@@ -2,6 +2,9 @@
 
 ## 2026-05-25
 
+- py-005: Added Ruff install script (`py/scripts/install-and-lint.sh`)
+- py-006: Added Ruff config (`py/configs/ruff-pyproject.toml`)
+- py-007: Added pytest primer (`py/notes/0000-primer-pytest.md`)
 - py-004: Added Ruff primer (`py/notes/0000-primer-py.md`)
 
 ## 2026-05-24
