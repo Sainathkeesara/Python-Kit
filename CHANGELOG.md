@@ -2,6 +2,10 @@
 
 ## 2026-05-26
 
+- py-014: Added uv.lock structure notes (`uv.lock/notes/2026-05-26-uv-lock-structure.md`)
+- py-015: Added generate uv.lock script (`uv.lock/scripts/generate-uv-lock.sh`)
+- py-016: Added uv run snippet (`uv/snippets/run-with-uv.py`)
+
 - py-008: Added pytest first test snippet (`pytest/snippets/test_first_test.py`)
 - py-009: Added pytest CLI exploration notes (`pytest/notes/2026-05-26-tried-pytest-cli.md`)
 - py-010: Added pyproject.toml primer (`pyproject.toml/notes/0000-primer-pyproject.toml.md`)
