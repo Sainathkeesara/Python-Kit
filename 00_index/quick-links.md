@@ -15,3 +15,9 @@
 ## pytest
 
 - [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first contact notes
+- [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
+- [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
+
+## pyproject.toml
+
+- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first contact notes

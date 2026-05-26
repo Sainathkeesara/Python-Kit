@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-26
+
+- py-008: Added pytest first test snippet (`pytest/snippets/test_first_test.py`)
+- py-009: Added pytest CLI exploration notes (`pytest/notes/2026-05-26-tried-pytest-cli.md`)
+- py-010: Added pyproject.toml primer (`pyproject.toml/notes/0000-primer-pyproject.toml.md`)
+
 ## 2026-05-25
 
 - py-005: Added Ruff install script (`py/scripts/install-and-lint.sh`)
