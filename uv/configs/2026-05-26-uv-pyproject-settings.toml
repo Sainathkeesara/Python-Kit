@@ -1,0 +1,7 @@
+[tool.uv]
+dev-dependencies = ["pytest >=8.0", "ruff >=0.5"]
+default-groups = ["dev"]
+package = true
+
+[tool.uv.sources]
+local-pkg = { path = "../local-pkg" }
