@@ -2,6 +2,10 @@
 
 ## 2026-05-26
 
+- py-017: Added uv pyproject.toml settings config (`uv/configs/2026-05-26-uv-pyproject-settings.toml`)
+- py-018: Added uv CLI beyond basics notes (`uv/notes/2026-05-26-cli-commands-beyond-basics.md`)
+- py-019: Added pre-commit primer (`pre-commit/notes/0000-primer-pre-commit.md`)
+
 - py-014: Added uv.lock structure notes (`uv.lock/notes/2026-05-26-uv-lock-structure.md`)
 - py-015: Added generate uv.lock script (`uv.lock/scripts/generate-uv-lock.sh`)
 - py-016: Added uv run snippet (`uv/snippets/run-with-uv.py`)

@@ -33,3 +33,9 @@
 ## uv
 
 - [Run Python Script with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
+- [uv pyproject.toml Config](../uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings in pyproject.toml
+- [uv CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
+
+## pre-commit
+
+- [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first contact notes
