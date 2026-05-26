@@ -5,6 +5,9 @@
 - py-008: Added pytest first test snippet (`pytest/snippets/test_first_test.py`)
 - py-009: Added pytest CLI exploration notes (`pytest/notes/2026-05-26-tried-pytest-cli.md`)
 - py-010: Added pyproject.toml primer (`pyproject.toml/notes/0000-primer-pyproject.toml.md`)
+- py-011: Added minimal pyproject.toml config (`pyproject.toml/configs/minimal-pyproject.toml`)
+- py-012: Added pyproject.toml settings notes (`pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md`)
+- py-013: Added uv.lock primer (`uv.lock/notes/0000-primer-uv.lock.md`)
 
 ## 2026-05-25
 
