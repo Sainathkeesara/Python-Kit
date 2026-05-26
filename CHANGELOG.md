@@ -2,6 +2,10 @@
 
 ## 2026-05-26
 
+- py-022: Added pip-audit primer (`pip-audit/notes/0000-primer-pip-audit.md`)
+- py-023: Added scan project script (`pip-audit/scripts/scan-project.sh`)
+- py-024: Added pip-audit findings notes (`pip-audit/notes/2026-05-26-pip-audit-findings.md`)
+
 - py-017: Added uv pyproject.toml settings config (`uv/configs/2026-05-26-uv-pyproject-settings.toml`)
 - py-018: Added uv CLI beyond basics notes (`uv/notes/2026-05-26-cli-commands-beyond-basics.md`)
 - py-019: Added pre-commit primer (`pre-commit/notes/0000-primer-pre-commit.md`)
