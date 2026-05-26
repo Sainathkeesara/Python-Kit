@@ -27,3 +27,9 @@
 ## uv.lock
 
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first contact notes
+- [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
+- [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
+
+## uv
+
+- [Run Python Script with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
