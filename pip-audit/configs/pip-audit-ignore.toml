@@ -1,0 +1,11 @@
+[tool.pip-audit]
+strict = true
+timeout = 60
+
+[tool.pip-audit.ignore]
+# I reviewed these CVEs and they don't affect my use case.
+# Remove entries once the package is upgraded past the vulnerable version.
+vulns = [
+    "CVE-2023-12345",  # example: only affects old Django versions
+    "PYSEC-2023-100",  # example: false positive in my pinned version
+]
