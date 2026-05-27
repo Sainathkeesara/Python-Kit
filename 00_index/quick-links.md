@@ -49,6 +49,13 @@
 - [pip-audit Findings Notes](../pip-audit/notes/2026-05-26-pip-audit-findings.md) — First scan results and observations
 - [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
 
+## rich
+
+- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
+- [Console Logging Snippet](../rich/snippets/first-rich-logger.py) — Minimal rich logging handler setup
+- [Progress Bar Snippet](../rich/snippets/tried-rich-progress-bar.py) — First try at rich progress bar
+- [Themes and Markdown Notes](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md) — Exploring themes and markdown rendering
+
 ## Ty
 
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
