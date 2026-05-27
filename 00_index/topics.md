@@ -2,6 +2,8 @@
 
 ## pre-commit
 - [primer](../pre-commit/notes/0000-primer-pre-commit.md) — First-contact notes for pre-commit hooks
+- [first config snippet](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
+- [install & run script](../pre-commit/scripts/install-and-run.sh) — Install pre-commit and run on repo
 
 ## py (Ruff / Python tooling)
 - [primer](../py/notes/0000-primer-py.md) — What is Ruff? first-contact notes

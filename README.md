@@ -20,11 +20,13 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | py (Ruff / tooling) | 2 | 1 | 1 | — |
 | pyproject.toml | 2 | — | 1 | — |
 | pytest | 1 | — | — | 1 |
-| pre-commit | 1 | — | — | — |
+| pre-commit | 1 | 1 | — | 1 |
 
 ## Quick links
 
 - [pre-commit primer](pre-commit/notes/0000-primer-pre-commit.md) — First-contact notes for pre-commit hooks
+- [pre-commit config](pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
+- [install & run pre-commit](pre-commit/scripts/install-and-run.sh) — Install pre-commit and run on repo
 - [uv pyproject.toml config](uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings inside pyproject.toml
 - [uv CLI beyond basics](uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond the basics
 - [uv.lock structure](uv.lock/notes/2026-05-26-uv-lock-structure.md) — Inside the lock file — understanding its structure
@@ -32,14 +34,20 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Layout
 
+The repository follows a tool-centric organization:
+
 | Directory | Contents |
 |-----------|----------|
+| `00_index/` | Navigation: quick-links.md, topics.md, glossary.md |
 | `uv/` | Notes, scripts, configs, and snippets for Astral's uv |
-| `uv.lock/` | Notes and scripts for understanding uv's lock file |
-| `py/` | Ruff primer, config, and install/lint script |
-| `pyproject.toml/` | Primer, minimal config, and settings notes |
-| `pytest/` | CLI notes and a first test snippet |
-| `pre-commit/` | Primer for pre-commit hooks |
+| `py/` | Ruff and related Python tooling notes, scripts, configs |
+| `pytest/` | pytest testing framework notes and snippets |
+| `pyproject.toml/` | pyproject.toml configuration notes and examples |
+| `uv.lock/` | uv.lock lock file notes and scripts |
+| `pre-commit/` | Hook configs: snippets/, notes/, scripts/ |
+| `pip-audit/` | Vulnerability scanning notes and scripts |
+
+See [docs/repository-structure.md](docs/repository-structure.md) for full details.
 
 ## Status
 
