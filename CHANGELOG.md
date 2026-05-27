@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-27
+
+- py-020: Added pre-commit config snippet (`pre-commit/snippets/first-pre-commit-config.yaml`)
+- py-021: Added install pre-commit script (`pre-commit/scripts/install-and-run.sh`)
+- py-053: Restructured README with documented repository structure (`docs/repository-structure.md`)
+
 ## 2026-05-26
 
 - py-022: Added pip-audit primer (`pip-audit/notes/0000-primer-pip-audit.md`)
