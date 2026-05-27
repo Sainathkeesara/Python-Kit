@@ -5,6 +5,9 @@
 - py-020: Added pre-commit config snippet (`pre-commit/snippets/first-pre-commit-config.yaml`)
 - py-021: Added install pre-commit script (`pre-commit/scripts/install-and-run.sh`)
 - py-053: Restructured README with documented repository structure (`docs/repository-structure.md`)
+- py-030: Added Rich primer (`rich/notes/0000-primer-rich.md`)
+- py-028: Added Ty vs mypy comparison notes (`Ty/notes/2026-05-27-compare-ty-vs-mypy.md`)
+- py-029: Added Ty config (`Ty/configs/tried-ty-config.toml`)
 
 ## 2026-05-26
 

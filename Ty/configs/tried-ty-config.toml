@@ -1,0 +1,8 @@
+[tool.ty]
+# Minimal Ty config — checks what you annotate, no strict mode
+include = ["src/**/*.py"]
+exclude = ["tests/", "build/"]
+python_version = "3.12"
+
+# Report unused ignores (quiet by default)
+report_unused_ignore = false

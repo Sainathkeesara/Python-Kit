@@ -47,3 +47,12 @@
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
 - [pip-audit Findings Notes](../pip-audit/notes/2026-05-26-pip-audit-findings.md) — First scan results and observations
+
+## rich
+
+- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
+
+## Ty
+
+- [Ty vs mypy Notes](../Ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing Ty and mypy type checking
+- [Ty Config](../Ty/configs/tried-ty-config.toml) — Configure Ty in pyproject.toml
