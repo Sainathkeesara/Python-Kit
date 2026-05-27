@@ -2,6 +2,10 @@
 
 ## 2026-05-27
 
+- py-031: Added rich console logging snippet (`rich/snippets/first-rich-logger.py`)
+- py-032: Added rich themes and markdown notes (`rich/notes/2026-05-27-tried-rich-themes-and-markdown.md`)
+- py-033: Added rich progress bar snippet (`rich/snippets/tried-rich-progress-bar.py`)
+
 - py-020: Added pre-commit config snippet (`pre-commit/snippets/first-pre-commit-config.yaml`)
 - py-021: Added install pre-commit script (`pre-commit/scripts/install-and-run.sh`)
 - py-053: Restructured README with documented repository structure (`docs/repository-structure.md`)
