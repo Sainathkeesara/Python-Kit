@@ -2,6 +2,10 @@
 
 ## 2026-05-28
 
+- prc-001: Added pre-commit run notes (`pre-commit/notes/2026-05-28-run-pre-commit-on-work.md`)
+- ric-001: Added rich table/panel/progress script (`rich/scripts/first-table-panel-progress.py`)
+- ric-002: Added rich renderables exploration notes (`rich/notes/2026-05-28-exploring-renderables.md`)
+
 - myp-001: Added mypy primer (`mypy/notes/0000-primer-mypy.md`)
 - myp-002: Added first mypy type check script (`mypy/scripts/tried-mypy-first-check.py`)
 - myp-003: Added mypy CLI flags notes (`mypy/notes/2026-05-28-tried-mypy-cli-flags.md`)
