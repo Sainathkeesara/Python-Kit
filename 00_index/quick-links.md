@@ -56,6 +56,12 @@
 - [Progress Bar Snippet](../rich/snippets/tried-rich-progress-bar.py) — First try at rich progress bar
 - [Themes and Markdown Notes](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md) — Exploring themes and markdown rendering
 
+## mypy
+
+- [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes
+- [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
+- [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
+
 ## Ty
 
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
