@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-28
+
+- myp-001: Added mypy primer (`mypy/notes/0000-primer-mypy.md`)
+- myp-002: Added first mypy type check script (`mypy/scripts/tried-mypy-first-check.py`)
+- myp-003: Added mypy CLI flags notes (`mypy/notes/2026-05-28-tried-mypy-cli-flags.md`)
+
 ## 2026-05-27
 
 - py-031: Added rich console logging snippet (`rich/snippets/first-rich-logger.py`)
