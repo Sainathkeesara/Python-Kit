@@ -75,3 +75,9 @@
 
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
 - [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
+
+## Typer
+
+- [Typer Primer](../typer/notes/0000-primer-typer.md) — What is Typer? first contact notes
+- [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
+- [Quickstart Notes](../typer/notes/2026-05-29-typer-quickstart-notes.md) — What tripped me up following quickstart
