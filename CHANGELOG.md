@@ -2,6 +2,10 @@
 
 ## 2026-05-29
 
+- pdt-001: Added pipdeptree primer (`pipdeptree/notes/0000-primer-pipdeptree.md`)
+- pdt-002: Added install and inspect script (`pipdeptree/scripts/install-and-inspect-deps.sh`)
+- pdt-003: Added JSON format notes (`pipdeptree/notes/2026-05-29-format-json-deps.md`)
+
 - typ-001: Added Typer primer (`typer/notes/0000-primer-typer.md`)
 - typ-002: Added minimal CLI app script (`typer/scripts/typer_cli_demo.py`)
 - typ-003: Added Typer quickstart notes (`typer/notes/2026-05-29-typer-quickstart-notes.md`)
