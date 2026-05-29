@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-05-29
+
+- typ-001: Added Typer primer (`typer/notes/0000-primer-typer.md`)
+- typ-002: Added minimal CLI app script (`typer/scripts/typer_cli_demo.py`)
+- typ-003: Added Typer quickstart notes (`typer/notes/2026-05-29-typer-quickstart-notes.md`)
+
 ## 2026-05-28
 
 - prc-001: Added pre-commit run notes (`pre-commit/notes/2026-05-28-run-pre-commit-on-work.md`)
