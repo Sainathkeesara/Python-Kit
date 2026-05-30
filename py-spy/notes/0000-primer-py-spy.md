@@ -14,7 +14,7 @@ You point py-spy at a running Python PID (or launch a script with it), and it sa
 
 ## Why does it exist?
 
-Profiling Python has always been a pain. `cProfile` adds massive overhead (sometimes 10-50x slower), and `profile` is even worse. You can't realistically use them in production. `time` and manual logging tell you nothing about *where* time is spent inside a function. py-spy's sampling approach adds almost zero overhead — typically under 1% — so you can run it against production processes without distorting the metrics.
+Profiling Python has always been a pain. `cProfile` adds massive overhead (sometimes 10-50x slower), and `profile` is even worse. You can't realistically use them in real workloads. `time` and manual logging tell you nothing about *where* time is spent inside a function. py-spy's sampling approach adds almost zero overhead — typically under 1% — so you can run it against live systems without distorting the metrics.
 
 ## Key terminology
 

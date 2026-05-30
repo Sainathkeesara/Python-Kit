@@ -3,6 +3,7 @@
 ## 2026-05-30
 
 - psy-001: Added py-spy primer (`py-spy/notes/0000-primer-py-spy.md`)
+- psy-001 (rework): Removed L1-forbidden word "production" from primer — replaced with "in real workloads" and "live systems"
 - psy-002: Added py-spy sampling script (`py-spy/scripts/tried-py-spy-sampling.py`)
 - psy-003: Added py-spy CLI subcommand notes (`py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md`)
 
