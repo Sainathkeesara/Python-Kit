@@ -7,6 +7,8 @@
 - psy-002: Added py-spy sampling script (`py-spy/scripts/tried-py-spy-sampling.py`)
 - psy-003: Added py-spy CLI subcommand notes (`py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md`)
 
+- pdt-002: Updated install and inspect script to change to /work before running pipdeptree (pipdeptree/scripts/install-and-inspect-deps.sh)
+- pdt-003: Added JSON format and dependency type notes (pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md)
 ## 2026-05-29
 
 - pdt-001: Added pipdeptree primer (`pipdeptree/notes/0000-primer-pipdeptree.md`)
