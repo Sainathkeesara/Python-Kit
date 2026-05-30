@@ -5,6 +5,8 @@ set -e
 
 pip install pipdeptree
 
+cd /work
+
 echo "=== pipdeptree default output ==="
 pipdeptree
 
