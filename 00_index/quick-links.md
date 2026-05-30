@@ -1,83 +1,95 @@
 # Quick Links
 
-## I need to...
+## uv
 
-### Get started with a tool
-- [uv primer](uv/notes/0000-primer-uv.md)
-- [Ruff primer](py/notes/0000-primer-py.md)
-- [pytest primer](py/notes/0000-primer-pytest.md)
-- [mypy primer](mypy/notes/0000-primer-mypy.md)
-- [pre-commit primer](pre-commit/notes/0000-primer-pre-commit.md)
-- [pip-audit primer](pip-audit/notes/0000-primer-pip-audit.md)
-- [pipdeptree primer](pipdeptree/notes/0000-primer-pipdeptree.md)
-- [rich primer](rich/notes/0000-primer-rich.md)
-- [ty primer](ty/notes/0000-primer-ty.md)
-- [typer primer](typer/notes/0000-primer-typer.md)
-- [uv.lock primer](uv.lock/notes/0000-primer-uv.lock.md)
-- [pyproject.toml primer](pyproject.toml/notes/0000-primer-pyproject.toml.md)
+- [uv Primer](../uv/notes/0000-primer-uv.md) — What is uv? first contact notes
+- [Install uv Script](../uv/scripts/install-and-first-command.sh) — Install uv and run first command
+- [Virtual Env Notes](../uv/notes/2026-05-24-virtual-env-uv.md) — Creating and exploring a virtual environment with uv
 
-### Install and configure a tool
-- [Install uv](uv/scripts/install-and-first-command.sh)
-- [Install Ruff and lint](py/scripts/install-and-lint.sh)
-- [Install pre-commit and run](pre-commit/scripts/install-and-run.sh)
-- [Install pipdeptree and inspect deps](pipdeptree/scripts/install-and-inspect-deps.sh)
-- [Scan project with pip-audit](pip-audit/scripts/scan-project.sh)
-- [Generate uv.lock](uv.lock/scripts/generate-uv-lock.sh)
+## Ruff
 
-### Lint and format code
-- [Ruff primer](py/notes/0000-primer-py.md)
-- [Ruff config in pyproject.toml](py/configs/ruff-pyproject.toml)
-- [Install and lint script](py/scripts/install-and-lint.sh)
+- [Ruff Primer](../py/notes/0000-primer-py.md) — What is Ruff? first contact notes
+- [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
+- [Ruff Config](../py/configs/ruff-pyproject.toml) — Configure Ruff with pyproject.toml
 
-### Type check code
-- [mypy primer](mypy/notes/0000-primer-mypy.md)
-- [mypy CLI flags](mypy/notes/2026-05-28-tried-mypy-cli-flags.md)
-- [mypy test script](mypy/scripts/tried-mypy-first-check.py)
-- [ty primer](ty/notes/0000-primer-ty.md)
-- [ty vs mypy comparison](ty/notes/2026-05-27-compare-ty-vs-mypy.md)
-- [Run ty on codebase](ty/snippets/run-ty-on-codebase.py)
+## pytest
 
-### Run tests
-- [pytest CLI notes](pytest/notes/2026-05-26-tried-pytest-cli.md)
-- [First test snippet](pytest/snippets/test_first_test.py)
+- [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first contact notes
+- [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
+- [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
 
-### Scan for vulnerabilities
-- [pip-audit primer](pip-audit/notes/0000-primer-pip-audit.md)
-- [Scan script](pip-audit/scripts/scan-project.sh)
-- [Findings notes](pip-audit/notes/2026-05-26-pip-audit-findings.md)
-- [Ignore config](pip-audit/configs/pip-audit-ignore.toml)
+## pyproject.toml
 
-### Manage dependencies
-- [uv primer](uv/notes/0000-primer-uv.md)
-- [Virtual env with uv](uv/notes/2026-05-24-virtual-env-uv.md)
-- [uv CLI beyond basics](uv/notes/2026-05-26-cli-commands-beyond-basics.md)
-- [uv pyproject.toml config](uv/configs/2026-05-26-uv-pyproject-settings.toml)
-- [Run script with uv](uv/snippets/run-with-uv.py)
-- [pipdeptree primer](pipdeptree/notes/0000-primer-pipdeptree.md)
-- [pipdeptree JSON output](pipdeptree/notes/2026-05-29-format-json-deps.md)
-- [uv.lock primer](uv.lock/notes/0000-primer-uv.lock.md)
-- [uv.lock structure](uv.lock/notes/2026-05-26-uv-lock-structure.md)
+- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first contact notes
+- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
+- [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
 
-### Build CLI apps
-- [typer primer](typer/notes/0000-primer-typer.md)
-- [Quickstart notes](typer/notes/2026-05-29-typer-quickstart-notes.md)
-- [CLI demo script](typer/scripts/typer_cli_demo.py)
+## uv.lock
 
-### Write rich terminal output
-- [rich primer](rich/notes/0000-primer-rich.md)
-- [Themes and markdown](rich/notes/2026-05-27-tried-rich-themes-and-markdown.md)
-- [Exploring renderables](rich/notes/2026-05-28-exploring-renderables.md)
-- [Table, panel, progress script](rich/scripts/first-table-panel-progress.py)
-- [Rich logger snippet](rich/snippets/first-rich-logger.py)
-- [Progress bar snippet](rich/snippets/tried-rich-progress-bar.py)
+- [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first contact notes
+- [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
+- [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 
-### Set up pre-commit hooks
-- [pre-commit primer](pre-commit/notes/0000-primer-pre-commit.md)
-- [Pre-commit config](pre-commit/snippets/first-pre-commit-config.yaml)
-- [Install and run script](pre-commit/scripts/install-and-run.sh)
-- [Running pre-commit on /work](pre-commit/notes/2026-05-28-run-pre-commit-on-work.md)
+## uv
 
-### Configure pyproject.toml
-- [pyproject.toml primer](pyproject.toml/notes/0000-primer-pyproject.toml.md)
-- [Settings notes](pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md)
-- [Minimal pyproject.toml](pyproject.toml/configs/minimal-pyproject.toml)
+- [Run Python Script with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
+- [uv pyproject.toml Config](../uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings in pyproject.toml
+- [uv CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
+
+## pre-commit
+
+- [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first contact notes
+- [pre-commit config](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
+- [Install and Run Script](../pre-commit/scripts/install-and-run.sh) — Install pre-commit and run on my repo
+
+## pip-audit
+
+- [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
+- [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
+- [pip-audit Findings Notes](../pip-audit/notes/2026-05-26-pip-audit-findings.md) — First scan results and observations
+- [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
+
+## rich
+
+- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
+- [Console Logging Snippet](../rich/snippets/first-rich-logger.py) — Minimal rich logging handler setup
+- [Progress Bar Snippet](../rich/snippets/tried-rich-progress-bar.py) — First try at rich progress bar
+- [Themes and Markdown Notes](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md) — Exploring themes and markdown rendering
+
+## mypy
+
+- [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes
+- [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
+- [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
+
+## pre-commit
+
+- [Run Pre-commit on /work Notes](../pre-commit/notes/2026-05-28-run-pre-commit-on-work.md) — Running pre-commit across /work and interpreting results
+
+## rich
+
+- [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
+- [Exploring Renderables Notes](../rich/notes/2026-05-28-exploring-renderables.md) — Trying tables, panels, layouts, markup syntax
+
+## Ty
+
+- [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
+- [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
+
+## pipdeptree
+
+- [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
+- [Install and Inspect Script](../pipdeptree/scripts/install-and-inspect-deps.sh) — Install pipdeptree and inspect the /work project's dependency tree
+- [JSON Format Notes](../pipdeptree/notes/2026-05-29-format-json-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
+
+## Typer
+
+- [Typer Primer](../typer/notes/0000-primer-typer.md) — What is Typer? first contact notes
+- [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
+- [Quickstart Notes](../typer/notes/2026-05-29-typer-quickstart-notes.md) — What tripped me up following quickstart
+
+## py-spy
+
+- [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
+- [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
+- [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
