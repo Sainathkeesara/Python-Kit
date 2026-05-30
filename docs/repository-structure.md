@@ -9,11 +9,17 @@ This document describes the directory layout of Python-Kit.
 | `00_index/` | Navigation files including quick-links.md, topics.md, glossary.md |
 | `uv/` | Notes, scripts, configs, and snippets for Astral's uv package manager |
 | `py/` | Ruff and related Python tooling notes, scripts, configs |
+| `py-spy/` | Profiler notes and scripts for py-spy |
 | `pytest/` | pytest testing framework notes and snippets |
 | `pyproject.toml/` | pyproject.toml configuration notes and examples |
 | `uv.lock/` | uv.lock lock file notes and scripts |
 | `pre-commit/` | pre-commit hook configuration and scripts (scripts/, notes/, snippets/) |
 | `pip-audit/` | Vulnerability scanning notes and scripts |
+| `pipdeptree/` | Dependency tree notes and scripts |
+| `mypy/` | Type checking notes and test scripts |
+| `rich/` | Terminal output notes, scripts, and snippets |
+| `ty/` | Type checker comparison notes and configs |
+| `typer/` | CLI framework notes and demos |
 
 ## File organization by type
 
