@@ -3,6 +3,7 @@
 ## 2026-05-31
 
 - tox-001: Added tox primer (`tox/notes/0000-primer-tox.md`)
+- tox-001 (rework): Rewrote primer to ≤300 words, ≤15 lines, first-person scratchy voice
 - tox-002: Added minimal tox config (`tox/configs/tox.ini`)
 - tox-003: Added tox CLI first run notes (`tox/notes/2026-05-31-tox-cli-first-run.md`)
 
