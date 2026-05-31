@@ -95,6 +95,12 @@
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
 
+## tox
+
+- [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
+- [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
+- [First tox CLI Run Notes](../tox/notes/2026-05-31-tox-cli-first-run.md) — env list, -e flag, passing args through
+
 ## httpie
 
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first contact notes

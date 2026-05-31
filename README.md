@@ -29,6 +29,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | typer | 2 | 1 | — | — |
 | py-spy | 2 | 1 | — | — |
 | httpie | 2 | 1 | — | — |
+| tox | 1 | — | 1 | — |
 
 ## Quick links
 
@@ -61,13 +62,14 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | `typer/` | CLI framework notes and demos |
 | `py-spy/` | Profiler notes and scripts for py-spy |
 | `httpie/` | API testing CLI notes, scripts, and configs |
+| `tox/` | Test automation notes and configs for tox |
 | `docs/` | Project-level documentation (repository-structure.md) |
 
 See [docs/repository-structure.md](docs/repository-structure.md) for full details.
 
 ## Status
 
-Building out first-contact notes across the Python toolchain. Recent additions cover httpie (API testing CLI) and py-spy (profiling). Currently working through L1 notes for httpie and py-spy.
+Building out first-contact notes across the Python toolchain. Recent additions cover tox (test automation), httpie (API testing CLI) and py-spy (profiling). Currently working through L1 notes for tox.
 
 ---
-_Last updated: 2026-05-30_ (added httpie, py-spy, docs to layout)
+_Last updated: 2026-05-31_ (added httpie, py-spy, docs, tox to layout)
