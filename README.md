@@ -27,6 +27,8 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | rich | 3 | 1 | — | 2 |
 | ty | 2 | — | 1 | 1 |
 | typer | 2 | 1 | — | — |
+| py-spy | 2 | 1 | — | — |
+| httpie | 2 | 1 | — | — |
 
 ## Quick links
 
@@ -37,6 +39,8 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 - [typer CLI demo](typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
 - [rich primer](rich/notes/0000-primer-rich.md) — First-contact notes for rich (terminal output)
 - [rich table/panel/progress script](rich/scripts/first-table-panel-progress.py) — Rich script with table, panel, and progress bar
+- [httpie primer](httpie/notes/0000-primer-httpie.md) — First-contact notes for HTTPie
+- [httpie vs curl](httpie/notes/2026-05-30-compare-httpie-vs-curl.md) — Same API calls, different ergonomics
 
 ## Layout
 
@@ -55,12 +59,15 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | `rich/` | Terminal output notes, scripts, and snippets |
 | `ty/` | Type checker comparison notes and configs |
 | `typer/` | CLI framework notes and demos |
+| `py-spy/` | Profiler notes and scripts for py-spy |
+| `httpie/` | API testing CLI notes, scripts, and configs |
+| `docs/` | Project-level documentation (repository-structure.md) |
 
 See [docs/repository-structure.md](docs/repository-structure.md) for full details.
 
 ## Status
 
-Building out first-contact notes across the Python toolchain. Recent additions cover pipdeptree (dependency trees) and typer (CLI building). Currently working through L1 notes for pipdeptree and typer.
+Building out first-contact notes across the Python toolchain. Recent additions cover httpie (API testing CLI) and py-spy (profiling). Currently working through L1 notes for httpie and py-spy.
 
 ---
-_Last updated: 2026-05-30_
+_Last updated: 2026-05-30_ (added httpie, py-spy, docs to layout)

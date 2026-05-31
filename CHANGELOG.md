@@ -2,6 +2,10 @@
 
 ## 2026-05-30
 
+- htp-001: Added httpie primer (`httpie/notes/0000-primer-httpie.md`)
+- htp-002: Added httpie install and test script (`httpie/scripts/install_and_test_httpie.sh`)
+- htp-003: Added httpie vs curl comparison notes (`httpie/notes/2026-05-30-compare-httpie-vs-curl.md`)
+
 - psy-001: Added py-spy primer (`py-spy/notes/0000-primer-py-spy.md`)
 - psy-001 (rework): Removed L1-forbidden word "production" from primer — replaced with "in real workloads" and "live systems"
 - psy-002: Added py-spy sampling script (`py-spy/scripts/tried-py-spy-sampling.py`)
