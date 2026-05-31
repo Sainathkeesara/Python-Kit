@@ -1,22 +1,28 @@
-# tox CLI first run
+# tox first run notes
 
-Tried tox today. First ran `tox --version` to confirm it was installed — got 4.25.0. Then `tox list` to see what envs I had. Oops, no `tox.ini` yet, so it complained. Should have made the config first.
+Ran `tox --version` to make sure it was installed — got `4.25.0`. Then I looked at what envs I had defined by running `tox list`, but I hadn't created a `tox.ini` yet, so it told me there was no config. Oops, order of operations.
 
-Made a minimal `tox.ini` with one `py311` env and pytest as deps. Created a quick `test_math.py` with a passing test.
+Created a minimal `tox.ini` with one `py311` env and a single deps on pytest. Made a throwaway `test_math.py` with a passing test.
 
-Ran plain `tox` — it built the env, installed pytest into `.tox/py311/`, and the test passed. Then tried `tox -e py311 -- pytest -v` to pass args through. Worked nicely.
+Ran plain `tox` — it built the env, installed pytest into `.tox/py311/`, and executed the test. Output was clean. Then I ran `tox -e py311 -- pytest -v` to pass args through to pytest and got verbose output.
 
-Got confused on the env list syntax. Expected `tox env list` because the help mentions `envlist`, but it's actually `tox list` (or `tox -l`). Missed that on first read of help.
+I tripped up on the env list command syntax. I expected `tox envs list` because the help text mentions `envlist`, but the actual subcommand is `tox list` (or `tox -l`). The help screen does show it, but I missed it the first time.
 
-When I added a second deps entry, tox wiped and recreated the whole env. That's expected — it prioritizes reproducibility over speed.
+Also worth noting: tox rebuilds the env from scratch whenever you change deps. When I added a second deps entry, the next `tox` run wiped and recreated `.tox/py311/`. That's by design — reproducibility over speed.
 
-What worked:
-- `tox --list-envs` showed my env
-- `tox -e py311` ran just that one
-- Flags passed through with `--` worked
+## What worked
 
-What tripped me up:
-- Thought `tox env list` was a command
-- Forgot to `cd` into project root and got "no tox.ini found" twice
+- `tox --list-envs` showed my single env
+- `tox -e py311` ran just that env
+- Passing flags through with `--` worked fine
 
-Next: adding a second env for different Python version and a lint env.
+## What tripped me up
+
+- Thought `tox env list` was a command (`tox list` is correct)
+- Forgot to `cd` into the project root first and got "no tox.ini found" twice
+
+## What I'd try next
+
+- Add a second env for a different Python version
+- Add a lint env that runs ruff or flake8
+- Figure out the `tox -e py311 -- recreate` flag
