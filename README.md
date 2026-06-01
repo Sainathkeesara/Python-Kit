@@ -23,7 +23,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | pre-commit | 2 | 1 | — | 1 |
 | pip-audit | 2 | 1 | 1 | — |
 | pipdeptree | 2 | 1 | — | — |
-| mypy | 2 | 1 | — | — |
+| mypy | 3 | 1 | 1 | — |
 | rich | 3 | 1 | — | 2 |
 | ty | 2 | — | 1 | 1 |
 | typer | 2 | 1 | — | — |

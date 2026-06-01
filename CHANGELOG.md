@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-01
+
+- mypy-004: Added mypy quickstart for existing projects notes (`mypy/notes/2026-05-29-tried-mypy-quickstart.md`)
+- mypy-005: Added minimal mypy strict mode config (`mypy/configs/tried-strict-mypy-config.toml`)
+
 ## 2026-05-31
 
 - tox-001: Added tox primer (`tox/notes/0000-primer-tox.md`)
