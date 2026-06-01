@@ -4,6 +4,9 @@
 
 - mypy-004: Added mypy quickstart for existing projects notes (`mypy/notes/2026-05-29-tried-mypy-quickstart.md`)
 - mypy-005: Added minimal mypy strict mode config (`mypy/configs/tried-strict-mypy-config.toml`)
+- pyt-001: Added parametrized tests script (`pytest/scripts/test_parametrized.py`)
+- uv-002: Added hello-world with dependency script (`uv/scripts/hello-with-dep.py`)
+- mypy-002: Added type error detection snippet (`mypy/snippets/tried-mypy-type-errors.py`)
 
 ## 2026-05-31
 

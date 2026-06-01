@@ -17,6 +17,7 @@
 - [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first contact notes
 - [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
+- [Parametrized Tests Script](../pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
 
 ## pyproject.toml
 
@@ -35,6 +36,7 @@
 - [Run Python Script with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
 - [uv pyproject.toml Config](../uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings in pyproject.toml
 - [uv CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
+- [Hello World with Dep Script](../uv/scripts/hello-with-dep.py) — PEP 723 inline metadata, uv run with requests
 
 ## pre-commit
 
@@ -63,6 +65,7 @@
 - [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
 - [Quickstart for Existing Projects](../mypy/notes/2026-05-29-tried-mypy-quickstart.md) — Running mypy on an existing codebase, what tripped me up
 - [Strict Mode Config](../mypy/configs/tried-strict-mypy-config.toml) — Minimal mypy config with incremental strict mode and stub setup
+- [Type Error Detection Snippet](../mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
 
 ## pre-commit
 
