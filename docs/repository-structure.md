@@ -20,6 +20,9 @@ This document describes the directory layout of Python-Kit.
 | `rich/` | Terminal output notes, scripts, and snippets |
 | `ty/` | Type checker comparison notes and configs |
 | `typer/` | CLI framework notes and demos |
+| `httpie/` | API testing CLI notes, scripts, and configs |
+| `tox/` | Test automation notes and configs for tox |
+| `docs/` | Project-level documentation (repository-structure.md) |
 
 ## File organization by type
 
