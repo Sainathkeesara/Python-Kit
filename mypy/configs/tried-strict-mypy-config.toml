@@ -1,0 +1,28 @@
+[tool.mypy]
+# Not turning on --strict yet — that's for later when I've
+# fixed most of the current errors. Starting with the flags
+# that catch the most common issues without overwhelming output.
+strict = false
+check_untyped_defs = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+
+# Incremental is on by default in mypy >= 0.980.
+# It speeds up repeated runs on the same project.
+incremental = true
+
+# Skip directories I don't own.
+exclude = [
+    "build/",
+    "migrations/",
+    "venv/",
+    ".venv/",
+]
+
+# I installed types-requests separately, so requests
+# imports should resolve instead of being silently ignored.
+[[tool.mypy.overrides]]
+module = "requests.*"
+ignore_missing_imports = false
