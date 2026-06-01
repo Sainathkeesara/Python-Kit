@@ -2,6 +2,8 @@
 
 ## 2026-06-01
 
+- uv-001: Added uv quickstart scaffold notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`)
+- ruf-002: Added minimal ruff linter config (`ruff/configs/ruff-linter-settings.toml`)
 - mypy-004: Added mypy quickstart for existing projects notes (`mypy/notes/2026-05-29-tried-mypy-quickstart.md`)
 - mypy-005: Added minimal mypy strict mode config (`mypy/configs/tried-strict-mypy-config.toml`)
 - pyt-001: Added parametrized tests script (`pytest/scripts/test_parametrized.py`)
