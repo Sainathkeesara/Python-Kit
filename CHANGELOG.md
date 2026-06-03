@@ -4,6 +4,8 @@
 
 - ruf-001: Added Ruff quickstart notes (`ruff/notes/2026-06-03-tried-ruff-quickstart.md`)
 - ric-004: Added interactive progress spinner snippet (`rich/snippets/tried-progress-spinner.py`)
+- ric-005: Added Rich quickstart tables/panels notes (`rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md`)
+- ric-006: Added live data viewer snippet (`rich/snippets/tried-live-data-viewer.py`)
 
 ## 2026-06-01
 

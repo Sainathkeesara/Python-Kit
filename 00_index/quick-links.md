@@ -53,6 +53,8 @@
 - [Themes and Markdown Notes](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md) — Exploring themes and markdown rendering
 - [Exploring Renderables Notes](../rich/notes/2026-05-28-exploring-renderables.md) — Trying tables, panels, layouts, markup syntax
 - [Progress Spinner Snippet](../rich/snippets/tried-progress-spinner.py) — Interactive status spinner for simulated long-running task
+- [Quickstart Tables/Panels Notes](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md) — Following official quickstart: Console, Table, Panel, Layout
+- [Live Data Viewer Snippet](../rich/snippets/tried-live-data-viewer.py) — Layout + Table + Live display in a simulated process monitor
 
 ## mypy
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes
