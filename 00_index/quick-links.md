@@ -15,6 +15,7 @@
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Config in pyproject.toml](../py/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [Ruff Quickstart Notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md) — Lint, auto-fix, explore rules
 - [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 
 ## pytest
@@ -51,6 +52,7 @@
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
 - [Themes and Markdown Notes](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md) — Exploring themes and markdown rendering
 - [Exploring Renderables Notes](../rich/notes/2026-05-28-exploring-renderables.md) — Trying tables, panels, layouts, markup syntax
+- [Progress Spinner Snippet](../rich/snippets/tried-progress-spinner.py) — Interactive status spinner for simulated long-running task
 
 ## mypy
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-03
+
+- ruf-001: Added Ruff quickstart notes (`ruff/notes/2026-06-03-tried-ruff-quickstart.md`)
+- ric-004: Added interactive progress spinner snippet (`rich/snippets/tried-progress-spinner.py`)
+
 ## 2026-06-01
 
 - uv-001: Added uv quickstart scaffold notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`)
