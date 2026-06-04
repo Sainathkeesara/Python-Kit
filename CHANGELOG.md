@@ -2,6 +2,9 @@
 
 ## 2026-06-04
 
+- pyt-002: Added pytest fixtures with conftest notes (`pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`)
+- ty-002: Added Ty markdown CSS template (`ty/configs/tried-ty-markdown-css.css`)
+
 - ruf-003: Added Ruff vs Flake8 comparison docs (`ruff/docs/ruff-vs-flake8-comparison.md`)
 - prc-004: Added pre-commit multi-hook config (`pre-commit/configs/tried-multi-hook-config.yaml`)
 

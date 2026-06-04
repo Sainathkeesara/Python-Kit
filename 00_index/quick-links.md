@@ -22,6 +22,7 @@
 ## pytest
 - [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
+- [Fixtures with conftest Notes](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md) — conftest.py with shared setup/teardown using yield fixtures
 - [Parametrized Tests Script](../pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
 
 ## pyproject.toml
@@ -71,6 +72,7 @@
 - [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
 - [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
 - [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
+- [Ty Markdown CSS](../ty/configs/tried-ty-markdown-css.css) — Custom CSS styling for Ty markdown rendering
 
 ## typer
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
