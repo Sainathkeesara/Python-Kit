@@ -4,6 +4,9 @@
 
 - ruf-003: Added Ruff vs Flake8 comparison docs (`ruff/docs/ruff-vs-flake8-comparison.md`)
 - prc-004: Added pre-commit multi-hook config (`pre-commit/configs/tried-multi-hook-config.yaml`)
+- ric-003: Added rich console API notes (`rich/notes/2026-06-04-tried-rich-console-api.md`)
+- mypy-003: Added first mypy run notes (`mypy/notes/2026-06-04-first-mypy-run.md`)
+- pau-002: Added pip-audit JSON scan script (`pip-audit/scripts/scan-and-parse-json.sh`)
 
 ## 2026-06-03
 
