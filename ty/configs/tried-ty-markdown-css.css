@@ -1,0 +1,35 @@
+/* Ty custom CSS for markdown rendering */
+/* Ty uses rich's CSS subset — not full browser CSS */
+
+body {
+    margin: 1em;
+    font-family: "DejaVu Sans Mono", monospace;
+}
+
+h1 {
+    color: #00aa00;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+h2 {
+    color: #0055ff;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+code {
+    background: #333333;
+    color: #ffcc00;
+}
+
+pre {
+    background: #222222;
+    border: round;
+    padding: 1;
+}
+
+blockquote {
+    color: #888888;
+    border: #555555;
+}
