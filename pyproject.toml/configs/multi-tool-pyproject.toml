@@ -1,0 +1,40 @@
+[build-system]
+# I used setuptools here since it's the default — switching to hatchling or
+# flit is easy but I wanted the most supported option first
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-project"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+# ── Tool configuration ──────────────────────────────────────────────
+
+[tool.ruff]
+# Picked py310 since that's what I'm running — ruff uses this for rule compatibility
+target-version = "py310"
+
+[tool.ruff.lint]
+# Started with the default E+F and added I (imports), N (naming), W (warnings), UP (pyupgrade)
+# Skipping E501 (line length) for now — I'll tighten it later once the codebase is cleaner
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+# Keeping tests in a single top-level directory — conftest.py lives here too
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.mypy]
+python_version = "3.10"
+# Not going full --strict yet — starting with basic checks and will tighten
+strict = false
+warn_unused_configs = true
+ignore_missing_imports = true

@@ -3,6 +3,8 @@
 ## 2026-06-04
 
 - pyt-002: Added pytest fixtures with conftest notes (`pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`)
+- pyt-003: Added pytest vs unittest API mapping docs (`pytest/docs/pytest-vs-unittest-mapping.md`)
+- ppt-002: Added multi-tool pyproject.toml config (`pyproject.toml/configs/multi-tool-pyproject.toml`)
 - ty-002: Added Ty markdown CSS template (`ty/configs/tried-ty-markdown-css.css`)
 
 - ruf-003: Added Ruff vs Flake8 comparison docs (`ruff/docs/ruff-vs-flake8-comparison.md`)
