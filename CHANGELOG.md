@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-06-05
+
+- typer-002: Added Typer calculator script (`typer/scripts/tried-typer-calculator.py`)
+- prc-002: Added minimal pre-commit config with ruff hook (`pre-commit/configs/tried-first-ruff-hooks-config.yaml`)
+- uvl-002: Added uv.lock reproducibility test script (`uv.lock/scripts/tried-uv-lock-reproducibility.sh`)
+
 ## 2026-06-04
 
 - pyt-002: Added pytest fixtures with conftest notes (`pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`)

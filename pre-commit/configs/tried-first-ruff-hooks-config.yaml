@@ -1,0 +1,9 @@
+# tried-first-ruff-hooks-config.yaml — minimal pre-commit config with ruff hook
+# Only the ruff hook — nothing else. Wanted the absolute minimum config.
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+      - id: ruff-format
