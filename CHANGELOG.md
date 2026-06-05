@@ -2,6 +2,8 @@
 
 ## 2026-06-05
 
+- tox-002 (rework): Delivered minimal tox.ini with one test environment (`tox/configs/tox.ini`)
+
 - uv-003: Added uv vs pip command mapping cheat-sheet (`uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md`)
 - tox-002: Verified minimal tox.ini config with one test environment (`tox/configs/tox.ini`)
 - typer-002: Added Typer calculator script (`typer/scripts/tried-typer-calculator.py`)
