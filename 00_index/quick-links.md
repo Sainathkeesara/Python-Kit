@@ -9,6 +9,7 @@
 - [Run with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
 - [uv pyproject.toml Config](../uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings in pyproject.toml
 - [CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
+- [uv vs pip Cheat Sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md) — Command mapping and migration cheat-sheet
 
 ## Ruff / py-tooling
 - [Ruff Primer](../py/notes/0000-primer-py.md) — What is Ruff? first contact notes
