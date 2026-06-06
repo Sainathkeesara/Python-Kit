@@ -2,6 +2,7 @@
 
 ## 2026-06-05
 
+- ty-001: Added Ty quickstart notes (`ty/notes/2026-06-05-tried-ty-quickstart.md`)
 - uv-003: Added uv vs pip command mapping cheat-sheet (`uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md`)
 - tox-002: Verified minimal tox.ini config with one test environment (`tox/configs/tox.ini`)
 - typer-002: Added Typer calculator script (`typer/scripts/tried-typer-calculator.py`)

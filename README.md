@@ -13,32 +13,31 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Snippets | Docs |
-|------|-------|---------|---------|----------|------|
-| uv | 4 | 2 | 1 | 1 | 1 |
-| uv.lock | 2 | 2 | — | — | — |
-| mypy | 4 | 1 | 1 | 1 | — |
-| pip-audit | 2 | 2 | 1 | — | — |
-| pipdeptree | 3 | 1 | — | — | — |
-| pre-commit | 2 | 1 | 2 | 1 | — |
-| py (Ruff tooling) | 2 | 1 | 1 | — | — |
-| pyproject.toml | 2 | — | 2 | — | — |
-| py-spy | 2 | 1 | — | — | — |
-| pytest | 2 | 1 | — | 1 | 1 |
-| rich | 5 | 1 | — | 4 | — |
-| ruff | 1 | — | 1 | — | 1 |
-| tox | 2 | — | 1 | — | — |
-| ty | 2 | — | 2 | 1 | — |
-| typer | 2 | 2 | — | — | — |
-| httpie | 2 | 1 | — | — | — |
+| Tool | Notes | Scripts | Configs | Snippets |
+|------|-------|---------|---------|----------|
+| uv | 4 | 2 | 1 | 1 |
+| uv.lock | 2 | 1 | — | — |
+| py (Ruff / tooling) | 3 | 1 | 2 | — |
+| pyproject.toml | 2 | — | 1 | — |
+| pytest | 1 | 1 | — | 1 |
+| pre-commit | 2 | 1 | — | 1 |
+| pip-audit | 2 | 2 | 1 | — |
+| pipdeptree | 3 | 1 | — | — |
+| mypy | 4 | 1 | 1 | 1 |
+| rich | 4 | 1 | — | 2 |
+| ty | 3 | — | 2 | 1 |
+| typer | 2 | 1 | — | — |
+| py-spy | 2 | 1 | — | — |
+| httpie | 2 | 1 | — | — |
+| tox | 2 | — | 1 | — |
 
 ## Quick links
 
-- [uv vs pip cheat-sheet](uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md) — Command mapping and migration cheat-sheet
-- [Ruff-only pre-commit config](pre-commit/configs/tried-first-ruff-hooks-config.yaml) — Minimal pre-commit config with just the ruff hook
-- [Typer calculator script](typer/scripts/tried-typer-calculator.py) — Minimal Typer CLI calculator: add, sub, mul, div
-- [uv.lock reproducibility test](uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
-- [Multi-tool pyproject.toml config](pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
+- [ruff linter settings](py/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [uv quickstart scaffold notes](uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md) — Following uv init, add, run workflow
+- [mypy type error detection snippet](mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
+- [pytest parametrized tests script](pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
+- [hello world with dependency script](uv/scripts/hello-with-dep.py) — PEP 723 inline metadata, uv run with requests
 
 ## Layout
 

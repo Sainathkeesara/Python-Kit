@@ -77,6 +77,7 @@
 
 ## Ty
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
+- [Ty Quickstart Notes](../ty/notes/2026-06-05-tried-ty-quickstart.md) — Following the official quickstart, first check, what tripped me up
 - [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
 - [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
 - [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
