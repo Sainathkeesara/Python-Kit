@@ -19,6 +19,7 @@ This document describes the directory layout of Python-Kit.
 | `mypy/` | Type checking notes and test scripts |
 | `rich/` | Terminal output notes, scripts, and snippets |
 | `ty/` | Type checker comparison notes and configs |
+| `ruff/` | Linter/formatter notes, configs, and comparisons |
 | `typer/` | CLI framework notes and demos |
 | `httpie/` | API testing CLI notes, scripts, and configs |
 | `tox/` | Test automation notes and configs for tox |

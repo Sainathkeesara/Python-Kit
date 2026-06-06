@@ -33,7 +33,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [ruff linter settings](py/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [ruff linter settings](ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [uv quickstart scaffold notes](uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md) — Following uv init, add, run workflow
 - [mypy type error detection snippet](mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
 - [pytest parametrized tests script](pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
