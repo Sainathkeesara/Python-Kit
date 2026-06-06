@@ -2,7 +2,7 @@
 > A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-68-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-86-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -54,6 +54,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | `pipdeptree/` | Dependency tree notes and scripts |
 | `mypy/` | Type checking notes and test scripts |
 | `rich/` | Terminal output notes, scripts, and snippets |
+| `ruff/` | Linter/formatter notes, configs, and comparisons |
 | `ty/` | Type checker comparison notes and configs |
 | `typer/` | CLI framework notes and demos |
 | `py-spy/` | Profiler notes and scripts for py-spy |
@@ -65,7 +66,7 @@ See [docs/repository-structure.md](docs/repository-structure.md) for full detail
 
 ## Status
 
-Building out first-contact notes across the Python toolchain. Recent additions cover ruff linter config, uv quickstart scaffold notes, several test scripts, and type-error example snippets. Currently working through notes for uv and pytest.
+Building out first-contact notes across the Python toolchain. Recent additions cover ty quickstart, uv vs pip cheat-sheet, ruff-only pre-commit hook config, typer calculator demo, and uv.lock reproducibility testing. Actively working through notes for uv, pytest, and rich.
 
 ---
-_Last updated: 2026-06-04_
+_Last updated: 2026-06-05_
