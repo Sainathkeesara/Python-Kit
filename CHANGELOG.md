@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-06-07
+- mypy-002: Added mypy first run notes (PATH confusion, untyped function issues, --strict mode)
+
 ## 2026-06-06
 
 - psy-004: Added py-spy record & flamegraph script (`py-spy/scripts/tried-py-spy-record-flamegraph.sh`)
