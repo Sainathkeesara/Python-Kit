@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-06-07
+
+- pdt-002: Added pipdeptree JSON parsing snippet (`pipdeptree/snippets/parse-pipdeptree-json.py`)
+- pdt-003: Added pipdeptree filtering tripped-me-up notes (`pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md`)
+- psy-006: Added py-spy CPU-bound simulation snippet (`py-spy/snippets/tried-cpu-bound-simulation.py`)
+
 ## 2026-06-06
 
 - psy-004: Added py-spy record & flamegraph script (`py-spy/scripts/tried-py-spy-record-flamegraph.sh`)
