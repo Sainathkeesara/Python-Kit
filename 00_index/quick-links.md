@@ -96,12 +96,15 @@
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
 - [Record & Flamegraph Script](../py-spy/scripts/tried-py-spy-record-flamegraph.sh) — Profile a CPU-bound script and output a flamegraph SVG
+- [CPU-Bound Simulation Snippet](../py-spy/snippets/tried-cpu-bound-simulation.py) — Minimal script for py-spy profiling practice
 
 ## pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
 - [Install and Inspect Script](../pipdeptree/scripts/install-and-inspect-deps.sh) — Install pipdeptree and inspect the /work project's dependency tree
 - [JSON Format Notes](../pipdeptree/notes/2026-05-29-format-json-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [JSON Format and Dependency Type Notes](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
+- [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
+- [Filtering & JSON Tripped Me Up](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — Filter by package, JSON format quirks, missing deps
 
 ## tox
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
