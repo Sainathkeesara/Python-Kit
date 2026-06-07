@@ -12,12 +12,14 @@
 - [uv vs pip Cheat Sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md) — Command mapping and migration cheat-sheet
 
 ## Ruff / py-tooling
-- [Ruff Primer](../py/notes/0000-primer-py.md) — What is Ruff? first contact notes
+- [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Config in pyproject.toml](../py/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [Ruff Quickstart Notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md) — Lint, auto-fix, explore rules
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
+- [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
+- [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 
 ## pytest

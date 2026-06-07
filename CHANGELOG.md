@@ -1,9 +1,15 @@
 # CHANGELOG
 
+## 2026-06-07
+- mypy-002: Added mypy first run notes (PATH confusion, untyped function issues, --strict mode)
+
 ## 2026-06-06
 
 - psy-004: Added py-spy record & flamegraph script (`py-spy/scripts/tried-py-spy-record-flamegraph.sh`)
 - htt-002: Added httpie first-request tripped-me-up notes (`httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md`)
+- ruf-004: Added Ruff primer (`ruff/notes/0000-primer-ruff.md`)
+- ruf-006: Added messy example snippet (`ruff/snippets/messy_example.py`)
+- ruf-007: Added Ruff CLI exploration notes (`ruff/notes/2026-06-06-cli-exploration.md`)
 
 ## 2026-06-05
 
