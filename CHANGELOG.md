@@ -1,10 +1,9 @@
 # CHANGELOG
 
 ## 2026-06-08
-- tox-004: Added tox quickstart notes following official guide (`tox/notes/2026-06-08-tox-quickstart.md`)
-- tox-005: Updated tox.ini with `lint` env using ruff (`tox/configs/tox.ini`)
-
-## 2026-06-08
+- pyt-005: Added first test suite install+run notes (`pytest/notes/2026-06-08-installed-pytest-first-suite.md`) — Installed pytest, ran first suite, naming gotcha
+- ric-008: Added first styled output snippet (`rich/snippets/tried-rich-styled-output.py`) — Minimal rich print with colors and markup
+- uvl-006: Added uv.lock read snippet (`uv.lock/snippets/tried-reading-uv-lock.py`) — Parse uv.lock with tomllib and list package names
 - tox-004: Added tox quickstart notes following official guide (`tox/notes/2026-06-08-tox-quickstart.md`)
 - tox-005: Updated tox.ini with `lint` env using ruff (`tox/configs/tox.ini`)
 
