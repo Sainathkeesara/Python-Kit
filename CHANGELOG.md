@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-06-08
+- tox-004: Added tox quickstart notes following official guide (`tox/notes/2026-06-08-tox-quickstart.md`)
+- tox-005: Updated tox.ini with `lint` env using ruff (`tox/configs/tox.ini`)
+
+## 2026-06-08
+- tox-004: Added tox quickstart notes following official guide (`tox/notes/2026-06-08-tox-quickstart.md`)
+- tox-005: Updated tox.ini with `lint` env using ruff (`tox/configs/tox.ini`)
+
 ## 2026-06-07
 - mypy-002: Added mypy first run notes (PATH confusion, untyped function issues, --strict mode)
 
