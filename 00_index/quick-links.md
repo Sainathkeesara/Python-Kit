@@ -25,6 +25,7 @@
 ## pytest
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
 - [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
+- [Three Basic Tests Snippet](../pytest/snippets/three_basic_tests.py) — assert, exception, parameterized tests
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
 - [Fixtures with conftest Notes](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md) — conftest.py with shared setup/teardown using yield fixtures
 - [Parametrized Tests Script](../pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
