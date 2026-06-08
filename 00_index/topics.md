@@ -3,6 +3,7 @@
 ## httpie
 - [note] httpie/notes/0000-primer-httpie.md — First-contact notes for HTTPie
 - [note] httpie/notes/2026-05-30-compare-httpie-vs-curl.md — Same API calls, different ergonomics
+- [note] httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md — What caught me off guard on my first httpie request
 - [script] httpie/scripts/install_and_test_httpie.sh — Install httpie, make GET/POST requests to JSONPlaceholder
 
 ## mypy
@@ -10,7 +11,8 @@
 - [note] mypy/notes/2026-05-28-tried-mypy-cli-flags.md — Trying --strict, --check-untyped-defs, --ignore-missing-imports
 - [note] mypy/notes/2026-05-29-tried-mypy-quickstart.md — Running mypy on an existing codebase, what tripped me up
 - [note] mypy/notes/2026-06-04-first-mypy-run.md — Annotated a function, fixed type errors, tried reveal_type
-- [script] mypy/scripts/tried-mypy-first-check.py — Intentionally broken file to run mypy against
+- [note] mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md — What caught me off guard on my first mypy check
+- [script] mypy/scripts/tried-mypy-first-check.py — First mypy check script with intentional errors
 - [config] mypy/configs/tried-strict-mypy-config.toml — Minimal mypy config with incremental strict mode and stub setup
 - [snippet] mypy/snippets/tried-mypy-type-errors.py — Intentional type errors for mypy to catch
 
@@ -25,7 +27,9 @@
 - [note] pipdeptree/notes/0000-primer-pipdeptree.md — First-contact notes for pipdeptree
 - [note] pipdeptree/notes/2026-05-29-format-json-deps.md — Formatting output as JSON, identifying top-level vs transitive deps
 - [note] pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
+- [note] pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md — Filter by package, JSON format quirks, and handling missing deps
 - [script] pipdeptree/scripts/install-and-inspect-deps.sh — Install pipdeptree and inspect dependency tree
+- [snippet] pipdeptree/snippets/parse-pipdeptree-json.py — Parse pipdeptree JSON output and list leaf packages
 
 ## pre-commit
 - [note] pre-commit/notes/0000-primer-pre-commit.md — First-contact notes for pre-commit hooks
@@ -44,7 +48,9 @@
 ## py-spy
 - [note] py-spy/notes/0000-primer-py-spy.md — First-contact notes for py-spy
 - [note] py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md — Exploring record, top, and flamegraph subcommands
+- [script] py-spy/scripts/tried-py-spy-record-flamegraph.sh — Profile a CPU-bound script and output a flamegraph SVG
 - [script] py-spy/scripts/tried-py-spy-sampling.py — Python script with CPU-bound functions for py-spy to sample
+- [snippet] py-spy/snippets/tried-cpu-bound-simulation.py — Minimal script for py-spy profiling practice
 
 ## pyproject.toml
 - [note] pyproject.toml/notes/0000-primer-pyproject.toml.md — First-contact notes for pyproject.toml
@@ -72,9 +78,12 @@
 - [snippet] rich/snippets/tried-rich-progress-bar.py — First try at rich progress bar
 
 ## ruff
+- [note] ruff/notes/0000-primer-ruff.md — First-contact notes for Ruff
 - [note] ruff/notes/2026-06-03-tried-ruff-quickstart.md — Lint, auto-fix, explore rules
+- [note] ruff/notes/2026-06-06-cli-exploration.md — CLI flags, output formats for check and format commands
 - [config] ruff/configs/ruff-linter-settings.toml — Minimal ruff config with rule selection, ignores, excludes
 - [doc] ruff/docs/ruff-vs-flake8-comparison.md — Rule coverage, migration gotchas, auto-fix comparison
+- [snippet] ruff/snippets/messy_example.py — Deliberately messy code to test linter
 
 ## tox
 - [note] tox/notes/0000-primer-tox.md — First-contact notes for tox

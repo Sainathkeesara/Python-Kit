@@ -2,7 +2,7 @@
 > A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-86-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-95-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -13,31 +13,32 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Snippets |
-|------|-------|---------|---------|----------|
-| uv | 4 | 2 | 1 | 1 |
-| uv.lock | 2 | 1 | — | — |
-| py (Ruff / tooling) | 3 | 1 | 2 | — |
-| pyproject.toml | 2 | — | 1 | — |
-| pytest | 1 | 1 | — | 1 |
-| pre-commit | 2 | 1 | — | 1 |
-| pip-audit | 2 | 2 | 1 | — |
-| pipdeptree | 3 | 1 | — | — |
-| mypy | 4 | 1 | 1 | 1 |
-| rich | 4 | 1 | — | 2 |
-| ty | 3 | — | 2 | 1 |
-| typer | 2 | 1 | — | — |
-| py-spy | 2 | 1 | — | — |
-| httpie | 2 | 1 | — | — |
-| tox | 2 | — | 1 | — |
+| Tool | Notes | Scripts | Configs | Snippets | Docs |
+|------|-------|---------|---------|----------|------|
+| uv | 4 | 2 | 1 | 1 | 1 |
+| uv.lock | 2 | 2 | — | — | — |
+| py | 2 | 1 | 1 | — | — |
+| pyproject.toml | 2 | — | 2 | — | — |
+| pytest | 2 | 1 | — | 1 | 1 |
+| pre-commit | 2 | 1 | 2 | 1 | — |
+| pip-audit | 2 | 2 | 1 | — | — |
+| pipdeptree | 4 | 1 | — | 1 | — |
+| mypy | 5 | 1 | 1 | 1 | — |
+| rich | 5 | 1 | — | 4 | — |
+| ty | 3 | — | 2 | 1 | — |
+| typer | 2 | 2 | — | — | — |
+| py-spy | 2 | 2 | — | 1 | — |
+| httpie | 3 | 1 | — | — | — |
+| tox | 2 | — | 1 | — | — |
+| ruff | 3 | — | 1 | 1 | 1 |
 
 ## Quick links
 
-- [ruff linter settings](ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
-- [uv quickstart scaffold notes](uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md) — Following uv init, add, run workflow
-- [mypy type error detection snippet](mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
-- [pytest parametrized tests script](pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
-- [hello world with dependency script](uv/scripts/hello-with-dep.py) — PEP 723 inline metadata, uv run with requests
+- [pipdeptree filtering notes](pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — What tripped me up: filter by package, JSON format quirks, and handling missing deps
+- [pipdeptree JSON parser snippet](pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
+- [py-spy CPU-bound simulation](py-spy/snippets/tried-cpu-bound-simulation.py) — Minimal script simulating CPU-bound work for py-spy to sample
+- [mypy first check tripped me up](mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md) — What caught me off guard on my first mypy check
+- [Ruff CLI exploration notes](ruff/notes/2026-06-06-cli-exploration.md) — CLI flags, output formats for check and format commands
 
 ## Layout
 
@@ -66,7 +67,7 @@ See [docs/repository-structure.md](docs/repository-structure.md) for full detail
 
 ## Status
 
-Building out first-contact notes across the Python toolchain. Recent additions cover ty quickstart, uv vs pip cheat-sheet, ruff-only pre-commit hook config, typer calculator demo, and uv.lock reproducibility testing. Actively working through notes for uv, pytest, and rich.
+Building out first-contact notes across the Python toolchain. Recent additions cover pipdeptree JSON parsing, py-spy profiling snippets, mypy workflow notes, and Ruff CLI exploration. Actively working through notes for uv, pytest, and rich.
 
 ---
-_Last updated: 2026-06-05_
+_Last updated: 2026-06-07_
