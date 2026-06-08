@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-06-07
+- mypy-003: Added typed functions validation snippet (`mypy/snippets/typed-functions-validate.py`) — Small typed Python module: annotate functions and validate with mypy
 - mypy-002: Added mypy first run notes (PATH confusion, untyped function issues, --strict mode)
 
 ## 2026-06-06
