@@ -23,6 +23,7 @@
 - [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 
 ## pytest
+- [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
 - [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
 - [Fixtures with conftest Notes](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md) — conftest.py with shared setup/teardown using yield fixtures
@@ -40,6 +41,7 @@
 - [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
+- [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
 
 ## pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first contact notes
@@ -67,6 +69,7 @@
 - [Progress Spinner Snippet](../rich/snippets/tried-progress-spinner.py) — Interactive status spinner for simulated long-running task
 - [Quickstart Tables/Panels Notes](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md) — Following official quickstart: Console, Table, Panel, Layout
 - [Live Data Viewer Snippet](../rich/snippets/tried-live-data-viewer.py) — Layout + Table + Live display in a simulated process monitor
+- [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
 
 ## mypy
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes
