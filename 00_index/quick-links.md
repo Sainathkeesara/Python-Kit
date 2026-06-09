@@ -73,6 +73,7 @@
 - [Quickstart Tables/Panels Notes](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md) — Following official quickstart: Console, Table, Panel, Layout
 - [Live Data Viewer Snippet](../rich/snippets/tried-live-data-viewer.py) — Layout + Table + Live display in a simulated process monitor
 - [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
+- [Rich CLI Notes](../rich/notes/2026-06-09-tried-rich-cli.md) — Exploring the rich CLI and console features
 
 ## mypy
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first contact notes
@@ -91,6 +92,7 @@
 - [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
 - [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
 - [Ty Markdown CSS](../ty/configs/tried-ty-markdown-css.css) — Custom CSS styling for Ty markdown rendering
+- [Ty Pipeline Script](../ty/scripts/tried-ty-pipeline.sh) — Pipe markdown through ty and capture formatted output
 
 ## typer
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
