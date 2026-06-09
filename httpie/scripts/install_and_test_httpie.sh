@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Install HTTPie and try GET/POST against JSONPlaceholder
+# Install HTTPie with pipx and try GET/POST against JSONPlaceholder
 
 set -e
 
-echo "=== Installing HTTPie ==="
-pip install httpie
+echo "=== Installing HTTPie via pipx ==="
+pipx install httpie
 
 echo ""
 echo "=== GET /posts/1 ==="
