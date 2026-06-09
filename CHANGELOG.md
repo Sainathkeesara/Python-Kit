@@ -4,6 +4,8 @@
 - pdt-001: Added pipdeptree quickstart notes (`pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md`) — Following official quickstart: visualize deps, detect cycles, confusions
 - pau-005: Added pip-audit install and run notes (`pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md`) — Install pip-audit, run first audit, what tripped me up
 - pau-006: Added pip-audit audit and parse script (`pip-audit/scripts/2026-06-09-audit-and-parse-json.sh`) — Run pip-audit on a requirements.txt and parse JSON output
+- ty-006: Added Ty pipeline script (`ty/scripts/tried-ty-pipeline.sh`) — Pipe markdown through ty and capture formatted output
+- ric-009: Added Rich CLI notes (`rich/notes/2026-06-09-tried-rich-cli.md`) — Exploring the rich CLI and console features
 
 ## 2026-06-08
 - psy-005 (rework): Added py-spy top session tripped-me-up notes (`py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md`) — First py-spy top: permission, columns, key flags
