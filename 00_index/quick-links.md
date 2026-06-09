@@ -56,7 +56,9 @@
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
 - [Scan and Parse JSON Script](../pip-audit/scripts/scan-and-parse-json.sh) — Scan requirements.txt and parse JSON output with jq
+- [Audit and Parse Script](../pip-audit/scripts/2026-06-09-audit-and-parse-json.sh) — Run pip-audit on a requirements.txt and parse JSON output
 - [pip-audit Findings Notes](../pip-audit/notes/2026-05-26-pip-audit-findings.md) — First scan results and observations
+- [Install and Run Notes](../pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md) — Install pip-audit and run first audit, what tripped me up
 - [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
 
 ## rich
@@ -111,6 +113,7 @@
 - [JSON Format and Dependency Type Notes](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
 - [Filtering & JSON Tripped Me Up](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — Filter by package, JSON format quirks, missing deps
+- [pipdeptree Quickstart Notes](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md) — Following official quickstart: visualize deps, detect cycles, confusions
 
 ## tox
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
