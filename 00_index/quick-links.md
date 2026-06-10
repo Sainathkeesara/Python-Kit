@@ -124,6 +124,6 @@
 
 ## httpie
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first contact notes
-- [Install and Test Script](../httpie/scripts/install_and_test_httpie.sh) — Install httpie, make GET/POST requests to JSONPlaceholder
+- [Install and Test Script](../httpie/scripts/install_and_test_httpie.sh) — Install httpie with pipx, make GET/POST requests to JSONPlaceholder
 - [httpie vs curl Notes](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md) — Same API calls, ergonomics compared
 - [First Request Tripped Me Up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md) — What caught me off guard on my first httpie request
