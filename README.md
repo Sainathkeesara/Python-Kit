@@ -2,7 +2,7 @@
 > A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-95-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-109-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -16,29 +16,29 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | Tool | Notes | Scripts | Configs | Snippets | Docs |
 |------|-------|---------|---------|----------|------|
 | uv | 4 | 2 | 1 | 1 | 1 |
-| uv.lock | 2 | 2 | — | — | — |
-| py | 2 | 1 | 1 | — | — |
-| pyproject.toml | 2 | — | 2 | — | — |
-| pytest | 2 | 1 | — | 1 | 1 |
-| pre-commit | 2 | 1 | 2 | 1 | — |
-| pip-audit | 2 | 2 | 1 | — | — |
-| pipdeptree | 4 | 1 | — | 1 | — |
-| mypy | 5 | 1 | 1 | 1 | — |
-| rich | 5 | 1 | — | 4 | — |
-| ty | 3 | — | 2 | 1 | — |
-| typer | 2 | 2 | — | — | — |
-| py-spy | 2 | 2 | — | 1 | — |
-| httpie | 3 | 1 | — | — | — |
-| tox | 2 | — | 1 | — | — |
-| ruff | 3 | — | 1 | 1 | 1 |
+| uv.lock | 2 | 2 | 0 | 1 | 0 |
+| py | 2 | 1 | 1 | 0 | 0 |
+| pyproject.toml | 2 | 0 | 2 | 0 | 0 |
+| pytest | 3 | 1 | 0 | 2 | 1 |
+| pre-commit | 2 | 1 | 2 | 1 | 0 |
+| pip-audit | 3 | 3 | 1 | 0 | 0 |
+| pipdeptree | 5 | 1 | 0 | 1 | 0 |
+| mypy | 5 | 1 | 1 | 2 | 0 |
+| rich | 6 | 1 | 0 | 5 | 0 |
+| ty | 3 | 1 | 2 | 1 | 0 |
+| typer | 2 | 2 | 0 | 0 | 0 |
+| py-spy | 4 | 2 | 0 | 1 | 0 |
+| httpie | 3 | 1 | 0 | 0 | 0 |
+| tox | 4 | 0 | 1 | 0 | 0 |
+| ruff | 3 | 0 | 1 | 1 | 1 |
 
 ## Quick links
 
-- [pipdeptree filtering notes](pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — What tripped me up: filter by package, JSON format quirks, and handling missing deps
-- [pipdeptree JSON parser snippet](pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
-- [py-spy CPU-bound simulation](py-spy/snippets/tried-cpu-bound-simulation.py) — Minimal script simulating CPU-bound work for py-spy to sample
+- [pipdeptree quickstart notes](pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md) — Following official quickstart: visualize deps, detect cycles, confusions
+- [py-spy top session tripped me up](py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md) — First py-spy top session: permission issues, columns, key flags
 - [mypy first check tripped me up](mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md) — What caught me off guard on my first mypy check
 - [Ruff CLI exploration notes](ruff/notes/2026-06-06-cli-exploration.md) — CLI flags, output formats for check and format commands
+- [rich CLI notes](rich/notes/2026-06-09-tried-rich-cli.md) — Exploring the rich CLI and console features
 
 ## Layout
 
@@ -70,4 +70,4 @@ See [docs/repository-structure.md](docs/repository-structure.md) for full detail
 Building out first-contact notes across the Python toolchain. Recent additions cover pipdeptree JSON parsing, py-spy profiling snippets, mypy workflow notes, and Ruff CLI exploration. Actively working through notes for uv, pytest, and rich.
 
 ---
-_Last updated: 2026-06-07_
+_Last updated: 2026-06-10_

@@ -19,8 +19,10 @@
 ## pip-audit
 - [note] pip-audit/notes/0000-primer-pip-audit.md — First-contact notes for pip-audit
 - [note] pip-audit/notes/2026-05-26-pip-audit-findings.md — First scan results and observations
+- [note] pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md — Install pip-audit and run first audit, what tripped me up
 - [script] pip-audit/scripts/scan-project.sh — Scan project for vulnerabilities with pip-audit
 - [script] pip-audit/scripts/scan-and-parse-json.sh — Scan requirements.txt and parse JSON output with jq
+- [script] pip-audit/scripts/2026-06-09-audit-and-parse-json.sh — Run pip-audit on a requirements.txt and parse JSON output
 - [config] pip-audit/configs/pip-audit-ignore.toml — Configure pip-audit ignore list for reviewed CVEs
 
 ## pipdeptree
@@ -28,6 +30,7 @@
 - [note] pipdeptree/notes/2026-05-29-format-json-deps.md — Formatting output as JSON, identifying top-level vs transitive deps
 - [note] pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [note] pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md — Filter by package, JSON format quirks, and handling missing deps
+- [note] pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md — Following official quickstart: visualize deps, detect cycles, confusions
 - [script] pipdeptree/scripts/install-and-inspect-deps.sh — Install pipdeptree and inspect dependency tree
 - [snippet] pipdeptree/snippets/parse-pipdeptree-json.py — Parse pipdeptree JSON output and list leaf packages
 
@@ -93,8 +96,10 @@
 ## ty
 - [note] ty/notes/0000-primer-ty.md — First-contact notes for ty
 - [note] ty/notes/2026-05-27-compare-ty-vs-mypy.md — Comparing ty vs mypy output on the same codebase
+- [note] ty/notes/2026-06-05-tried-ty-quickstart.md — Following the official quickstart, first check, what tripped me up
 - [config] ty/configs/tried-ty-config.toml — Ty configuration file with enabled error codes
 - [config] ty/configs/tried-ty-markdown-css.css — Custom CSS styling for Ty markdown rendering
+- [script] ty/scripts/tried-ty-pipeline.sh — Pipe markdown through ty and capture formatted output
 - [snippet] ty/snippets/run-ty-on-codebase.py — Minimal example running ty on a Python module
 
 ## typer
