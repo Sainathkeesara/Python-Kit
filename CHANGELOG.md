@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## 2026-06-10
+- typer-005: Added first Typer CLI hello-world notes (`typer/notes/2026-06-10-first-typer-hello-world.md`) — Install Typer and run my first CLI hello-world
+- typer-006: Added first Typer CLI app snippet (`typer/snippets/tried-first-typer-cli-app.py`) — Minimal Typer CLI app with argument and option
+- ty-005: Added first Ty markdown render notes (`ty/notes/2026-06-10-first-ty-markdown-render.md`) — Install Ty and render my first markdown file
 - psy-007: Added py-spy quickstart notes (`py-spy/notes/2026-06-10-followed-py-spy-quickstart.md`) — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
 - uv-005: Added uv install and first command notes (`uv/notes/2026-06-10-installed-uv-first-command.md`) — Install uv, ran --version, --help, uv run on a script
 - htt-001: Added HTTPie primer (`httpie/notes/0000-primer-httpie.md`) — What is HTTPie? quick primer
@@ -153,7 +156,7 @@
 
 - py-005: Added Ruff install script (`py/scripts/install-and-lint.sh`)
 - py-006: Added Ruff config (`py/configs/ruff-pyproject.toml`)
-- py-007: Added pytest primer (`py/notes/0000-primer-pytest.md`)
+- py-007: Added pytest primer (`pytest/notes/0000-primer-pytest.md`)
 - py-004: Added Ruff primer (`py/notes/0000-primer-py.md`)
 
 ## 2026-05-24
