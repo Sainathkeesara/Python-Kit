@@ -20,7 +20,7 @@
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
-- [pytest Primer](../py/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
+- [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 
 ## pytest
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
@@ -88,6 +88,7 @@
 ## Ty
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
 - [Ty Quickstart Notes](../ty/notes/2026-06-05-tried-ty-quickstart.md) — Following the official quickstart, first check, what tripped me up
+- [First Ty Markdown Render](../ty/notes/2026-06-10-first-ty-markdown-render.md) — Install Ty and render my first markdown file in the terminal
 - [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
 - [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
 - [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
@@ -96,9 +97,11 @@
 
 ## typer
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
+- [First Typer Hello-World Notes](../typer/notes/2026-06-10-first-typer-hello-world.md) — Install Typer and run my first CLI hello-world app
 - [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
 - [Quickstart Notes](../typer/notes/2026-05-29-typer-quickstart-notes.md) — What tripped me up following quickstart
 - [Calculator Script](../typer/scripts/tried-typer-calculator.py) — Minimal Typer CLI calculator: add, sub, mul, div
+- [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
 
 ## py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
