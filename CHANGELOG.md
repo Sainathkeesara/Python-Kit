@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-10
+- htt-001: Added HTTPie primer (`httpie/notes/0000-primer-httpie.md`) — What is HTTPie? quick primer
+- htt-010: Added first HTTPie GET/POST request notes (`httpie/notes/2026-06-10-first-httpie-request.md`) — Install httpie, run my first GET with JSON and POST with form data
+- htt-011: Added HTTPie GET/POST automation snippet (`httpie/snippets/tried-httpie-get-post-workflow.py`) — Python script automating httpie for a simple GET/POST workflow
+
 ## 2026-06-09
 - htt-003: Reworked httpie install script to use pipx instead of pip (`httpie/scripts/install_and_test_httpie.sh`)
 - pdt-001: Added pipdeptree quickstart notes (`pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md`) — Following official quickstart: visualize deps, detect cycles, confusions
