@@ -131,6 +131,7 @@
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
 - [First tox CLI Run Notes](../tox/notes/2026-05-31-tox-cli-first-run.md) — env list, -e flag, passing args through
+- [Followed tox Quickstart Notes](../tox/notes/2026-06-11-followed-tox-quickstart.md) — Multi-env setup, what tripped me up
 
 ## httpie
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first contact notes
