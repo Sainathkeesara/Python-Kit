@@ -11,6 +11,7 @@
 - [CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
 - [uv vs pip Cheat Sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md) — Command mapping and migration cheat-sheet
 - [Install and First Command Notes](../uv/notes/2026-06-10-installed-uv-first-command.md) — Install uv, ran --version, --help, and uv run on a script
+- [Bootstrap uv Script](../uv/scripts/tried-bootstrap-uv-script.sh) — Bootstrap a one-file Python script with uv run and external deps
 
 ## Ruff / py-tooling
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
@@ -40,6 +41,7 @@
 
 ## uv.lock
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first contact notes
+- [Generate First uv.lock Notes](../uv.lock/notes/2026-06-11-generated-first-uv-lock.md) — Install uv and generate first uv.lock, what's inside it
 - [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
