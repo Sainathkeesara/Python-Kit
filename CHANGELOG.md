@@ -3,6 +3,7 @@
 ## 2026-06-11
 - uv-006: Added bootstrap uv script (`uv/scripts/tried-bootstrap-uv-script.sh`) — Bootstrap a one-file Python script with uv run and external deps
 - uvl-005: Added first uv.lock generation notes (`uv.lock/notes/2026-06-11-generated-first-uv-lock.md`) — Install uv and generate first uv.lock, what's inside it
+- pdt-009: Added reverse-dependency report snippet (`pipdeptree/snippets/find-reverse-deps.py`) — Use `--reverse` to find which packages depend on a given package
 
 ## 2026-06-10
 - typer-005: Added first Typer CLI hello-world notes (`typer/notes/2026-06-10-first-typer-hello-world.md`) — Install Typer and run my first CLI hello-world
