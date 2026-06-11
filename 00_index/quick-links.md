@@ -123,6 +123,7 @@
 - [JSON Format Notes](../pipdeptree/notes/2026-05-29-format-json-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [JSON Format and Dependency Type Notes](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
+- [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
 - [Filtering & JSON Tripped Me Up](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — Filter by package, JSON format quirks, missing deps
 - [pipdeptree Quickstart Notes](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md) — Following official quickstart: visualize deps, detect cycles, confusions
 
