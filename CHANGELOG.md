@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-06-11
+- uv-006: Added bootstrap uv script (`uv/scripts/tried-bootstrap-uv-script.sh`) — Bootstrap a one-file Python script with uv run and external deps
+- uvl-005: Added first uv.lock generation notes (`uv.lock/notes/2026-06-11-generated-first-uv-lock.md`) — Install uv and generate first uv.lock, what's inside it
+
 ## 2026-06-10
 - typer-005: Added first Typer CLI hello-world notes (`typer/notes/2026-06-10-first-typer-hello-world.md`) — Install Typer and run my first CLI hello-world
 - typer-006: Added first Typer CLI app snippet (`typer/snippets/tried-first-typer-cli-app.py`) — Minimal Typer CLI app with argument and option
