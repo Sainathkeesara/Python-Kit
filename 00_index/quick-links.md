@@ -140,3 +140,7 @@
 - [First Request Tripped Me Up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md) — What caught me off guard on my first httpie request
 - [First HTTPie Request Notes](../httpie/notes/2026-06-10-first-httpie-request.md) — Install httpie, run my first GET with JSON and POST with form data
 - [HTTPie GET/POST Automation Snippet](../httpie/snippets/tried-httpie-get-post-workflow.py) — Python script automating httpie for a simple GET/POST workflow
+
+## General
+- [Cross-Tool Workflow Notes](../general/notes/2026-06-12-figured-out-quality-tool-workflow.md) — How Ruff, mypy, pytest, pre-commit, and uv fit together
+- [First Quality Chain Snippet](../general/snippets/tried-first-quality-chain.py) — Run Ruff, mypy, and pytest in sequence from one script

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-06-12
+- gen-003: Added cross-tool workflow notes (`general/notes/2026-06-12-figured-out-quality-tool-workflow.md`) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
+- gen-004: Added first quality chain snippet (`general/snippets/tried-first-quality-chain.py`) — Run Ruff, mypy, and pytest in sequence from one script
+
 ## 2026-06-11
 - tox-004 (rework): Added followed tox quickstart notes (`tox/notes/2026-06-11-followed-tox-quickstart.md`) — Multi-env setup, what tripped me up
 - uv-006: Added bootstrap uv script (`uv/scripts/tried-bootstrap-uv-script.sh`) — Bootstrap a one-file Python script with uv run and external deps
