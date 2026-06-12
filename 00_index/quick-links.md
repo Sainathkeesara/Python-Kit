@@ -89,6 +89,8 @@
 - [Strict Mode Config](../mypy/configs/tried-strict-mypy-config.toml) — Minimal mypy config with incremental strict mode and stub setup
 - [Type Error Detection Snippet](../mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
 - [Typed Functions Validate Snippet](../mypy/snippets/typed-functions-validate.py) — Small typed Python module with annotated functions
+- [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
+- [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
 
 ## Ty
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
