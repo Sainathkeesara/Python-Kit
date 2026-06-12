@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-06-12
+- mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
+- mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
 - gen-003: Added cross-tool workflow notes (`general/notes/2026-06-12-figured-out-quality-tool-workflow.md`) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
 - gen-004: Added first quality chain snippet (`general/snippets/tried-first-quality-chain.py`) — Run Ruff, mypy, and pytest in sequence from one script
 
