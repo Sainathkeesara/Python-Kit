@@ -15,8 +15,8 @@
 
 ## Ruff / py-tooling
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
-- [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
-- [Ruff Config in pyproject.toml](../py/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
+- [Ruff Install Script](../ruff/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
+- [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [Ruff Quickstart Notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md) — Lint, auto-fix, explore rules
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
@@ -59,6 +59,7 @@
 
 ## pip-audit
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
+- [CVE Findings Snippet](../pip-audit/snippets/list-cve-findings.py) — Parse pip-audit JSON and list CVE findings with severity
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
 - [Scan and Parse JSON Script](../pip-audit/scripts/scan-and-parse-json.sh) — Scan requirements.txt and parse JSON output with jq
 - [Audit and Parse Script](../pip-audit/scripts/2026-06-09-audit-and-parse-json.sh) — Run pip-audit on a requirements.txt and parse JSON output
@@ -128,6 +129,8 @@
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
 - [Filtering & JSON Tripped Me Up](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — Filter by package, JSON format quirks, missing deps
 - [pipdeptree Quickstart Notes](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md) — Following official quickstart: visualize deps, detect cycles, confusions
+- [Package Dependency Chain Snippet](../pipdeptree/snippets/check-package-deps.py) — Check one package and print its dependency chain
+- [Common CLI Patterns Notes](../pipdeptree/notes/2026-06-13-common-cli-patterns.md) — CLI patterns I figured out on my own
 
 ## tox
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-13
+- pdt-007: Added package dependency chain snippet (`pipdeptree/snippets/check-package-deps.py`) — Check one package and print its dependency chain
+- pdt-008: Added common pipdeptree CLI patterns notes (`pipdeptree/notes/2026-06-13-common-cli-patterns.md`) — CLI patterns I figured out on my own
+- pau-005: Added pip-audit CVE findings snippet (`pip-audit/snippets/list-cve-findings.py`) — Parse JSON and list CVE findings with severity
+
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
 - mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
