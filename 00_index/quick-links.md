@@ -38,6 +38,7 @@
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first contact notes
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
 - [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
+- [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
 - [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
 
 ## uv.lock
@@ -46,7 +47,9 @@
 - [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
+- [Generate from pyproject.toml Script](../uv.lock/scripts/tried-generate-from-pyproject-toml.sh) — Create pyproject.toml by hand, generate uv.lock, and inspect the output
 - [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
+- [Detect Conflicting Constraints Snippet](../uv.lock/snippets/tried-detect-conflicting-constraints.py) — Parse uv.lock and flag packages with conflicting version constraints
 
 ## pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first contact notes
