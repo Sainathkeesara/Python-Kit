@@ -26,6 +26,8 @@
 - **Transitive dependency** — A dependency of a direct dependency (indirect dependency).
 - **Dependency conflict** — When two packages require incompatible versions of the same third package.
 - **`--json`** — Output the dependency tree as JSON instead of the default text tree.
+- **`--warn silence`** — Suppress CVE advisory warnings so the output can be read cleanly.
+- **`--freeze`** — Output packages as `pkg==version` lines, suitable for piping into grep.
 
 ## pre-commit
 - **Hook** — A script or command that runs before a commit is finalized, defined in `.pre-commit-config.yaml`.
