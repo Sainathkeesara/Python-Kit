@@ -121,6 +121,8 @@
 - [Py-spy Quickstart Notes](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md) — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
 - [Record Output Formats Notes](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md) — Compared flamegraph SVG, speedscope JSON, and raw JSON formats
 - [Speedscope Record Script](../py-spy/scripts/tried-py-spy-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
+- [Py-spy Workflow Notes](../py-spy/notes/2026-06-13-my-py-spy-workflow.md) — Documented record, flamegraph, top modes with gotchas
+- [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
 
 ## pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes

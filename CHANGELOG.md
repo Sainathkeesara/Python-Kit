@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-06-13
+- psy-012: Added py-spy workflow notes (`py-spy/notes/2026-06-13-my-py-spy-workflow.md`) — Documented record, flamegraph, top modes with gotchas
+- psy-011: Added py-spy profile running process snippet (`py-spy/snippets/tried-profile-running-process.py`) — Profile a running Python process and export flamegraph SVG with py-spy
 - psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md`) — Flamegraph SVG, speedscope JSON, raw JSON side by side
 - psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-py-spy-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
 
