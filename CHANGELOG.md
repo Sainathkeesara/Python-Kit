@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-06-13
+- psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md`) — Flamegraph SVG, speedscope JSON, raw JSON side by side
+- psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-py-spy-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
+
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
 - mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
