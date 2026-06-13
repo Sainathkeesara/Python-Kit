@@ -1,0 +1,15 @@
+[build-system]
+# Hatchling is a PEP 517 / PEP 621 compliant build backend — lighter than setuptools
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-first-pep621-project"
+version = "0.1.0"
+description = "My first project using PEP 621 metadata in pyproject.toml"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Me", email = "me@example.com" },
+]
+dependencies = []

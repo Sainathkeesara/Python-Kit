@@ -3,6 +3,9 @@
 ## 2026-06-13
 - psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md`) — Flamegraph SVG, speedscope JSON, raw JSON side by side
 - psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-py-spy-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
+- uvl-008: Added uv.lock conflict detection snippet (`uv.lock/snippets/tried-detect-conflicting-constraints.py`) — Parse uv.lock and flag conflicting version constraints
+- uvl-009: Added uv.lock generate-and-inspect script (`uv.lock/scripts/tried-generate-from-pyproject-toml.sh`) — Create pyproject.toml, generate uv.lock, inspect output
+- ppt-006: Added first PEP 621 config (`pyproject.toml/configs/first-pep621-config.toml`) — PEP 621 build-system and project metadata with hatchling
 
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
