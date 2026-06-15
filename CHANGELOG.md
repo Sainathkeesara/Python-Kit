@@ -4,6 +4,10 @@
 - uvl-012: Added uv.lock structure exploration notebook (`uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb`) — Walk through uv.lock sections, hashes, and reproducibility
 - uvl-011: Added uv.lock direct deps extraction script (`uv.lock/scripts/tried-extract-direct-deps.py`) — Parse uv.lock and list all direct dependency entries
 
+## 2026-06-14
+- pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
+- pyt-009: Added install and run first pytest script (`pytest/scripts/install-and-run-first-pytest.sh`) — Install pytest and run first passing test
+
 ## 2026-06-13
 - psy-012: Added py-spy workflow notes (`py-spy/notes/2026-06-13-my-py-spy-workflow.md`) — Documented record, flamegraph, top modes with gotchas
 - psy-011: Added py-spy profile running process snippet (`py-spy/snippets/tried-profile-running-process.py`) — Profile a running Python process and export flamegraph SVG with py-spy
