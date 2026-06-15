@@ -22,6 +22,7 @@
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
+- [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 
 ## pytest
@@ -141,11 +142,13 @@
 - [Filtering & JSON Tripped Me Up](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md) — Filter by package, JSON format quirks, missing deps
 - [pipdeptree Quickstart Notes](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md) — Following official quickstart: visualize deps, detect cycles, confusions
 - [Package Dependency Chain Snippet](../pipdeptree/snippets/check-package-deps.py) — Check one package and print its dependency chain
+- [Check Package Deps Snippet](../pipdeptree/snippets/tried-check-package-deps.py) — Minimal script to look up a package in pipdeptree JSON and walk its dependency chain
 - [Common CLI Patterns Notes](../pipdeptree/notes/2026-06-13-common-cli-patterns.md) — CLI patterns I figured out on my own
 
 ## tox
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
+- [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — L2: tox.ini with lint (ruff) and test (pytest) environments, annotated with reasoning
 - [First tox CLI Run Notes](../tox/notes/2026-05-31-tox-cli-first-run.md) — env list, -e flag, passing args through
 - [Followed tox Quickstart Notes](../tox/notes/2026-06-11-followed-tox-quickstart.md) — Multi-env setup, what tripped me up
 

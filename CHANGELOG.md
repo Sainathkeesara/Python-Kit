@@ -3,6 +3,9 @@
 ## 2026-06-15
 - uvl-012: Added uv.lock structure exploration notebook (`uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb`) — Walk through uv.lock sections, hashes, and reproducibility
 - uvl-011: Added uv.lock direct deps extraction script (`uv.lock/scripts/tried-extract-direct-deps.py`) — Parse uv.lock and list all direct dependency entries
+- tox-005: Added lint and test env tox config (`tox/configs/tried-lint-and-test-env.ini`) — Minimal tox.ini with lint (ruff) and test (pytest) environments, annotated with reasoning
+- ruf-006: Added messy example snippet (`ruff/snippets/tried-messy-example.py`) — Deliberately messy Python file with various style violations
+- pdt-007: Added check package deps snippet (`pipdeptree/snippets/tried-check-package-deps.py`) — Look up a specific package in pipdeptree JSON output and print its dependency chain
 
 ## 2026-06-14
 - pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
