@@ -6,6 +6,9 @@
 - tox-005: Added lint and test env tox config (`tox/configs/tried-lint-and-test-env.ini`) — Minimal tox.ini with lint (ruff) and test (pytest) environments, annotated with reasoning
 - ruf-006: Added messy example snippet (`ruff/snippets/tried-messy-example.py`) — Deliberately messy Python file with various style violations
 - pdt-007: Added check package deps snippet (`pipdeptree/snippets/tried-check-package-deps.py`) — Look up a specific package in pipdeptree JSON output and print its dependency chain
+- tox-009: Added minimal tox run script (`tox/scripts/tried-minimal-tox-run.sh`) — Create tox.ini with test env and run tox end-to-end
+- ppt-005: Added build-system config notes (`pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md`) — Exploring minimal [build-system] table in pyproject.toml
+- gen-002: Added backlog capacity audit notes (`general/notes/2026-06-10-backlog-capacity-audit.md`) — Count open vs completed tasks per tool, identify next-level blockers
 
 ## 2026-06-14
 - pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
