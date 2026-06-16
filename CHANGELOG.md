@@ -4,6 +4,9 @@
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
 - prc-008: Added pre-commit install and run with lint+typecheck notes (`pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md`) — Installed pre-commit, ran with ruff linting and mypy type check on a sample repo
 - uv-007: Added uv CLI help and format notes (`uv/notes/2026-06-16-explored-uv-cli-help-and-format.md`) — Explored uv CLI subcommands, help topics, and output formats
+- gen-005: Added quality tools pyproject.toml config (`general/configs/tried-quality-tools-pyproject.toml`) — Combined ruff, mypy, pytest config in one pyproject.toml
+- ty-007: Added Ty vs mypy comparison snippet (`ty/snippets/tried-ty-vs-mypy.py`) — Compare Ty and mypy output on the same typed code
+- prc-007: Added ruff + mypy hooks config snippet (`pre-commit/snippets/tried-ruff-mypy-config.yaml`) — Minimal pre-commit config with ruff and mypy hooks
 
 ## 2026-06-15
 - uvl-012: Added uv.lock structure exploration notebook (`uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb`) — Walk through uv.lock sections, hashes, and reproducibility

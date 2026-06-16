@@ -67,6 +67,7 @@
 - [Ruff-Only Hook Config](../pre-commit/configs/tried-first-ruff-hooks-config.yaml) — Minimal pre-commit config with just the ruff hook
 - [Pre-commit CLI Exploration Notes](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md) — Install pre-commit, explore CLI subcommands and flags
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
+- [Ruff + Mypy Hooks Config Snippet](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
 
 ## pip-audit
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
@@ -114,6 +115,7 @@
 - [Ty Markdown CSS](../ty/configs/tried-ty-markdown-css.css) — Custom CSS styling for Ty markdown rendering
 - [Ty Pipeline Script](../ty/scripts/tried-ty-pipeline.sh) — Pipe markdown through ty and capture formatted output
 - [CLI Flags and Formats Notes](../ty/notes/2026-06-16-explored-ty-cli-flags.md) — Explored Ty CLI flags, output formats, compared with mypy options
+- [Ty vs Mypy Comparison Snippet](../ty/snippets/tried-ty-vs-mypy.py) — Compare Ty and mypy output on the same typed code
 
 ## typer
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
@@ -170,3 +172,4 @@
 - [Cross-Tool Workflow Notes](../general/notes/2026-06-12-figured-out-quality-tool-workflow.md) — How Ruff, mypy, pytest, pre-commit, and uv fit together
 - [First Quality Chain Snippet](../general/snippets/tried-first-quality-chain.py) — Run Ruff, mypy, and pytest in sequence from one script
 - [Backlog Capacity Audit Notes](../general/notes/2026-06-10-backlog-capacity-audit.md) — Count open vs completed tasks per tool, identify blockers
+- [Quality Tools pyproject.toml Config](../general/configs/tried-quality-tools-pyproject.toml) — First combined ruff, mypy, pytest config in one pyproject.toml
