@@ -7,6 +7,9 @@
 - gen-005: Added quality tools pyproject.toml config (`general/configs/tried-quality-tools-pyproject.toml`) — Combined ruff, mypy, pytest config in one pyproject.toml
 - ty-007: Added Ty vs mypy comparison snippet (`ty/snippets/tried-ty-vs-mypy.py`) — Compare Ty and mypy output on the same typed code
 - prc-007: Added ruff + mypy hooks config snippet (`pre-commit/snippets/tried-ruff-mypy-config.yaml`) — Minimal pre-commit config with ruff and mypy hooks
+- tox-005: Upgraded tox config voice to L2 (`tox/configs/tried-lint-and-test-env.ini`) — Enhanced comments with structured reasoning
+- ruf-006: Trimmed messy example to ≤15 lines for L1 compliance (`ruff/snippets/tried-messy-example.py`)
+- pdt-007: Trimmed check-package-deps to ≤15 lines for L1 compliance (`pipdeptree/snippets/tried-check-package-deps.py`)
 
 ## 2026-06-15
 - uvl-012: Added uv.lock structure exploration notebook (`uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb`) — Walk through uv.lock sections, hashes, and reproducibility
