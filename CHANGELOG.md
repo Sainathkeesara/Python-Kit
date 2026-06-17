@@ -4,6 +4,9 @@
 - pyt-008: Added pytest primer (`pytest/notes/0000-primer-pytest.md`) — What is pytest? first contact notes
 - ric-009: Added rich Console API renderables notes (`rich/notes/2026-06-17-explored-rich-console-api-renderables.md`) — Explored renderables, styles, and output modes
 - ric-010: Added rich Console panel and table snippet (`rich/snippets/tried-rich-console-panel-table.py`) — Minimal Console script with text styling, panel, and table
+- ruf-007: Added Ruff CLI more flags notes (`ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md`) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
+- pdt-008: Added pipdeptree patterns I use notes (`pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md`) — More CLI patterns: --graph-output, --local-only, --python-version, --all
+- psy-008: Added install and record flamegraph script (`py-spy/scripts/tried-install-and-record-flamegraph.sh`) — Install py-spy and profile CPU-bound script to flamegraph SVG
 
 ## 2026-06-16
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
