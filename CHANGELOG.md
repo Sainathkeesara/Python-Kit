@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-17
+- pyt-008: Added pytest primer (`pytest/notes/0000-primer-pytest.md`) — What is pytest? first contact notes
+- ric-009: Added rich Console API renderables notes (`rich/notes/2026-06-17-explored-rich-console-api-renderables.md`) — Explored renderables, styles, and output modes
+- ric-010: Added rich Console panel and table snippet (`rich/snippets/tried-rich-console-panel-table.py`) — Minimal Console script with text styling, panel, and table
+
 ## 2026-06-16
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
 - prc-008: Added pre-commit install and run with lint+typecheck notes (`pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md`) — Installed pre-commit, ran with ruff linting and mypy type check on a sample repo

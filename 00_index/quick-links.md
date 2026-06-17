@@ -24,7 +24,7 @@
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
-- [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
+- [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
 
 ## pytest
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
@@ -82,6 +82,7 @@
 ## rich
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
 - [Console API Notes](../rich/notes/2026-06-04-tried-rich-console-api.md) — Trying print, print_json, rule, log
+- [Console API Renderables Notes](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md) — Renderables, styles, and output modes
 - [Console Logging Snippet](../rich/snippets/first-rich-logger.py) — Minimal rich logging handler setup
 - [Progress Bar Snippet](../rich/snippets/tried-rich-progress-bar.py) — First try at rich progress bar
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
@@ -91,6 +92,7 @@
 - [Quickstart Tables/Panels Notes](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md) — Following official quickstart: Console, Table, Panel, Layout
 - [Live Data Viewer Snippet](../rich/snippets/tried-live-data-viewer.py) — Layout + Table + Live display in a simulated process monitor
 - [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
+- [Console Panel and Table Snippet](../rich/snippets/tried-rich-console-panel-table.py) — Minimal Console script with text styling, panel, and table
 - [Rich CLI Notes](../rich/notes/2026-06-09-tried-rich-cli.md) — Exploring the rich CLI and console features
 
 ## mypy
