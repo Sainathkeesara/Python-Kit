@@ -16,6 +16,7 @@
 
 ## Ruff / py-tooling
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
+- [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
 - [Ruff Install Script](../ruff/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
@@ -129,6 +130,7 @@
 
 ## py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
+- [Install and Record Flamegraph](../py-spy/scripts/tried-install-and-record-flamegraph.sh) — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
 - [Record & Flamegraph Script](../py-spy/scripts/tried-py-spy-record-flamegraph.sh) — Profile a CPU-bound script and output a flamegraph SVG
@@ -143,6 +145,7 @@
 
 ## pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
+- [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — More CLI patterns: --graph-output, --local-only, --python-version, --all
 - [Install and Inspect Script](../pipdeptree/scripts/install-and-inspect-deps.sh) — Install pipdeptree and inspect the /work project's dependency tree
 - [JSON Format Notes](../pipdeptree/notes/2026-05-29-format-json-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [JSON Format and Dependency Type Notes](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
