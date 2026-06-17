@@ -16,17 +16,17 @@
 
 ## Ruff / py-tooling
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
-- [Ruff Install Script](../ruff/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
-- [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
+- [Install and Lint Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Quickstart Notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md) — Lint, auto-fix, explore rules
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
-- [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
 
 ## pytest
+- [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
 - [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
 - [Three Basic Tests Snippet](../pytest/snippets/three_basic_tests.py) — assert, exception, parameterized tests
@@ -43,6 +43,7 @@
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
 - [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
 - [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
+- [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
 - [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
 - [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
 
@@ -53,21 +54,21 @@
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
 - [Generate from pyproject.toml Script](../uv.lock/scripts/tried-generate-from-pyproject-toml.sh) — Create pyproject.toml by hand, generate uv.lock, and inspect the output
+- [Extract Direct Dependencies Script](../uv.lock/scripts/tried-extract-direct-deps.py) — Parse uv.lock and list all direct dependency entries with versions
 - [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
 - [Detect Conflicting Constraints Snippet](../uv.lock/snippets/tried-detect-conflicting-constraints.py) — Parse uv.lock and flag packages with conflicting version constraints
 - [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility mechanisms
-- [Extract Direct Dependencies Script](../uv.lock/scripts/tried-extract-direct-deps.py) — Parse uv.lock and list all direct dependency entries with versions
 
 ## pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first contact notes
 - [pre-commit config](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
 - [Pre-commit Multi-Hook Config](../pre-commit/configs/tried-multi-hook-config.yaml) — Ruff + mypy + trailing-whitespace hooks
+- [Ruff + Mypy Hooks Config](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
 - [Install and Run Script](../pre-commit/scripts/install-and-run.sh) — Install pre-commit and run on my repo
 - [Run Pre-commit on /work Notes](../pre-commit/notes/2026-05-28-run-pre-commit-on-work.md) — Running pre-commit across /work and interpreting results
 - [Ruff-Only Hook Config](../pre-commit/configs/tried-first-ruff-hooks-config.yaml) — Minimal pre-commit config with just the ruff hook
 - [Pre-commit CLI Exploration Notes](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md) — Install pre-commit, explore CLI subcommands and flags
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
-- [Ruff + Mypy Hooks Config Snippet](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
 
 ## pip-audit
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
@@ -100,10 +101,11 @@
 - [First mypy Run Notes](../mypy/notes/2026-06-04-first-mypy-run.md) — Annotated a function, fixed type errors, tried reveal_type
 - [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
 - [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
-- [Quickstart for Existing Projects](../mypy/notes/2026-05-29-tried-mypy-quickstart.md) — Running mypy on an existing codebase, what tripped me up
+- [Quickstart for Existing Projects](../mypy/notes/2026-05-29-tried-mypy-quickstart.md) — Running mypy on an existing codebase, what tripped me out
 - [Strict Mode Config](../mypy/configs/tried-strict-mypy-config.toml) — Minimal mypy config with incremental strict mode and stub setup
 - [Type Error Detection Snippet](../mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
 - [Typed Functions Validate Snippet](../mypy/snippets/typed-functions-validate.py) — Small typed Python module with annotated functions
+- [Validating Typed Function Snippet](../mypy/snippets/tried-validating-typed-function.py) — Small typed function with annotations to validate with mypy
 - [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
 - [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
 
@@ -139,7 +141,6 @@
 - [Speedscope Record Script](../py-spy/scripts/tried-py-spy-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Py-spy Workflow Notes](../py-spy/notes/2026-06-13-my-py-spy-workflow.md) — Documented record, flamegraph, top modes with gotchas
 - [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
-- [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
 
 ## pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
@@ -153,11 +154,12 @@
 - [Package Dependency Chain Snippet](../pipdeptree/snippets/check-package-deps.py) — Check one package and print its dependency chain
 - [Check Package Deps Snippet](../pipdeptree/snippets/tried-check-package-deps.py) — Minimal script to look up a package in pipdeptree JSON and walk its dependency chain
 - [Common CLI Patterns Notes](../pipdeptree/notes/2026-06-13-common-cli-patterns.md) — CLI patterns I figured out on my own
+- [Identify Leaf Packages Snippet](../pipdeptree/snippets/tried-identify-leaf-packages.py) — Identify leaf (top-level) packages from pipdeptree JSON
 
 ## tox
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first contact notes
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
-- [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — L2: tox.ini with lint (ruff) and test (pytest) environments, annotated with reasoning
+- [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — tox.ini with lint (ruff) and test (pytest) environments
 - [First tox CLI Run Notes](../tox/notes/2026-05-31-tox-cli-first-run.md) — env list, -e flag, passing args through
 - [Followed tox Quickstart Notes](../tox/notes/2026-06-11-followed-tox-quickstart.md) — Multi-env setup, what tripped me up
 - [Minimal tox Run Script](../tox/scripts/tried-minimal-tox-run.sh) — Create tox.ini, run tox end-to-end with a test env
