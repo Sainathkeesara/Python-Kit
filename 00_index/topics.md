@@ -21,7 +21,7 @@
 - [config] mypy/configs/tried-strict-mypy-config.toml — Minimal mypy config with incremental strict mode and stub setup
 - [config] mypy/configs/tried-minimal-mypy-config.ini — Three flags from the official quickstart, strict mode with per-module overrides
 - [snippet] mypy/snippets/tried-mypy-type-errors.py — Intentional type errors for mypy to catch
-- [snippet] mypy/snippets/tried-validating-typed-function.py — Annotated function that mypy validates successfully
+- [snippet] mypy/snippets/tried-validating-typed-function.py — Small typed function with annotations to validate with mypy
 - [snippet] mypy/snippets/typed-functions-validate.py — Small typed Python module with annotated functions
 
 ## pip-audit
@@ -43,13 +43,12 @@
 - [note] pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md — Filter by package, JSON format quirks, and handling missing deps
 - [note] pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md — Following official quickstart: visualize deps, detect cycles, confusions
 - [note] pipdeptree/notes/2026-06-13-common-cli-patterns.md — CLI patterns I figured out on my own
-- [note] pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md — --warn silence, --freeze, --exclude, JSON output tricks
 - [script] pipdeptree/scripts/install-and-inspect-deps.sh — Install pipdeptree and inspect dependency tree
 - [snippet] pipdeptree/snippets/check-package-deps.py — Check one package and print its dependency chain
 - [snippet] pipdeptree/snippets/find-reverse-deps.py — Use --reverse to find which packages depend on a given package
 - [snippet] pipdeptree/snippets/parse-pipdeptree-json.py — Parse pipdeptree JSON output and list leaf packages
 - [snippet] pipdeptree/snippets/tried-check-package-deps.py — Minimal script to look up a package in pipdeptree JSON and walk its dependency chain
-- [snippet] pipdeptree/snippets/tried-identify-leaf-packages.py — Find leaf packages (dependencies with no dependents)
+- [snippet] pipdeptree/snippets/tried-identify-leaf-packages.py — Identify leaf (top-level) packages from pipdeptree JSON
 
 ## pre-commit
 
@@ -77,7 +76,6 @@
 - [note] py-spy/notes/2026-06-10-followed-py-spy-quickstart.md — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
 - [note] py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md — Compared flamegraph SVG, speedscope JSON, and raw JSON formats
 - [note] py-spy/notes/2026-06-13-my-py-spy-workflow.md — Documented record, flamegraph, top modes with gotchas
-- [script] py-spy/scripts/tried-install-and-record-flamegraph.sh — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [script] py-spy/scripts/tried-py-spy-record-flamegraph.sh — Profile a CPU-bound script and output a flamegraph SVG
 - [script] py-spy/scripts/tried-py-spy-sampling.py — Python script with CPU-bound functions for py-spy to sample
 - [script] py-spy/scripts/tried-py-spy-speedscope-record.py — CPU-bound workload with py-spy record and speedscope JSON export
@@ -88,9 +86,9 @@
 
 - [note] pyproject.toml/notes/0000-primer-pyproject.toml.md — First-contact notes for pyproject.toml
 - [note] pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md — Key pyproject.toml settings explained
-- [note] pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md — Exploring the [build-system] table and PEP 517/621
+- [note] pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md — Exploring the [build-system] table and how it connects to PEP 517/621
 - [config] pyproject.toml/configs/first-pep621-config.toml — PEP 621 build-system and project metadata with hatchling
-- [config] pyproject.toml/configs/first-pep621-pyproject.toml — PEP 621 pyproject.toml skeleton with project metadata
+- [config] pyproject.toml/configs/first-pep621-pyproject.toml — PEP 621 pyproject.toml with hatchling build backend
 - [config] pyproject.toml/configs/minimal-pyproject.toml — Minimal pyproject.toml for a Python project
 - [config] pyproject.toml/configs/multi-tool-pyproject.toml — Combined ruff, pytest, mypy config
 
@@ -145,7 +143,7 @@
 - [note] tox/notes/2026-06-08-tox-quickstart.md — Followed the official quickstart and set up a first env
 - [note] tox/notes/2026-06-11-followed-tox-quickstart.md — Multi-env setup, what tripped me up
 - [config] tox/configs/tox.ini — Single env with pytest deps
-- [config] tox/configs/tried-lint-and-test-env.ini — Lint (ruff) and test (pytest) environments, annotated with reasoning
+- [config] tox/configs/tried-lint-and-test-env.ini — tox.ini with lint (ruff) and test (pytest) environments
 - [script] tox/scripts/tried-minimal-tox-run.sh — Create tox.ini, run tox end-to-end with a test env
 
 ## ty
@@ -199,8 +197,7 @@
 - [notebook] uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb — Walk through uv.lock sections, hashes, and reproducibility mechanisms
 
 ## general (cross-tool)
-
 - [note] general/notes/2026-06-10-backlog-capacity-audit.md — Count open vs completed tasks per tool, identify blockers
 - [note] general/notes/2026-06-12-figured-out-quality-tool-workflow.md — How Ruff, mypy, pytest, pre-commit, and uv fit together
-- [config] general/configs/tried-quality-tools-pyproject.toml — First combined ruff, mypy, pytest config in one pyproject.toml
+- [config] general/configs/tried-quality-tools-pyproject.toml — Combined ruff, mypy, pytest config in one pyproject.toml
 - [snippet] general/snippets/tried-first-quality-chain.py — Run Ruff, mypy, and pytest in sequence from one script

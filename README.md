@@ -1,5 +1,5 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, tox, and more.
+> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, pipdeptree, py-spy, tox, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Files](https://img.shields.io/badge/files-160-blue)](https://github.com/Sainathkeesara/Python-Kit)
@@ -9,7 +9,7 @@
 
 ## What's in here
 
-Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers uv (package & project manager), Ruff (linter/formatter), pytest, mypy (type checking), pre-commit, rich (terminal output), typer (CLI builder), pip-audit (vulnerability scanning), pipdeptree (dependency trees), py-spy (profiler), tox (test automation), httpie (API testing), ty (alternative type checker), uv.lock, pyproject conventions, and general quality-tool workflow notes. Written from the perspective of a working engineer who prefers plain language over marketing.
+Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers uv (package & project manager), Ruff (linter/formatter), pytest, mypy (type checking), pre-commit, rich (terminal output), typer (CLI builder), pip-audit (vulnerability scanning), pipdeptree (dependency trees), py-spy (profiler), tox (test automation), httpie (API testing), ty (alternative type checker), uv.lock, pyproject.toml conventions, and cross-tool workflow notes. Written from the perspective of a working engineer who prefers plain language over marketing.
 
 ## Coverage
 
@@ -46,7 +46,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md
 - `general/` — Cross-tool workflow notes and chaining scripts
 - `httpie/` — HTTPie CLI notes, install scripts, snippets
-- `mypy/` — mypy type-checking notes, strict config, and typed code samples
+- `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
 - `pre-commit/` — Hook configs, install/run scripts, snippets
