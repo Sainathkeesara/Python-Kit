@@ -52,6 +52,8 @@
 - **pyproject.toml** — The Python project configuration file (PEP 518 / PEP 621), used to declare build system, project metadata, and tool settings.
 - **`[build-system]`** — Section declaring the build backend (e.g. setuptools, hatchling) and its requirements.
 - **`[project]`** — Section for project metadata (name, version, dependencies, Python version requirement).
+- **PEP 517** — The specification for a build-system independent format for source trees; defines how backends like hatchling are invoked.
+- **PEP 621** — The specification for storing project metadata (name, version, dependencies) in the `[project]` table of `pyproject.toml`.
 
 ## pytest
 - **assert** — Python's built-in assertion statement; pytest rewrites it to provide detailed failure messages.
@@ -102,6 +104,7 @@
 - **Transitive dependency** — A dependency of a direct dependency (indirect dependency).
 - **`[[package]]` section** — TOML array entry in `uv.lock` describing a single resolved package.
 - **`[metadata]` section** — The top-level metadata block in `uv.lock` containing the resolver version and install strategy.
+- **Hashes** — Cryptographic checksums (SHA256, SHA512) stored in `uv.lock` for each package to verify integrity across installs.
 
 ## rich
 - **Console** — The main Rich object (`from rich.console import Console`); everything flows through it.
