@@ -1,6 +1,7 @@
 # Topics
 
 ## httpie
+
 - [note] httpie/notes/0000-primer-httpie.md — First-contact notes for HTTPie
 - [note] httpie/notes/2026-05-30-compare-httpie-vs-curl.md — Same API calls, different ergonomics compared to curl
 - [note] httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md — What caught me off guard on my first httpie request
@@ -9,6 +10,7 @@
 - [snippet] httpie/snippets/tried-httpie-get-post-workflow.py — Python script automating httpie for a simple GET/POST workflow
 
 ## mypy
+
 - [note] mypy/notes/0000-primer-mypy.md — First-contact notes for mypy
 - [note] mypy/notes/2026-05-28-tried-mypy-cli-flags.md — Trying --strict, --check-untyped-defs, --ignore-missing-imports
 - [note] mypy/notes/2026-05-29-tried-mypy-quickstart.md — Running mypy on an existing codebase, what tripped me up
@@ -23,6 +25,7 @@
 - [snippet] mypy/snippets/typed-functions-validate.py — Small typed Python module with annotated functions
 
 ## pip-audit
+
 - [note] pip-audit/notes/0000-primer-pip-audit.md — First-contact notes for pip-audit
 - [note] pip-audit/notes/2026-05-26-pip-audit-findings.md — First scan results and observations
 - [note] pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md — Install pip-audit and run first audit, what tripped me up
@@ -33,6 +36,7 @@
 - [snippet] pip-audit/snippets/list-cve-findings.py — Parse pip-audit JSON and list CVE findings with severity
 
 ## pipdeptree
+
 - [note] pipdeptree/notes/0000-primer-pipdeptree.md — First-contact notes for pipdeptree
 - [note] pipdeptree/notes/2026-05-29-format-json-deps.md — Formatting output as JSON, identifying top-level vs transitive deps
 - [note] pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
@@ -47,6 +51,7 @@
 - [snippet] pipdeptree/snippets/tried-identify-leaf-packages.py — Identify leaf (top-level) packages from pipdeptree JSON
 
 ## pre-commit
+
 - [note] pre-commit/notes/0000-primer-pre-commit.md — First-contact notes for pre-commit hooks
 - [note] pre-commit/notes/2026-05-28-run-pre-commit-on-work.md — Running pre-commit across /work and interpreting results
 - [note] pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md — Install pre-commit, explore CLI subcommands and flags
@@ -58,10 +63,12 @@
 - [snippet] pre-commit/snippets/tried-ruff-mypy-config.yaml — Minimal pre-commit config with ruff and mypy hooks
 
 ## py (Ruff / Python tooling)
+
 - [note] py/notes/0000-primer-py.md — What is Ruff? first-contact notes
 - [script] py/scripts/install-and-lint.sh — Install Ruff and lint a Python file
 
 ## py-spy
+
 - [note] py-spy/notes/0000-primer-py-spy.md — First-contact notes for py-spy
 - [note] py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md — Exploring record, top, and flamegraph subcommands
 - [note] py-spy/notes/2026-06-08-tried-py-spy-top-session.md — Getting started with py-spy top: permissions and flags
@@ -76,6 +83,7 @@
 - [snippet] py-spy/snippets/tried-profile-running-process.py — Profile a running Python process and export flamegraph SVG
 
 ## pyproject.toml
+
 - [note] pyproject.toml/notes/0000-primer-pyproject.toml.md — First-contact notes for pyproject.toml
 - [note] pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md — Key pyproject.toml settings explained
 - [note] pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md — Exploring the [build-system] table and how it connects to PEP 517/621
@@ -85,6 +93,7 @@
 - [config] pyproject.toml/configs/multi-tool-pyproject.toml — Combined ruff, pytest, mypy config
 
 ## pytest
+
 - [note] pytest/notes/0000-primer-pytest.md — First-contact notes for pytest
 - [note] pytest/notes/2026-05-26-tried-pytest-cli.md — Exploring CLI flags and output formats
 - [note] pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md — conftest.py with shared setup/teardown using yield fixtures
@@ -98,6 +107,7 @@
 - [snippet] pytest/snippets/three_basic_tests.py — assert, exception, parameterized tests
 
 ## rich
+
 - [note] rich/notes/0000-primer-rich.md — First-contact notes for rich
 - [note] rich/notes/2026-05-27-tried-rich-themes-and-markdown.md — Exploring themes and markdown rendering
 - [note] rich/notes/2026-05-28-exploring-renderables.md — Trying tables, panels, layouts, markup syntax
@@ -114,9 +124,11 @@
 - [snippet] rich/snippets/tried-rich-styled-output.py — First styled terminal output with rich print
 
 ## ruff
+
 - [note] ruff/notes/0000-primer-ruff.md — First-contact notes for Ruff
 - [note] ruff/notes/2026-06-03-tried-ruff-quickstart.md — Lint, auto-fix, explore rules
 - [note] ruff/notes/2026-06-06-cli-exploration.md — CLI flags, output formats for check and format commands
+- [note] ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md — --show-settings, --show-files, --add-noqa, --statistics, ruff rule
 - [config] ruff/configs/ruff-linter-settings.toml — Minimal ruff config with rule selection, ignores, excludes
 - [config] ruff/configs/ruff-pyproject.toml — Configure Ruff inside pyproject.toml
 - [doc] ruff/docs/ruff-vs-flake8-comparison.md — Rule coverage, migration gotchas, auto-fix comparison
@@ -124,6 +136,7 @@
 - [snippet] ruff/snippets/tried-messy-example.py — Another deliberately messy file with different violations
 
 ## tox
+
 - [note] tox/notes/0000-primer-tox.md — First-contact notes for tox
 - [note] tox/notes/2026-05-31-tox-cli-first-run.md — env list, -e flag, passing args through
 - [note] tox/notes/2026-06-08-first-tox-run-tripped-me-up.md — First tox run: env creation, isolated installs, slow feedback
@@ -134,6 +147,7 @@
 - [script] tox/scripts/tried-minimal-tox-run.sh — Create tox.ini, run tox end-to-end with a test env
 
 ## ty
+
 - [note] ty/notes/0000-primer-ty.md — First-contact notes for ty
 - [note] ty/notes/2026-05-27-compare-ty-vs-mypy.md — Comparing ty vs mypy output on the same codebase
 - [note] ty/notes/2026-06-05-tried-ty-quickstart.md — Following the official quickstart, first check, what tripped me up
@@ -146,6 +160,7 @@
 - [snippet] ty/snippets/tried-ty-vs-mypy.py — Compare Ty and mypy output on the same typed code
 
 ## typer
+
 - [note] typer/notes/0000-primer-typer.md — First-contact notes for typer
 - [note] typer/notes/2026-05-29-typer-quickstart-notes.md — What tripped me up following the quickstart
 - [note] typer/notes/2026-06-10-first-typer-hello-world.md — Install Typer and run my first CLI hello-world app
@@ -154,6 +169,7 @@
 - [snippet] typer/snippets/tried-first-typer-cli-app.py — Minimal Typer CLI app with argument and option
 
 ## uv
+
 - [note] uv/notes/0000-primer-uv.md — What is uv? first-contact notes
 - [note] uv/notes/2026-05-24-virtual-env-uv.md — Creating and exploring a virtual environment with uv
 - [note] uv/notes/2026-05-26-cli-commands-beyond-basics.md — Exploring uv CLI commands beyond the basics
@@ -168,6 +184,7 @@
 - [doc] uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md — Command mapping and migration cheat-sheet
 
 ## uv.lock
+
 - [note] uv.lock/notes/0000-primer-uv.lock.md — First-contact notes for uv.lock
 - [note] uv.lock/notes/2026-05-26-uv-lock-structure.md — Reading and understanding uv.lock internals
 - [note] uv.lock/notes/2026-06-11-generated-first-uv-lock.md — Install uv and generate first uv.lock, what's inside it

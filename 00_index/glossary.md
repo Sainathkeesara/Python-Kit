@@ -47,6 +47,7 @@
 - **record** — A py-spy subcommand that captures a profiling dump to disk.
 - **top** — A py-spy subcommand that displays a live, top-like view of hot functions.
 - **CPU-bound** — Code that spends most of its time using the CPU rather than waiting for I/O.
+- **speedscope** — A web-based viewer for flamechart/flamegraph data; py-spy can export JSON in speedscope format.
 
 ## pyproject.toml
 - **pyproject.toml** — The Python project configuration file (PEP 518 / PEP 621), used to declare build system, project metadata, and tool settings.

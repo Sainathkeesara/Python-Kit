@@ -1,20 +1,16 @@
 # Quick Links
 
-## uv
+## I need to...
+
+### Set up a Python project
 - [uv Primer](../uv/notes/0000-primer-uv.md) — What is uv? first contact notes
 - [Install uv Script](../uv/scripts/install-and-first-command.sh) — Install uv and run first command
 - [Virtual Env Notes](../uv/notes/2026-05-24-virtual-env-uv.md) — Creating and exploring a virtual environment with uv
 - [Quickstart Scaffold Notes](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md) — Following uv init, add, run workflow
-- [Hello with Dep Script](../uv/scripts/hello-with-dep.py) — PEP 723 inline metadata, uv run with requests
-- [Run with uv Snippet](../uv/snippets/run-with-uv.py) — Minimal script to run with uv run
-- [uv pyproject.toml Config](../uv/configs/2026-05-26-uv-pyproject-settings.toml) — Configure uv settings in pyproject.toml
-- [CLI Beyond Basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md) — Exploring uv CLI commands beyond basics
-- [uv vs pip Cheat Sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md) — Command mapping and migration cheat-sheet
-- [Install and First Command Notes](../uv/notes/2026-06-10-installed-uv-first-command.md) — Install uv, ran --version, --help, and uv run on a script
-- [Bootstrap uv Script](../uv/scripts/tried-bootstrap-uv-script.sh) — Bootstrap a one-file Python script with uv run and external deps
-- [CLI Help and Format Notes](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md) — Explored uv CLI subcommands, help topics, and output formats
+- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first contact notes
+- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
 
-## Ruff / py-tooling
+### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
 - [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
 - [Ruff Install Script](../ruff/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
@@ -22,19 +18,18 @@
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Quickstart Notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md) — Lint, auto-fix, explore rules
-- [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats
+- [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — `--show-settings`, `--show-files`, `--add-noqa`, `--statistics`, `ruff rule`
+- [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
 
 ## pytest
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
-- [pytest First Test Snippet](../pytest/snippets/test_first_test.py) — My first pytest test, basic assertions
-- [Three Basic Tests Snippet](../pytest/snippets/three_basic_tests.py) — assert, exception, parameterized tests
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
 - [Fixtures with conftest Notes](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md) — conftest.py with shared setup/teardown using yield fixtures
-- [Parametrized Tests Script](../pytest/scripts/test_parametrized.py) — Parametrized tests with @pytest.mark.parametrize
 - [pytest vs unittest Docs](../pytest/docs/pytest-vs-unittest-mapping.md) — API mapping and migration patterns from unittest
 - [pytest CLI Advanced Flags Notes](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md) — Exploring `--collect-only`, `--fixtures`, and `--co` flags
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create test file and run with -v, -k, -x, --tb=short
@@ -74,15 +69,15 @@
 - [Pre-commit CLI Walkthrough Notes](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
 
-## pip-audit
+### Audit dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
-- [CVE Findings Snippet](../pip-audit/snippets/list-cve-findings.py) — Parse pip-audit JSON and list CVE findings with severity
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
-- [Scan and Parse JSON Script](../pip-audit/scripts/scan-and-parse-json.sh) — Scan requirements.txt and parse JSON output with jq
-- [Audit and Parse Script](../pip-audit/scripts/2026-06-09-audit-and-parse-json.sh) — Run pip-audit on a requirements.txt and parse JSON output
-- [pip-audit Findings Notes](../pip-audit/notes/2026-05-26-pip-audit-findings.md) — First scan results and observations
-- [Install and Run Notes](../pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md) — Install pip-audit and run first audit, what tripped me up
+- [CVE Findings Snippet](../pip-audit/snippets/list-cve-findings.py) — Parse pip-audit JSON and list CVE findings with severity
 - [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
+- [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
+- [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — --warn silence, --freeze, --exclude, JSON output tricks
+- [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
+- [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
 
 ## rich
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
@@ -126,11 +121,10 @@
 - [Ty vs Mypy Comparison Snippet](../ty/snippets/tried-ty-vs-mypy.py) — Compare Ty and mypy output on the same typed code
 - [First Ty Type Check Notes](../ty/notes/2026-06-18-first-ty-type-check.md) — Installed Ty and ran first type check on a sample Python file
 
-## typer
+### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
 - [First Typer Hello-World Notes](../typer/notes/2026-06-10-first-typer-hello-world.md) — Install Typer and run my first CLI hello-world app
 - [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
-- [Quickstart Notes](../typer/notes/2026-05-29-typer-quickstart-notes.md) — What tripped me up following quickstart
 - [Calculator Script](../typer/scripts/tried-typer-calculator.py) — Minimal Typer CLI calculator: add, sub, mul, div
 - [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
 
@@ -171,16 +165,27 @@
 - [Followed tox Quickstart Notes](../tox/notes/2026-06-11-followed-tox-quickstart.md) — Multi-env setup, what tripped me up
 - [Minimal tox Run Script](../tox/scripts/tried-minimal-tox-run.sh) — Create tox.ini, run tox end-to-end with a test env
 
-## httpie
+### Test APIs
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first contact notes
 - [Install and Test Script](../httpie/scripts/install_and_test_httpie.sh) — Install httpie with pipx, make GET/POST requests to JSONPlaceholder
 - [httpie vs curl Notes](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md) — Same API calls, ergonomics compared
-- [First Request Tripped Me Up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md) — What caught me off guard on my first httpie request
-- [First HTTPie Request Notes](../httpie/notes/2026-06-10-first-httpie-request.md) — Install httpie, run my first GET with JSON and POST with form data
-- [HTTPie GET/POST Automation Snippet](../httpie/snippets/tried-httpie-get-post-workflow.py) — Python script automating httpie for a simple GET/POST workflow
 
-## General
+### Make terminal output look good
+- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
+- [Console API Notes](../rich/notes/2026-06-04-tried-rich-console-api.md) — Trying print, print_json, rule, log
+- [Console API Renderables Notes](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md) — Renderables, styles, and output modes
+- [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
+- [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
+
+### Understand uv.lock
+- [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first contact notes
+- [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
+- [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
+- [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
+- [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility
+
+### Chain quality tools together
 - [Cross-Tool Workflow Notes](../general/notes/2026-06-12-figured-out-quality-tool-workflow.md) — How Ruff, mypy, pytest, pre-commit, and uv fit together
 - [First Quality Chain Snippet](../general/snippets/tried-first-quality-chain.py) — Run Ruff, mypy, and pytest in sequence from one script
-- [Backlog Capacity Audit Notes](../general/notes/2026-06-10-backlog-capacity-audit.md) — Count open vs completed tasks per tool, identify blockers
 - [Quality Tools pyproject.toml Config](../general/configs/tried-quality-tools-pyproject.toml) — First combined ruff, mypy, pytest config in one pyproject.toml
+- [Backlog Capacity Audit Notes](../general/notes/2026-06-10-backlog-capacity-audit.md) — Count open vs completed tasks per tool, identify blockers
