@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-18
+- prc-006: Added pre-commit CLI walkthrough notes (`pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md`) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
+- ty-006: Added first Ty type check notes (`ty/notes/2026-06-18-first-ty-type-check.md`) — Installed Ty and ran first type check on a sample Python file
+- uvl-007: Added uv.lock packages/checksums/markers notes (`uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md`) — Explored uv.lock package versions, checksums, and dependency markers
+
 ## 2026-06-17
 - pyt-008: Added pytest primer (`pytest/notes/0000-primer-pytest.md`) — What is pytest? first contact notes
 - ric-009: Added rich Console API renderables notes (`rich/notes/2026-06-17-explored-rich-console-api-renderables.md`) — Explored renderables, styles, and output modes
