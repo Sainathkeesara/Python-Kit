@@ -13,7 +13,7 @@
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
 - [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
-- [Ruff Install Script](../ruff/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
+- [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
@@ -68,6 +68,7 @@
 - [Pre-commit CLI Exploration Notes](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md) — Install pre-commit, explore CLI subcommands and flags
 - [Pre-commit CLI Walkthrough Notes](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
+- [Pre-commit CLI Walkthrough](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 
 ### Audit dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
@@ -183,9 +184,6 @@
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
 - [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility
+- [uv.lock Packages Checksums Markers Notes](../uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md) — Explored uv.lock: package versions, checksums, and dependency markers
 
-### Chain quality tools together
-- [Cross-Tool Workflow Notes](../general/notes/2026-06-12-figured-out-quality-tool-workflow.md) — How Ruff, mypy, pytest, pre-commit, and uv fit together
-- [First Quality Chain Snippet](../general/snippets/tried-first-quality-chain.py) — Run Ruff, mypy, and pytest in sequence from one script
-- [Quality Tools pyproject.toml Config](../general/configs/tried-quality-tools-pyproject.toml) — First combined ruff, mypy, pytest config in one pyproject.toml
-- [Backlog Capacity Audit Notes](../general/notes/2026-06-10-backlog-capacity-audit.md) — Count open vs completed tasks per tool, identify blockers
+

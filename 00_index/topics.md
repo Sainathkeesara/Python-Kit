@@ -43,6 +43,7 @@
 - [note] pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md — Filter by package, JSON format quirks, and handling missing deps
 - [note] pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md — Following official quickstart: visualize deps, detect cycles, confusions
 - [note] pipdeptree/notes/2026-06-13-common-cli-patterns.md — CLI patterns I figured out on my own
+- [note] pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md — --warn silence, --freeze, --exclude, JSON output tricks
 - [script] pipdeptree/scripts/install-and-inspect-deps.sh — Install pipdeptree and inspect dependency tree
 - [snippet] pipdeptree/snippets/check-package-deps.py — Check one package and print its dependency chain
 - [snippet] pipdeptree/snippets/find-reverse-deps.py — Use --reverse to find which packages depend on a given package
@@ -56,6 +57,7 @@
 - [note] pre-commit/notes/2026-05-28-run-pre-commit-on-work.md — Running pre-commit across /work and interpreting results
 - [note] pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md — Install pre-commit, explore CLI subcommands and flags
 - [note] pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md — Install pre-commit, run with ruff linting and mypy type check on a sample repo
+- [note] pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - [script] pre-commit/scripts/install-and-run.sh — Install pre-commit and run on repo
 - [config] pre-commit/configs/tried-first-ruff-hooks-config.yaml — Minimal pre-commit config with just the ruff hook
 - [config] pre-commit/configs/tried-multi-hook-config.yaml — Ruff + mypy + trailing-whitespace hooks
@@ -79,6 +81,7 @@
 - [script] py-spy/scripts/tried-py-spy-record-flamegraph.sh — Profile a CPU-bound script and output a flamegraph SVG
 - [script] py-spy/scripts/tried-py-spy-sampling.py — Python script with CPU-bound functions for py-spy to sample
 - [script] py-spy/scripts/tried-py-spy-speedscope-record.py — CPU-bound workload with py-spy record and speedscope JSON export
+- [script] py-spy/scripts/tried-install-and-record-flamegraph.sh — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [snippet] py-spy/snippets/tried-cpu-bound-simulation.py — Minimal script for py-spy profiling practice
 - [snippet] py-spy/snippets/tried-profile-running-process.py — Profile a running Python process and export flamegraph SVG
 
@@ -153,6 +156,7 @@
 - [note] ty/notes/2026-06-05-tried-ty-quickstart.md — Following the official quickstart, first check, what tripped me up
 - [note] ty/notes/2026-06-10-first-ty-markdown-render.md — Install Ty and render my first markdown file in the terminal
 - [note] ty/notes/2026-06-16-explored-ty-cli-flags.md — Explored Ty CLI flags, output formats, compared with mypy options
+- [note] ty/notes/2026-06-18-first-ty-type-check.md — Installed Ty and ran first type check on a sample Python file
 - [config] ty/configs/tried-ty-config.toml — Ty configuration file with enabled error codes
 - [config] ty/configs/tried-ty-markdown-css.css — Custom CSS styling for Ty markdown rendering
 - [script] ty/scripts/tried-ty-pipeline.sh — Pipe markdown through ty and capture formatted output
@@ -188,6 +192,7 @@
 - [note] uv.lock/notes/0000-primer-uv.lock.md — First-contact notes for uv.lock
 - [note] uv.lock/notes/2026-05-26-uv-lock-structure.md — Reading and understanding uv.lock internals
 - [note] uv.lock/notes/2026-06-11-generated-first-uv-lock.md — Install uv and generate first uv.lock, what's inside it
+- [note] uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md — Explored uv.lock: package versions, checksums, and dependency markers
 - [script] uv.lock/scripts/generate-uv-lock.sh — Generate a uv.lock file with uv sync
 - [script] uv.lock/scripts/tried-extract-direct-deps.py — Parse uv.lock and list all direct dependency entries with versions
 - [script] uv.lock/scripts/tried-generate-from-pyproject-toml.sh — Create pyproject.toml by hand, generate uv.lock, and inspect the output
@@ -196,8 +201,4 @@
 - [snippet] uv.lock/snippets/tried-reading-uv-lock.py — Parse uv.lock with Python and list package names
 - [notebook] uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb — Walk through uv.lock sections, hashes, and reproducibility mechanisms
 
-## general (cross-tool)
-- [note] general/notes/2026-06-10-backlog-capacity-audit.md — Count open vs completed tasks per tool, identify blockers
-- [note] general/notes/2026-06-12-figured-out-quality-tool-workflow.md — How Ruff, mypy, pytest, pre-commit, and uv fit together
-- [config] general/configs/tried-quality-tools-pyproject.toml — Combined ruff, mypy, pytest config in one pyproject.toml
-- [snippet] general/snippets/tried-first-quality-chain.py — Run Ruff, mypy, and pytest in sequence from one script
+
