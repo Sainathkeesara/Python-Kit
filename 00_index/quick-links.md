@@ -1,5 +1,10 @@
 # Quick Links
 
+## Foundational Concepts
+- [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md) — What is Git? first contact notes
+- [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first contact notes
+- [Virtual Environment & Dependency Mgmt Primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md) — What are virtual environments and dependency management? first contact notes
+
 ## I need to...
 
 ### Set up a Python project
