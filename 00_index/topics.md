@@ -1,5 +1,11 @@
 # Topics
 
+## Foundational concepts
+
+- [doc] docs/concepts/git-version-control/0000-primer-git-version-control.md — What is Git? Commits, branches, remotes, and how it connects to pre-commit hooks
+- [doc] docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md — What are type hints and static type checkers? first contact notes
+- [doc] docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md — What are virtual environments and dependency management? first contact notes
+
 ## httpie
 
 - [note] httpie/notes/0000-primer-httpie.md — First-contact notes for HTTPie

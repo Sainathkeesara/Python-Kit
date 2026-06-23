@@ -116,3 +116,19 @@
 - **Progress** — A pre-built progress bar widget supporting multiple bars, transfer speeds, and spinners.
 - **Markdown** — Renders markdown text to formatted terminal output.
 - **Syntax** — Syntax-highlights source code with a Pygments-based theme.
+
+## Git Version Control
+- **Repository (repo)** — A directory managed by Git, containing all tracked files and their complete history.
+- **Commit** — A snapshot of all tracked files at a point in time, paired with a message describing the change.
+- **Branch** — A separate line of development, letting you work on features or fixes without affecting the main codebase.
+- **Stage (index)** — The set of file changes you have marked for inclusion in the next commit using `git add`.
+- **Remote** — A hosted copy of the repository (e.g., on GitHub) that you can push to or pull from.
+- **HEAD** — A pointer to the most recent commit on the currently checked-out branch.
+
+## Python Programming Fundamentals
+- **Type hint** — An annotation on a variable, parameter, or return value indicating its expected type.
+- **PEP 484** — The Python Enhancement Proposal that introduced standardised type hint syntax (`Optional[str]`, `List[int]`, `Union[str, int]`).
+- **Marker** — A condition attached to a dependency that controls when it is installed (based on Python version, OS, or platform).
+
+## Package & Dependency Management
+- **Dependency resolution** — The process of selecting a set of package versions that satisfy all version constraints across the dependency tree.
