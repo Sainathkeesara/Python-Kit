@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-06-23
+- con-001: Added Git Version Control primer (`docs/concepts/git-version-control/0000-primer-git-version-control.md`) — What is Git? first contact notes
+- con-005: Added Static Type Checking & Type Hints primer (`docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md`) — What are type hints and static type checkers? first contact notes
+- con-006: Added Virtual Environment & Dependency Mgmt primer (`docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md`) — What are virtual environments and dependency management? first contact notes
+
 ## 2026-06-18
 - prc-006: Added pre-commit CLI walkthrough notes (`pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md`) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - ty-006: Added first Ty type check notes (`ty/notes/2026-06-18-first-ty-type-check.md`) — Installed Ty and ran first type check on a sample Python file
