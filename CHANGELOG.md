@@ -2,6 +2,9 @@
 
 ## 2026-06-23
 - con-001: Added Git Version Control primer (`docs/concepts/git-version-control/0000-primer-git-version-control.md`) — What is Git? first contact notes
+- con-002: Added Python Programming Fundamentals primer (`docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md`) — What are Python programming fundamentals? first contact notes
+- con-003: Added Python Packaging & Project Config primer (`docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md`) — What is Python packaging and project config? first contact notes
+- con-004: Added Software Testing Principles primer (`docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md`) — What are software testing principles? first contact notes
 - con-005: Added Static Type Checking & Type Hints primer (`docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md`) — What are type hints and static type checkers? first contact notes
 - con-006: Added Virtual Environment & Dependency Mgmt primer (`docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md`) — What are virtual environments and dependency management? first contact notes
 
