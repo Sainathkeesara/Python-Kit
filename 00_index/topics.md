@@ -1,5 +1,15 @@
 # Topics
 
+## Concepts
+
+- [primer] docs/concepts/git-version-control/0000-primer-git-version-control.md — What is Git? first contact notes
+- [primer] docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md — Variables, data types, functions, loops, and imports as the vocabulary of Python
+- [primer] docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md — What is Python packaging and project config? first contact notes
+- [primer] docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md — What are software testing principles? first contact notes
+- [primer] docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md — What are type hints and static type checkers? first contact notes
+- [primer] docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md — What are virtual environments and dependency management? first contact notes
+- [doc] docs/repository-structure.md — Describes the directory layout of Python-Kit
+
 ## httpie
 
 - [note] httpie/notes/0000-primer-httpie.md — First-contact notes for HTTPie
@@ -200,5 +210,3 @@
 - [snippet] uv.lock/snippets/tried-detect-conflicting-constraints.py — Parse uv.lock and flag packages with conflicting version constraints
 - [snippet] uv.lock/snippets/tried-reading-uv-lock.py — Parse uv.lock with Python and list package names
 - [notebook] uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb — Walk through uv.lock sections, hashes, and reproducibility mechanisms
-
-
