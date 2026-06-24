@@ -6,12 +6,12 @@
 
 These concepts have no prerequisites and are the starting point for Python tooling.
 
-- **Python Programming Fundamentals** — Understanding basic Python syntax, functions, modules, and error handling. Everything in this kit depends on this. Entry point: [Python Programming Fundamentals Primer](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md).
-- **Git Version Control** — Tracking changes, committing, branching. Required for pre-commit hooks. Primer: [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md).
-- **Software Testing Principles** — What makes a good test, test discovery, assertions. Unlocks pytest and tox. Primer: [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md).
-- **Static Type Checking & Type Hints** — Type annotations (`str`, `int`, `Optional`, `Union`). Unlocks mypy, Ty, and typer. Primer: [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md).
-- **Virtual Environment & Dependency Management** — Isolated Python environments, installing packages. Unlocks uv and pip-audit. Primer: [Virtual Environment & Dependency Mgmt Primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md).
-- **Python Packaging & Project Config** — pyproject.toml, build backends, project metadata. Unlocks pyproject.toml configs and uv.lock. Primer: [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md).
+- **Python Programming Fundamentals** — Understanding basic Python syntax, functions, modules, and error handling. Everything in this kit depends on this.
+- **Git Version Control** — Tracking changes, committing, branching. Required for pre-commit hooks. Primer: [Git Version Control primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md).
+- **Software Testing Principles** — What makes a good test, test discovery, assertions. Unlocks pytest and tox. Primer: [pytest Primer](../pytest/notes/0000-primer-pytest.md).
+- **Static Type Checking & Type Hints** — Type annotations (`str`, `int`, `Optional`, `Union`). Unlocks mypy, Ty, and typer. Primer: [Static Type Checking & Type Hints primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md).
+- **Virtual Environment & Dependency Management** — Isolated Python environments, installing packages. Unlocks uv and pip-audit. Primer: [Virtual Environment & Dependency Mgmt primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md).
+- **Python Packaging & Project Config** — pyproject.toml, build backends, project metadata. Unlocks pyproject.toml configs and uv.lock. Primer: [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md).
 
 ## Stage 2: Core Tools
 
