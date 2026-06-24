@@ -9,7 +9,7 @@
 
 ## What's in here
 
-Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers uv (package & project manager), Ruff (linter/formatter), pytest, mypy (type checking), pre-commit, rich (terminal output), typer (CLI builder), pip-audit (vulnerability scanning), pipdeptree (dependency trees), py-spy (profiler), tox (test automation), httpie (API testing), ty (type checker), uv.lock, pyproject.toml conventions, and cross-tool workflow notes. Written from the perspective of a working engineer who prefers plain language over marketing.
+Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers uv (package & project manager), Ruff (linter/formatter), pytest, mypy (type checking), pre-commit, rich (terminal output), typer (CLI builder), pip-audit (vulnerability scanning), pipdeptree (dependency trees), py-spy (profiler), tox (test automation), httpie (API testing), ty (type checker), uv.lock, pyproject.toml conventions, and foundational concept primers. Written from the perspective of a working engineer who prefers plain language over marketing.
 
 ## Coverage
 

@@ -1,6 +1,6 @@
 # Learning Path — Python
 
-> A suggested progression from beginner to confident practitioner. Each stage builds on the previous one.
+> A suggested progression from beginner to confident practitioner. Each stage builds on the previous one. If a topic is listed but has no content yet, it's marked as ⏳ (coming soon).
 
 ## Stage 1: Foundations
 
@@ -63,8 +63,8 @@ Python Programming Fundamentals
 ├── Static Type Checking ──────► mypy, Ty, typer
 ├── Virtual Environment Mgmt ──► uv ──► uv.lock, pip-audit, pipdeptree
 └── Python Packaging Config ───► pyproject.toml
-                                    │
-                                    ├── Ruff (linter config)
-                                    ├── pytest (test config)
-                                    └── mypy (type check config)
+                                     │
+                                     ├── Ruff (linter config)
+                                     ├── pytest (test config)
+                                     └── mypy (type check config)
 ```

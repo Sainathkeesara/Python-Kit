@@ -206,5 +206,3 @@
 - [snippet] uv.lock/snippets/tried-detect-conflicting-constraints.py — Parse uv.lock and flag packages with conflicting version constraints
 - [snippet] uv.lock/snippets/tried-reading-uv-lock.py — Parse uv.lock with Python and list package names
 - [notebook] uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb — Walk through uv.lock sections, hashes, and reproducibility mechanisms
-
-
