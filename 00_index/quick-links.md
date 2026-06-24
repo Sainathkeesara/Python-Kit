@@ -76,7 +76,6 @@
 - [Pre-commit CLI Exploration Notes](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md) — Install pre-commit, explore CLI subcommands and flags
 - [Pre-commit CLI Walkthrough Notes](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
-- [Pre-commit CLI Walkthrough](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 
 ### Audit dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
