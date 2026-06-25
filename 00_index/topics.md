@@ -3,6 +3,9 @@
 ## Foundational concepts
 
 - [doc] docs/concepts/git-version-control/0000-primer-git-version-control.md — What is Git? Commits, branches, remotes, and how it connects to pre-commit hooks
+- [doc] docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md — What is Python packaging and project config? first contact notes
+- [doc] docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md — What are Python programming fundamentals? first contact notes
+- [doc] docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md — What are software testing principles? first contact notes
 - [doc] docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md — What are type hints and static type checkers? first contact notes
 - [doc] docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md — What are virtual environments and dependency management? first contact notes
 
