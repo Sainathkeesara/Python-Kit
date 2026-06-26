@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-06-26
+- mypy-007: Added official mypy quickstart notes (`mypy/notes/2026-06-08-tried-mypy-official-quickstart.md`) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
+- mypy-008: Added strict/disallow/ignore mypy.ini config (`mypy/configs/tried-strict-disallow-ignore-config.ini`) — Minimal mypy.ini with strict, disallow_untyped_defs, ignore_missing_imports
+
 ## 2026-06-23
 - con-001: Added Git Version Control primer (`docs/concepts/git-version-control/0000-primer-git-version-control.md`) — What is Git? first contact notes
 - con-002: Added Python Programming Fundamentals primer (`docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md`) — What are Python programming fundamentals? first contact notes
