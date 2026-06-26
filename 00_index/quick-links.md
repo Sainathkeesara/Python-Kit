@@ -112,7 +112,9 @@
 - [Typed Functions Validate Snippet](../mypy/snippets/typed-functions-validate.py) — Small typed Python module with annotated functions
 - [Validating Typed Function Snippet](../mypy/snippets/tried-validating-typed-function.py) — Small typed function with annotations to validate with mypy
 - [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
+- [Official mypy Quickstart Notes](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
 - [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
+- [Strict Disallow Ignore Config](../mypy/configs/tried-strict-disallow-ignore-config.ini) — Minimal mypy.ini with strict mode, type annotation enforcement, and import allowance
 
 ### Ty
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first contact notes
