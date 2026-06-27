@@ -2,7 +2,7 @@
 > A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, pipdeptree, py-spy, tox, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-166-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-168-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -16,7 +16,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks |
 |------|-------|---------|---------|----------|------|-----------|
 | httpie | 4 | 1 | — | 1 | — | — |
-| mypy | 6 | 1 | 2 | 3 | — | — |
+| mypy | 7 | 1 | 3 | 3 | — | — |
 | pip-audit | 3 | 3 | 1 | 1 | — | — |
 | pipdeptree | 7 | 1 | — | 5 | — | — |
 | pre-commit | 5 | 1 | 2 | 2 | — | — |
@@ -67,4 +67,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Recent additions include Python programming fundamentals, packaging and project config, and software testing principles primers. The concept primer library now covers all six foundational areas for the Python toolchain. Continuing to build out notes across uv, pytest, rich, and mypy.
 
 ---
-_Last updated: 2026-06-25_
+_Last updated: 2026-06-27_
