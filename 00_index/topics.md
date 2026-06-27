@@ -1,5 +1,7 @@
 # Topics
 
+- [doc] docs/repository-structure.md — Documented repository structure and organisation
+
 ## Foundational concepts
 
 - [doc] docs/concepts/git-version-control/0000-primer-git-version-control.md — What is Git? Commits, branches, remotes, and how it connects to pre-commit hooks
@@ -25,8 +27,10 @@
 - [note] mypy/notes/2026-05-29-tried-mypy-quickstart.md — Running mypy on an existing codebase, what tripped me up
 - [note] mypy/notes/2026-06-04-first-mypy-run.md — Annotated a function, fixed type errors, tried reveal_type
 - [note] mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md — What caught me off guard on my first mypy check
+- [note] mypy/notes/2026-06-08-tried-mypy-official-quickstart.md — Following official docs with gradual typing and strict mode
 - [note] mypy/notes/2026-06-12-followed-mypy-quickstart.md — Using gradual typing and strict mode, where I got stuck
 - [script] mypy/scripts/tried-mypy-first-check.py — First mypy check script with intentional errors
+- [config] mypy/configs/tried-strict-disallow-ignore-config.ini — Strict mypy config with disallow-untyped-defs and ignore-missing-imports
 - [config] mypy/configs/tried-strict-mypy-config.toml — Minimal mypy config with incremental strict mode and stub setup
 - [config] mypy/configs/tried-minimal-mypy-config.ini — Three flags from the official quickstart, strict mode with per-module overrides
 - [snippet] mypy/snippets/tried-mypy-type-errors.py — Intentional type errors for mypy to catch

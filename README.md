@@ -1,8 +1,8 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, pipdeptree, py-spy, tox, and more.
+> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-166-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-168-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -16,7 +16,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks |
 |------|-------|---------|---------|----------|------|-----------|
 | httpie | 4 | 1 | — | 1 | — | — |
-| mypy | 6 | 1 | 2 | 3 | — | — |
+| mypy | 7 | 1 | 3 | 3 | — | — |
 | pip-audit | 3 | 3 | 1 | 1 | — | — |
 | pipdeptree | 7 | 1 | — | 5 | — | — |
 | pre-commit | 5 | 1 | 2 | 2 | — | — |
@@ -34,11 +34,11 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [Python Programming Fundamentals primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
-- [Python Packaging & Project Config primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
-- [Software Testing Principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
-- [Git Version Control primer](docs/concepts/git-version-control/0000-primer-git-version-control.md) — Commits, branches, remotes, and how it connects to pre-commit hooks
-- [Static Type Checking & Type Hints primer](docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — PEP 484 type hints, gradual typing, and how mypy and Ty use them
+- [mypy strict disallow config](mypy/configs/tried-strict-disallow-ignore-config.ini) — Strict mypy config with disallow-untyped-defs and ignore-missing-imports
+- [mypy official quickstart notes](mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Following official docs with gradual typing and strict mode
+- [pyproject.toml primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
+- [Python programming primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
+- [Testing principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
 
 ## Layout
 
@@ -67,4 +67,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Recent additions include Python programming fundamentals, packaging and project config, and software testing principles primers. The concept primer library now covers all six foundational areas for the Python toolchain. Continuing to build out notes across uv, pytest, rich, and mypy.
 
 ---
-_Last updated: 2026-06-25_
+_Last updated: 2026-06-27_
