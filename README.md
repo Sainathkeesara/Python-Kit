@@ -64,7 +64,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Status
 
-Recent additions include Python programming fundamentals, packaging and project config, and software testing principles primers. The concept primer library now covers all six foundational areas for the Python toolchain. Continuing to build out notes across uv, pytest, rich, and mypy.
+The concept primer library now covers all six foundational areas for the Python toolchain. Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit.
 
 ---
 _Last updated: 2026-06-27_
