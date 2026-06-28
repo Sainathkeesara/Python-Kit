@@ -34,11 +34,11 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [Python Programming Fundamentals primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
-- [Python Packaging & Project Config primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
-- [Software Testing Principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
-- [Git Version Control primer](docs/concepts/git-version-control/0000-primer-git-version-control.md) — Commits, branches, remotes, and how it connects to pre-commit hooks
-- [Static Type Checking & Type Hints primer](docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — PEP 484 type hints, gradual typing, and how mypy and Ty use them
+- [mypy strict disallow config](mypy/configs/tried-strict-disallow-ignore-config.ini) — Strict mypy config with disallow-untyped-defs and ignore-missing-imports
+- [mypy official quickstart notes](mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Following official docs with gradual typing and strict mode
+- [pyproject.toml primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
+- [Python programming primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
+- [Testing principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
 
 ## Layout
 
