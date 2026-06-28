@@ -1,5 +1,5 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, pipdeptree, py-spy, tox, and more.
+> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Files](https://img.shields.io/badge/files-166-blue)](https://github.com/Sainathkeesara/Python-Kit)
@@ -64,7 +64,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Status
 
-Recent additions include Python programming fundamentals, packaging and project config, and software testing principles primers. The concept primer library now covers all six foundational areas for the Python toolchain. Continuing to build out notes across uv, pytest, rich, and mypy.
+The concept primer library now covers all six foundational areas for the Python toolchain. Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit.
 
 ---
 _Last updated: 2026-06-25_
