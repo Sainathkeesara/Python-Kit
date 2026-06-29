@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-06-29
+- pau-005: Added pip-audit CVE listing snippet (`pip-audit/snippets/tried-list-cves.py`) — Parse pip-audit JSON output to list packages with CVEs and their severity
+- psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
+
 ## 2026-06-26
 - mypy-007: Added official mypy quickstart notes (`mypy/notes/2026-06-08-tried-mypy-official-quickstart.md`) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
 - mypy-008: Added strict/disallow/ignore mypy.ini config (`mypy/configs/tried-strict-disallow-ignore-config.ini`) — Minimal mypy.ini with strict, disallow_untyped_defs, ignore_missing_imports
