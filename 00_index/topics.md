@@ -8,6 +8,7 @@
 - [doc] docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md — What are software testing principles? first contact notes
 - [doc] docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md — What are type hints and static type checkers? first contact notes
 - [doc] docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md — What are virtual environments and dependency management? first contact notes
+- [doc] docs/repository-structure.md — Directory layout, file organization, and quick reference for Python-Kit
 
 ## httpie
 
