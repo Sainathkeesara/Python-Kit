@@ -46,6 +46,7 @@
 - [script] pip-audit/scripts/2026-06-09-audit-and-parse-json.sh — Run pip-audit on a requirements.txt and parse JSON output
 - [config] pip-audit/configs/pip-audit-ignore.toml — Configure pip-audit ignore list for reviewed CVEs
 - [snippet] pip-audit/snippets/list-cve-findings.py — Parse pip-audit JSON and list CVE findings with severity
+- [snippet] pip-audit/snippets/tried-list-cves.py — Parse pip-audit JSON and list CVE findings with severity and package info
 
 ## pipdeptree
 
@@ -93,6 +94,7 @@
 - [script] py-spy/scripts/tried-py-spy-record-flamegraph.sh — Profile a CPU-bound script and output a flamegraph SVG
 - [script] py-spy/scripts/tried-py-spy-sampling.py — Python script with CPU-bound functions for py-spy to sample
 - [script] py-spy/scripts/tried-py-spy-speedscope-record.py — CPU-bound workload with py-spy record and speedscope JSON export
+- [script] py-spy/scripts/tried-cpu-speedscope-record.py — CPU-bound workload with py-spy record and speedscope JSON export
 - [script] py-spy/scripts/tried-install-and-record-flamegraph.sh — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [snippet] py-spy/snippets/tried-cpu-bound-simulation.py — Minimal script for py-spy profiling practice
 - [snippet] py-spy/snippets/tried-profile-running-process.py — Profile a running Python process and export flamegraph SVG
