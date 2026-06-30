@@ -135,6 +135,9 @@
 - [Calculator Script](../typer/scripts/tried-typer-calculator.py) — Minimal Typer CLI calculator: add, sub, mul, div
 - [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
 
+### Profile with py-spy
+- [Self-Profile Speedscope Script](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
+
 ### py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
 - [Install and Record Flamegraph](../py-spy/scripts/tried-install-and-record-flamegraph.sh) — Install py-spy and profile CPU-bound script to flamegraph SVG
@@ -148,6 +151,9 @@
 - [Speedscope Record Script](../py-spy/scripts/tried-py-spy-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Py-spy Workflow Notes](../py-spy/notes/2026-06-13-my-py-spy-workflow.md) — Documented record, flamegraph, top modes with gotchas
 - [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
+
+### Parse pip-audit output
+- [List CVEs from pip-audit JSON Snippet](../pip-audit/snippets/tried-list-cves.py) — Pipe pip-audit JSON through to see vulnerable packages
 
 ### pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
