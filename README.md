@@ -1,8 +1,8 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
+> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, pipdeptree, py-spy, tox, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Files](https://img.shields.io/badge/files-168-blue)](https://github.com/Sainathkeesara/Python-Kit)
+[![Files](https://img.shields.io/badge/files-165-blue)](https://github.com/Sainathkeesara/Python-Kit)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Shell Script](https://img.shields.io/badge/Shell_Script-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![TOML](https://img.shields.io/badge/TOML-9C4221?logo=toml&logoColor=white)](https://toml.io/)
@@ -34,11 +34,11 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [mypy strict disallow config](mypy/configs/tried-strict-disallow-ignore-config.ini) — Strict mypy config with disallow-untyped-defs and ignore-missing-imports
-- [mypy official quickstart notes](mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Following official docs with gradual typing and strict mode
-- [pyproject.toml primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
-- [Python programming primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
-- [Testing principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
+- [Python Programming Fundamentals primer](docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — Variables, functions, loops, conditionals, and imports
+- [Python Packaging & Project Config primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
+- [Software Testing Principles primer](docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — Unit tests, assertions, fixtures, parametrization, and TDD
+- [Git Version Control primer](docs/concepts/git-version-control/0000-primer-git-version-control.md) — Commits, branches, remotes, and how it connects to pre-commit hooks
+- [Static Type Checking & Type Hints primer](docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — PEP 484 type hints, gradual typing, and how mypy and Ty use them
 
 ## Layout
 
@@ -64,7 +64,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Status
 
-The concept primer library now covers all six foundational areas for the Python toolchain. Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit.
+Continuing to build out notes across uv, pytest, rich, and mypy. Recent additions include mypy official quickstart notes and a strict disallow-ignore config. The concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-06-27_
+_Last updated: 2026-06-28_
