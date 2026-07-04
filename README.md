@@ -67,4 +67,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-06-30_
+_Last updated: 2026-07-01_
