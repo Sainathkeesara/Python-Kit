@@ -1,0 +1,10 @@
+# last_verified: 2026-07-05 · pyproject.toml n/a
+
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "A minimal Python project with no build-system section"
+requires-python = ">=3.11"
+
+# No [build-system] table — pip assumes setuptools by default
+# For PEP 517 compliance, add one with a modern build backend

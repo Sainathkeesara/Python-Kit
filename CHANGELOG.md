@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-07-05
+- ppt-008: Added minimal pyproject.toml with metadata and no build-system (`pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml`) — Minimal pyproject.toml with project metadata and no [build-system] section
+- ruf-012: Added minimal standalone ruff.toml config (`ruff/configs/2026-07-05-minimal-standalone-ruff.toml`) — Minimal ruff.toml with select and ignore rules
+- typer-005: Added Typer CLI option + subcommand snippet (`typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py`) — Typer CLI with one option and two subcommands
+
 ## 2026-06-29
 - pau-005: Added pip-audit CVE listing snippet (`pip-audit/snippets/tried-list-cves.py`) — Parse pip-audit JSON output to list packages with CVEs and their severity
 - psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
