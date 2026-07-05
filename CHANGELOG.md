@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-07-05
+- con-007: Added Python Programming Fundamentals practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py`) — Practicing data types, control flow, functions, comprehensions, args/kwargs
+- con-008: Added Python Packaging patterns snippet (`docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py`) — Reading pyproject.toml metadata and discovering packages
+- con-009: Added Software Testing Principles practice script (`docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py`) — Writing isolated, parametrized tests with fixtures
+
 ## 2026-06-29
 - pau-005: Added pip-audit CVE listing snippet (`pip-audit/snippets/tried-list-cves.py`) — Parse pip-audit JSON output to list packages with CVEs and their severity
 - psy-010: Added py-spy speedscope record script (`py-spy/scripts/tried-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
