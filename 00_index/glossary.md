@@ -32,6 +32,7 @@
 - **SDist (source distribution)** — A compressed archive of source code that can be built and installed.
 - **Wheel** — A pre-built distribution format that installs faster than SDist.
 - **Entry point** — A function exposed as a CLI command via the `[project.scripts]` table.
+- **tomllib** — Python's standard-library TOML parser (3.11+), used by scripts in this kit to read pyproject.toml programmatically.
 
 ### Software Testing Principles
 - **Unit test** — Tests a single function or method in isolation.
