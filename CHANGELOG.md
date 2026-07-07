@@ -1,9 +1,9 @@
 # CHANGELOG
 
 ## 2026-07-05
-- ppt-008: Added minimal pyproject.toml with metadata and no build-system (`pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml`) — Minimal pyproject.toml with project metadata and no [build-system] section
-- ruf-012: Added minimal standalone ruff.toml config (`ruff/configs/2026-07-05-minimal-standalone-ruff.toml`) — Minimal ruff.toml with select and ignore rules
-- typer-005: Added Typer CLI option + subcommand snippet (`typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py`) — Typer CLI with one option and two subcommands
+- con-007: Added Python Programming Fundamentals practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py`) — Practicing data types, control flow, functions, comprehensions, args/kwargs
+- con-008: Added Python Packaging patterns snippet (`docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py`) — Reading pyproject.toml metadata and discovering packages
+- con-009: Added Software Testing Principles practice script (`docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py`) — Writing isolated, parametrized tests with fixtures
 
 ## 2026-06-29
 - pau-005: Added pip-audit CVE listing snippet (`pip-audit/snippets/tried-list-cves.py`) — Parse pip-audit JSON output to list packages with CVEs and their severity
