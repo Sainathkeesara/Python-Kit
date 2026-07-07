@@ -6,6 +6,8 @@
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
+> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
+
 ## Who this is for
 
 A working Python engineer's quick-reference: first-contact notes, runnable snippets, and configs for the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, pyproject.toml, and uv.lock. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
@@ -16,16 +18,17 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
+- [Packaging patterns script](docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Read pyproject.toml metadata and discover packages
+- [Fundamentals practice script](docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practicing data types, control flow, functions, and comprehensions
+- [Testing principles practice script](docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py) — Writing isolated, parametrized tests with fixtures
+- [Lint CI workflow](.github/workflows/lint.yml) — Lint workflow for shell, Python, and YAML
 - [pip-audit CVE snippet](pip-audit/snippets/tried-list-cves.py) — Parse pip-audit JSON and list CVE findings with severity
-- [py-spy speedscope record script](py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
-- [mypy strict disallow config](mypy/configs/tried-strict-disallow-ignore-config.ini) — Strict mypy config with disallow-untyped-defs and ignore-missing-imports
-- [mypy official quickstart notes](mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Following official docs with gradual typing and strict mode
-- [Python packaging primer](docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, and entry points
 
 ## Layout
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
 - `CHANGELOG.md` — Project changelog tracking additions and fixes over time
+- `.github/` — GitHub Actions CI workflows (workflows/lint.yml)
 - `docs/` — Foundational concept primers and project-level documentation
 - `httpie/` — HTTPie CLI notes, install scripts, snippets
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
@@ -73,4 +76,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-01_
+_Last updated: 2026-07-06_

@@ -6,9 +6,10 @@ This document describes the directory layout of Python-Kit.
 
 | Directory | Purpose |
 |-----------|---------|
-| `00_index/` | Navigation files including quick-links.md, topics.md, glossary.md |
+| `00_index/` | Navigation files including quick-links.md, topics.md, glossary.md, learning-path.md |
+| `.github/` | GitHub Actions CI workflows (workflows/lint.yml) |
 | `uv/` | Notes, scripts, configs, and snippets for Astral's uv package manager |
-| `py/` | Ruff and related Python tooling notes, scripts, configs |
+| `py/` | General Python launcher notes and lint scripts |
 | `py-spy/` | Profiler notes and scripts for py-spy |
 | `pytest/` | pytest testing framework notes and snippets |
 | `pyproject.toml/` | pyproject.toml configuration notes and examples |
