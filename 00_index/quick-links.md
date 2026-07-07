@@ -32,6 +32,7 @@
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
+- [Minimal Standalone Ruff Config](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal ruff.toml with select/ignore rules
 
 ### pytest
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
@@ -51,6 +52,7 @@
 - [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
 - [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
 - [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
+- [Minimal No Build-System Config](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
 
 ### uv.lock
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first contact notes
@@ -138,6 +140,7 @@
 - [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
 - [Calculator Script](../typer/scripts/tried-typer-calculator.py) — Minimal Typer CLI calculator: add, sub, mul, div
 - [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
+- [Typer CLI Option + Subcommand Snippet](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
 
 ### Profile with py-spy
 - [Self-Profile Speedscope Script](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export

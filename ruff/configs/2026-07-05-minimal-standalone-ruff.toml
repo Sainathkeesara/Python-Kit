@@ -1,0 +1,9 @@
+# last_verified: 2026-07-05 · Ruff n/a
+
+# Standalone ruff.toml — top-level keys, no [tool.ruff] wrapper
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+# Equivalent [tool.ruff.lint] section when embedded in pyproject.toml
+# select = ["E", "F", "W"]
+# ignore = ["E501"]
