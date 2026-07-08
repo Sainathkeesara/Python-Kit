@@ -159,6 +159,8 @@
 - [CPU Speedscope Record Script](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Py-spy Workflow Notes](../py-spy/notes/2026-06-13-my-py-spy-workflow.md) — Documented record, flamegraph, top modes with gotchas
 - [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
+- [Record Formats Compared Notes](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — Compared flamegraph, speedscope, and raw JSON record output formats
+- [Self-Profile Speedscope Script](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 
 ### Parse pip-audit output
 - [List CVEs from pip-audit JSON Snippet](../pip-audit/snippets/tried-list-cves.py) — Pipe pip-audit JSON through to see vulnerable packages
