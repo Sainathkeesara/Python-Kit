@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-07-08
+- psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md`) — Compared flamegraph SVG, speedscope JSON, and raw JSON output formats
+- psy-010: Added py-spy self-profile speedscope script (`py-spy/scripts/2026-07-08-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
+
 ## 2026-07-05
 - con-007: Added Python Programming Fundamentals practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py`) — Practicing data types, control flow, functions, comprehensions, args/kwargs
 - con-008: Added Python Packaging patterns snippet (`docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py`) — Reading pyproject.toml metadata and discovering packages
@@ -38,7 +42,7 @@
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
 - prc-008: Added pre-commit install and run with lint+typecheck notes (`pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md`) — Installed pre-commit, ran with ruff linting and mypy type check on a sample repo
 - uv-007: Added uv CLI help and format notes (`uv/notes/2026-06-16-explored-uv-cli-help-and-format.md`) — Explored uv CLI subcommands, help topics, and output formats
-- gen-005: Added quality tools pyproject.toml config (`general/configs/tried-quality-tools-pyproject.toml`) — Combined ruff, mypy, pytest config in one pyproject.toml
+- gen-005: Added quality tools pyproject.toml config (historically `general/configs/tried-quality-tools-pyproject.toml`, moved to tool-specific configs) — Combined ruff, mypy, pytest config in one pyproject.toml
 - ty-007: Added Ty vs mypy comparison snippet (`ty/snippets/tried-ty-vs-mypy.py`) — Compare Ty and mypy output on the same typed code
 - prc-007: Added ruff + mypy hooks config snippet (`pre-commit/snippets/tried-ruff-mypy-config.yaml`) — Minimal pre-commit config with ruff and mypy hooks
 - tox-005: Upgraded tox config voice to L2 (`tox/configs/tried-lint-and-test-env.ini`) — Enhanced comments with structured reasoning
@@ -53,7 +57,7 @@
 - pdt-007: Added check package deps snippet (`pipdeptree/snippets/tried-check-package-deps.py`) — Look up a specific package in pipdeptree JSON output and print its dependency chain
 - tox-009: Added minimal tox run script (`tox/scripts/tried-minimal-tox-run.sh`) — Create tox.ini with test env and run tox end-to-end
 - ppt-005: Added build-system config notes (`pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md`) — Exploring minimal [build-system] table in pyproject.toml
-- gen-002: Added backlog capacity audit notes (`general/notes/2026-06-10-backlog-capacity-audit.md`) — Count open vs completed tasks per tool, identify next-level blockers
+- gen-002: Added backlog capacity audit notes (historically `general/notes/2026-06-10-backlog-capacity-audit.md`) — Count open vs completed tasks per tool, identify next-level blockers
 
 ## 2026-06-14
 - pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
@@ -71,8 +75,8 @@
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
 - mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
-- gen-003: Added cross-tool workflow notes (`general/notes/2026-06-12-figured-out-quality-tool-workflow.md`) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
-- gen-004: Added first quality chain snippet (`general/snippets/tried-first-quality-chain.py`) — Run Ruff, mypy, and pytest in sequence from one script
+- gen-003: Added cross-tool workflow notes (historically `general/notes/2026-06-12-figured-out-quality-tool-workflow.md`) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
+- gen-004: Added first quality chain snippet (historically `general/snippets/tried-first-quality-chain.py`) — Run Ruff, mypy, and pytest in sequence from one script
 
 ## 2026-06-11
 - tox-004 (rework): Added followed tox quickstart notes (`tox/notes/2026-06-11-followed-tox-quickstart.md`) — Multi-env setup, what tripped me up
@@ -237,7 +241,7 @@
 ## 2026-05-25
 
 - py-005: Added Ruff install script (`py/scripts/install-and-lint.sh`)
-- py-006: Added Ruff config (`py/configs/ruff-pyproject.toml`)
+- py-006: Added Ruff config (`ruff/configs/ruff-pyproject.toml`)
 - py-007: Added pytest primer (`pytest/notes/0000-primer-pytest.md`)
 - py-004: Added Ruff primer (`py/notes/0000-primer-py.md`)
 
