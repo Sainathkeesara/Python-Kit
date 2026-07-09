@@ -32,7 +32,7 @@
 - [Ruff vs Flake8 Docs](../ruff/docs/ruff-vs-flake8-comparison.md) — Rule coverage, migration gotchas, auto-fix comparison
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
-- [Minimal Standalone Ruff Config](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal ruff.toml with select/ignore rules
+- [Minimal Standalone Ruff Config](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
 
 ### pytest
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
@@ -165,7 +165,7 @@
 
 ### pipdeptree
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first contact notes
-- [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — More CLI patterns: --graph-output, --local-only, --python-version, --all
+- [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — --warn silence, --freeze, --exclude, JSON output tricks
 - [Install and Inspect Script](../pipdeptree/scripts/install-and-inspect-deps.sh) — Install pipdeptree and inspect the /work project's dependency tree
 - [JSON Format Notes](../pipdeptree/notes/2026-05-29-format-json-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps
 - [JSON Format and Dependency Type Notes](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md) — Formatting pipdeptree output as JSON and identifying top-level vs transitive deps

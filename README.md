@@ -18,17 +18,16 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [Packaging patterns script](docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Read pyproject.toml metadata and discover packages
+- [Minimal pyproject.toml config](pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
+- [Standalone ruff.toml config](ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
+- [Typer CLI option and subcommand](typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
+- [Packaging patterns script](docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Reading pyproject.toml metadata and discovering packages
 - [Fundamentals practice script](docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practicing data types, control flow, functions, and comprehensions
-- [Testing principles practice script](docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py) — Writing isolated, parametrized tests with fixtures
-- [Lint CI workflow](.github/workflows/lint.yml) — Lint workflow for shell, Python, and YAML
-- [pip-audit CVE snippet](pip-audit/snippets/tried-list-cves.py) — Parse pip-audit JSON and list CVE findings with severity
 
 ## Layout
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
 - `CHANGELOG.md` — Project changelog tracking additions and fixes over time
-- `.github/` — GitHub Actions CI workflows (workflows/lint.yml)
 - `docs/` — Foundational concept primers and project-level documentation
 - `httpie/` — HTTPie CLI notes, install scripts, snippets
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
@@ -59,13 +58,13 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | pre-commit | 5 | 1 | 2 | 2 | — | — |
 | py | 1 | 1 | — | — | — | — |
 | py-spy | 7 | 5 | — | 2 | — | — |
-| pyproject.toml | 3 | — | 4 | — | — | — |
+| pyproject.toml | 3 | — | 5 | — | — | — |
 | pytest | 5 | 3 | — | 2 | 1 | — |
 | rich | 7 | 1 | — | 6 | — | — |
-| ruff | 4 | — | 2 | 2 | 1 | — |
+| ruff | 4 | — | 3 | 2 | 1 | — |
 | tox | 5 | 1 | 2 | — | — | — |
 | ty | 6 | 1 | 2 | 2 | — | — |
-| typer | 3 | 2 | — | 1 | — | — |
+| typer | 3 | 2 | — | 2 | — | — |
 | uv | 6 | 3 | 1 | 1 | 1 | — |
 | uv.lock | 4 | 4 | — | 2 | — | 1 |
 
@@ -76,4 +75,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-06_
+_Last updated: 2026-07-07_

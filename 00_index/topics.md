@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  7 files
+## Foundational concepts  ·  10 files
 
 - [Git Version Control primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md) — Commits, branches, remotes, and how it connects to pre-commit hooks
 - [Python Packaging & Project Config primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — pyproject.toml, PEP 517/621, build backends, entry points
@@ -11,6 +11,8 @@
 - [Static Type Checking & Type Hints primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — Type annotations, gradual typing, type checkers
 - [Virtual Environment & Dependency Mgmt primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md) — Isolated environments, installing packages, lockfiles
 - [Repository structure](../docs/repository-structure.md) — Directory layout and quick reference
+- **scripts** (2): [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py)
+- **snippets** (1): [packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py)
 
 ## httpie  ·  6 files
 
@@ -66,11 +68,11 @@
 - **snippets** (2): [tried-cpu-bound-simulation.py](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process.py](../py-spy/snippets/tried-profile-running-process.py)
 - _and 5 more under `py-spy/` — browse the folder._
 
-## pyproject.toml  ·  7 files
+## pyproject.toml  ·  8 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
 - **notes** (3): [build-system-config](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md), [settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md)
-- **configs** (4): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [first-pep621-config.toml](../pyproject.toml/configs/first-pep621-config.toml)
+- **configs** (5): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [first-pep621-config.toml](../pyproject.toml/configs/first-pep621-config.toml), [minimal-no-build-system.toml](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml)
 
 ## pytest  ·  11 files
 
@@ -88,11 +90,11 @@
 - **snippets** (6): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py)
 - _and 6 more under `rich/` — browse the folder._
 
-## ruff  ·  9 files
+## ruff  ·  10 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **notes** (4): [cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
-- **configs** (2): [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml)
+- **configs** (3): [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml), [minimal-standalone-ruff.toml](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml)
 - **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **snippets** (2): [messy_example.py](../ruff/snippets/messy_example.py), [tried-messy-example.py](../ruff/snippets/tried-messy-example.py)
 
@@ -113,12 +115,12 @@
 - **snippets** (2): [run-ty-on-codebase.py](../ty/snippets/run-ty-on-codebase.py), [tried-ty-vs-mypy.py](../ty/snippets/tried-ty-vs-mypy.py)
 - _and 2 more under `ty/` — browse the folder._
 
-## typer  ·  6 files
+## typer  ·  7 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
 - **notes** (3): [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [quickstart-tripped-me](../typer/notes/2026-05-29-typer-quickstart-notes.md)
 - **scripts** (2): [typer_cli_demo.py](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator.py](../typer/scripts/tried-typer-calculator.py)
-- **snippets** (1): [tried-first-typer-cli-app.py](../typer/snippets/tried-first-typer-cli-app.py)
+- **snippets** (2): [tried-first-typer-cli-app.py](../typer/snippets/tried-first-typer-cli-app.py), [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py)
 
 ## uv  ·  12 files
 
