@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-07-10
+- psy-009: Added record output formats comparison notes (`py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md`) — L2 steps+gotchas+next-try approach comparing flamegraph, speedscope, raw JSON
+- psy-010: Added CPU speedscope record script (`py-spy/scripts/2026-07-10-cpu-speedscope-record.py`) — Self-profiling CPU-bound workload with py-spy record and speedscope JSON export
+
 ## 2026-07-08
 - psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md`) — Compared flamegraph SVG, speedscope JSON, and raw JSON output formats
 - psy-010: Added py-spy self-profile speedscope script (`py-spy/scripts/2026-07-08-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export
