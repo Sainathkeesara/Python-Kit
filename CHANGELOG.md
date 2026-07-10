@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-07-10
+- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
+
 ## 2026-07-08
 - psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md`) — Compared flamegraph SVG, speedscope JSON, and raw JSON output formats
 - psy-010: Added py-spy self-profile speedscope script (`py-spy/scripts/2026-07-08-cpu-speedscope-record.py`) — CPU-bound workload with py-spy record and speedscope JSON export

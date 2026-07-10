@@ -163,6 +163,7 @@
 - [Self-Profile Speedscope Script](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 
 ### Parse pip-audit output
+- [List CVEs from pip-audit JSON Snippet (dated)](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Pipe pip-audit JSON through to see vulnerable packages
 - [List CVEs from pip-audit JSON Snippet](../pip-audit/snippets/tried-list-cves.py) — Pipe pip-audit JSON through to see vulnerable packages
 
 ### pipdeptree
