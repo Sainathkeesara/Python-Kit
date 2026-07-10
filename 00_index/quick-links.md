@@ -147,6 +147,8 @@
 
 ### py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
+- [Record Output Formats Compared](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — L2 notes: steps, gotchas, and what I'd try next with flamegraph, speedscope, raw JSON
+- [CPU Speedscope Record Script](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — Self-profiling CPU-bound workload with py-spy record and speedscope export
 - [Install and Record Flamegraph](../py-spy/scripts/tried-install-and-record-flamegraph.sh) — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
