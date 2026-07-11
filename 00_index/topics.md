@@ -28,7 +28,6 @@
 - **configs** (3): [strict-disallow-ignore-config.ini](../mypy/configs/tried-strict-disallow-ignore-config.ini), [strict-mypy-config.toml](../mypy/configs/tried-strict-mypy-config.toml), [minimal-mypy-config.ini](../mypy/configs/tried-minimal-mypy-config.ini)
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (3): [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
-- _and 3 more under `mypy/` — browse the folder._
 
 ## pip-audit  ·  9 files
 
@@ -60,13 +59,13 @@
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
 - **scripts** (1): [install-and-lint.sh](../py/scripts/install-and-lint.sh)
 
-## py-spy  ·  14 files
+## py-spy  ·  16 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
-- **notes** (7): [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [compared-record-output-formats](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md), [followed-quickstart](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md)
-- **scripts** (5): [tried-cpu-speedscope-record.py](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record.py](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh)
+- **notes** (8): [compared-record-output-formats-0708](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md), [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [compared-record-output-formats-0613](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md)
+- **scripts** (6): [cpu-speedscope-record-0708](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py)
 - **snippets** (2): [tried-cpu-bound-simulation.py](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process.py](../py-spy/snippets/tried-profile-running-process.py)
-- _and 5 more under `py-spy/` — browse the folder._
+- _and 7 more under `py-spy/` — browse the folder._
 
 ## pyproject.toml  ·  8 files
 
@@ -104,7 +103,6 @@
 - **notes** (5): [followed-quickstart](../tox/notes/2026-06-11-followed-tox-quickstart.md), [quickstart](../tox/notes/2026-06-08-tox-quickstart.md), [cli-first-run](../tox/notes/2026-05-31-tox-cli-first-run.md)
 - **configs** (2): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini)
 - **scripts** (1): [tried-minimal-tox-run.sh](../tox/scripts/tried-minimal-tox-run.sh)
-- _and 1 more under `tox/` — browse the folder._
 
 ## ty  ·  11 files
 
@@ -113,7 +111,6 @@
 - **configs** (2): [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
 - **scripts** (1): [tried-ty-pipeline.sh](../ty/scripts/tried-ty-pipeline.sh)
 - **snippets** (2): [run-ty-on-codebase.py](../ty/snippets/run-ty-on-codebase.py), [tried-ty-vs-mypy.py](../ty/snippets/tried-ty-vs-mypy.py)
-- _and 2 more under `ty/` — browse the folder._
 
 ## typer  ·  7 files
 

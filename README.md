@@ -6,7 +6,7 @@
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
-> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
+> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order.
 
 ## Who this is for
 
@@ -18,11 +18,11 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
+- [Compared py-spy record output formats](py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
+- [CPU speedscope record script](py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Minimal pyproject.toml config](pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
 - [Standalone ruff.toml config](ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
 - [Typer CLI option and subcommand](typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
-- [Packaging patterns script](docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Reading pyproject.toml metadata and discovering packages
-- [Fundamentals practice script](docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practicing data types, control flow, functions, and comprehensions
 
 ## Layout
 
@@ -57,7 +57,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | pipdeptree | 7 | 1 | — | 5 | — | — |
 | pre-commit | 5 | 1 | 2 | 2 | — | — |
 | py | 1 | 1 | — | — | — | — |
-| py-spy | 7 | 5 | — | 2 | — | — |
+| py-spy | 8 | 6 | — | 2 | — | — |
 | pyproject.toml | 3 | — | 5 | — | — | — |
 | pytest | 5 | 3 | — | 2 | 1 | — |
 | rich | 7 | 1 | — | 6 | — | — |
@@ -72,7 +72,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Status
 
-Notes and snippets continue to expand across uv, pytest, rich, mypy, Ty, typer, pipdeptree, py-spy, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across uv, pytest, rich, mypy, py-spy, typer, pipdeptree, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-07_
+_Last updated: 2026-07-10_

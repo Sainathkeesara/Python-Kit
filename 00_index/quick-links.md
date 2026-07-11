@@ -142,11 +142,10 @@
 - [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
 - [Typer CLI Option + Subcommand Snippet](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
 
-### Profile with py-spy
-- [Self-Profile Speedscope Script](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
-
 ### py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
+- [Record Output Formats Compared](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — L2 notes: steps, gotchas, and what I'd try next with flamegraph, speedscope, raw JSON
+- [CPU Speedscope Record Script](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — Self-profiling CPU-bound workload with py-spy record and speedscope export
 - [Install and Record Flamegraph](../py-spy/scripts/tried-install-and-record-flamegraph.sh) — Install py-spy and profile CPU-bound script to flamegraph SVG
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
@@ -157,6 +156,8 @@
 - [Record Output Formats Notes](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md) — Compared flamegraph SVG, speedscope JSON, and raw JSON formats
 - [Speedscope Record Script](../py-spy/scripts/tried-py-spy-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [CPU Speedscope Record Script](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
+- [Record Formats Compared (July)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — Compared flamegraph, speedscope, and raw JSON record output formats
+- [CPU Speedscope Record (July)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Py-spy Workflow Notes](../py-spy/notes/2026-06-13-my-py-spy-workflow.md) — Documented record, flamegraph, top modes with gotchas
 - [Profile Running Process Snippet](../py-spy/snippets/tried-profile-running-process.py) — Profile a running Python process and export flamegraph SVG
 - [Record Formats Compared Notes](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — Compared flamegraph, speedscope, and raw JSON record output formats
