@@ -21,8 +21,8 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 - [Compared py-spy record output formats](py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [CPU speedscope record script](py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [Parse pip-audit JSON CVEs](pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
-- [Minimal pyproject.toml config](pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
-- [Standalone ruff.toml config](ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
+- [Compared py-spy record output formats (July 8)](py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
+- [CPU speedscope record script (July 8)](py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 
 ## Layout
 
@@ -49,30 +49,30 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 <details>
 <summary>Coverage table</summary>
 
-| Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks |
-|------|-------|---------|---------|----------|------|-----------|
-| httpie | 4 | 1 | — | 1 | — | — |
-| mypy | 7 | 1 | 3 | 3 | — | — |
-| pip-audit | 3 | 3 | 1 | 3 | — | — |
-| pipdeptree | 7 | 1 | — | 5 | — | — |
-| pre-commit | 5 | 1 | 2 | 2 | — | — |
-| py | 1 | 1 | — | — | — | — |
-| py-spy | 9 | 7 | — | 2 | — | — |
-| pyproject.toml | 3 | — | 5 | — | — | — |
-| pytest | 5 | 3 | — | 2 | 1 | — |
-| rich | 7 | 1 | — | 6 | — | — |
-| ruff | 4 | — | 3 | 2 | 1 | — |
-| tox | 5 | 1 | 2 | — | — | — |
-| ty | 6 | 1 | 2 | 2 | — | — |
-| typer | 3 | 2 | — | 2 | — | — |
-| uv | 6 | 3 | 1 | 1 | 1 | — |
-| uv.lock | 4 | 4 | — | 2 | — | 1 |
+| Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
+|------|-------|---------|---------|----------|------|-----------|---------------|
+| httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
+| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-27 |
+| pip-audit | 3 | 3 | 1 | 3 | — | — | 2026-07-10 |
+| pipdeptree | 7 | 1 | — | 5 | — | — | 2026-06-18 |
+| pre-commit | 5 | 1 | 2 | 2 | — | — | 2026-06-21 |
+| py | 1 | 1 | — | — | — | — | 2026-06-17 |
+| py-spy | 9 | 7 | — | 2 | — | — | 2026-07-10 |
+| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
+| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-17 |
+| rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
+| ruff | 4 | — | 3 | 2 | 1 | — | 2026-07-05 |
+| tox | 5 | 1 | 2 | — | — | — | 2026-06-17 |
+| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-21 |
+| typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
+| uv | 6 | 3 | 1 | 1 | 1 | — | 2026-06-16 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-21 |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across uv, pytest, rich, mypy, py-spy, typer, pipdeptree, tox, httpie, and pre-commit. Concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
 _Last updated: 2026-07-12_
