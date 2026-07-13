@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-07-13
+- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
+
 ## 2026-07-10
 - pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
 
