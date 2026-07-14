@@ -52,7 +52,7 @@ Advanced patterns and integrated workflows.
 - **Full pre-commit pipeline** — Chain Ruff, mypy, and pytest hooks: [multi-hook config](../pre-commit/configs/tried-multi-hook-config.yaml).
 - **Cross-tool quality workflow** — How Ruff, mypy, pytest, pre-commit, and uv fit together in practice.
 - **Profiling advanced output formats** — Compare flamegraph SVG, speedscope JSON, and raw JSON: [output formats notes (June)](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md) and [output formats notes (July)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md).
-- **CVE parsing from pip-audit** — Parse vulnerability scan output programmatically: [CVE snippet](../pip-audit/snippets/tried-list-cves.py).
+- **CVE parsing from pip-audit** — Parse vulnerability scan output programmatically: [CVE snippet (July 10)](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) and [CVE snippet (July 13)](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py).
 - **Speedscope profiling workflow** — Record and export speedscope JSON from CPU-bound workloads: [speedscope script](../py-spy/scripts/tried-cpu-speedscope-record.py) and [July speedscope script](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py).
 - **Reproducible lock files** — Test uv.lock checksum stability across lock commands: [reproducibility script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh).
 
