@@ -14,15 +14,15 @@ A working Python engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers package & project management (uv), linting & formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml). Includes six foundational concept primers that underpin the whole stack.
+Personal notes, configuration files, scripts, and snippets collected while getting productive with the modern Python toolchain. Covers package & project management (uv), linting & formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml). Six foundational concept primers underpin the whole stack.
 
 ## Quick links
 
+- [Parse pip-audit JSON CVEs](pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [Compared py-spy record output formats](py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [CPU speedscope record script](py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
-- [Parse pip-audit JSON CVEs](pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
+- [Parse pip-audit JSON CVEs (July 10)](pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [Compared py-spy record output formats (July 8)](py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
-- [CPU speedscope record script (July 8)](py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 
 ## Layout
 
@@ -53,7 +53,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
 | mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-27 |
-| pip-audit | 3 | 3 | 1 | 3 | — | — | 2026-07-10 |
+| pip-audit | 3 | 3 | 1 | 4 | — | — | 2026-07-13 |
 | pipdeptree | 7 | 1 | — | 5 | — | — | 2026-06-18 |
 | pre-commit | 5 | 1 | 2 | 2 | — | — | 2026-06-21 |
 | py | 1 | 1 | — | — | — | — | 2026-06-17 |
@@ -72,7 +72,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Status
 
-Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Recently added a pip-audit JSON CVE parser snippet. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-12_
+_Last updated: 2026-07-13_

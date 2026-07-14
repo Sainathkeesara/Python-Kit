@@ -82,7 +82,8 @@
 ### Audit dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
-- [Parse pip-audit JSON CVEs](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
+- [Parse pip-audit JSON CVEs (July 13)](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
+- [Parse pip-audit JSON CVEs (July 10)](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [CVE Findings Snippet](../pip-audit/snippets/list-cve-findings.py) — Parse pip-audit JSON and list CVE findings with severity
 - [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
 - [Parse CVE Findings Snippet](../pip-audit/snippets/tried-list-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
