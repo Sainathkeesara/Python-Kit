@@ -57,7 +57,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | pipdeptree | 7 | 1 | — | 5 | — | — | 2026-06-18 |
 | pre-commit | 5 | 1 | 2 | 2 | — | — | 2026-06-21 |
 | py | 1 | 1 | — | — | — | — | 2026-05-25 |
-| py-spy | 9 | 8 | — | 2 | — | — | 2026-07-10 |
+| py-spy | 9 | 7 | — | 2 | — | — | 2026-07-10 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
 | pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-17 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
@@ -75,4 +75,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-15
+_Last updated: 2026-07-16
