@@ -29,13 +29,13 @@
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (3): [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
 
-## pip-audit  ·  10 files
+## pip-audit  ·  11 files
 
 - **primer:** [0000-primer-pip-audit.md](../pip-audit/notes/0000-primer-pip-audit.md)
 - **notes** (3): [installs-and-runs-pip-audit](../pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md), [pip-audit-findings](../pip-audit/notes/2026-05-26-pip-audit-findings.md)
 - **scripts** (3): [scan-project.sh](../pip-audit/scripts/scan-project.sh), [scan-and-parse-json.sh](../pip-audit/scripts/scan-and-parse-json.sh), [audit-and-parse-json.sh](../pip-audit/scripts/2026-06-09-audit-and-parse-json.sh)
 - **configs** (1): [pip-audit-ignore.toml](../pip-audit/configs/pip-audit-ignore.toml)
-- **snippets** (3): [list-cve-findings.py](../pip-audit/snippets/list-cve-findings.py), [tried-list-cves.py](../pip-audit/snippets/tried-list-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py)
+- **snippets** (4): [parse-pip-audit-json-cves-2026-07-13](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py), [list-cve-findings.py](../pip-audit/snippets/list-cve-findings.py), [tried-list-cves.py](../pip-audit/snippets/tried-list-cves.py)
 
 ## pipdeptree  ·  13 files
 
@@ -57,11 +57,11 @@
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
 - **scripts** (1): [install-and-lint.sh](../py/scripts/install-and-lint.sh)
 
-## py-spy  ·  18 files
+## py-spy  ·  19 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
 - **notes** (8): [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md), [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [followed-py-spy-quickstart](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md), [tripped-on-py-spy-top-session](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md), [tried-py-spy-top-session](../py-spy/notes/2026-06-08-tried-py-spy-top-session.md), [tried-py-spy-cli-subcommands](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md)
-- **scripts** (7): [2026-07-10-cpu-speedscope-record.py](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [2026-07-08-cpu-speedscope-record.py](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py)
+- **scripts** (8): [2026-07-10-cpu-speedscope-record.py](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [2026-07-08-cpu-speedscope-record.py](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py), [cpu_worker.py](../py-spy/scripts/cpu_worker.py)
 - **snippets** (2): [tried-cpu-bound-simulation.py](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process.py](../py-spy/snippets/tried-profile-running-process.py)
 
 ## pyproject.toml  ·  8 files
