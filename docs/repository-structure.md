@@ -35,7 +35,6 @@ This document describes the directory layout of Python-Kit.
 | Snippets | `<tool>/snippets/<topic>.<ext>` | `.py`, `.sh`, etc. |
 | Scripts | `<tool>/scripts/<topic>.<ext>` | `.sh`, `.py` |
 | Configs | `<tool>/configs/<topic>.<fmt>` | `.toml`, `.yaml` |
-| Manifests | `<tool>/manifests/<topic>.<fmt>` | `.yaml` |
 
 ## Quick reference
 
