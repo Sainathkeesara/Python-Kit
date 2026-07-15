@@ -28,7 +28,7 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
 - `CHANGELOG.md` — Project changelog tracking additions and fixes over time
-- `docs/` — Foundational concept primers and project-level documentation
+- `docs/` — Foundational concept primers and project-level documentation (10 files)
 - `httpie/` — HTTPie CLI notes, install scripts, snippets
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
@@ -52,27 +52,27 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
-| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-27 |
+| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-12 |
 | pip-audit | 3 | 3 | 1 | 4 | — | — | 2026-07-13 |
-| pipdeptree | 7 | 1 | — | 5 | — | — | 2026-06-18 |
-| pre-commit | 5 | 1 | 2 | 2 | — | — | 2026-06-21 |
+| pipdeptree | 7 | 1 | — | 5 | — | — | 2026-06-17 |
+| pre-commit | 5 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | 2026-06-17 |
 | py-spy | 9 | 7 | — | 2 | — | — | 2026-07-10 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
-| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-17 |
+| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-10 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
 | ruff | 4 | — | 3 | 2 | 1 | — | 2026-07-05 |
-| tox | 5 | 1 | 2 | — | — | — | 2026-06-17 |
-| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-21 |
+| tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
+| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
 | uv | 6 | 3 | 1 | 1 | 1 | — | 2026-06-16 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-21 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Recently added a pip-audit JSON CVE parser snippet. Concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across py-spy, pip-audit, ruff, and typer. Recently added a pip-audit JSON CVE parser snippet and py-spy speedscope recording scripts. Concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-13_
+_Last updated: 2026-07-15_
