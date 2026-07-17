@@ -29,27 +29,27 @@
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (3): [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
 
-## pip-audit  ·  11 files
+## pip-audit  ·  12 files
 
 - **primer:** [0000-primer-pip-audit.md](../pip-audit/notes/0000-primer-pip-audit.md)
-- **notes** (3): [installs-and-runs-pip-audit](../pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md), [pip-audit-findings](../pip-audit/notes/2026-05-26-pip-audit-findings.md)
+- **notes** (4): [followed-pip-audit-quickstart](../pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md), [installs-and-runs-pip-audit](../pip-audit/notes/2026-06-09-installs-and-runs-pip-audit.md), [pip-audit-findings](../pip-audit/notes/2026-05-26-pip-audit-findings.md)
 - **scripts** (3): [scan-project.sh](../pip-audit/scripts/scan-project.sh), [scan-and-parse-json.sh](../pip-audit/scripts/scan-and-parse-json.sh), [audit-and-parse-json.sh](../pip-audit/scripts/2026-06-09-audit-and-parse-json.sh)
 - **configs** (1): [pip-audit-ignore.toml](../pip-audit/configs/pip-audit-ignore.toml)
 - **snippets** (4): [parse-pip-audit-json-cves-2026-07-13](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py), [list-cve-findings.py](../pip-audit/snippets/list-cve-findings.py), [tried-list-cves.py](../pip-audit/snippets/tried-list-cves.py)
 
-## pipdeptree  ·  13 files
+## pipdeptree  ·  14 files
 
 - **primer:** [0000-primer-pipdeptree.md](../pipdeptree/notes/0000-primer-pipdeptree.md)
 - **notes** (7): [pipdeptree-patterns-i-use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md), [common-cli-patterns](../pipdeptree/notes/2026-06-13-common-cli-patterns.md), [followed-pipdeptree-quickstart](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md), [format-json-and-identify-deps](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md), [format-json-deps](../pipdeptree/notes/2026-05-29-format-json-deps.md), [tripped-on-pipdeptree-filtering](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md)
-- **scripts** (1): [install-and-inspect-deps.sh](../pipdeptree/scripts/install-and-inspect-deps.sh)
+- **scripts** (2): [list-package-deps.py](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps.sh](../pipdeptree/scripts/install-and-inspect-deps.sh)
 - **snippets** (5): [parse-pipdeptree-json.py](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps.py](../pipdeptree/snippets/find-reverse-deps.py), [check-package-deps.py](../pipdeptree/snippets/check-package-deps.py), [tried-check-package-deps.py](../pipdeptree/snippets/tried-check-package-deps.py), [tried-identify-leaf-packages.py](../pipdeptree/snippets/tried-identify-leaf-packages.py)
 
-## pre-commit  ·  10 files
+## pre-commit  ·  11 files
 
 - **primer:** [0000-primer-pre-commit.md](../pre-commit/notes/0000-primer-pre-commit.md)
 - **notes** (5): [pre-commit-cli-walkthrough](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md), [installed-pre-commit-ran-lint-typecheck](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md), [installed-pre-commit-explored-cli](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md), [run-pre-commit-on-work](../pre-commit/notes/2026-05-28-run-pre-commit-on-work.md)
 - **configs** (2): [tried-multi-hook-config.yaml](../pre-commit/configs/tried-multi-hook-config.yaml), [tried-first-ruff-hooks-config.yaml](../pre-commit/configs/tried-first-ruff-hooks-config.yaml)
-- **scripts** (1): [install-and-run.sh](../pre-commit/scripts/install-and-run.sh)
+- **scripts** (2): [run-pre-commit-ruff-trailing-ws.sh](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh), [install-and-run.sh](../pre-commit/scripts/install-and-run.sh)
 - **snippets** (2): [tried-ruff-mypy-config.yaml](../pre-commit/snippets/tried-ruff-mypy-config.yaml), [first-pre-commit-config.yaml](../pre-commit/snippets/first-pre-commit-config.yaml)
 
 ## py  ·  2 files

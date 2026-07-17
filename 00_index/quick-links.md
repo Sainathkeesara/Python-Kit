@@ -73,6 +73,7 @@
 - [Pre-commit Multi-Hook Config](../pre-commit/configs/tried-multi-hook-config.yaml) — Ruff + mypy + trailing-whitespace hooks
 - [Ruff + Mypy Hooks Config](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
 - [Install and Run Script](../pre-commit/scripts/install-and-run.sh) — Install pre-commit and run on my repo
+- [Run Ruff + Trailing-Whitespace Hooks Script](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project with ruff and trailing-whitespace hooks, run them once
 - [Run Pre-commit on /work Notes](../pre-commit/notes/2026-05-28-run-pre-commit-on-work.md) — Running pre-commit across /work and interpreting results
 - [Ruff-Only Hook Config](../pre-commit/configs/tried-first-ruff-hooks-config.yaml) — Minimal pre-commit config with just the ruff hook
 - [Pre-commit CLI Exploration Notes](../pre-commit/notes/2026-06-10-installed-pre-commit-explored-cli.md) — Install pre-commit, explore CLI subcommands and flags
@@ -81,6 +82,7 @@
 
 ### Audit dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first contact notes
+- [Followed pip-audit Quickstart Notes](../pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md) — Quickstart walkthrough: exit codes, dry runs, and irrelevant-report gotchas
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
 - [Parse pip-audit JSON CVEs (July 13)](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [Parse pip-audit JSON CVEs (July 10)](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
@@ -91,6 +93,7 @@
 - [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — --warn silence, --freeze, --exclude, JSON output tricks
 - [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
+- [List Package Dependencies Script](../pipdeptree/scripts/list-package-deps.py) — Use pipdeptree as a library to list all deps of a named package
 
 ### rich
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first contact notes
