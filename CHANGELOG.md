@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-07-17
+- pau-007: Added pip-audit quickstart tripped-me-up notes (`pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md`) — Followed official quickstart: --local, --require-hashes, --fix gotchas, exit codes, --ignore-vuln
+- prc-010: Added pre-commit ruff+trailing-whitespace run script (`pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh`) — Set up sample project, configure pre-commit, run hooks once
+- pdt-011: Added pipdeptree library dependency-listing script (`pipdeptree/scripts/list-package-deps.py`) — Minimal Python script using pipdeptree as a library to list all dependencies of a package
+
 ## 2026-07-13
 - pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
 
