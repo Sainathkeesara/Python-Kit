@@ -3,6 +3,8 @@
 ## 2026-07-19
 - mypy-011: Added minimal typed module snippet (`mypy/snippets/2026-07-19-typed-small-module.py`) — Minimal typed Python file to validate with mypy on a small module
 - psy-011: Added py-spy install + live-process profiling notes (`py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md`) — What I learned installing py-spy and profiling my first running Python process with `py-spy top`
+- uv-006: Added minimal pyproject.toml for uv-managed project (`uv/configs/2026-07-19-uv-managed-project.toml`) — Minimal pyproject.toml with project metadata, dependencies, scripts, and hatchling build-backend
+- uv-007: Added minimal uv workflow script (`uv/scripts/2026-07-19-uv-workflow.sh`) — Walk through uv init, add, run, and inspect generated lockfile
 
 ## 2026-07-17
 - pau-007: Added pip-audit quickstart tripped-me-up notes (`pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md`) — Followed official quickstart: --local, --require-hashes, --fix gotchas, exit codes, --ignore-vuln
