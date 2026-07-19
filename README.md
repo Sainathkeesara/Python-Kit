@@ -18,11 +18,11 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [Followed the official pip-audit quickstart](pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md) — Working through the quickstart, the exit-code and irrelevant-report gotchas
-- [List a package's dependencies with pipdeptree](pipdeptree/scripts/list-package-deps.py) — Use pipdeptree as a library to list all deps of a named package
-- [Run pre-commit with ruff + trailing-whitespace](pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project and run the two hooks once
-- [CPU-bound worker for py-spy](py-spy/scripts/cpu_worker.py) — Minimal CPU-bound workload for profiling practice
-- [Parse pip-audit JSON CVEs (July 13)](pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
+- [Managed project config for uv](uv/configs/2026-07-19-uv-managed-project.toml) — Scaffolded uv-managed project with pyproject.toml, build-system, and dependencies
+- [End-to-end uv workflow](uv/scripts/2026-07-19-uv-workflow.sh) — Create project, add deps, sync, run, and lock with uv
+- [HTTPie defaults config](httpie/configs/2026-07-19-httpie-defaults.json) — Default request options for HTTPie CLI sessions
+- [Dev dependencies for pipdeptree](pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml) — pyproject.toml excerpt declaring dev dependencies for dependency analysis
+- [Minimal pytest config](pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
 
 ## Layout
 
@@ -50,28 +50,28 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
-| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-12 |
+| httpie | 4 | 1 | 1 | 1 | — | — | 2026-06-10 |
+| mypy | 7 | 1 | 3 | 4 | — | — | 2026-06-12 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | — | 5 | — | — | 2026-06-17 |
+| pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-06-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 11 | 8 | — | 2 | — | — | 2026-07-10 |
+| py-spy | 10 | 8 | — | 2 | — | — | 2026-07-19 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-06-05 |
-| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-10 |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-06-10 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
 | ruff | 4 | — | 3 | 2 | 1 | — | 2026-06-17 |
 | tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
 | ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | typer | 3 | 2 | — | 2 | — | — | 2026-06-10 |
-| uv | 6 | 3 | 1 | 1 | 1 | — | 2026-06-16 |
+| uv | 6 | 4 | 2 | 1 | 1 | — | 2026-06-16 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across pip-audit, pipdeptree, pre-commit, and py-spy. The concept primer library covers all six foundational areas for the Python toolchain.
+Notes and configs continue to expand — new additions this cycle include a uv managed-project config and workflow script, HTTPie defaults, pipdeptree dev-dependencies config, and a minimal pytest config. The concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-18_
+_Last updated: 2026-07-19_
