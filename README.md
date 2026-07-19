@@ -6,7 +6,7 @@
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
-> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order.
+> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
 
 ## Who this is for
 
@@ -18,17 +18,17 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [Followed the official pip-audit quickstart](pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md) — Working through the quickstart, the exit-code and irrelevant-report gotchas
-- [List a package's dependencies with pipdeptree](pipdeptree/scripts/list-package-deps.py) — Use pipdeptree as a library to list all deps of a named package
-- [Run pre-commit with ruff + trailing-whitespace](pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project and run the two hooks once
-- [CPU-bound worker for py-spy](py-spy/scripts/cpu_worker.py) — Minimal CPU-bound workload for profiling practice
-- [Parse pip-audit JSON CVEs (July 13)](pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
+- [First Ruff project: what tripped me up](ruff/notes/2026-07-19-tripped-on-ruff-first-project.md) — Initial Ruff setup, CLI exploration, and the gotchas that caught me
+- [Followed the official httpie quickstart](httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Sessions, headers, and JSON handling gotchas from a fresh install
+- [httpie API request workflow script](httpie/scripts/2026-07-19-httpie-request-workflow.sh) — Workflow covering GET, POST, auth, and file upload patterns
+- [uv managed project config](uv/configs/2026-07-19-uv-managed-project.toml) — Structured pyproject.toml with uv tool sections for a managed project
+- [End-to-end uv workflow script](uv/scripts/2026-07-19-uv-workflow.sh) — Full loop: init, add dependencies, sync, and run
 
 ## Layout
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
 - `docs/` — Foundational concept primers and project-level documentation
-- `httpie/` — HTTPie CLI notes, install scripts, snippets
+- `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
@@ -50,28 +50,28 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 4 | 1 | 1 | 1 | — | — | 2026-07-19 |
-| mypy | 7 | 1 | 3 | 4 | — | — | 2026-07-19 |
+| httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
+| mypy | 7 | 1 | 3 | 4 | — | — | 2026-06-12 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | — | 5 | — | — | 2026-06-17 |
+| pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-06-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 8 | — | 2 | — | — | 2026-07-19 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-06-05 |
-| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-10 |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-06-10 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
-| ruff | 4 | — | 3 | 2 | 1 | — | 2026-06-17 |
+| ruff | 5 | — | 3 | 2 | 1 | — | 2026-07-19 |
 | tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
 | ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | typer | 3 | 2 | — | 2 | — | — | 2026-06-10 |
-| uv | 6 | 3 | 1 | 1 | 1 | — | 2026-06-16 |
+| uv | 6 | 4 | 2 | 1 | 1 | — | 2026-06-16 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across pip-audit, pipdeptree, pre-commit, and py-spy. The concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across ruff, httpie, uv, py-spy, and pip-audit. The concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-19_
+_Last updated: 2026-07-20_

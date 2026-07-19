@@ -18,7 +18,7 @@ These concepts have no prerequisites and are the starting point for Python tooli
 These tools are unlocked from the start and form the day-to-day workflow.
 
 - **uv** — Fast package and project manager. Install packages, manage environments, run scripts. Start with the [uv Primer](../uv/notes/0000-primer-uv.md) and [install script](../uv/scripts/install-and-first-command.sh).
-- **Ruff** — Linter and formatter. Catches bugs and enforces style. Start with the [Ruff Primer](../ruff/notes/0000-primer-ruff.md) and [quickstart notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md).
+- **Ruff** — Linter and formatter. Catches bugs and enforces style. Start with the [Ruff Primer](../ruff/notes/0000-primer-ruff.md) and [quickstart notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md). When applying to a real project, see [what tripped me up](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md).
 - **pytest** — Test runner with fixtures and parametrization. Start with the [pytest Primer](../pytest/notes/0000-primer-pytest.md) and [first test suite notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md).
 - **pre-commit** — Hook framework that runs linters and type checkers before each commit. Start with the [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) and [install/run script](../pre-commit/scripts/install-and-run.sh).
 - **pyproject.toml** — Central config file for all modern Python tools. Start with the [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) and [minimal config](../pyproject.toml/configs/minimal-pyproject.toml).
@@ -40,7 +40,7 @@ Tools that depend on foundational concepts being complete.
 - **Terminal output (rich)** — Beautiful terminal formatting with tables, panels, progress bars. Start with the [rich Primer](../rich/notes/0000-primer-rich.md) and [first script](../rich/scripts/first-table-panel-progress.py).
 - **CLI framework (typer)** — Build command-line interfaces with type hints. Start with the [typer Primer](../typer/notes/0000-primer-typer.md) and [hello-world notes](../typer/notes/2026-06-10-first-typer-hello-world.md).
 - **Profiling (py-spy)** — Sampling profiler for running Python processes. Start with the [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) and [flamegraph script](../py-spy/scripts/tried-install-and-record-flamegraph.sh).
-- **API testing (httpie)** — User-friendly HTTP client for REST APIs. Start with the [httpie Primer](../httpie/notes/0000-primer-httpie.md) and [install/test script](../httpie/scripts/install_and_test_httpie.sh).
+- **API testing (httpie)** — User-friendly HTTP client for REST APIs. Start with the [httpie Primer](../httpie/notes/0000-primer-httpie.md) and [quickstart notes](../httpie/notes/2026-07-19-followed-httpie-quickstart.md). The [request workflow script](../httpie/scripts/2026-07-19-httpie-request-workflow.sh) covers GET, POST, auth, and file uploads.
 - **Test automation (tox)** — Multi-environment test runner. Start with the [tox Primer](../tox/notes/0000-primer-tox.md) and [minimal config](../tox/configs/tox.ini).
 - **uv vs pip cheat sheet** — Quick reference for migrating from pip to uv: [cheat sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md).
 
