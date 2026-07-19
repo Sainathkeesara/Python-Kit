@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-07-19
+- ruf-011: Added Ruff first-project tripped-me-up notes (`ruff/notes/2026-07-19-tripped-on-ruff-first-project.md`) — What tripped me up applying Ruff to my first real project: config confusion, select/ignore interaction, check-before-format order
 - mypy-011: Added minimal typed module snippet (`mypy/snippets/2026-07-19-typed-small-module.py`) — Minimal typed Python file to validate with mypy on a small module
 - psy-011: Added py-spy install + live-process profiling notes (`py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md`) — What I learned installing py-spy and profiling my first running Python process with `py-spy top`
 - uv-006: Added minimal pyproject.toml for uv-managed project (`uv/configs/2026-07-19-uv-managed-project.toml`) — Minimal pyproject.toml with project metadata, dependencies, scripts, and hatchling build-backend
