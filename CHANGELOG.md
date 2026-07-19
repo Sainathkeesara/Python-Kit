@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-07-19
+- mypy-011: Added minimal typed module snippet (`mypy/snippets/2026-07-19-typed-small-module.py`) — Minimal typed Python file to validate with mypy on a small module
+- psy-011: Added py-spy install + live-process profiling notes (`py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md`) — What I learned installing py-spy and profiling my first running Python process with `py-spy top`
+
 ## 2026-07-17
 - pau-007: Added pip-audit quickstart tripped-me-up notes (`pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md`) — Followed official quickstart: --local, --require-hashes, --fix gotchas, exit codes, --ignore-vuln
 - prc-010: Added pre-commit ruff+trailing-whitespace run script (`pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh`) — Set up sample project, configure pre-commit, run hooks once
