@@ -50,13 +50,13 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
-| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-12 |
+| httpie | 4 | 1 | 1 | 1 | — | — | 2026-07-19 |
+| mypy | 7 | 1 | 3 | 4 | — | — | 2026-07-19 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 7 | 2 | — | 5 | — | — | 2026-06-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 11 | 8 | — | 2 | — | — | 2026-07-10 |
+| py-spy | 10 | 8 | — | 2 | — | — | 2026-07-19 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-06-05 |
 | pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-10 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
@@ -74,4 +74,4 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 Notes and snippets continue to expand across pip-audit, pipdeptree, pre-commit, and py-spy. The concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-18_
+_Last updated: 2026-07-19_

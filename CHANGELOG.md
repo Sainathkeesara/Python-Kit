@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-07-19
+- httpie-001: Added followed httpie quickstart notes (`httpie/notes/2026-07-19-followed-httpie-quickstart.md`) — Followed official quickstart: GET, POST, raw JSON, headers, what tripped me up
+- httpie-002: Added httpie request workflow script (`httpie/scripts/2026-07-19-httpie-request-workflow.sh`) — GET, POST, JSON body, custom headers, --check-status
 - mypy-011: Added minimal typed module snippet (`mypy/snippets/2026-07-19-typed-small-module.py`) — Minimal typed Python file to validate with mypy on a small module
 - psy-011: Added py-spy install + live-process profiling notes (`py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md`) — What I learned installing py-spy and profiling my first running Python process with `py-spy top`
 - uv-006: Added minimal pyproject.toml for uv-managed project (`uv/configs/2026-07-19-uv-managed-project.toml`) — Minimal pyproject.toml with project metadata, dependencies, scripts, and hatchling build-backend
