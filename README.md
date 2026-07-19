@@ -27,7 +27,6 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 ## Layout
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
-- `CHANGELOG.md` — Project changelog tracking additions and fixes over time
 - `docs/` — Foundational concept primers and project-level documentation
 - `httpie/` — HTTPie CLI notes, install scripts, snippets
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
@@ -51,22 +50,22 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 4 | 1 | — | 1 | — | — | — |
-| mypy | 7 | 1 | 3 | 3 | — | — | — |
+| httpie | 4 | 1 | — | 1 | — | — | 2026-06-10 |
+| mypy | 7 | 1 | 3 | 3 | — | — | 2026-06-12 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | — | 5 | — | — | 2026-07-17 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
+| pipdeptree | 7 | 2 | — | 5 | — | — | 2026-06-17 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 9 | 8 | — | 2 | — | — | 2026-07-10 |
-| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
-| pytest | 5 | 3 | — | 2 | 1 | — | — |
-| rich | 7 | 1 | — | 6 | — | — | — |
-| ruff | 4 | — | 3 | 2 | 1 | — | 2026-07-05 |
-| tox | 5 | 1 | 2 | — | — | — | — |
-| ty | 6 | 1 | 2 | 2 | — | — | — |
-| typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
-| uv | 6 | 3 | 1 | 1 | 1 | — | — |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — |
+| py-spy | 11 | 8 | — | 2 | — | — | 2026-07-10 |
+| pyproject.toml | 3 | — | 5 | — | — | — | 2026-06-05 |
+| pytest | 5 | 3 | — | 2 | 1 | — | 2026-06-10 |
+| rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
+| ruff | 4 | — | 3 | 2 | 1 | — | 2026-06-17 |
+| tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
+| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
+| typer | 3 | 2 | — | 2 | — | — | 2026-06-10 |
+| uv | 6 | 3 | 1 | 1 | 1 | — | 2026-06-16 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
 
 </details>
 
