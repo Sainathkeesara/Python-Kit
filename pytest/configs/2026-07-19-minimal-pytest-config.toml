@@ -1,0 +1,12 @@
+# last_verified: 2026-07-19 · pytest n/a
+
+# [tool.pytest.ini_options] is the standard place for pytest settings in pyproject.toml.
+# testpaths tells pytest where to look; markers let me tag slow vs fast tests;
+# addopts with --cov requires pytest-cov installed; it prints a terminal coverage report.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+]
+addopts = "--cov=src --cov-report=term-missing"

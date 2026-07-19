@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-07-19
+- pdt-015: Added pipdeptree dev-dependency config (`pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml`) — Pin pipdeptree in pyproject.toml [project.optional-dependencies] dev extra
+- pyt-012: Added minimal pytest pyproject.toml config (`pytest/configs/2026-07-19-minimal-pytest-config.toml`) — testpaths, markers, and coverage addopts
+- httpie-003: Added httpie default config (`httpie/configs/2026-07-19-httpie-defaults.json`) — Custom default headers and --check-status option
+
 ## 2026-07-17
 - pau-007: Added pip-audit quickstart tripped-me-up notes (`pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md`) — Followed official quickstart: --local, --require-hashes, --fix gotchas, exit codes, --ignore-vuln
 - prc-010: Added pre-commit ruff+trailing-whitespace run script (`pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh`) — Set up sample project, configure pre-commit, run hooks once

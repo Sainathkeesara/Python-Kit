@@ -1,0 +1,11 @@
+# last_verified: 2026-07-19 · pipdeptree n/a
+
+# Dev dependencies live under [project.optional-dependencies] so
+# `pip install -e .[dev]` pulls in tooling without bloating runtime installs.
+[project]
+name = "my-project"
+version = "0.1.0"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pipdeptree"]
