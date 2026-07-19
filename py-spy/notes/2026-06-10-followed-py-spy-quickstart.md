@@ -6,7 +6,7 @@ I walked through the py-spy quickstart from the GitHub README today. Figured I'd
 
 Installed py-spy with `pip install py-spy` — no issues there.
 
-Created a test script with two CPU-bound functions and a loop, basically the same one I already had in `scripts/tried-py-spy-sampling.py`. Then ran:
+Created a test script with two CPU-bound functions and a loop, basically the same one I already had in `../scripts/tried-py-spy-sampling.py`. Then ran:
 
 ```bash
 py-spy record -o profile.svg -- python test_script.py
