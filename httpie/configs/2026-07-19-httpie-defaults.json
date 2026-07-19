@@ -1,0 +1,11 @@
+// last_verified: 2026-07-19 · httpie n/a
+
+{
+  "default_options": [
+    "--check-status"
+  ],
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "httpie/cli"
+  }
+}
