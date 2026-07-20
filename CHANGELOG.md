@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-07-20
+- psy-014: Added py-spy top+record profile script (`py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh`) — Profile a tiny Python loop with py-spy top (live view) and py-spy record (flamegraph SVG)
+
 ## 2026-07-19
 - httpie-001: Added followed httpie quickstart notes (`httpie/notes/2026-07-19-followed-httpie-quickstart.md`) — Followed official quickstart: GET, POST, raw JSON, headers, what tripped me up
 - httpie-002: Added httpie request workflow script (`httpie/scripts/2026-07-19-httpie-request-workflow.sh`) — GET, POST, JSON body, custom headers, --check-status
