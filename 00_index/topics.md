@@ -14,12 +14,12 @@
 - **scripts** (2): [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py)
 - **snippets** (1): [packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py)
 
-## httpie  ·  7 files
+## httpie  ·  9 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
-- **notes** (4): [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
+- **notes** (4): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
 - **configs** (1): [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
-- **scripts** (1): [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
+- **scripts** (2): [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
 - **snippets** (1): [tried-httpie-get-post-workflow.py](../httpie/snippets/tried-httpie-get-post-workflow.py)
 
 ## mypy  ·  15 files
@@ -88,10 +88,10 @@
 - **scripts** (1): [first-table-panel-progress.py](../rich/scripts/first-table-panel-progress.py)
 - **snippets** (6): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py), [tried-progress-spinner.py](../rich/snippets/tried-progress-spinner.py), [first-rich-logger.py](../rich/snippets/first-rich-logger.py), [tried-rich-progress-bar.py](../rich/snippets/tried-rich-progress-bar.py)
 
-## ruff  ·  10 files
+## ruff  ·  11 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
-- **notes** (4): [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [tried-ruff-quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
+- **notes** (5): [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [tried-ruff-quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
 - **configs** (3): [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml), [minimal-standalone-ruff.toml](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml)
 - **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **snippets** (2): [messy_example.py](../ruff/snippets/messy_example.py), [tried-messy-example.py](../ruff/snippets/tried-messy-example.py)
