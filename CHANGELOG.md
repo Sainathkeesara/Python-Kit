@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-07-21
+- ruf-012: Added minimal standalone ruff.toml (`ruff/configs/2026-07-21-minimal-standalone-ruff.toml`) — One selected rule (E), one ignored rule (E501), top-level keys only
+- ruf-015: Added Ruff rule configuration notes (`ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md`) — select/ignore filter behavior, extend-safe, per-directory overrides with glob patterns
+
 ## 2026-07-20
 - psy-014: Rework: Reduced py-spy top+record profile script to ≤15 lines, added sleep for py-spy attach timing (`py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh`) — Profile a tiny Python loop with py-spy top (live view) and py-spy record (flamegraph SVG)
 
