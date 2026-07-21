@@ -1,0 +1,6 @@
+# last_verified: 2026-07-21 · Ruff n/a
+
+# Minimal ruff.toml — one selected rule, one ignored rule
+# Top-level keys, no [tool.ruff] wrapper needed for standalone config
+select = ["E"]
+ignore = ["E501"]
