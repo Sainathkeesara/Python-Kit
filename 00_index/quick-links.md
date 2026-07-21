@@ -146,6 +146,7 @@
 
 ### py-spy
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first contact notes
+- [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Minimal CPU-bound loop for profiling practice with py-spy
 - [Record Output Formats Compared (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [Record Output Formats Compared (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [Record Output Formats Compared (June)](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md) — Compared flamegraph SVG, speedscope JSON, and raw JSON formats

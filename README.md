@@ -1,12 +1,12 @@
 # Python-Kit
-> A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
+> A working Python engineer's quick-reference: first-contact notes, runnable snippets, and configs for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, pyproject.toml, and uv.lock.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
-> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
+> **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order.
 
 ## Who this is for
 
@@ -18,17 +18,17 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 
 ## Quick links
 
-- [First Ruff project: what tripped me up](ruff/notes/2026-07-19-tripped-on-ruff-first-project.md) — Initial Ruff setup, CLI exploration, and the gotchas that caught me
-- [Followed the official httpie quickstart](httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Sessions, headers, and JSON handling gotchas from a fresh install
-- [httpie API request workflow script](httpie/scripts/2026-07-19-httpie-request-workflow.sh) — Workflow covering GET, POST, auth, and file upload patterns
-- [uv managed project config](uv/configs/2026-07-19-uv-managed-project.toml) — Structured pyproject.toml with uv tool sections for a managed project
-- [End-to-end uv workflow script](uv/scripts/2026-07-19-uv-workflow.sh) — Full loop: init, add dependencies, sync, and run
+- [CPU-bound profiling loop for py-spy](py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Minimal CPU-bound script for profiling practice with py-spy
+- [Tripped on Ruff's first project](ruff/notes/2026-07-19-tripped-on-ruff-first-project.md) — Running Ruff on an existing project, the gotchas and fixes
+- [Followed HTTPie quickstart](httpie/notes/2026-07-19-followed-httpie-quickstart.md) — First HTTPie quickstart walkthrough, exit codes, and session defaults
+- [HTTPie request workflow script](httpie/scripts/2026-07-19-httpie-request-workflow.sh) — End-to-end GET/POST workflow with HTTPie defaults
+- [uv-managed project config](uv/configs/2026-07-19-uv-managed-project.toml) — Scaffolded uv-managed project with pyproject.toml, build-system, and dependencies
 
 ## Layout
 
 - `00_index/` — Navigation index: topics.md, quick-links.md, glossary.md, learning-path.md
 - `docs/` — Foundational concept primers and project-level documentation
-- `httpie/` — HTTPie CLI notes, install scripts, request workflows
+- `httpie/` — HTTPie CLI notes, install scripts, snippets
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
@@ -51,27 +51,27 @@ Personal notes, configuration files, scripts, and snippets collected while getti
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
-| mypy | 7 | 1 | 3 | 4 | — | — | 2026-06-12 |
+| mypy | 7 | 1 | 3 | 4 | — | — | — |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-06-17 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
+| pipdeptree | 7 | 2 | 1 | 5 | — | — | — |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 8 | — | 2 | — | — | 2026-07-19 |
-| pyproject.toml | 3 | — | 5 | — | — | — | 2026-06-05 |
-| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-06-10 |
-| rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
+| pyproject.toml | 3 | — | 5 | — | — | — | — |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | — |
+| rich | 7 | 1 | — | 6 | — | — | — |
 | ruff | 5 | — | 3 | 2 | 1 | — | 2026-07-19 |
-| tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
-| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
-| typer | 3 | 2 | — | 2 | — | — | 2026-06-10 |
-| uv | 6 | 4 | 2 | 1 | 1 | — | 2026-06-16 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
+| tox | 5 | 1 | 2 | — | — | — | — |
+| ty | 6 | 1 | 2 | 2 | — | — | — |
+| typer | 3 | 2 | — | 2 | — | — | — |
+| uv | 6 | 4 | 2 | 1 | 1 | — | — |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across ruff, httpie, uv, py-spy, and pip-audit. The concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across pip-audit, pipdeptree, pre-commit, py-spy, and ruff. The concept primer library covers all six foundational areas for the Python toolchain.
 
 ---
-_Last updated: 2026-07-20_
+_Last updated: 2026-07-21_

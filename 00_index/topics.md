@@ -17,7 +17,7 @@
 ## httpie  ·  9 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
-- **notes** (4): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
+- **notes** (5): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
 - **configs** (1): [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **scripts** (2): [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
 - **snippets** (1): [tried-httpie-get-post-workflow.py](../httpie/snippets/tried-httpie-get-post-workflow.py)
@@ -59,11 +59,11 @@
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
 - **scripts** (1): [install-and-lint.sh](../py/scripts/install-and-lint.sh)
 
-## py-spy  ·  20 files
+## py-spy  ·  21 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
 - **notes** (10): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md), [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [followed-py-spy-quickstart](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md), [tripped-on-py-spy-top-session](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md), [tried-py-spy-top-session](../py-spy/notes/2026-06-08-tried-py-spy-top-session.md), [tried-py-spy-cli-subcommands](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md)
-- **scripts** (8): [cpu_worker.py](../py-spy/scripts/cpu_worker.py), [2026-07-10-cpu-speedscope-record.py](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [2026-07-08-cpu-speedscope-record.py](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py)
+- **scripts** (9): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [cpu-speedscope-record-2026-07-10](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record-2026-07-08](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py), [cpu_worker.py](../py-spy/scripts/cpu_worker.py)
 - **snippets** (2): [tried-cpu-bound-simulation.py](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process.py](../py-spy/snippets/tried-profile-running-process.py)
 
 ## pyproject.toml  ·  8 files
