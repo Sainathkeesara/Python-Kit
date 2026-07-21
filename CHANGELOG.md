@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## 2026-07-20
-- psy-014: Added py-spy top+record profile script (`py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh`) — Profile a tiny Python loop with py-spy top (live view) and py-spy record (flamegraph SVG)
+- psy-014: Rework: Reduced py-spy top+record profile script to ≤15 lines, added sleep for py-spy attach timing (`py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh`) — Profile a tiny Python loop with py-spy top (live view) and py-spy record (flamegraph SVG)
 
 ## 2026-07-19
 - httpie-001: Added followed httpie quickstart notes (`httpie/notes/2026-07-19-followed-httpie-quickstart.md`) — Followed official quickstart: GET, POST, raw JSON, headers, what tripped me up
