@@ -35,7 +35,8 @@
 - [First Ruff Project: What Tripped Me Up](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md) — Initial Ruff setup, CLI exploration, and the gotchas that caught me
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test linter
 - [Tried Messy Example Snippet](../ruff/snippets/tried-messy-example.py) — Another deliberately messy file with different violations
-- [Minimal Standalone Ruff Config](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
+- [Minimal Standalone Ruff Config (July 5)](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml) — Minimal standalone ruff.toml with select/ignore rules
+- [Minimal Standalone Ruff Config (July 21)](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml) — Fresh ruff.toml with select/ignore rules for a new project
 
 ### pytest
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first contact notes
@@ -157,6 +158,7 @@
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
 - [Record & Flamegraph Script](../py-spy/scripts/tried-py-spy-record-flamegraph.sh) — Profile a CPU-bound script and output a flamegraph SVG
+- [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Profile a CPU-bound loop with py-spy record and flamegraph output
 - [CPU-Bound Simulation Snippet](../py-spy/snippets/tried-cpu-bound-simulation.py) — Minimal script for py-spy profiling practice
 - [Top Session Tripped Me Up](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md) — First py-spy top session: permission issues, columns, key flags
 - [Py-spy Quickstart Notes](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md) — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
