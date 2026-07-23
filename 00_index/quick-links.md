@@ -25,6 +25,7 @@
 
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first contact notes
+- [Ruff select, ignore, extend-safe, and per-directory overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md) — `select` as a filter, safe fixes only, and per-directory rule exceptions
 - [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff Config in pyproject.toml](../ruff/configs/ruff-pyproject.toml) — Configure Ruff inside pyproject.toml
@@ -158,7 +159,6 @@
 - [Sampling Target Script](../py-spy/scripts/tried-py-spy-sampling.py) — Python script with CPU-bound functions for py-spy to sample
 - [CLI Subcommand Notes](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md) — Exploring record, top, and flamegraph subcommands
 - [Record & Flamegraph Script](../py-spy/scripts/tried-py-spy-record-flamegraph.sh) — Profile a CPU-bound script and output a flamegraph SVG
-- [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Profile a CPU-bound loop with py-spy record and flamegraph output
 - [CPU-Bound Simulation Snippet](../py-spy/snippets/tried-cpu-bound-simulation.py) — Minimal script for py-spy profiling practice
 - [Top Session Tripped Me Up](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md) — First py-spy top session: permission issues, columns, key flags
 - [Py-spy Quickstart Notes](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md) — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
