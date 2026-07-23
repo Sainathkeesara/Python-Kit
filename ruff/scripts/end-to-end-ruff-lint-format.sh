@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # last_verified: 2026-07-23 · ruff latest
 
-set -euo pipefail
+set -e
 
 PROJECT_DIR="$(mktemp -d)/sample_project"
 mkdir -p "$PROJECT_DIR"
