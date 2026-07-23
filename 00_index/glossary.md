@@ -188,13 +188,18 @@
 - **Commit** — A snapshot of all tracked files at a point in time, paired with a message describing the change.
 - **Branch** — A separate line of development, letting you work on features or fixes without affecting the main codebase.
 - **Stage (index)** — The set of file changes you have marked for inclusion in the next commit using `git add`.
+- **Working tree** — Files on disk that are not yet staged; the complement of the staging area.
 - **Remote** — A hosted copy of the repository (e.g., on GitHub) that you can push to or pull from.
 - **HEAD** — A pointer to the most recent commit on the currently checked-out branch.
+- **Conventional Commits** — A convention for structuring commit messages with prefixes like `feat:`, `fix:`, `chore:`.
 
 ## Python Programming Fundamentals
 - **Type hint** — An annotation on a variable, parameter, or return value indicating its expected type.
 - **PEP 484** — The Python Enhancement Proposal that introduced standardised type hint syntax (`Optional[str]`, `List[int]`, `Union[str, int]`).
+- **PEP 585** — The Python Enhancement Proposal that allows using built-in generics (`list[str]`, `dict[str, int]`) instead of `typing.List`, `typing.Dict`.
 - **Marker** — A condition attached to a dependency that controls when it is installed (based on Python version, OS, or platform).
 
 ## Package & Dependency Management
 - **Dependency resolution** — The process of selecting a set of package versions that satisfy all version constraints across the dependency tree.
+- **requirements.txt** — A traditional pip dependency file listing packages line by line, often with version pins.
+- **pip** — Python's standard package installer; retrieves packages from PyPI.

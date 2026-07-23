@@ -2,7 +2,7 @@
 > A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
+[![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
@@ -14,15 +14,15 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## What's in here
 
-199 files across 16 tool directories plus 6 foundational concept primers and a repository-structure doc. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
+203 files across 16 tool directories plus 6 foundational concept primers and a repository-structure doc. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
 
 ## Quick links
 
+- [Practice Git version control](docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Walk through init, commit, branching, merging, and remote push workflow
+- [Common Git patterns in Python projects](docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Python helpers to list branches, inspect commits, and manage tags
+- [Common static type-checking patterns](docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed functions, Optional, Union, Protocol, and TypeVar usage
+- [Virtual environment practice script](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create venvs, install packages, freeze deps, and compare with uv
 - [Ruff select, ignore, extend-safe, and per-directory overrides](ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md) — Walked through Ruff's rule configuration and the distinction between `select` as a filter vs a toggle
-- [Fresh standalone ruff.toml with select/ignore rules](ruff/configs/2026-07-21-minimal-standalone-ruff.toml) — Ready-to-use standalone Ruff config for a new Python project
-- [Profile a tiny loop with py-spy](py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Install py-spy, profile a CPU-bound loop, and export a flamegraph
-- [First Ruff project: what tripped me up](ruff/notes/2026-07-19-tripped-on-ruff-first-project.md) — Initial Ruff setup, CLI exploration, and the gotchas that caught me
-- [Followed the official httpie quickstart](httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Sessions, headers, and JSON handling gotchas from a fresh install
 
 ## Layout
 
@@ -58,24 +58,24 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 | mypy | 7 | 1 | 3 | 4 | — | — | 2026-07-19 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-07-19 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 9 | — | 2 | — | — | 2026-07-20 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
-| rich | 7 | 1 | — | 6 | — | — | — |
+| rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
 | ruff | 6 | — | 4 | 2 | 1 | — | 2026-07-21 |
-| tox | 5 | 1 | 2 | — | — | — | — |
-| ty | 6 | 1 | 2 | 2 | — | — | — |
+| tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
+| ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
 | uv | 6 | 4 | 2 | 1 | 1 | — | 2026-07-19 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | 2026-06-18 |
 
 </details>
 
 ## Status
 
-Notes and snippets continue to expand across ruff, httpie, uv, py-spy, and pip-audit. Ruff gained expanded select/ignore/extend-safe notes and a fresh standalone config (2026-07-21), and py-spy added a streamlined profile loop script (2026-07-20). The concept primer library covers all six foundational areas for the Python toolchain.
+Notes and snippets continue to expand across ruff, httpie, uv, py-spy, and pip-audit. The foundational concept library added practice scripts for Git, venv, and type-checking patterns (2026-07-23). Ruff gained expanded select/ignore/extend-safe overrides notes (2026-07-21).
 
 ---
-_Last updated: 2026-07-22_
+_Last updated: 2026-07-24_
