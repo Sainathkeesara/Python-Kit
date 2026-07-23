@@ -4,6 +4,7 @@
 - con-016: Added Git Version Control practice script (`docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py`) — Python script exercising init, add, commit, and branch workflows in a temp directory
 - con-017: Added Git Version Control common patterns snippet (`docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py`) — Python snippets for status checks, feature branch creation, and remote branch listing via subprocess
 - con-018: Added Static Type Checking & Type Hints common patterns snippet (`docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py`) — Python snippets demonstrating basic functions, Optional, and Union type hints
+- con-020: Added Virtual Environment & Dependency Mgmt practice script (`docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py`) — Python script exercising venv creation, package install, requirements export, and offline dep caching
 
 ## 2026-07-21
 - ruf-012: Added minimal standalone ruff.toml (`ruff/configs/2026-07-21-minimal-standalone-ruff.toml`) — One selected rule (E), one ignored rule (E501)
