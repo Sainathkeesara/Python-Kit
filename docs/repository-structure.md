@@ -23,7 +23,7 @@ This document describes the directory layout of Python-Kit.
 | `typer/` | CLI framework notes and demos |
 | `httpie/` | API testing CLI notes, scripts, and configs |
 | `tox/` | Test automation notes and configs for tox |
-| `docs/` | Project-level documentation (repository-structure.md) |
+| `docs/` | Foundational concept primers, notes, scripts, and snippets — one subfolder per concept |
 
 ## File organization by type
 

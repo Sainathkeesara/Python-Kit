@@ -28,6 +28,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 - `00_index/` — Navigation: topics.md, quick-links.md, glossary.md, learning-path.md
 - `docs/` — Foundational concept primers and project-level documentation
+  - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
