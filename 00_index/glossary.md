@@ -130,6 +130,8 @@
 ## ruff
 - **Rule selection** — Choosing which lint rules Ruff applies; controlled by the `select` setting.
 - **per-file-ignores** — A Ruff configuration that disables specific rules for specific files or directories.
+- **`extend-safe`** — A Ruff lint configuration that restricts `--fix` to safe auto-fixes only, avoiding changes that could break code.
+- **`--unsafe-fixes`** — A Ruff CLI flag that overrides `extend-safe` and allows potentially unsafe auto-fixes to be applied.
 - **target-version** — The minimum Python version Ruff should target when formatting or linting.
 
 ## tox

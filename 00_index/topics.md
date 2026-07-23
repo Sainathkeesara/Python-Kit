@@ -25,7 +25,7 @@
 ## mypy  ·  15 files
 
 - **primer:** [0000-primer-mypy.md](../mypy/notes/0000-primer-mypy.md)
-- **notes** (6): [first-mypy-run](../mypy/notes/2026-06-04-first-mypy-run.md), [mypy-first-check-tripped-me-up](../mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md), [tried-mypy-quickstart](../mypy/notes/2026-05-29-tried-mypy-quickstart.md), [tried-mypy-cli-flags](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md), [tried-mypy-official-quickstart](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md), [followed-mypy-quickstart](../mypy/notes/2026-06-12-followed-mypy-quickstart.md)
+- **notes** (6): [followed-mypy-quickstart](../mypy/notes/2026-06-12-followed-mypy-quickstart.md), [tried-mypy-official-quickstart](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md), [first-mypy-run](../mypy/notes/2026-06-04-first-mypy-run.md), [mypy-first-check-tripped-me-up](../mypy/notes/2026-06-05-mypy-first-check-tripped-me-up.md), [tried-mypy-quickstart](../mypy/notes/2026-05-29-tried-mypy-quickstart.md), [tried-mypy-cli-flags](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md)
 - **configs** (3): [strict-disallow-ignore-config.ini](../mypy/configs/tried-strict-disallow-ignore-config.ini), [strict-mypy-config.toml](../mypy/configs/tried-strict-mypy-config.toml), [minimal-mypy-config.ini](../mypy/configs/tried-minimal-mypy-config.ini)
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
@@ -88,10 +88,10 @@
 - **scripts** (1): [first-table-panel-progress.py](../rich/scripts/first-table-panel-progress.py)
 - **snippets** (6): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py), [tried-progress-spinner.py](../rich/snippets/tried-progress-spinner.py), [first-rich-logger.py](../rich/snippets/first-rich-logger.py), [tried-rich-progress-bar.py](../rich/snippets/tried-rich-progress-bar.py)
 
-## ruff  ·  12 files
+## ruff  ·  13 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
-- **notes** (4): [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [tried-ruff-quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
+- **notes** (5): [select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [tried-ruff-quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
 - **configs** (4): [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml), [minimal-standalone-ruff](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml)
 - **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **snippets** (2): [messy_example.py](../ruff/snippets/messy_example.py), [tried-messy-example.py](../ruff/snippets/tried-messy-example.py)
@@ -121,7 +121,7 @@
 ## uv  ·  14 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
-- **notes** (4): [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md), [installed-uv-first-command](../uv/notes/2026-06-10-installed-uv-first-command.md), [tried-uv-quickstart-scaffold](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md), [2026-05-24-virtual-env-uv](../uv/notes/2026-05-24-virtual-env-uv.md)
+- **notes** (5): [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md), [installed-uv-first-command](../uv/notes/2026-06-10-installed-uv-first-command.md), [tried-uv-quickstart-scaffold](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md), [cli-commands-beyond-basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md), [virtual-env-uv](../uv/notes/2026-05-24-virtual-env-uv.md)
 - **configs** (2): [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
 - **scripts** (4): [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh), [install-and-first-command.sh](../uv/scripts/install-and-first-command.sh), [hello-with-dep.py](../uv/scripts/hello-with-dep.py), [tried-bootstrap-uv-script.sh](../uv/scripts/tried-bootstrap-uv-script.sh)
 - **docs** (1): [uv-vs-pip-cheat-sheet.md](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
