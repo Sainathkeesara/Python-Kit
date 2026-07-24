@@ -10,6 +10,10 @@
 - [Python Fundamentals Practice Script](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practicing data types, control flow, functions, and comprehensions
 - [Python Packaging Patterns Snippet](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Reading pyproject.toml metadata and discovering packages
 - [Testing Principles Practice Script](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py) — Writing isolated, parametrized tests with fixtures
+- [Git Version Control Practice Script](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Walk through init, commit, branching, merging, and remote push
+- [Common Git Patterns for Python Projects](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Helper functions to list branches, inspect commits, and manage tags
+- [Common Static Type-Checking Patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed functions, Optional, Union, Protocol, and TypeVar usage
+- [Virtual Environment Practice Script](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create venvs, install packages, freeze deps, and compare with uv
 
 ## I need to...
 
