@@ -2,7 +2,7 @@
 > A working engineer's Python reference — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
+[![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
@@ -14,15 +14,15 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## What's in here
 
-203 files across 16 tool directories plus 6 foundational concept primers and a repository-structure doc. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
+204 files across 16 tool directories, 6 foundational concept primers, a repository-structure doc, and a changelog. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
 
 ## Quick links
 
-- [Practice Git version control](docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Walk through init, commit, branching, merging, and remote push workflow
-- [Common Git patterns in Python projects](docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Python helpers to list branches, inspect commits, and manage tags
-- [Common static type-checking patterns](docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed functions, Optional, Union, Protocol, and TypeVar usage
-- [Virtual environment practice script](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create venvs, install packages, freeze deps, and compare with uv
-- [Ruff select, ignore, extend-safe, and per-directory overrides](ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md) — Walked through Ruff's rule configuration and the distinction between `select` as a filter vs a toggle
+- [Ruff end-to-end lint-and-format workflow](ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify with a single script
+- [Virtual environment management practice](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
+- [Git version control practice](docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Reproduce common Git workflows from a Python script
+- [Common Git patterns in Python projects](docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Using GitPython to clone, commit, branch, and merge
+- [Common type-checking patterns](docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed dicts, callables, overloads, and Protocol patterns
 
 ## Layout
 
@@ -64,7 +64,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
 | rich | 7 | 1 | — | 6 | — | — | 2026-06-17 |
-| ruff | 6 | — | 4 | 2 | 1 | — | 2026-07-21 |
+| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-07-24 |
 | tox | 5 | 1 | 2 | — | — | — | 2026-06-11 |
 | ty | 6 | 1 | 2 | 2 | — | — | 2026-06-18 |
 | typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
@@ -75,7 +75,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## Status
 
-Notes and snippets continue to expand across ruff, httpie, uv, py-spy, and pip-audit. The foundational concept library added practice scripts for Git, venv, and type-checking patterns (2026-07-23). Ruff gained expanded select/ignore/extend-safe overrides notes (2026-07-21).
+Ruff gained an end-to-end lint-and-format workflow script (2026-07-23), and the concept primer library expanded with new practice scripts and snippets for Git version control, virtual environment management, and static type-checking patterns.
 
 ---
 _Last updated: 2026-07-24_
