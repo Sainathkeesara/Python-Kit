@@ -30,6 +30,10 @@
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
 
+## pau  ·  1 files
+
+- **notes** (1): [0000-primer-pip-audit](../pau/notes/0000-primer-pip-audit.md)
+
 ## pip-audit  ·  12 files
 
 - **primer:** [0000-primer-pip-audit.md](../pip-audit/notes/0000-primer-pip-audit.md)

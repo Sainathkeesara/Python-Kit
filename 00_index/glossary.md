@@ -83,7 +83,10 @@
 - **CVE** — A publicly disclosed security vulnerability with an ID like `CVE-2023-12345`.
 - **OSV** — Open Source Vulnerabilities database that pip-audit queries under the hood.
 - **PYSEC** — PyPI-specific advisory ID format (e.g. `PYSEC-2023-100`).
+- **Vulnerability** — A known security flaw in a specific package version. Advisory databases assign identifiers like PYSEC, CVE, or GHSA.
+- **Advisory** — The published record of a vulnerability, usually with a recommended fixed version. pip-audit reports advisories and suggests upgrading to a patched version.
 - **`--fix`** — Experimental flag that attempts to auto-upgrade vulnerable packages.
+- **`--ignore-vuln <id>`** — Skips a specific advisory by identifier. Use this to silence a known false-positive for one package.
 
 ## pipdeptree
 - **Top-level package** — A package installed directly by the user (e.g. `pip install requests`).
