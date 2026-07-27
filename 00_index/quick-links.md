@@ -15,6 +15,8 @@
 - [Common Git Patterns in Python Projects](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Using GitPython to clone, commit, branch, and merge
 - [Common Type-Checking Patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed dicts, callables, overloads, and Protocol patterns
 - [Venv Practice Script](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
+- [Applying Type Hints Practice](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
+- [Common venv Patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
 
 ## I need to...
 
