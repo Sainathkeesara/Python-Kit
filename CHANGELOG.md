@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-07-26
+- pau-004: Added pip-audit quick primer (`pau/notes/0000-primer-pip-audit.md`) — First-day notes explaining what pip-audit is, key terminology, and a tiny scan example
+
 ## 2026-07-23
 - ruf-016: Rework: Removed `set -euo pipefail` from end-to-end Ruff lint-and-format workflow script (`ruff/scripts/end-to-end-ruff-lint-format.sh`) — Replaced with `set -e` for L2 voice compliance
 - con-016: Added Git Version Control practice script (`docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py`) — Python script exercising init, add, commit, and branch workflows in a temp directory
