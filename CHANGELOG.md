@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-07-27
+- con-019: Added Static Type Checking & Type Hints applying-type-hints script (`docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py`) — Python script demonstrating typed dictionaries, runtime validation, and filtering with type annotations
+- con-021: Added Virtual Environment & Dependency Mgmt common-venv-patterns snippet (`docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py`) — Python snippet showing venv creation, requirements pinning, install, and freeze workflows
+
 ## 2026-07-26
 - pau-004: Added pip-audit quick primer (`pau/notes/0000-primer-pip-audit.md`) — First-day notes explaining what pip-audit is, key terminology, and a tiny scan example
 
