@@ -1,5 +1,5 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more.
+> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pau, py-spy, tox, Ty, httpie, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -10,19 +10,19 @@
 
 ## Who this is for
 
-A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and pau. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pau, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
-205 files across 18 tool directories, 6 foundational concept primers, a repository-structure doc, and a changelog. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty, pau), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree, pau), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
+205 files across 18 tool directories, 6 foundational concept primers, a repository-structure doc, and a changelog. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty, pau), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit, pau), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
 
 ## Quick links
 
+- [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results (new)
+- [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments (new)
 - [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pau is, key terminology, and a tiny scan example (new)
 - [End-to-end Ruff lint and format workflow](ruff/scripts/end-to-end-ruff-lint-format.sh) — Lint a project, auto-fix, format, and verify with a single script
 - [Virtual environment management practice](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
-- [Git version control practice](docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Reproduce common Git workflows from a Python script
-- [Common Git patterns in Python projects](docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Using GitPython to clone, commit, branch, and merge
 
 ## Layout
 
@@ -31,7 +31,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
   - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
-- `pau/` — pip-audit quick primer (new)
+- `pau/` — pip-audit quick primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
 - `pre-commit/` — Hook configs, install/run scripts, snippets
@@ -55,18 +55,18 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
+| httpie | 5 | 2 | 1 | 1 | — | — | — |
 | mypy | 7 | 1 | 3 | 4 | — | — | — |
 | pau | 1 | — | — | — | — | — | 2026-07-26 |
-| pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
+| pip-audit | 5 | 3 | 1 | 4 | — | — | — |
 | pipdeptree | 7 | 2 | 1 | 5 | — | — | — |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
+| py-spy | 10 | 9 | — | 2 | — | — | — |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 7 | 1 | — | 6 | — | — | — |
-| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
+| ruff | 6 | 1 | 4 | 2 | 1 | — | — |
 | tox | 5 | 1 | 2 | — | — | — | — |
 | ty | 6 | 1 | 2 | 2 | — | — | — |
 | typer | 3 | 2 | — | 2 | — | — | — |
@@ -77,7 +77,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## Status
 
-Notes and snippets continue to expand across ruff, httpie, uv, py-spy, pip-audit, and pau. The foundational concept library added practice scripts for Git, venv, and type-checking patterns (2026-07-23). Ruff gained an end-to-end lint-and-format pipeline script (2026-07-25).
+Notes and snippets continue to expand across ruff, httpie, uv, py-spy, pip-audit, and pau. The foundational concept library added practice scripts for Git, venv, and type-checking patterns (2026-07-27). Ruff gained an end-to-end lint-and-format pipeline script (2026-07-25).
 
 ---
 _Last updated: 2026-07-27_
