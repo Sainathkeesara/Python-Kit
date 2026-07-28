@@ -1,5 +1,5 @@
 # Python-Kit
-> A working engineer's Python reference for uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pau, py-spy, tox, Ty, httpie, and more.
+> A working Python engineer's reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -10,11 +10,11 @@
 
 ## Who this is for
 
-A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, typer, pip-audit, pau, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, pau, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
-205 files across 18 tool directories, 6 foundational concept primers, a repository-structure doc, and a changelog. Covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty, pau), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit, pau), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml).
+This kit covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty, pau), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml). It is a working reference — notes, configs, scripts, and snippets gathered in practice — not a replacement for official documentation.
 
 ## Quick links
 
@@ -31,7 +31,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
   - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
-- `pau/` — pip-audit quick primer
+- `pau/` — pip-audit quick primer (new)
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
 - `pre-commit/` — Hook configs, install/run scripts, snippets
@@ -55,18 +55,18 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 5 | 2 | 1 | 1 | — | — | — |
+| httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
 | mypy | 7 | 1 | 3 | 4 | — | — | — |
 | pau | 1 | — | — | — | — | — | 2026-07-26 |
-| pip-audit | 5 | 3 | 1 | 4 | — | — | — |
+| pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 7 | 2 | 1 | 5 | — | — | — |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | — |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 7 | 1 | — | 6 | — | — | — |
-| ruff | 6 | 1 | 4 | 2 | 1 | — | — |
+| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
 | tox | 5 | 1 | 2 | — | — | — | — |
 | ty | 6 | 1 | 2 | 2 | — | — | — |
 | typer | 3 | 2 | — | 2 | — | — | — |
@@ -77,7 +77,7 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## Status
 
-Notes and snippets continue to expand across ruff, httpie, uv, py-spy, pip-audit, and pau. The foundational concept library added practice scripts for Git, venv, and type-checking patterns (2026-07-27). Ruff gained an end-to-end lint-and-format pipeline script (2026-07-25).
+Recently added pau quick primer and foundational concept practice scripts for Git, venv, and type-checking patterns. End-to-end Ruff lint-and-format workflow expanded, and the lock file analysis section grew with a new reproducibility script.
 
 ---
-_Last updated: 2026-07-27_
+_Last updated: 2026-07-28_
