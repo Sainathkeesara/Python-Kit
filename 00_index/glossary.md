@@ -87,6 +87,7 @@
 - **Advisory** — The published record of a vulnerability, usually with a recommended fixed version. pip-audit reports advisories and suggests upgrading to a patched version.
 - **`--fix`** — Experimental flag that attempts to auto-upgrade vulnerable packages.
 - **`--ignore-vuln <id>`** — Skips a specific advisory by identifier. Use this to silence a known false-positive for one package.
+- **`--locked`** — Audits a `pyproject.toml` or lockfile directly without needing a live environment. Added in pip-audit 2.7.
 
 ## pipdeptree
 - **Top-level package** — A package installed directly by the user (e.g. `pip install requests`).
