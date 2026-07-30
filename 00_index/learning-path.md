@@ -29,7 +29,7 @@ Intermediate tools and patterns that extend the core workflow.
 
 - **Type checking (mypy)** — Static analysis for type safety. Start with the [mypy Primer](../mypy/notes/0000-primer-mypy.md) and [CLI flags notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md).
 - **Type checking (Ty)** — An alternative type checker with a focus on ergonomics. Start with the [Ty Primer](../ty/notes/0000-primer-ty.md) and [quickstart notes](../ty/notes/2026-06-05-tried-ty-quickstart.md).
-- **Vulnerability scanning (pip-audit)** — Audit dependencies for known CVEs. Start with the [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) and [scan script](../pip-audit/scripts/scan-project.sh). For the quick primer, see the [pau quick primer](../pau/notes/0000-primer-pip-audit.md) (new).
+- **Vulnerability scanning (pip-audit)** — Audit dependencies for known CVEs. Start with the [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) and [scan script](../pip-audit/scripts/scan-project.sh). For the quick primer, see the [pau quick primer](../pau/notes/0000-primer-pip-audit.md).
 - **Dependency trees (pipdeptree)** — Visualize and analyze package dependency graphs. Start with the [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) and [JSON parsing snippet](../pipdeptree/snippets/parse-pipdeptree-json.py).
 - **Lock files (uv.lock)** — Reproducible dependency resolution. Start with the [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) and [generation script](../uv.lock/scripts/generate-uv-lock.sh).
 
