@@ -18,9 +18,9 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Quick links
 
-- [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results (new)
-- [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments (new)
-- [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pau is, key terminology, and a tiny scan example (new)
+- [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
+- [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
+- [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pau is, key terminology, and a tiny scan example
 - [End-to-end Ruff lint and format workflow](ruff/scripts/end-to-end-ruff-lint-format.sh) — Lint a project, auto-fix, format, and verify with a single script
 - [Virtual environment management practice](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
 
@@ -31,7 +31,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
   - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
-- `pau/` — pip-audit quick primer (new)
+- `pau/` — pip-audit quick primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
 - `pre-commit/` — Hook configs, install/run scripts, snippets
@@ -77,7 +77,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Status
 
-Recently added pau quick primer and foundational concept practice scripts for Git, venv, and type-checking patterns. End-to-end Ruff lint-and-format workflow expanded, and the lock file analysis section grew with a new reproducibility script.
+Foundational concept practice scripts for Git, venv, and type-checking are the most recent additions. Tool-specific primers and workflows for pip-audit, Ruff, and uv continue to grow.
 
 ---
 _Last updated: 2026-07-28_
