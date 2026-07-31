@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-07-31
+- ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
+
 ## 2026-07-27
 - con-019: Added Static Type Checking & Type Hints applying-type-hints script (`docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py`) — Python script demonstrating typed dictionaries, runtime validation, and filtering with type annotations
 - con-021: Added Virtual Environment & Dependency Mgmt common-venv-patterns snippet (`docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py`) — Python snippet showing venv creation, requirements pinning, install, and freeze workflows
