@@ -15,15 +15,15 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## What's in here
 
-This kit covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit, pau), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock), and project config conventions (pyproject.toml). It is a working reference — notes, configs, scripts, and snippets gathered in practice — not a replacement for official documentation.
+This kit covers package and project management (uv), linting and formatting (Ruff), testing (pytest), type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI frameworks (typer), vulnerability scanning (pip-audit, pau), dependency trees (pipdeptree), profiling (py-spy), test automation (tox), API testing (httpie), lock file analysis (uv.lock, uvl), and project config conventions (pyproject.toml). It is a working reference — notes, configs, scripts, and snippets gathered in practice — not a replacement for official documentation.
 
 ## Quick links
 
-- [Ruff quick primer](ruff/notes/0000-primer-ruf.md) — Ruff linter and formatter first-contact notes
+- [uv.lock quick primer](uvl/notes/0000-primer-uv.lock.md) — What uv.lock is, key terminology, and a tiny example
 - [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
 - [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
-- [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pau is, key terminology, and a tiny scan example
-- [Git attributes config](.gitattributes) — Repository-level git attribute rules
+- [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pip-audit is, key terminology, and a tiny scan example
+- [Ruff end-to-end workflow script](ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 
 ## Layout
 
@@ -47,6 +47,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - `typer/` — CLIs built with Typer notes and demo scripts
 - `uv/` — uv package/project manager notes, scripts, and configs
 - `uv.lock/` — Lock file structure notes, generation and reproducibility scripts
+- `uvl/` — uv.lock quick primer
 - `CHANGELOG.md` — Recent changes log
 
 ## Coverage
@@ -73,6 +74,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | typer | 3 | 2 | — | 2 | — | — | — |
 | uv | 6 | 4 | 2 | 1 | 1 | — | — |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
+| uvl | 1 | — | — | — | — | — | 2026-08-01 |
 
 </details>
 
