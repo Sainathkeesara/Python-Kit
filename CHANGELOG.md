@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-01
+- uvl-004: Added uv.lock quick primer (`uvl/notes/0000-primer-uv.lock.md`) — First-day notes explaining what uv.lock is, key terminology, and a tiny example
+
 ## 2026-07-31
 - ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
 
