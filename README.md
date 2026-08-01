@@ -1,10 +1,11 @@
 # Python-Kit
-> A working Python engineer's reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
+[![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 
 > **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
 
@@ -18,11 +19,11 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Quick links
 
+- [Ruff quick primer](ruff/notes/0000-primer-ruf.md) — Ruff linter and formatter first-contact notes
 - [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
 - [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
 - [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pau is, key terminology, and a tiny scan example
-- [End-to-end Ruff lint and format workflow](ruff/scripts/end-to-end-ruff-lint-format.sh) — Lint a project, auto-fix, format, and verify with a single script
-- [Virtual environment management practice](docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
+- [Git attributes config](.gitattributes) — Repository-level git attribute rules
 
 ## Layout
 
@@ -66,7 +67,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 7 | 1 | — | 6 | — | — | — |
-| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
+| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-01 |
 | tox | 5 | 1 | 2 | — | — | — | — |
 | ty | 6 | 1 | 2 | 2 | — | — | — |
 | typer | 3 | 2 | — | 2 | — | — | — |
@@ -77,7 +78,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Status
 
-Foundational concept practice scripts for Git, venv, and type-checking are the most recent additions. Tool-specific primers and workflows for pip-audit, Ruff, and uv continue to grow.
+Currently working through foundational concept practice scripts and the Ruff quick primer. Pip-audit and uv workflows continue to grow.
 
 ---
-_Last updated: 2026-07-30_
+_Last updated: 2026-08-01_
