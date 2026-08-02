@@ -133,6 +133,10 @@
 - **docs** (1): [uv-vs-pip-cheat-sheet.md](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
 - **snippets** (1): [run-with-uv.py](../uv/snippets/run-with-uv.py)
 
+## uvl  ·  1 files
+
+- **primer:** [0000-primer-uv.lock.md](../uvl/notes/0000-primer-uv.lock.md)
+
 ## uv.lock  ·  11 files
 
 - **primer:** [0000-primer-uv.lock.md](../uv.lock/notes/0000-primer-uv.lock.md)
