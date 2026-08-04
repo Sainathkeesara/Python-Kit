@@ -19,11 +19,11 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Quick links
 
+- [Ruff quick primer](ruff/notes/0000-primer-ruff.md) — What Ruff is, key terminology, and a tiny example
 - [uv.lock quick primer](uvl/notes/0000-primer-uv.lock.md) — What uv.lock is, key terminology, and a tiny example
 - [Applying type hints practice script](docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
 - [Common venv patterns snippet](docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
 - [First pip-audit quick primer](pau/notes/0000-primer-pip-audit.md) — What pip-audit is, key terminology, and a tiny scan example
-- [Ruff end-to-end workflow script](ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 
 ## Layout
 
@@ -46,6 +46,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - `ty/` — Ty type checker comparison notes and configs
 - `typer/` — CLIs built with Typer notes and demo scripts
 - `uv/` — uv package/project manager notes, scripts, and configs
+  - `uv/docs/` — uv vs pip cheat sheet and migration docs
 - `uv.lock/` — Lock file structure notes, generation and reproducibility scripts
 - `uvl/` — uv.lock quick primer
 - `CHANGELOG.md` — Recent changes log
@@ -58,21 +59,21 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
-| mypy | 7 | 1 | 3 | 4 | — | — | — |
+| mypy | 7 | 1 | 3 | 4 | — | — | 2026-07-19 |
 | pau | 1 | — | — | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | 1 | 5 | — | — | — |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | — |
+| pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-07-19 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
-| pyproject.toml | 3 | — | 5 | — | — | — | — |
-| pytest | 5 | 3 | 1 | 2 | 1 | — | — |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-20 |
+| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
 | rich | 7 | 1 | — | 6 | — | — | — |
-| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-01 |
+| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-03 |
 | tox | 5 | 1 | 2 | — | — | — | — |
-| ty | 6 | 1 | 2 | 2 | — | — | — |
+| ty | 6 | 1 | 2 | 2 | — | — | 2026-07-05 |
 | typer | 3 | 2 | — | 2 | — | — | — |
-| uv | 6 | 4 | 2 | 1 | 1 | — | — |
+| uv | 6 | 4 | 2 | 1 | 1 | — | 2026-07-19 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 1 | — | — | — | — | — | 2026-08-01 |
 
@@ -80,7 +81,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Status
 
-Currently working through foundational concept practice scripts and the Ruff quick primer. Pip-audit and uv workflows continue to grow.
+Currently working through the Ruff quick primer and uv.lock quick primer. Foundational concept practice scripts continue to grow.
 
 ---
-_Last updated: 2026-08-01_
+_Last updated: 2026-08-04_
