@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-04
+- uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
+
 ## 2026-08-03
 - ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
 
