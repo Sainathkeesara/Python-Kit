@@ -2,6 +2,9 @@
 
 ## 2026-08-04
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
+- mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pyt/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
 
 ## 2026-08-03
 - ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
