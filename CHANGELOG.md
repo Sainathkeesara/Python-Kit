@@ -3,6 +3,7 @@
 ## 2026-08-05
 - rich-001: Added Rich quickstart tripped-me-up notes (`rich/notes/2026-08-05-followed-rich-quickstart.md`) — What I learned following the official Rich quickstart: markup syntax, table alignment, Live refresh rate, and console width gotchas
 - rich-002: Added Rich styled output script (`rich/scripts/2026-08-05-rich-styled-output-tables-progress.py`) — Minimal Rich script demonstrating panels, tables, and progress bars
+- ty-009: Added minimal Ty config (`ty/configs/2026-08-05-minimal-ty-config.toml`) — Minimal Ty configuration with pyproject.toml for type-checking settings
 
 ## 2026-08-04
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
