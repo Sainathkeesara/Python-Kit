@@ -146,6 +146,9 @@
 ## ty
 - **Type inference** — Ty figuring out types even when annotations are not written (e.g. `x = 42` implies `int`).
 - **PEP 484** — The Python specification that defines type annotation syntax (`Optional[str]`, `List[int]`, `Union[str, int]`, etc.).
+- **strict mode** — A Ty configuration that enforces checking all functions, even ones without annotations; similar to mypy's `--strict`.
+- **Unannotated** — A function or variable with no type hint; in Ty's strict mode, these are flagged as errors.
+- **zero-config** — Ty's philosophy of working out of the box with no manual configuration needed.
 
 ## typer
 - **Command** — A function decorated with `@app.command()` that becomes a CLI subcommand.

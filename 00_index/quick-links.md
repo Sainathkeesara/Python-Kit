@@ -57,6 +57,8 @@
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create test file and run with -v, -k, -x, --tb=short
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
+- [Tried pytest quickstart notes](../pyt/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
+- [Minimal fixture parametrize suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
 
 ### pyproject.toml
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
@@ -82,7 +84,8 @@
 - [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility mechanisms
 
 ### uvl
-- [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What uv.lock is, key terminology, and a tiny example
+- [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What is uv.lock? key terminology, and a tiny example
+- [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
 
 ### pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
@@ -113,6 +116,7 @@
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use --reverse to find which packages depend on a given package
 - [List Package Dependencies Script](../pipdeptree/scripts/list-package-deps.py) — Use pipdeptree as a library to list all deps of a named package
 - [Dev Dependencies Config](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml) — pyproject.toml excerpt declaring dev dependencies for dependency analysis
+- [Build dependency report snippet](../pipdeptree/snippets/2026-08-04-build-dependency-report.py) — Parse pipdeptree JSON and classify deps as direct vs transitive
 
 ### rich
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
@@ -136,6 +140,7 @@
 - [Official mypy Quickstart Notes](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
 - [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
 - [Strict Disallow Ignore Config](../mypy/configs/tried-strict-disallow-ignore-config.ini) — Minimal mypy.ini with strict mode, type annotation enforcement, and import allowance
+- [Selective mypy strictness config](../mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
 
 ### Ty
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
@@ -149,6 +154,8 @@
 - [CLI Flags and Formats Notes](../ty/notes/2026-06-16-explored-ty-cli-flags.md) — Explored Ty CLI flags, output formats, compared with mypy options
 - [Ty vs Mypy Comparison Snippet](../ty/snippets/tried-ty-vs-mypy.py) — Compare Ty and mypy output on the same typed code
 - [First Ty Type Check Notes](../ty/notes/2026-06-18-first-ty-type-check.md) — Installed Ty and ran first type check on a sample Python file
+- [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
+- [Ty type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module and checking results
 
 ### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
