@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-05
+- rich-001: Added Rich quickstart tripped-me-up notes (`rich/notes/2026-08-05-followed-rich-quickstart.md`) — What I learned following the official Rich quickstart: markup syntax, table alignment, Live refresh rate, and console width gotchas
+- rich-002: Added Rich styled output script (`rich/scripts/2026-08-05-rich-styled-output-tables-progress.py`) — Minimal Rich script demonstrating panels, tables, and progress bars
+
 ## 2026-08-04
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
