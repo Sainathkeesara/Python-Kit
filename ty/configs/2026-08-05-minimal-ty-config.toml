@@ -1,0 +1,6 @@
+# last_verified: 2026-08-05 · ty n/a
+
+[tool.ty]
+include = ["src/**/*.py"]
+exclude = ["tests/", "build/"]
+python_version = "3.12"

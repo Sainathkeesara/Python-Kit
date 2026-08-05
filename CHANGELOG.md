@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-05
+- ty-009: Added minimal Ty config (`ty/configs/2026-08-05-minimal-ty-config.toml`) — Minimal Ty configuration with pyproject.toml for type-checking settings
+
 ## 2026-08-04
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
