@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-06
-- pdt-010: Added pipdeptree tutorial notes (`pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md`) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
+- psy-013: Added py-spy CLI subcommand exploration notes (`psy/notes/2026-08-06-explore-py-spy-cli-subcommands.md`) — Explored py-spy's top, record, flamegraph subcommands and --help output
 - rich-003: Added Rich inspect + live display snippet (`rich/snippets/2026-08-06-rich-inspect-live-pipeline.py`) — What I learned using Rich's inspect() and live display on a sample data pipeline
 
 ## 2026-08-05
