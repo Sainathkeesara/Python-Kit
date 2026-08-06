@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-06
+- pdt-010: Added pipdeptree tutorial notes (`pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md`) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
 - rich-003: Added Rich inspect + live display snippet (`rich/snippets/2026-08-06-rich-inspect-live-pipeline.py`) — What I learned using Rich's inspect() and live display on a sample data pipeline
 
 ## 2026-08-05
