@@ -2,6 +2,7 @@
 
 ## 2026-08-06
 - pdt-010: Added pipdeptree tutorial notes (`pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md`) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
+- rich-003: Added Rich inspect + live display snippet (`rich/snippets/2026-08-06-rich-inspect-live-pipeline.py`) — What I learned using Rich's inspect() and live display on a sample data pipeline
 
 ## 2026-08-05
 - rich-001: Added Rich quickstart tripped-me-up notes (`rich/notes/2026-08-05-followed-rich-quickstart.md`) — What I learned following the official Rich quickstart: markup syntax, table alignment, Live refresh rate, and console width gotchas
