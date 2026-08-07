@@ -3,6 +3,7 @@
 ## 2026-08-07
 - pau-013: Added pip-audit first-scan notes (`pau/notes/2026-08-07-first-pip-audit-scan.md`) — Installed pip-audit, scanned a tiny requirements.txt with --format json, and learned the report shape (list of per-package findings) plus the non-zero exit-on-find behavior
 - rich-004: Added Rich first styled-output notes (`rich/notes/2026-08-07-installed-rich-first-styled-output.md`) — Installed Rich and produced first styled console output; noted inline markup needs closed tags
+- pau-013: Added pip-audit first scan and JSON report notes (`pau/notes/2026-08-07-first-pip-audit-scan-and-json-report.md`) — First pip-audit scan against a tiny requirements.txt: what the JSON report looks like
 
 ## 2026-08-06
 - pdt-010: Added pipdeptree tutorial notes (`pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md`) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
@@ -19,19 +20,19 @@
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
 - mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
-- pyt-010: Added pytest quickstart tripped-me-up notes (`pyt/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
-- pyt-011: Added minimal pytest fixture and parametrize suite (`pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
 - ty-010: Added Ty quickstart tripped-me-up notes (`ty/notes/2026-08-04-followed-ty-quickstart.md`) — What I learned following the official Ty quickstart: install, run, type mismatches, and config gotchas
 - ty-011: Added minimal Ty type-checking workflow snippet (`ty/snippets/2026-08-04-ty-type-checking-workflow.py`) — Minimal typed Python module demonstrating Ty check workflow
 
 ## 2026-08-03
-- ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
+- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
 
 ## 2026-08-01
 - uvl-004: Added uv.lock quick primer (`uvl/notes/0000-primer-uv.lock.md`) — First-day notes explaining what uv.lock is, key terminology, and a tiny example
 
 ## 2026-07-31
-- ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
+- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
 
 ## 2026-07-27
 - con-019: Added Static Type Checking & Type Hints applying-type-hints script (`docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py`) — Python script demonstrating typed dictionaries, runtime validation, and filtering with type annotations
