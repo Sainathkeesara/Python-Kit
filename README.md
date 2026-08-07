@@ -23,7 +23,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - [Ty type-checking workflow snippet](ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module
 - [Build dependency report snippet](pipdeptree/snippets/2026-08-04-build-dependency-report.py) — Parse pipdeptree output and list direct vs transitive deps
 - [Selective mypy strictness config](mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
-- [pytest quickstart notes](pyt/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
+- [pytest quickstart notes](pytest/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
 
 ## Layout
 
