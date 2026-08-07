@@ -57,8 +57,8 @@
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create test file and run with -v, -k, -x, --tb=short
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
-- [Tried pytest quickstart notes](../pyt/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
-- [Minimal fixture parametrize suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
+ - [Tried pytest quickstart notes](../pytest/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
+ - [Minimal fixture parametrize suite](../pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
 
 ### pyproject.toml
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
