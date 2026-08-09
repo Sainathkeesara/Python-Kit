@@ -9,7 +9,7 @@ I already knew py-spy could dump a flamegraph, but I wanted to understand the tr
 
 ## The test script
 
-I used a small Python file that does number crunching in a loop — the same `cpu_worker.py` for all three runs so the comparison is fair.
+I used a small Python file that does number crunching in a loop — the same `../scripts/cpu_worker.py` for all three runs so the comparison is fair.
 
 ## Flamegraph SVG (`-o flame.svg`)
 

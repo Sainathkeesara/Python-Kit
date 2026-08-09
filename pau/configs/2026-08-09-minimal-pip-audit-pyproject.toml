@@ -1,0 +1,9 @@
+# last_verified: 2026-08-09 · pip-audit 2.10.1
+
+[tool.pip-audit]
+strict = true
+timeout = 60
+
+[tool.pip-audit.ignore]
+# Add vulnerability IDs here after reviewing them.
+vulns = []

@@ -1,6 +1,6 @@
 # Tried py-spy CLI subcommands: record, top, flamegraph
 
-I ran my sampling target script (`tried-py-spy-sampling.py`) in one terminal, then played with py-spy's three main subcommands in another.
+I ran my sampling target script (`../scripts/tried-py-spy-sampling.py`) in one terminal, then played with py-spy's three main subcommands in another.
 
 ## `py-spy top`
 

@@ -28,6 +28,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 ## Layout
 
 - `00_index/` — Navigation: topics.md, quick-links.md, glossary.md, learning-path.md
+- `.gitattributes` — Git export-ignore and line-ending rules
 - `docs/` — Foundational concept primers and project-level documentation
   - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows

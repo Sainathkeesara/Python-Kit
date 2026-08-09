@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-08-09
+- pau-009: Added pip-audit scan config (`pau/configs/2026-08-09-pip-audit-scan-config.toml`) — Minimal [tool.pip-audit] section with scan defaults and ignore rules
+- uv-009: Added uv script/venv/lockfile workflow notes (`uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md`) — What I learned building a small CLI tool with uv
+- prc-011: Added first pre-commit hook notes (`prc/notes/2026-08-09-first-pre-commit-hook.md`) — What I learned setting up my first pre-commit hook and running it once
+- pau-009: Added minimal pip-audit pyproject.toml config (`pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml`) — Minimal [tool.pip-audit] section with scan defaults and ignore rules
+
 ## 2026-08-07
 - rich-004: Added Rich first styled console output script (`rich/scripts/2026-08-07-first-styled-rich-output.py`) — Install Rich and produce my first styled console output
 
@@ -18,19 +24,19 @@
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
 - mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
-- pyt-010: Added pytest quickstart tripped-me-up notes (`pyt/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
-- pyt-011: Added minimal pytest fixture and parametrize suite (`pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
 - ty-010: Added Ty quickstart tripped-me-up notes (`ty/notes/2026-08-04-followed-ty-quickstart.md`) — What I learned following the official Ty quickstart: install, run, type mismatches, and config gotchas
 - ty-011: Added minimal Ty type-checking workflow snippet (`ty/snippets/2026-08-04-ty-type-checking-workflow.py`) — Minimal typed Python module demonstrating Ty check workflow
 
 ## 2026-08-03
-- ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
+- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny example
 
 ## 2026-08-01
 - uvl-004: Added uv.lock quick primer (`uvl/notes/0000-primer-uv.lock.md`) — First-day notes explaining what uv.lock is, key terminology, and a tiny example
 
 ## 2026-07-31
-- ruf-004: Added Ruff quick primer (`ruf/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
+- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
 
 ## 2026-07-27
 - con-019: Added Static Type Checking & Type Hints applying-type-hints script (`docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py`) — Python script demonstrating typed dictionaries, runtime validation, and filtering with type annotations
@@ -114,7 +120,7 @@
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
 - prc-008: Added pre-commit install and run with lint+typecheck notes (`pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md`) — Installed pre-commit, ran with ruff linting and mypy type check on a sample repo
 - uv-007: Added uv CLI help and format notes (`uv/notes/2026-06-16-explored-uv-cli-help-and-format.md`) — Explored uv CLI subcommands, help topics, and output formats
-- gen-005: Added quality tools pyproject.toml config (historically `general/configs/tried-quality-tools-pyproject.toml`, moved to tool-specific configs) — Combined ruff, mypy, pytest config in one pyproject.toml
+- gen-005: Added quality tools pyproject.toml config (historically in a general configs folder, moved to tool-specific configs) — Combined ruff, mypy, pytest config in one pyproject.toml
 - ty-007: Added Ty vs mypy comparison snippet (`ty/snippets/tried-ty-vs-mypy.py`) — Compare Ty and mypy output on the same typed code
 - prc-007: Added ruff + mypy hooks config snippet (`pre-commit/snippets/tried-ruff-mypy-config.yaml`) — Minimal pre-commit config with ruff and mypy hooks
 - tox-005: Upgraded tox config voice to L2 (`tox/configs/tried-lint-and-test-env.ini`) — Enhanced comments with structured reasoning
@@ -129,7 +135,7 @@
 - pdt-007: Added check package deps snippet (`pipdeptree/snippets/tried-check-package-deps.py`) — Look up a specific package in pipdeptree JSON output and print its dependency chain
 - tox-009: Added minimal tox run script (`tox/scripts/tried-minimal-tox-run.sh`) — Create tox.ini with test env and run tox end-to-end
 - ppt-005: Added build-system config notes (`pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md`) — Exploring minimal [build-system] table in pyproject.toml
-- gen-002: Added backlog capacity audit notes (historically `general/notes/2026-06-10-backlog-capacity-audit.md`) — Count open vs completed tasks per tool, identify next-level blockers
+- gen-002: Added backlog capacity audit notes (historically in general notes) — Count open vs completed tasks per tool, identify next-level blockers
 
 ## 2026-06-14
 - pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
@@ -147,8 +153,8 @@
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
 - mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
-- gen-003: Added cross-tool workflow notes (historically `general/notes/2026-06-12-figured-out-quality-tool-workflow.md`) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
-- gen-004: Added first quality chain snippet (historically `general/snippets/tried-first-quality-chain.py`) — Run Ruff, mypy, and pytest in sequence from one script
+- gen-003: Added cross-tool workflow notes (historically in general notes) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
+- gen-004: Added first quality chain snippet (historically in general snippets) — Run Ruff, mypy, and pytest in sequence from one script
 
 ## 2026-06-11
 - tox-004 (rework): Added followed tox quickstart notes (`tox/notes/2026-06-11-followed-tox-quickstart.md`) — Multi-env setup, what tripped me up
