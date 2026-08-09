@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, uvl, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -11,7 +11,7 @@
 
 ## Who this is for
 
-A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, uvl, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
@@ -19,11 +19,11 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Quick links
 
-- [Ty quickstart notes](ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
-- [Ty type-checking workflow snippet](ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module
-- [Build dependency report snippet](pipdeptree/snippets/2026-08-04-build-dependency-report.py) — Parse pipdeptree output and list direct vs transitive deps
-- [Selective mypy strictness config](mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
-- [pytest quickstart notes](pytest/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
+- [uv first project snippet](uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
+- [uv.lock dependencies docs](uvl/docs/2026-08-08-uv-lock-dependencies.md) — How uv.lock records dependency groups, markers, and transitive dependencies
+- [Rich styled output script](rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
+- [pipdeptree tutorial notes](pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
+- [Rich inspect live pipeline snippet](rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
 
 ## Layout
 
@@ -40,6 +40,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
+- `pyt/` — pytest quickstart notes and minimal fixture/parametrize suite
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs
 - `tox/` — Tox automation notes, env config, and CLI patterns
@@ -47,7 +48,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - `typer/` — CLIs built with Typer notes and demo scripts
 - `uv/` — uv package/project manager notes, scripts, and configs
 - `uv.lock/` — Lock file structure notes, generation and reproducibility scripts
-- `uvl/` — uv.lock quick primer
+- `uvl/` — uv.lock quick primer and mapping docs
 - `CHANGELOG.md` — Recent changes log
 
 ## Coverage
@@ -58,31 +59,30 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
-| mypy | 7 | 1 | 4 | 4 | — | — | 2026-08-04 |
+| mypy | 7 | 1 | 4 | 4 | — | — | — |
 | pau | 1 | — | — | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 7 | 2 | 1 | 5 | — | — | 2026-08-04 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
+| pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-20 |
-| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
+| pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pyt | 1 | 1 | — | — | — | — | 2026-08-04 |
-| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
-| rich | 7 | 1 | — | 6 | — | — | — |
-| ruf | 1 | — | — | — | — | — | 2026-08-03 |
-| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-07-31 |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | — |
+| rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
+| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-04 |
 | tox | 5 | 1 | 2 | — | — | — | — |
-| ty | 7 | 1 | 2 | 3 | — | — | 2026-08-04 |
-| typer | 3 | 2 | — | 2 | — | — | 2026-07-05 |
-| uv | 6 | 4 | 2 | 1 | 1 | — | 2026-07-19 |
+| ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
+| typer | 3 | 2 | — | 2 | — | — | — |
+| uv | 7 | 4 | 2 | 1 | 1 | — | 2026-08-05 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
-| uvl | 2 | — | — | — | — | — | 2026-08-04 |
+| uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
 
 </details>
 
 ## Status
 
-Currently working through Ty quickstart notes, pytest practice scripts, and mypy strictness configs. Pipdeptree and uv.lock content continue to grow.
+Currently adding uv project snippets, uv.lock dependency mapping docs, Rich styled output and inspect workflows, and pipdeptree tutorials. Ty, pytest, and mypy strictness configs continue to grow.
 
 ---
-_Last updated: 2026-08-05_
+_Last updated: 2026-08-08_

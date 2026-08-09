@@ -29,6 +29,7 @@
 - [End-to-end uv Workflow Script](../uv/scripts/2026-07-19-uv-workflow.sh) — Create project, add deps, sync, run, and lock with uv
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
+- [First uv project snippet](../uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
 
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first-contact notes
@@ -57,8 +58,8 @@
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create test file and run with -v, -k, -x, --tb=short
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
- - [Tried pytest quickstart notes](../pytest/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
- - [Minimal fixture parametrize suite](../pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
+- [Tried pytest quickstart notes](../pyt/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
+- [Minimal fixture parametrize suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
 
 ### pyproject.toml
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
@@ -86,6 +87,7 @@
 ### uvl
 - [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What is uv.lock? key terminology, and a tiny example
 - [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
+- [uv.lock dependencies docs](../uvl/docs/2026-08-08-uv-lock-dependencies.md) — How uv.lock records dependency groups, markers, and transitive dependencies
 
 ### pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
@@ -117,6 +119,7 @@
 - [List Package Dependencies Script](../pipdeptree/scripts/list-package-deps.py) — Use pipdeptree as a library to list all deps of a named package
 - [Dev Dependencies Config](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml) — pyproject.toml excerpt declaring dev dependencies for dependency analysis
 - [Build dependency report snippet](../pipdeptree/snippets/2026-08-04-build-dependency-report.py) — Parse pipdeptree JSON and classify deps as direct vs transitive
+- [pipdeptree tutorial notes](../pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
 
 ### rich
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
@@ -124,6 +127,8 @@
 - [Console API Renderables Notes](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md) — Renderables, styles, and output modes
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
 - [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
+- [Rich styled output script](../rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
+- [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
 
 ### mypy
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes

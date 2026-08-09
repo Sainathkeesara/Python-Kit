@@ -42,10 +42,10 @@
 - **configs** (1): [pip-audit-ignore.toml](../pip-audit/configs/pip-audit-ignore.toml)
 - **snippets** (4): [parse-pip-audit-json-cves-2026-07-13](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py), [list-cve-findings.py](../pip-audit/snippets/list-cve-findings.py), [tried-list-cves.py](../pip-audit/snippets/tried-list-cves.py)
 
-## pipdeptree  ·  16 files
+## pipdeptree  ·  17 files
 
 - **primer:** [0000-primer-pipdeptree.md](../pipdeptree/notes/0000-primer-pipdeptree.md)
-- **notes** (6): [pipdeptree-patterns-i-use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md), [common-cli-patterns](../pipdeptree/notes/2026-06-13-common-cli-patterns.md), [followed-pipdeptree-quickstart](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md), [format-json-and-identify-deps](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md), [format-json-deps](../pipdeptree/notes/2026-05-29-format-json-deps.md), [tripped-on-pipdeptree-filtering](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md)
+- **notes** (8): [pipdeptree-patterns-i-use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md), [common-cli-patterns](../pipdeptree/notes/2026-06-13-common-cli-patterns.md), [followed-pipdeptree-quickstart](../pipdeptree/notes/2026-06-09-followed-pipdeptree-quickstart.md), [pipdeptree-tutorial](../pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md), [format-json-and-identify-deps](../pipdeptree/notes/2026-05-30-format-json-and-identify-deps.md), [format-json-deps](../pipdeptree/notes/2026-05-29-format-json-deps.md), [tripped-on-pipdeptree-filtering](../pipdeptree/notes/2026-06-07-tripped-on-pipdeptree-filtering.md)
 - **configs** (1): [dev-dependencies-pipdeptree](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml)
 - **scripts** (2): [list-package-deps.py](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps.sh](../pipdeptree/scripts/install-and-inspect-deps.sh)
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json.py](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps.py](../pipdeptree/snippets/find-reverse-deps.py), [check-package-deps.py](../pipdeptree/snippets/check-package-deps.py), [tried-check-package-deps.py](../pipdeptree/snippets/tried-check-package-deps.py), [tried-identify-leaf-packages.py](../pipdeptree/snippets/tried-identify-leaf-packages.py)
@@ -66,8 +66,10 @@
 ## py-spy  ·  21 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
-- **notes** (9): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md), [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [followed-py-spy-quickstart](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md), [tripped-on-py-spy-top-session](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md), [tried-py-spy-top-session](../py-spy/notes/2026-06-08-tried-py-spy-top-session.md), [tried-py-spy-cli-subcommands](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md)
-- **scripts** (9): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [2026-07-10-cpu-speedscope-record.py](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [2026-07-08-cpu-speedscope-record.py](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [cpu_worker.py](../py-spy/scripts/cpu_worker.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py)
+- **notes** (9): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (June)](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md), [my-py-spy-workflow](../py-spy/notes/2026-06-13-my-py-spy-workflow.md), [followed-py-spy-quickstart](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md), [tripped-on-py-spy-top-session](../py-spy/notes/2026-06-08-tripped-on-py-spy-top-session.md), [tried-py-spy-top-session](../py-spy/notes/2026-06-08-tried-py-spy-top-session.md), [tried-py-spy-cli-subcommands](../py-spy/notes/2026-05-30-tried-py-spy-cli-subcommands.md)
+- _…and 0 more under `py-spy/notes/` — browse the folder._
+- **scripts** (9): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [cpu-speedscope-record (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py), [tried-cpu-speedscope-record](../py-spy/scripts/tried-cpu-speedscope-record.py), [cpu_worker.py](../py-spy/scripts/cpu_worker.py), [tried-py-spy-speedscope-record](../py-spy/scripts/tried-py-spy-speedscope-record.py), [tried-install-and-record-flamegraph.sh](../py-spy/scripts/tried-install-and-record-flamegraph.sh), [tried-py-spy-record-flamegraph.sh](../py-spy/scripts/tried-py-spy-record-flamegraph.sh), [tried-py-spy-sampling.py](../py-spy/scripts/tried-py-spy-sampling.py)
+- _…and 0 more under `py-spy/scripts/` — browse the folder._
 - **snippets** (2): [tried-cpu-bound-simulation.py](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process.py](../py-spy/snippets/tried-profile-running-process.py)
 
 ## pyproject.toml  ·  8 files
@@ -85,18 +87,25 @@
 - **docs** (1): [pytest-vs-unittest-mapping.md](../pytest/docs/pytest-vs-unittest-mapping.md)
 - **snippets** (2): [test_first_test.py](../pytest/snippets/test_first_test.py), [three_basic_tests.py](../pytest/snippets/three_basic_tests.py)
 
-## rich  ·  14 files
+## pyt  ·  2 files
+
+- **notes** (1): [tried-pytest-quickstart](../pyt/notes/2026-08-04-tried-pytest-quickstart.md)
+- **scripts** (1): [minimal-fixture-parametrize-suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py)
+
+## rich  ·  18 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
-- **notes** (6): [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md), [tried-rich-console-api](../rich/notes/2026-06-04-tried-rich-console-api.md), [tried-rich-quickstart-tables-panels](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md), [tried-rich-themes-and-markdown](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md), [exploring-renderables](../rich/notes/2026-05-28-exploring-renderables.md)
-- **scripts** (1): [first-table-panel-progress.py](../rich/scripts/first-table-panel-progress.py)
-- **snippets** (6): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py), [tried-progress-spinner.py](../rich/snippets/tried-progress-spinner.py), [first-rich-logger.py](../rich/snippets/first-rich-logger.py), [tried-rich-progress-bar.py](../rich/snippets/tried-rich-progress-bar.py)
+- **notes** (8): [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md), [tried-rich-console-api](../rich/notes/2026-06-04-tried-rich-console-api.md), [tried-rich-quickstart-tables-panels](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md), [tried-rich-themes-and-markdown](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md), [exploring-renderables](../rich/notes/2026-05-28-exploring-renderables.md), [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md)
+- _…and 1 more under `rich/notes/` — browse the folder._
+- **scripts** (3): [first-table-panel-progress.py](../rich/scripts/first-table-panel-progress.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py)
+- **snippets** (7): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py), [tried-progress-spinner.py](../rich/snippets/tried-progress-spinner.py), [first-rich-logger.py](../rich/snippets/first-rich-logger.py), [tried-rich-progress-bar.py](../rich/snippets/tried-rich-progress-bar.py), [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py)
 
 ## ruff  ·  15 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **primer:** [0000-primer-ruf.md](../ruff/notes/0000-primer-ruf.md)
 - **notes** (6): [select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md), [cli-exploration](../ruff/notes/2026-06-06-cli-exploration.md), [tried-ruff-quickstart](../ruff/notes/2026-06-03-tried-ruff-quickstart.md)
+- _…and 1 more under `ruff/notes/` — browse the folder._
 - **configs** (4): [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml), [minimal-standalone-ruff](../ruff/configs/2026-07-05-minimal-standalone-ruff.toml)
 - **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **scripts** (1): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh)
@@ -109,11 +118,11 @@
 - **configs** (2): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini)
 - **scripts** (1): [tried-minimal-tox-run.sh](../tox/scripts/tried-minimal-tox-run.sh)
 
-## ty  ·  13 files
+## ty  ·  14 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (6): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md), [first-ty-markdown-render](../ty/notes/2026-06-10-first-ty-markdown-render.md), [tried-ty-quickstart](../ty/notes/2026-06-05-tried-ty-quickstart.md), [compare-ty-vs-mypy](../ty/notes/2026-05-27-compare-ty-vs-mypy.md)
-- **configs** (2): [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
+- **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
 - **scripts** (1): [tried-ty-pipeline.sh](../ty/scripts/tried-ty-pipeline.sh)
 - **snippets** (3): [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase.py](../ty/snippets/run-ty-on-codebase.py), [tried-ty-vs-mypy.py](../ty/snippets/tried-ty-vs-mypy.py)
 
@@ -124,24 +133,27 @@
 - **scripts** (2): [typer_cli_demo.py](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator.py](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (2): [tried-first-typer-cli-app.py](../typer/snippets/tried-first-typer-cli-app.py), [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py)
 
-## uv  ·  14 files
+## uv  ·  15 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
-- **notes** (5): [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md), [installed-uv-first-command](../uv/notes/2026-06-10-installed-uv-first-command.md), [tried-uv-quickstart-scaffold](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md), [cli-commands-beyond-basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md), [virtual-env-uv](../uv/notes/2026-05-24-virtual-env-uv.md)
+- **notes** (7): [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md), [installed-uv-first-command](../uv/notes/2026-06-10-installed-uv-first-command.md), [tried-uv-quickstart-scaffold](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md), [cli-commands-beyond-basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md), [virtual-env-uv](../uv/notes/2026-05-24-virtual-env-uv.md)
+- _…and 1 more under `uv/notes/` — browse the folder._
 - **configs** (2): [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
 - **scripts** (4): [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh), [install-and-first-command.sh](../uv/scripts/install-and-first-command.sh), [hello-with-dep.py](../uv/scripts/hello-with-dep.py), [tried-bootstrap-uv-script.sh](../uv/scripts/tried-bootstrap-uv-script.sh)
 - **docs** (1): [uv-vs-pip-cheat-sheet.md](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
 - **snippets** (1): [run-with-uv.py](../uv/snippets/run-with-uv.py)
 
-## uvl  ·  2 files
+## uvl  ·  3 files
 
 - **primer:** [0000-primer-uv.lock.md](../uvl/notes/0000-primer-uv.lock.md)
 - **notes** (1): [uv-lock-mapping-to-pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md)
+- **docs** (1): [uv-lock-dependencies](../uvl/docs/2026-08-08-uv-lock-dependencies.md)
 
 ## uv.lock  ·  11 files
 
 - **primer:** [0000-primer-uv.lock.md](../uv.lock/notes/0000-primer-uv.lock.md)
 - **notes** (3): [uv-lock-packages-checksums-markers](../uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md), [generated-first-uv-lock](../uv.lock/notes/2026-06-11-generated-first-uv-lock.md), [uv-lock-structure](../uv.lock/notes/2026-05-26-uv-lock-structure.md)
 - **scripts** (4): [generate-uv-lock.sh](../uv.lock/scripts/generate-uv-lock.sh), [tried-extract-direct-deps.py](../uv.lock/scripts/tried-extract-direct-deps.py), [tried-uv-lock-reproducibility.sh](../uv.lock/scripts/tried-uv-lock-reproducibility.sh), [tried-generate-from-pyproject-toml.sh](../uv.lock/scripts/tried-generate-from-pyproject-toml.sh)
+- _…and 0 more under `uv.lock/scripts/` — browse the folder._
 - **snippets** (2): [tried-reading-uv-lock.py](../uv.lock/snippets/tried-reading-uv-lock.py), [tried-detect-conflicting-constraints.py](../uv.lock/snippets/tried-detect-conflicting-constraints.py)
 - **notebooks** (1): [exploring-uv-lock-structure.ipynb](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb)
