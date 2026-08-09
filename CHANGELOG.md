@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-08-09
+- pau-009: Added pip-audit scan config (`pau/configs/2026-08-09-pip-audit-scan-config.toml`) — Minimal [tool.pip-audit] section with scan defaults and ignore rules
+- uv-009: Added uv script/venv/lockfile workflow notes (`uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md`) — What I learned building a small CLI tool with uv
+- prc-011: Added first pre-commit hook notes (`prc/notes/2026-08-09-first-pre-commit-hook.md`) — What I learned setting up my first pre-commit hook and running it once
+
 ## 2026-08-07
 - rich-004: Added Rich first styled console output script (`rich/scripts/2026-08-07-first-styled-rich-output.py`) — Install Rich and produce my first styled console output
 
