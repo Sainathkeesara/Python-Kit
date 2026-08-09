@@ -58,8 +58,6 @@
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create test file and run with -v, -k, -x, --tb=short
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
-- [Tried pytest quickstart notes](../pyt/notes/2026-08-04-tried-pytest-quickstart.md) — Following the pytest quickstart, first test suite, what tripped me up
-- [Minimal fixture parametrize suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py) — Practice parametrize and fixture patterns
 
 ### pyproject.toml
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
@@ -112,6 +110,8 @@
 - [pip-audit Ignore Config](../pip-audit/configs/pip-audit-ignore.toml) — Configure pip-audit ignore list for reviewed CVEs
 - [Parse CVE Findings Snippet](../pip-audit/snippets/tried-list-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [pau Quick Primer](../pau/notes/0000-primer-pip-audit.md) — What is pip-audit? first-contact notes
+- [pau pyproject config](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml) — Minimal pyproject.toml with [tool.pip-audit] strict mode and timeout settings
+- [pau scan config](../pau/configs/2026-08-09-pip-audit-scan-config.toml) — pip-audit scan configuration with strict mode and custom sources
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first-contact notes
 - [Pipdeptree Patterns I Use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md) — --warn silence, --freeze, --exclude, JSON output tricks
 - [Parse JSON Snippet](../pipdeptree/snippets/parse-pipdeptree-json.py) — Parse pipdeptree JSON output and list leaf packages

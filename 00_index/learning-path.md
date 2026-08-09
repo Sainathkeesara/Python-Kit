@@ -20,7 +20,7 @@ These tools are unlocked from the start and form the day-to-day workflow.
 - **uv** — Fast package and project manager. Install packages, manage environments, run scripts. Start with the [uv Primer](../uv/notes/0000-primer-uv.md) and [install script](../uv/scripts/install-and-first-command.sh).
 - **Ruff** — Linter and formatter. Catches bugs and enforces style. Start with the [Ruff Primer](../ruff/notes/0000-primer-ruff.md) and [quickstart notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md). For an end-to-end lint-and-format workflow, see the [workflow script](../ruff/scripts/end-to-end-ruff-lint-format.sh). When applying to a real project, see [what tripped me up](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md).
 - **pytest** — Test runner with fixtures and parametrization. Start with the [pytest Primer](../pytest/notes/0000-primer-pytest.md) and [first test suite notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md).
-- **pre-commit** — Hook framework that runs linters and type checkers before each commit. Start with the [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) and [install/run script](../pre-commit/scripts/install-and-run.sh).
+- **pre-commit** — Hook framework that runs linters and type checkers before each commit. Start with the [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) and [install/run script](../pre-commit/scripts/install-and-run.sh). For first-contact notes, see the [prc first hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md).
 - **pyproject.toml** — Central config file for all modern Python tools. Start with the [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) and [minimal config](../pyproject.toml/configs/minimal-pyproject.toml).
 
 ## Stage 3: Building Skills
@@ -32,6 +32,8 @@ Intermediate tools and patterns that extend the core workflow.
 - **Lock files (uv.lock, uvl)** — Reproducible dependency resolution. Start with the lighter [uvl primer](../uvl/notes/0000-primer-uv.lock.md) and [uv.lock mapping notes](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md), then dive into the full [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) and [generation script](../uv.lock/scripts/generate-uv-lock.sh).
 - **Vulnerability scanning (pip-audit)** — Audit dependencies for known CVEs. Start with the [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) and [scan script](../pip-audit/scripts/scan-project.sh). For the quick primer, see the [pau quick primer](../pau/notes/0000-primer-pip-audit.md).
 - **Dependency trees (pipdeptree)** — Visualize and analyze package dependency graphs. Start with the [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) and [JSON parsing snippet](../pipdeptree/snippets/parse-pipdeptree-json.py).
+- **uv script, venv, and lockfile workflow** — Try uv script, venv, and lockfile on a small CLI project: [uv workflow notes](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md).
+- **pip-audit configs (pau)** — Minimal pyproject.toml and scan configs for pip-audit: [pau pyproject config](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml) and [pau scan config](../pau/configs/2026-08-09-pip-audit-scan-config.toml).
 
 ## Stage 4: Advanced Tools
 

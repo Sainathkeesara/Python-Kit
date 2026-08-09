@@ -19,11 +19,11 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 
 ## Quick links
 
-- [uv first project snippet](uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
-- [uv.lock dependencies docs](uvl/docs/2026-08-08-uv-lock-dependencies.md) — How uv.lock records dependency groups, markers, and transitive dependencies
-- [Rich styled output script](rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
-- [pipdeptree tutorial notes](pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
-- [Rich inspect live pipeline snippet](rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
+- [pau pip-audit pyproject config](pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml) — Minimal pyproject.toml with [tool.pip-audit] strict mode and timeout settings
+- [pau pip-audit scan config](pau/configs/2026-08-09-pip-audit-scan-config.toml) — pip-audit scan configuration with strict mode and custom sources
+- [First pre-commit hook notes](prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
+- [uv script, venv, and lockfile notes](uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md) — Tried uv script, venv, and lockfile workflow on a small CLI project
+- [First uv project snippet](uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
 
 ## Layout
 
@@ -33,9 +33,10 @@ This kit covers package and project management (uv), linting and formatting (Ruf
   - `docs/concepts/<concept>/` — Primer notes, scripts, and snippets per foundational concept
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
-- `pau/` — pip-audit quick primer
+- `pau/` — pip-audit quick primer and configs
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
+- `prc/` — pre-commit first-contact notes
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Python launcher notes and lint scripts
 - `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples
@@ -61,29 +62,29 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
 | mypy | 7 | 1 | 4 | 4 | — | — | — |
-| pau | 1 | — | — | — | — | — | 2026-07-26 |
+| pau | 1 | — | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
+| prc | 1 | — | — | — | — | — | 2026-08-09 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-08 |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
-| pyt | 1 | 1 | — | — | — | — | 2026-08-04 |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
-| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-04 |
+| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
 | tox | 5 | 1 | 2 | — | — | — | — |
 | ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
 | typer | 3 | 2 | — | 2 | — | — | — |
-| uv | 7 | 4 | 2 | 1 | 1 | — | 2026-08-05 |
+| uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-05 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
-| uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
+| uvl | 2 | — | — | — | 1 | — | 2026-08-01 |
 
 </details>
 
 ## Status
 
-Currently adding uv project snippets, uv.lock dependency mapping docs, Rich styled output and inspect workflows, and pipdeptree tutorials. Ty, pytest, and mypy strictness configs continue to grow.
+Currently adding pau configs, prc first-contact notes, uv script/venv/lockfile workflow notes, and uv project snippets. pipdeptree tutorials, Rich styled output and inspect workflows continue to grow.
 
 ---
-_Last updated: 2026-08-08_
+_Last updated: 2026-08-10_
