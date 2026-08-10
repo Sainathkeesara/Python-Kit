@@ -30,9 +30,10 @@
 - **scripts** (1): [tried-mypy-first-check.py](../mypy/scripts/tried-mypy-first-check.py)
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors.py](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate.py](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function.py](../mypy/snippets/tried-validating-typed-function.py)
 
-## pau  ·  1 files
+## pau  ·  3 files
 
-- **notes** (1): [0000-primer-pip-audit](../pau/notes/0000-primer-pip-audit.md)
+- **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
+- **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
 
 ## pip-audit  ·  12 files
 
@@ -58,6 +59,10 @@
 - **scripts** (2): [run-pre-commit-ruff-trailing-ws.sh](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh), [install-and-run.sh](../pre-commit/scripts/install-and-run.sh)
 - **snippets** (2): [tried-ruff-mypy-config.yaml](../pre-commit/snippets/tried-ruff-mypy-config.yaml), [first-pre-commit-config.yaml](../pre-commit/snippets/first-pre-commit-config.yaml)
 
+## prc  ·  1 files
+
+- **notes** (1): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
+
 ## py  ·  2 files
 
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
@@ -78,7 +83,7 @@
 - **notes** (2): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md)
 - **configs** (5): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [first-pep621-config.toml](../pyproject.toml/configs/first-pep621-config.toml), [minimal-no-build-system.toml](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml)
 
-## pytest  ·  12 files
+## pytest  ·  10 files
 
 - **primer:** [0000-primer-pytest.md](../pytest/notes/0000-primer-pytest.md)
 - **notes** (4): [explored-pytest-cli-advanced-flags](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md), [installed-pytest-first-suite](../pytest/notes/2026-06-08-installed-pytest-first-suite.md), [tried-pytest-fixtures-conftest](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md), [tried-pytest-cli](../pytest/notes/2026-05-26-tried-pytest-cli.md)
@@ -87,15 +92,10 @@
 - **docs** (1): [pytest-vs-unittest-mapping.md](../pytest/docs/pytest-vs-unittest-mapping.md)
 - **snippets** (2): [test_first_test.py](../pytest/snippets/test_first_test.py), [three_basic_tests.py](../pytest/snippets/three_basic_tests.py)
 
-## pyt  ·  2 files
-
-- **notes** (1): [tried-pytest-quickstart](../pyt/notes/2026-08-04-tried-pytest-quickstart.md)
-- **scripts** (1): [minimal-fixture-parametrize-suite](../pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py)
-
 ## rich  ·  18 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
-- **notes** (8): [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md), [tried-rich-console-api](../rich/notes/2026-06-04-tried-rich-console-api.md), [tried-rich-quickstart-tables-panels](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md), [tried-rich-themes-and-markdown](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md), [exploring-renderables](../rich/notes/2026-05-28-exploring-renderables.md), [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md)
+- **notes** (7): [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md), [tried-rich-console-api](../rich/notes/2026-06-04-tried-rich-console-api.md), [tried-rich-quickstart-tables-panels](../rich/notes/2026-06-03-tried-rich-quickstart-tables-panels.md), [tried-rich-themes-and-markdown](../rich/notes/2026-05-27-tried-rich-themes-and-markdown.md), [exploring-renderables](../rich/notes/2026-05-28-exploring-renderables.md), [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md)
 - _…and 1 more under `rich/notes/` — browse the folder._
 - **scripts** (3): [first-table-panel-progress.py](../rich/scripts/first-table-panel-progress.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py)
 - **snippets** (7): [tried-live-data-viewer.py](../rich/snippets/tried-live-data-viewer.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py), [tried-progress-spinner.py](../rich/snippets/tried-progress-spinner.py), [first-rich-logger.py](../rich/snippets/first-rich-logger.py), [tried-rich-progress-bar.py](../rich/snippets/tried-rich-progress-bar.py), [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py)
@@ -133,11 +133,11 @@
 - **scripts** (2): [typer_cli_demo.py](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator.py](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (2): [tried-first-typer-cli-app.py](../typer/snippets/tried-first-typer-cli-app.py), [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py)
 
-## uv  ·  15 files
+## uv  ·  16 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
 - **notes** (7): [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md), [installed-uv-first-command](../uv/notes/2026-06-10-installed-uv-first-command.md), [tried-uv-quickstart-scaffold](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md), [cli-commands-beyond-basics](../uv/notes/2026-05-26-cli-commands-beyond-basics.md), [virtual-env-uv](../uv/notes/2026-05-24-virtual-env-uv.md)
-- _…and 1 more under `uv/notes/` — browse the folder._
+- _…and 2 more under `uv/notes/` — browse the folder._
 - **configs** (2): [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
 - **scripts** (4): [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh), [install-and-first-command.sh](../uv/scripts/install-and-first-command.sh), [hello-with-dep.py](../uv/scripts/hello-with-dep.py), [tried-bootstrap-uv-script.sh](../uv/scripts/tried-bootstrap-uv-script.sh)
 - **docs** (1): [uv-vs-pip-cheat-sheet.md](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
