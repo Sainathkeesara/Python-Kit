@@ -38,11 +38,10 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
 - `prc/` — pre-commit first-contact notes
 - `pre-commit/` — Hook configs, install/run scripts, snippets
-- `py/` — Python launcher notes and lint scripts
+- `py/` — Ruff first-contact primer and install/lint script
 - `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
-- `pyt/` — pytest quickstart notes and minimal fixture/parametrize suite
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs
 - `tox/` — Tox automation notes, env config, and CLI patterns

@@ -27,9 +27,10 @@
 - [Quickstart Scaffold Notes](../uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md) — Following uv init, add, run workflow
 - [Managed Project Config](../uv/configs/2026-07-19-uv-managed-project.toml) — Scaffolded uv-managed project with pyproject.toml, build-system, and dependencies
 - [End-to-end uv Workflow Script](../uv/scripts/2026-07-19-uv-workflow.sh) — Create project, add deps, sync, run, and lock with uv
+- [uv Script, venv, and lockfile workflow notes](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md) — Tried uv script, venv, and lockfile workflow on a small CLI project
+- [First uv project snippet](../uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
-- [First uv project snippet](../uv/snippets/2026-08-08-first-uv-project.py) — Minimal example creating a first uv project with a dependency
 
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first-contact notes
@@ -59,16 +60,6 @@
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
 
-### pyproject.toml
-- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
-- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
-- [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
-- [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
-- [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
-- [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
-- [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
-- [Minimal No Build-System Config](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
-
 ### uv.lock
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first-contact notes
 - [Generate First uv.lock Notes](../uv.lock/notes/2026-06-11-generated-first-uv-lock.md) — Install uv and generate first uv.lock, what's inside it
@@ -82,6 +73,16 @@
 - [Detect Conflicting Constraints Snippet](../uv.lock/snippets/tried-detect-conflicting-constraints.py) — Parse uv.lock and flag packages with conflicting version constraints
 - [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility mechanisms
 
+### pyproject.toml
+- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
+- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
+- [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
+- [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
+- [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
+- [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
+- [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
+- [Minimal No Build-System Config](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
+
 ### uvl
 - [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What is uv.lock? key terminology, and a tiny example
 - [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
@@ -89,6 +90,7 @@
 
 ### pre-commit
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
+- [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
 - [pre-commit config](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
 - [Pre-commit Multi-Hook Config](../pre-commit/configs/tried-multi-hook-config.yaml) — Ruff + mypy + trailing-whitespace hooks
 - [Ruff + Mypy Hooks Config](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
@@ -161,6 +163,7 @@
 - [First Ty Type Check Notes](../ty/notes/2026-06-18-first-ty-type-check.md) — Installed Ty and ran first type check on a sample Python file
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
 - [Ty type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module and checking results
+- [Minimal Ty Config](../ty/configs/2026-08-05-minimal-ty-config.toml) — Minimal Ty configuration with pyproject.toml for type-checking settings
 
 ### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
@@ -195,6 +198,7 @@
 - [First tox CLI Run Notes](../tox/notes/2026-05-31-tox-cli-first-run.md) — env list, -e flag, passing args through
 - [Followed tox Quickstart Notes](../tox/notes/2026-06-11-followed-tox-quickstart.md) — Multi-env setup, what tripped me up
 - [Minimal tox Run Script](../tox/scripts/tried-minimal-tox-run.sh) — Create tox.ini, run tox end-to-end with a test env
+- [Install tox and first env script](../tox/scripts/2026-08-05-install-tox-and-first-env.sh) — Install tox, write a minimal tox.ini, and run a first test environment
 
 ### Test APIs
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first-contact notes
