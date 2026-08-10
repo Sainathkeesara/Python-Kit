@@ -1,7 +1,6 @@
 ---
-last_verified: 2026-08-09
+last_verified: 2026-08-10
 tool_version: n/a
-sources: []
 ---
 
 # Tried uv's script, venv, and lockfile workflow on a small CLI project
@@ -14,7 +13,7 @@ Started with `uv init wordcount-cli`. It created `pyproject.toml`, a `README.md`
 
 I created a venv with `uv venv`. Then I added `typer` for the CLI: `uv add typer`. The dependency landed in `[project.dependencies]` in `pyproject.toml` and `uv.lock` appeared in the same command — I didn't need to run anything extra to generate the lockfile.
 
-I wrote `src/wordcount_cli/main.py` with a `@app.command()` that reads a file and prints the count, then ran it with `uv run typer run src/wordcount_cli/main.py run myfile.txt`. It worked on the first try.
+I wrote a `main.py` in the package dir with a `@app.command()` that reads a file and prints the count, then ran it with `uv run typer run main.py run myfile.txt`. It worked on the first try.
 
 ## What tripped me up
 

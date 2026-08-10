@@ -1,9 +1,12 @@
 # CHANGELOG
 
+## 2026-08-10
+- uv-009 (rework): Fixed front-matter and expanded uv script/venv/lockfile workflow notes (`uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md`) — What I learned building a small CLI tool with uv
+
 ## 2026-08-09
 - pau-009: Added pip-audit scan config (`pau/configs/2026-08-09-pip-audit-scan-config.toml`) — Minimal [tool.pip-audit] section with scan defaults and ignore rules
 - uv-009: Added uv script/venv/lockfile workflow notes (`uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md`) — What I learned building a small CLI tool with uv
-- prc-011: Added first pre-commit hook notes (`prc/notes/2026-08-09-first-pre-commit-hook.md`) — What I learned setting up my first pre-commit hook and running it once
+- prc-011: Added first pre-commit hook notes (`pre-commit/notes/2026-08-09-first-pre-commit-hook.md`) — What I learned setting up my first pre-commit hook and running it once
 - pau-009: Added minimal pip-audit pyproject.toml config (`pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml`) — Minimal [tool.pip-audit] section with scan defaults and ignore rules
 
 ## 2026-08-07
@@ -24,8 +27,8 @@
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
 - mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
-- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
-- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pyt/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
 - ty-010: Added Ty quickstart tripped-me-up notes (`ty/notes/2026-08-04-followed-ty-quickstart.md`) — What I learned following the official Ty quickstart: install, run, type mismatches, and config gotchas
 - ty-011: Added minimal Ty type-checking workflow snippet (`ty/snippets/2026-08-04-ty-type-checking-workflow.py`) — Minimal typed Python module demonstrating Ty check workflow
 
