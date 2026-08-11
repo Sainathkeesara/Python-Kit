@@ -71,7 +71,7 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
-| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
+| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
 | tox | 5 | 1 | 2 | — | — | — | — |
 | ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
 | typer | 3 | 2 | — | 2 | — | — | — |

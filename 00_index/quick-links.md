@@ -34,7 +34,6 @@
 
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first-contact notes
-- [Ruff quick primer (ruf)](../ruff/notes/0000-primer-ruf.md) — Ruff first-contact notes from the quickstart walkthrough
 - [Ruff select, ignore, extend-safe, and per-directory overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md) — `select` as a filter, safe fixes only, and per-directory rule exceptions
 - [More Ruff CLI Flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md) — Tried --show-settings, --show-files, --add-noqa, --statistics, ruff rule
 - [Ruff CLI Notes](../ruff/notes/2026-06-06-cli-exploration.md) — CLI flags and output formats

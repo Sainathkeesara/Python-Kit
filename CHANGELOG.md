@@ -40,7 +40,7 @@
 - uvl-004: Added uv.lock quick primer (`uvl/notes/0000-primer-uv.lock.md`) — First-day notes explaining what uv.lock is, key terminology, and a tiny example
 
 ## 2026-07-31
-- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruf.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
+- ruf-004: Added Ruff quick primer (`ruff/notes/0000-primer-ruff.md`) — First-day notes explaining what Ruff is, key terminology, and a tiny config example
 
 ## 2026-07-27
 - con-019: Added Static Type Checking & Type Hints applying-type-hints script (`docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py`) — Python script demonstrating typed dictionaries, runtime validation, and filtering with type annotations

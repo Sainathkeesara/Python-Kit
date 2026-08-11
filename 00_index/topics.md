@@ -112,12 +112,11 @@
 - **snippets** (7): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [tried-rich-console-panel-table.py](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output.py](../rich/snippets/tried-rich-styled-output.py)
 - _…and 4 more under `rich/snippets/` — browse the folder._
 
-## ruff  ·  15 files
+## ruff  ·  14 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
-- **primer:** [0000-primer-ruf.md](../ruff/notes/0000-primer-ruf.md)
 - **notes** (5): [ruff-select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md)
-- _…and 2 more under `ruff/notes/` — browse the folder._
+- _…and 1 more under `ruff/notes/` — browse the folder._
 - **configs** (4): [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml)
 - _…and 1 more under `ruff/configs/` — browse the folder._
 - **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
