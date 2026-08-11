@@ -17,7 +17,7 @@ These concepts have no prerequisites and are the starting point for Python tooli
 
 These tools are unlocked from the start and form the day-to-day workflow.
 
-- **uv** — Fast package and project manager. Install packages, manage environments, run scripts. Start with the [uv Primer](../uv/notes/0000-primer-uv.md) and [install script](../uv/scripts/install-and-first-command.sh).
+- **uv** — Fast package and project manager. Install packages, manage environments, run scripts. Start with the [uv Primer](../uv/notes/0000-primer-uv.md) and [install script](../uv/scripts/install-and-first-command.sh). Try the [first project snippet](../uv/snippets/2026-08-08-first-uv-project.py) for a minimal uv project with a dependency.
 - **Ruff** — Linter and formatter. Catches bugs and enforces style. Start with the [Ruff Primer](../ruff/notes/0000-primer-ruff.md) and [quickstart notes](../ruff/notes/2026-06-03-tried-ruff-quickstart.md). For an end-to-end lint-and-format workflow, see the [workflow script](../ruff/scripts/end-to-end-ruff-lint-format.sh). When applying to a real project, see [what tripped me up](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md).
 - **pytest** — Test runner with fixtures and parametrization. Start with the [pytest Primer](../pytest/notes/0000-primer-pytest.md) and [first test suite notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md).
 - **pre-commit** — Hook framework that runs linters and type checkers before each commit. Start with the [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) and [install/run script](../pre-commit/scripts/install-and-run.sh). For first-contact notes, see the [prc first hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md).
@@ -28,7 +28,7 @@ These tools are unlocked from the start and form the day-to-day workflow.
 Intermediate tools and patterns that extend the core workflow.
 
 - **Type checking (mypy)** — Static analysis for type safety. Start with the [mypy Primer](../mypy/notes/0000-primer-mypy.md) and [CLI flags notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md).
-- **Type checking (Ty)** — An alternative type checker with a focus on ergonomics. Start with the [Ty Primer](../ty/notes/0000-primer-ty.md) and [quickstart notes](../ty/notes/2026-06-05-tried-ty-quickstart.md).
+- **Type checking (Ty)** — An alternative type checker with a focus on ergonomics. Start with the [Ty Primer](../ty/notes/0000-primer-ty.md) and [quickstart notes](../ty/notes/2026-06-05-tried-ty-quickstart.md). For configuration, see the [minimal ty config](../ty/configs/2026-08-05-minimal-ty-config.toml). Try the [type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) for a minimal example.
 - **Lock files (uv.lock, uvl)** — Reproducible dependency resolution. Start with the lighter [uvl primer](../uvl/notes/0000-primer-uv.lock.md) and [uv.lock mapping notes](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md), then dive into the full [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) and [generation script](../uv.lock/scripts/generate-uv-lock.sh).
 - **Vulnerability scanning (pip-audit)** — Audit dependencies for known CVEs. Start with the [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) and [scan script](../pip-audit/scripts/scan-project.sh). For the quick primer, see the [pau quick primer](../pau/notes/0000-primer-pip-audit.md).
 - **Dependency trees (pipdeptree)** — Visualize and analyze package dependency graphs. Start with the [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) and [JSON parsing snippet](../pipdeptree/snippets/parse-pipdeptree-json.py).
@@ -39,11 +39,11 @@ Intermediate tools and patterns that extend the core workflow.
 
 Tools that depend on foundational concepts being complete.
 
-- **Terminal output (rich)** — Beautiful terminal formatting with tables, panels, progress bars. Start with the [rich Primer](../rich/notes/0000-primer-rich.md) and [first script](../rich/scripts/first-table-panel-progress.py).
+- **Terminal output (rich)** — Beautiful terminal formatting with tables, panels, progress bars. Start with the [rich Primer](../rich/notes/0000-primer-rich.md) and [first script](../rich/scripts/first-table-panel-progress.py). See the [inspect + live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) for debugging with `inspect()` and live displays.
 - **CLI framework (typer)** — Build command-line interfaces with type hints. Start with the [typer Primer](../typer/notes/0000-primer-typer.md) and [hello-world notes](../typer/notes/2026-06-10-first-typer-hello-world.md).
 - **Profiling (py-spy)** — Sampling profiler for running Python processes. Start with the [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) and [flamegraph script](../py-spy/scripts/tried-install-and-record-flamegraph.sh).
 - **API testing (httpie)** — User-friendly HTTP client for REST APIs. Start with the [httpie Primer](../httpie/notes/0000-primer-httpie.md) and [quickstart notes](../httpie/notes/2026-07-19-followed-httpie-quickstart.md). The [request workflow script](../httpie/scripts/2026-07-19-httpie-request-workflow.sh) covers GET, POST, auth, and file uploads.
-- **Test automation (tox)** — Multi-environment test runner. Start with the [tox Primer](../tox/notes/0000-primer-tox.md) and [minimal config](../tox/configs/tox.ini).
+- **Test automation (tox)** — Multi-environment test runner. Start with the [tox Primer](../tox/notes/0000-primer-tox.md) and [minimal config](../tox/configs/tox.ini). For a full install-and-run walkthrough, see the [install script](../tox/scripts/2026-08-05-install-tox-and-first-env.sh).
 - **uv vs pip cheat sheet** — Quick reference for migrating from pip to uv: [cheat sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md).
 
 ## Stage 5: Mastery

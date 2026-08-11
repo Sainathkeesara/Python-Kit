@@ -103,6 +103,8 @@
 - **Repo** — In pre-commit, a source repository that provides hooks (e.g. `https://github.com/pre-commit/pre-commit-hooks`).
 - **rev** — The tag or commit to pin a pre-commit hook source to.
 - **ID** — The identifier of a specific hook within a pre-commit source repo.
+- **`--all-files`** — A pre-commit flag that runs hooks on every tracked file, not just staged changes.
+- **`SKIP=`** — An environment variable that skips specific hooks by ID for a single commit (e.g. `SKIP=ruff git commit`).
 
 ## py (Ruff)
 - **Linter** — Ruff's lint rules that detect code issues; configured under `[tool.ruff.lint]`.
@@ -172,6 +174,8 @@
 - **scaffold** — A project skeleton created by `uv init` with default directories and a `pyproject.toml`.
 - **PEP 723** — Python Enhancement Proposal that allows inline script metadata/declarations in a special comment block.
 - **ephemeral venv** — A temporary virtual environment created on-the-fly for a single run.
+- **`uv lock --frozen`** — Validates the lock file against pyproject.toml without modifying it; fails if they're out of sync.
+- **`uv export`** — Generates a requirements.txt or similar format from the project's dependencies for tools that don't use uv.lock.
 
 ## uv.lock
 - **Lockfile** — A file that pins exact versions of every direct and transitive dependency, ensuring reproducible installs.
