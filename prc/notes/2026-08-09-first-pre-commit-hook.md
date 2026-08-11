@@ -1,7 +1,6 @@
 ---
-last_verified: 2026-08-09
+last_verified: 2026-08-10
 tool_version: n/a
-sources: []
 ---
 
 # Set up my first pre-commit hook and ran it once
@@ -14,19 +13,7 @@ I installed pre-commit for the first time today and walked through the full setu
 
 ## The config
 
-I ran `pre-commit sample-config > .pre-commit-config.yaml` to get a starter file. Then I added ruff to it:
-
-```yaml
-repos:
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.20
-    hooks:
-      - id: ruff
-        args: [--fix]
-        types: [python]
-```
-
-I pinned the rev to a specific tag — the docs recommend never using `main` or `HEAD` because upstream can break without warning.
+I ran `pre-commit sample-config > .pre-commit-config.yaml` to get a starter file. Then I added a ruff hook to it, pinning the rev to a specific tag — the docs recommend never using `main` or `HEAD` because upstream can break without warning. The hook runs ruff with `--fix` on Python files only.
 
 ## First run
 
@@ -40,4 +27,4 @@ To skip a hook for one commit: `SKIP=ruff git commit -m "wip: rough draft"` — 
 
 ## What I'd try next
 
-Add `check-yaml` and `end-of-file-fixer` from `pre-commit-hooks` rev `v6.0.0`, then try `pre-commit run --all-files --show-diff-on-failure` to see what the diff looks like.
+Add `check-yaml` and `end-of-file-fixer` from `pre-commit-hooks`, then try `pre-commit run --all-files --show-diff-on-failure` to see what the diff looks like.
