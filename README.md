@@ -2,7 +2,6 @@
 > A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, pre-commit, rich, Typer, pip-audit, py-spy, tox, Ty, httpie, pyproject.toml, uv.lock, uvl, and more.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![License](https://img.shields.io/github/license/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -65,19 +64,19 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
-| prc | 1 | — | — | — | — | — | 2026-08-09 |
+| prc | 1 | — | — | — | — | — | 2026-08-10 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-08 |
+| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
-| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-07-21 |
-| tox | 5 | 1 | 2 | — | — | — | — |
+| ruff | 7 | 1 | 4 | 2 | 1 | — | 2026-08-03 |
+| tox | 5 | 2 | 2 | — | — | — | — |
 | ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
 | typer | 3 | 2 | — | 2 | — | — | — |
-| uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-05 |
+| uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-10 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
-| uvl | 2 | — | — | — | 1 | — | 2026-08-01 |
+| uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
 
 </details>
 
@@ -86,4 +85,4 @@ This kit covers package and project management (uv), linting and formatting (Ruf
 Currently adding pau configs, prc first-contact notes, uv script/venv/lockfile workflow notes, and uv project snippets. pipdeptree tutorials, Rich styled output and inspect workflows continue to grow.
 
 ---
-_Last updated: 2026-08-10_
+_Last updated: 2026-08-11_

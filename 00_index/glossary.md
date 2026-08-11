@@ -88,6 +88,8 @@
 - **`--fix`** — Experimental flag that attempts to auto-upgrade vulnerable packages.
 - **`--ignore-vuln <id>`** — Skips a specific advisory by identifier. Use this to silence a known false-positive for one package.
 - **`--locked`** — Audits a `pyproject.toml` or lockfile directly without needing a live environment. Added in pip-audit 2.7.
+- **strict mode** — A pip-audit setting (`strict = true`) that makes the scan exit non-zero when any vulnerability is found, so a broken build fails loudly.
+- **`[tool.pip-audit]`** — The pyproject.toml table where pip-audit settings live; nested `[tool.pip-audit.ignore]` holds a `vulns` list of advisories to skip.
 
 ## pipdeptree
 - **Top-level package** — A package installed directly by the user (e.g. `pip install requests`).
@@ -103,6 +105,11 @@
 - **Repo** — In pre-commit, a source repository that provides hooks (e.g. `https://github.com/pre-commit/pre-commit-hooks`).
 - **rev** — The tag or commit to pin a pre-commit hook source to.
 - **ID** — The identifier of a specific hook within a pre-commit source repo.
+- **`install`** — The subcommand that writes the pre-commit shim into `.git/hooks/pre-commit` so hooks fire on every commit.
+- **`sample-config`** — The subcommand that prints a starter `.pre-commit-config.yaml` to scaffold a new setup.
+- **`--all-files`** — A `run` flag that lints the whole repo instead of only staged files.
+- **`SKIP`** — An environment variable naming hooks to skip for one commit (e.g. `SKIP=ruff git commit`), cleaner than `--no-verify`.
+- **`--show-diff-on-failure`** — A `run` flag that prints the diff a failing hook would have applied.
 - **`--all-files`** — A pre-commit flag that runs hooks on every tracked file, not just staged changes.
 - **`SKIP=`** — An environment variable that skips specific hooks by ID for a single commit (e.g. `SKIP=ruff git commit`).
 
@@ -170,6 +177,9 @@
 - **`uv tool`** — Command for managing globally installed tools (equivalent to `pipx`).
 - **`uv pip`** — Pip-compatible interface for users migrating from pip.
 - **`uv python`** — Command for managing Python versions.
+- **`uv init`** — Command that scaffolds a new project (`pyproject.toml`, `README.md`, package dir) without creating a venv.
+- **`uv lock --frozen`** — Validates that `uv.lock` matches `pyproject.toml` without modifying it; useful as a pre-commit check.
+- **`uv export`** — Writes a `requirements.txt` from the lockfile, for environments that don't run uv itself.
 - **dev-dependencies** — Dependencies marked for development only; they are installed but not included in the published package metadata.
 - **scaffold** — A project skeleton created by `uv init` with default directories and a `pyproject.toml`.
 - **PEP 723** — Python Enhancement Proposal that allows inline script metadata/declarations in a special comment block.
