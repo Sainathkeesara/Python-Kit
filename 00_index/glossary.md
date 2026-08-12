@@ -21,6 +21,9 @@
 - **Loop** — Repeat code for each item using `for`.
 - **Conditional** — Branch code based on a condition with `if`/`elif`/`else`.
 - **Import** — Load code from another module.
+- **Comprehension** — A compact expression that builds a list, dict, or set from an iterable in one line (e.g. `[x * 2 for x in items]`).
+- **Generator** — A function using `yield` that produces values lazily, one at a time, without building the whole sequence in memory.
+- **Exception** — An error raised at runtime that can be caught with `try`/`except` so the program can recover instead of crashing.
 
 ### Python Packaging & Project Config
 - **pyproject.toml** — The standard config file for Python projects, defined by PEP 518 and PEP 621.
@@ -31,6 +34,7 @@
 - **Virtual environment** — An isolated directory with its own Python interpreter and package set.
 - **SDist (source distribution)** — A compressed archive of source code that can be built and installed.
 - **Wheel** — A pre-built distribution format that installs faster than SDist.
+- **Wheel manifest** — The list of files packaged inside a built wheel, inspectable with `unzip -l`. Build scripts use it to confirm exactly what ships in a distribution.
 - **Entry point** — A function exposed as a CLI command via the `[project.scripts]` table.
 - **tomllib** — Python's standard-library TOML parser (3.11+), used by scripts in this kit to read pyproject.toml programmatically.
 
@@ -42,6 +46,8 @@
 - **Test coverage** — A metric showing what percentage of code lines are executed during tests.
 - **Red-Green-Refactor** — A TDD cycle: write a failing test (red), write code to make it pass (green), then clean up the code (refactor).
 - **Mock** — A fake object that replaces a real dependency during testing.
+- **Test double** — A generic term for any stand-in object (stub, fake, mock, spy) that replaces a real dependency during testing.
+- **Boundary value** — A value at the edge of a valid input range (e.g. `12`, `13`, `20` around a `< 13` threshold), where off-by-one bugs tend to hide.
 - **Regression** — A bug that reappears after a change.
 
 ### Static Type Checking & Type Hints
@@ -210,6 +216,9 @@
 - **Remote** — A hosted copy of the repository (e.g., on GitHub) that you can push to or pull from.
 - **HEAD** — A pointer to the most recent commit on the currently checked-out branch.
 - **Conventional Commits** — A convention for structuring commit messages with prefixes like `feat:`, `fix:`, `chore:`.
+- **Tag** — A named, fixed reference to a specific commit, typically versioned like `v1.2.0`; used as the release point that dependents pin against.
+- **Branch protection** — Repository rules that block direct pushes to a branch until required checks (e.g. a CI status check) pass.
+- **CI gate** — A check that runs on every push and pull request, and must pass before a merge is allowed.
 
 ## Python Programming Fundamentals
 - **Type hint** — An annotation on a variable, parameter, or return value indicating its expected type.

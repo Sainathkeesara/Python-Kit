@@ -3,20 +3,25 @@
 ## Foundational Concepts
 
 - [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md) — What is Git? first-contact notes
+- [Git workflows, branches, tags, and CI](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md) — Branch-and-PR flow, semantic release tags, and CI gates tied to a uv lockfile
 - [Python Programming Fundamentals Primer](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — What are Python programming fundamentals? first-contact notes
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
 - [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first-contact notes
 - [Virtual Environment & Dependency Mgmt Primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md) — What are virtual environments and dependency management? first-contact notes
 - [Practicing Fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practice data types, control flow, functions, and comprehensions
+- [Comprehensions, Generators, Error Handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
 - [Packaging Patterns Snippet](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Reading pyproject.toml metadata and discovering packages
+- [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
 - [Testing Principles Practice](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py) — Writing isolated, parametrized tests with fixtures
+- [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Practice Git Version Control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Reproduce common Git workflows from a Python script
 - [Common Git Patterns in Python Projects](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py) — Using GitPython to clone, commit, branch, and merge
 - [Common Type-Checking Patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py) — Typed dicts, callables, overloads, and Protocol patterns
-- [Venv Practice Script](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
 - [Applying Type Hints Practice](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
+- [Venv Practice Script](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
 - [Common venv Patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
+- [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
 
@@ -48,7 +53,7 @@
 - [Minimal Standalone Ruff Config (July 21)](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml) — Fresh ruff.toml with select/ignore rules for a new project
 - [Ruff End-to-End Lint-and-Format Workflow](../ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 
-### pytest
+### Write and run tests
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
 - [First Test Suite Notes](../pytest/notes/2026-06-08-installed-pytest-first-suite.md) — Installed pytest, ran first test suite, what tripped me up
 - [pytest CLI Notes](../pytest/notes/2026-05-26-tried-pytest-cli.md) — Exploring CLI flags and output formats
@@ -59,35 +64,40 @@
 - [Install and Run First pytest Script](../pytest/scripts/install-and-run-first-pytest.sh) — Install pytest and run first passing test
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
 
-### uv.lock
-- [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first-contact notes
-- [Generate First uv.lock Notes](../uv.lock/notes/2026-06-11-generated-first-uv-lock.md) — Install uv and generate first uv.lock, what's inside it
-- [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
-- [uv.lock Packages Checksums Markers Notes](../uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md) — Explored uv.lock: package versions, checksums, and dependency markers
-- [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
-- [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
-- [Generate from pyproject.toml Script](../uv.lock/scripts/tried-generate-from-pyproject-toml.sh) — Create pyproject.toml by hand, generate uv.lock, and inspect the output
-- [Extract Direct Dependencies Script](../uv.lock/scripts/tried-extract-direct-deps.py) — Parse uv.lock and list all direct dependency entries with versions
-- [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
-- [Detect Conflicting Constraints Snippet](../uv.lock/snippets/tried-detect-conflicting-constraints.py) — Parse uv.lock and flag packages with conflicting version constraints
-- [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility mechanisms
+### Type-check code
+- [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes
+- [First mypy Run Notes](../mypy/notes/2026-06-04-first-mypy-run.md) — Annotated a function, fixed type errors, tried reveal_type
+- [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
+- [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
+- [Quickstart for Existing Projects](../mypy/notes/2026-05-29-tried-mypy-quickstart.md) — Running mypy on an existing codebase, what tripped me out
+- [Strict Mode Config](../mypy/configs/tried-strict-mypy-config.toml) — Minimal mypy config with incremental strict mode and stub setup
+- [Type Error Detection Snippet](../mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
+- [Typed Functions Validate Snippet](../mypy/snippets/typed-functions-validate.py) — Small typed Python module with annotated functions
+- [Validating Typed Function Snippet](../mypy/snippets/tried-validating-typed-function.py) — Small typed function with annotations to validate with mypy
+- [Typed Small Module Snippet](../mypy/snippets/2026-07-19-typed-small-module.py) — Small typed Python module with annotated functions and classes
+- [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
+- [Official mypy Quickstart Notes](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
+- [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
+- [Strict Disallow Ignore Config](../mypy/configs/tried-strict-disallow-ignore-config.ini) — Minimal mypy.ini with strict mode, type annotation enforcement, and import allowance
+- [Selective mypy strictness config](../mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
 
-### pyproject.toml
-- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
-- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
-- [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
-- [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
-- [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
-- [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
-- [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
-- [Minimal No Build-System Config](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
+### Type-check with Ty
+- [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
+- [Ty Quickstart Notes](../ty/notes/2026-06-05-tried-ty-quickstart.md) — Following the official quickstart, first check, what tripped me up
+- [First Ty Markdown Render](../ty/notes/2026-06-10-first-ty-markdown-render.md) — Install Ty and render my first markdown file in the terminal
+- [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
+- [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
+- [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
+- [Ty Markdown CSS](../ty/configs/tried-ty-markdown-css.css) — Custom CSS styling for Ty markdown rendering
+- [Ty Pipeline Script](../ty/scripts/tried-ty-pipeline.sh) — Pipe markdown through ty and capture formatted output
+- [CLI Flags and Formats Notes](../ty/notes/2026-06-16-explored-ty-cli-flags.md) — Explored Ty CLI flags, output formats, compared with mypy options
+- [Ty vs Mypy Comparison Snippet](../ty/snippets/tried-ty-vs-mypy.py) — Compare Ty and mypy output on the same typed code
+- [First Ty Type Check Notes](../ty/notes/2026-06-18-first-ty-type-check.md) — Installed Ty and ran first type check on a sample Python file
+- [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
+- [Ty type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module and checking results
+- [Minimal Ty Config](../ty/configs/2026-08-05-minimal-ty-config.toml) — Minimal Ty configuration with pyproject.toml for type-checking settings
 
-### uvl
-- [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What is uv.lock? key terminology, and a tiny example
-- [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
-- [uv.lock dependencies docs](../uvl/docs/2026-08-08-uv-lock-dependencies.md) — How uv.lock records dependency groups, markers, and transitive dependencies
-
-### pre-commit
+### Manage pre-commit hooks
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
 - [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
 - [pre-commit config](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
@@ -101,7 +111,7 @@
 - [Pre-commit CLI Walkthrough Notes](../pre-commit/notes/2026-06-18-pre-commit-cli-walkthrough.md) — Installed pre-commit, walked through install/run/sample-config/validate-config/autoupdate
 - [Install and Run Lint + Typecheck Notes](../pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md) — Install pre-commit, run with ruff linting and mypy type check on a sample repo
 
-### Audit dependencies
+### Audit and understand dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first-contact notes
 - [Followed pip-audit Quickstart Notes](../pip-audit/notes/2026-07-17-followed-pip-audit-quickstart.md) — Quickstart walkthrough: exit codes, dry runs, and irrelevant-report gotchas
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
@@ -122,47 +132,31 @@
 - [Build dependency report snippet](../pipdeptree/snippets/2026-08-04-build-dependency-report.py) — Parse pipdeptree JSON and classify deps as direct vs transitive
 - [pipdeptree tutorial notes](../pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md) — Followed the official pipdeptree tutorial: reverse trees, cycle detection, and what tripped me up
 
-### rich
-- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
-- [Console API Notes](../rich/notes/2026-06-04-tried-rich-console-api.md) — Trying print, print_json, rule, log
-- [Console API Renderables Notes](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md) — Renderables, styles, and output modes
-- [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
-- [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
-- [Rich styled output script](../rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
-- [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
+### Manage lockfiles
+- [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first-contact notes
+- [Generate First uv.lock Notes](../uv.lock/notes/2026-06-11-generated-first-uv-lock.md) — Install uv and generate first uv.lock, what's inside it
+- [uv.lock Structure Notes](../uv.lock/notes/2026-05-26-uv-lock-structure.md) — Reading and understanding uv.lock internals
+- [uv.lock Packages Checksums Markers Notes](../uv.lock/notes/2026-06-18-uv-lock-packages-checksums-markers.md) — Explored uv.lock: package versions, checksums, and dependency markers
+- [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
+- [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
+- [Generate from pyproject.toml Script](../uv.lock/scripts/tried-generate-from-pyproject-toml.sh) — Create pyproject.toml by hand, generate uv.lock, and inspect the output
+- [Extract Direct Dependencies Script](../uv.lock/scripts/tried-extract-direct-deps.py) — Parse uv.lock and list all direct dependency entries with versions
+- [Read uv.lock Snippet](../uv.lock/snippets/tried-reading-uv-lock.py) — Parse uv.lock with Python and list package names
+- [Detect Conflicting Constraints Snippet](../uv.lock/snippets/tried-detect-conflicting-constraints.py) — Parse uv.lock and flag packages with conflicting version constraints
+- [Exploring uv.lock Structure Notebook](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb) — Walk through uv.lock sections, hashes, and reproducibility mechanisms
+- [uv.lock quick primer](../uvl/notes/0000-primer-uv.lock.md) — What is uv.lock? key terminology, and a tiny example
+- [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
+- [uv.lock dependencies docs](../uvl/docs/2026-08-08-uv-lock-dependencies.md) — How uv.lock records dependency groups, markers, and transitive dependencies
 
-### mypy
-- [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes
-- [First mypy Run Notes](../mypy/notes/2026-06-04-first-mypy-run.md) — Annotated a function, fixed type errors, tried reveal_type
-- [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
-- [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
-- [Quickstart for Existing Projects](../mypy/notes/2026-05-29-tried-mypy-quickstart.md) — Running mypy on an existing codebase, what tripped me out
-- [Strict Mode Config](../mypy/configs/tried-strict-mypy-config.toml) — Minimal mypy config with incremental strict mode and stub setup
-- [Type Error Detection Snippet](../mypy/snippets/tried-mypy-type-errors.py) — Intentional type errors for mypy to catch
-- [Typed Functions Validate Snippet](../mypy/snippets/typed-functions-validate.py) — Small typed Python module with annotated functions
-- [Validating Typed Function Snippet](../mypy/snippets/tried-validating-typed-function.py) — Small typed function with annotations to validate with mypy
-- [Typed Small Module Snippet](../mypy/snippets/2026-07-19-typed-small-module.py) — Small typed Python module with annotated functions and classes
-- [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
-- [Official mypy Quickstart Notes](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md) — Followed official docs: gradual typing, strict mode, reveal_type, what tripped me up
-- [Minimal mypy.ini Config](../mypy/configs/tried-minimal-mypy-config.ini) — Strict, disallow-untyped-defs, ignore-missing-imports
-- [Strict Disallow Ignore Config](../mypy/configs/tried-strict-disallow-ignore-config.ini) — Minimal mypy.ini with strict mode, type annotation enforcement, and import allowance
-- [Selective mypy strictness config](../mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
-
-### Ty
-- [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
-- [Ty Quickstart Notes](../ty/notes/2026-06-05-tried-ty-quickstart.md) — Following the official quickstart, first check, what tripped me up
-- [First Ty Markdown Render](../ty/notes/2026-06-10-first-ty-markdown-render.md) — Install Ty and render my first markdown file in the terminal
-- [Run Ty on a Codebase Snippet](../ty/snippets/run-ty-on-codebase.py) — Minimal example running Ty on a Python module
-- [Compare Ty vs Mypy Notes](../ty/notes/2026-05-27-compare-ty-vs-mypy.md) — Comparing ty vs mypy output on the same codebase
-- [Ty Config](../ty/configs/tried-ty-config.toml) — Ty configuration file with enabled error codes
-- [Ty Markdown CSS](../ty/configs/tried-ty-markdown-css.css) — Custom CSS styling for Ty markdown rendering
-- [Ty Pipeline Script](../ty/scripts/tried-ty-pipeline.sh) — Pipe markdown through ty and capture formatted output
-- [CLI Flags and Formats Notes](../ty/notes/2026-06-16-explored-ty-cli-flags.md) — Explored Ty CLI flags, output formats, compared with mypy options
-- [Ty vs Mypy Comparison Snippet](../ty/snippets/tried-ty-vs-mypy.py) — Compare Ty and mypy output on the same typed code
-- [First Ty Type Check Notes](../ty/notes/2026-06-18-first-ty-type-check.md) — Installed Ty and ran first type check on a sample Python file
-- [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
-- [Ty type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) — Minimal example running Ty on a Python module and checking results
-- [Minimal Ty Config](../ty/configs/2026-08-05-minimal-ty-config.toml) — Minimal Ty configuration with pyproject.toml for type-checking settings
+### Configure pyproject.toml
+- [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
+- [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
+- [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
+- [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
+- [First PEP 621 pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml) — PEP 621 pyproject.toml with hatchling build backend
+- [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
+- [Build-System Config Notes](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md) — Exploring the [build-system] table and how it connects to PEP 517/621
+- [Minimal No Build-System Config](../pyproject.toml/configs/2026-07-05-minimal-no-build-system.toml) — Minimal pyproject.toml with project metadata and no [build-system] section
 
 ### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
@@ -172,7 +166,7 @@
 - [First Typer CLI App Snippet](../typer/snippets/tried-first-typer-cli-app.py) — Minimal Typer CLI app with argument and option
 - [Typer CLI Option + Subcommand Snippet](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
 
-### py-spy
+### Profile performance
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first-contact notes
 - [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Minimal CPU-bound loop for profiling practice with py-spy
 - [Record Output Formats Compared (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
@@ -190,7 +184,7 @@
 - [Py-spy Quickstart Notes](../py-spy/notes/2026-06-10-followed-py-spy-quickstart.md) — Followed official quickstart: profile a sample app, flamegraph, what tripped me up
 - [Speedscope Record Script](../py-spy/scripts/tried-py-spy-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 
-### tox
+### Automate test environments
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first-contact notes
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
 - [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — tox.ini with lint (ruff) and test (pytest) environments
@@ -206,3 +200,12 @@
 - [httpie Request Workflow Script](../httpie/scripts/2026-07-19-httpie-request-workflow.sh) — Workflow covering GET, POST, auth, and file upload patterns
 - [httpie vs curl Notes](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md) — Same API calls, ergonomics compared
 - [HTTPie Defaults Config](../httpie/configs/2026-07-19-httpie-defaults.json) — Default request options for HTTPie CLI sessions
+
+### Make terminal output nice
+- [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
+- [Console API Notes](../rich/notes/2026-06-04-tried-rich-console-api.md) — Trying print, print_json, rule, log
+- [Console API Renderables Notes](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md) — Renderables, styles, and output modes
+- [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
+- [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
+- [Rich styled output script](../rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
+- [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
