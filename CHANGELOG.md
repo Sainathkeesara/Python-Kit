@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-12
+- con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
+
 ## 2026-08-11
 - con-026: Added Git workflows docs for branches, tags, and CI gates (`docs/concepts/git-version-control/git-workflows-branches-tags-ci.md`) — Branch-and-PR flow, semantic tags, and uv-backed CI gates for the Python learning kit
 - con-027: Added comprehensions, generators, and error handling snippet (`docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py`) — Practicing list/set comprehensions, generator functions and expressions, and try/except/finally
