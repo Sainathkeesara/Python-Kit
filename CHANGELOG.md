@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-12
+- con-028: Added Python Packaging & Project Config build-and-verify wheel script (`docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py`) — Build a minimal package into a wheel and inspect its contents
+- con-029: Added Software Testing Principles boundary values and test doubles snippet (`docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py`) — Practice boundary-value tests and a fake test double with pytest
+
 ## 2026-08-11
 - con-026: Added Git workflows docs for branches, tags, and CI gates (`docs/concepts/git-version-control/git-workflows-branches-tags-ci.md`) — Branch-and-PR flow, semantic tags, and uv-backed CI gates for the Python learning kit
 - con-027: Added comprehensions, generators, and error handling snippet (`docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py`) — Practicing list/set comprehensions, generator functions and expressions, and try/except/finally
