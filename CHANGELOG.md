@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-11
+- con-026: Added Git workflows docs for branches, tags, and CI gates (`docs/concepts/git-version-control/git-workflows-branches-tags-ci.md`) — Branch-and-PR flow, semantic tags, and uv-backed CI gates for the Python learning kit
+- con-027: Added comprehensions, generators, and error handling snippet (`docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py`) — Practicing list/set comprehensions, generator functions and expressions, and try/except/finally
+
 ## 2026-08-10
 - uv-009 (rework): Fixed front-matter and expanded uv script/venv/lockfile workflow notes (`uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md`) — What I learned building a small CLI tool with uv
 - prc-011 (rework): Fixed front-matter and removed unverified version/URL references in pre-commit hook notes (`prc/notes/2026-08-09-first-pre-commit-hook.md`) — What I learned setting up my first pre-commit hook and running it once
