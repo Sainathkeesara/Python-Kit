@@ -18,11 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [CI-safe API smoke test](httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing the run on non-2xx
+- [Type-checking patterns: Protocol, TypedDict, generics](docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md) — Structural typing, fixed-shape dicts, and type-preserving generics in real projects
+- [Derive a version from git tags](docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py) — setuptools-scm-style version resolution from plain git history, close to PEP 440
 - [Build and verify a wheel](docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect what actually gets packaged
 - [Boundary values and test doubles](docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
-- [Git workflows, branches, tags, and CI](docs/concepts/git-version-control/git-workflows-branches-tags-ci.md) — Branch-and-PR flow, semantic release tags, and CI gates tied to a uv lockfile
-- [Comprehensions, generators, error handling](docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
-- [pip-audit pyproject config](pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml) — Minimal pyproject.toml with `[tool.pip-audit]` strict mode and timeout settings
 
 ## Layout
 
@@ -54,7 +54,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 5 | 2 | 1 | 1 | — | — | 2026-07-19 |
+| httpie | 5 | 3 | 1 | 1 | — | — | 2026-08-13 |
 | mypy | 7 | 1 | 4 | 4 | — | — | 2026-08-04 |
 | pau | 1 | — | 2 | — | — | — | 2026-08-09 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
@@ -78,7 +78,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-The docs/concepts tree is getting most of the attention right now — practice scripts and snippets for packaging (wheel builds), testing (boundary values, test doubles), Git workflows, and Python fundamentals. pip-audit configs and pipdeptree tutorials continue to grow alongside it.
+Currently focused on the docs/concepts tree — type-checking patterns (Protocol, TypedDict, generics), git version-from-tags, and wheel builds — alongside httpie smoke testing that runs cleanly in CI. pip-audit configs and pipdeptree tutorials keep growing.
 
 ---
-_Last updated: 2026-08-12_
+_Last updated: 2026-08-14_

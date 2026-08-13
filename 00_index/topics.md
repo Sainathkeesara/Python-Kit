@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  20 files
+## Foundational concepts  ·  21 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -11,18 +11,18 @@
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **docs** (2): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [repository-structure](../docs/repository-structure.md)
-- **scripts** (6): [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py)
-- _…and 3 more under `docs/concepts/*/scripts/` — browse the folders._
+- **scripts** (7): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py)
+- _…and 4 more under `docs/concepts/*/scripts/` — browse the folders._
 - **snippets** (6): [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py)
 - _…and 3 more under `docs/concepts/*/snippets/` — browse the folders._
 
-## httpie  ·  9 files
+## httpie  ·  10 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (4): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md)
 - _…and 1 more under `httpie/notes/` — browse the folder._
 - **configs** (1): [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
-- **scripts** (2): [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
+- **scripts** (3): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
 - **snippets** (1): [tried-httpie-get-post-workflow.py](../httpie/snippets/tried-httpie-get-post-workflow.py)
 
 ## mypy  ·  16 files
