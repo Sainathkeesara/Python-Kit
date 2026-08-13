@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-08-13
+- con-030 (rework): Rewrote type-checking patterns docs with L3 integration voice and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
+
+## 2026-08-12
+- con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
 ## 2026-08-12
 - con-025: Added Git Version Control version-from-tags script (`docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py`) — Derive a package version from the nearest reachable git tag (setuptools-scm pattern) using only stdlib
 - con-028: Added Python Packaging & Project Config build-and-verify wheel script (`docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py`) — Build a minimal package into a wheel and inspect its contents
