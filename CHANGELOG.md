@@ -5,6 +5,10 @@
 
 ## 2026-08-12
 - con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
+## 2026-08-12
+- con-025: Added Git Version Control version-from-tags script (`docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py`) — Derive a package version from the nearest reachable git tag (setuptools-scm pattern) using only stdlib
+- con-028: Added Python Packaging & Project Config build-and-verify wheel script (`docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py`) — Build a minimal package into a wheel and inspect its contents
+- con-029: Added Software Testing Principles boundary values and test doubles snippet (`docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py`) — Practice boundary-value tests and a fake test double with pytest
 
 ## 2026-08-11
 - con-026: Added Git workflows docs for branches, tags, and CI gates (`docs/concepts/git-version-control/git-workflows-branches-tags-ci.md`) — Branch-and-PR flow, semantic tags, and uv-backed CI gates for the Python learning kit
