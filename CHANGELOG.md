@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-13
+- con-030 (rework): Rewrote type-checking patterns docs with L3 integration voice and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
+
 ## 2026-08-12
 - con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
 
