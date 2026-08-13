@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  16 files
+## Foundational concepts  ·  20 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -10,11 +10,11 @@
 - **primer:** [Software Testing Principles](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md)
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
-- **docs** (1): [Repository structure](../docs/repository-structure.md)
-- **scripts** (5): [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
-- _…and 2 more under `docs/concepts/*/` — browse the folders._
-- **snippets** (4): [common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py)
-- _…and 1 more under `docs/concepts/*/` — browse the folders._
+- **docs** (2): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [repository-structure](../docs/repository-structure.md)
+- **scripts** (6): [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py)
+- _…and 3 more under `docs/concepts/*/scripts/` — browse the folders._
+- **snippets** (6): [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py)
+- _…and 3 more under `docs/concepts/*/snippets/` — browse the folders._
 
 ## httpie  ·  9 files
 
@@ -59,6 +59,10 @@
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json.py](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps.py](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folder._
 
+## prc  ·  1 files
+
+- **notes** (1): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
+
 ## pre-commit  ·  11 files
 
 - **primer:** [0000-primer-pre-commit.md](../pre-commit/notes/0000-primer-pre-commit.md)
@@ -67,10 +71,6 @@
 - **configs** (2): [tried-multi-hook-config.yaml](../pre-commit/configs/tried-multi-hook-config.yaml), [tried-first-ruff-hooks-config.yaml](../pre-commit/configs/tried-first-ruff-hooks-config.yaml)
 - **scripts** (2): [run-pre-commit-ruff-trailing-ws.sh](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh), [install-and-run.sh](../pre-commit/scripts/install-and-run.sh)
 - **snippets** (2): [tried-ruff-mypy-config.yaml](../pre-commit/snippets/tried-ruff-mypy-config.yaml), [first-pre-commit-config.yaml](../pre-commit/snippets/first-pre-commit-config.yaml)
-
-## prc  ·  1 files
-
-- **notes** (1): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
 
 ## py  ·  2 files
 
