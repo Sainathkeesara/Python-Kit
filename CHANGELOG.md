@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-13
+- httpie-004: Added CI-safe API smoke-test script (`httpie/scripts/ci-safe-api-smoke-test.sh`) — dodges the httpie `--ignore-stdin` stdin hang in CI and gates on `--check-status` exit codes
 - con-030 (rework): Rewrote type-checking patterns docs with L3 integration voice and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
 
 ## 2026-08-12
