@@ -22,7 +22,7 @@ This is the integration point between three things the kit teaches separately: c
 
 ## Prerequisites
 
-- A Python 3.10+ interpreter — the lowercase generics and `X | Y` union syntax need it; on 3.8–3.9 use the `typing` module spellings.
+- A Python 3.9+ interpreter for the PEP 585 lowercase generics (`list[str]`, `dict[str, str]`). If you also want the `X | Y` union syntax, that is PEP 604 and needs Python 3.10+ — the two land in different releases, so "3.10+" is not the right baseline for the generics alone.
 - A `pyproject.toml` with `[project]` metadata and a `dev` dependency group that declares `mypy` and `pytest`.
 - `uv sync` (or an equivalent install) that resolves the `dev` group into an environment.
 
@@ -41,39 +41,34 @@ This is the integration point between three things the kit teaches separately: c
        return {p["name"]: p.get("version", "unknown") for p in packages}
    ```
 
-2. **Add type hints where the checker can see them.** Annotate the public signature. This is where the gap appears: functions without annotations are not checked by mypy, so a `def` that returns the wrong type passes with zero errors. Annotate the public surface, or turn on `check_untyped_defs` so the bodies of unannotated functions still get checked.
+2. **Add type hints where the checker can see them.** Annotate the public signature with the builtin lowercase generics. This is where the gap appears: functions without annotations are not checked by mypy, so a `def` that returns the wrong type passes with zero errors. Annotate the public surface, or turn on `check_untyped_defs` so the bodies of unannotated functions still get checked. The `list[dict[str, str]]` shape is enough for a small module; reach for a `TypedDict` or `NamedTuple` only when the inner dict has a shape worth naming.
 
    ```python
-   from typing import TypedDict
-
-
-   class Package(TypedDict):
-       name: str
-       version: str
-
-
-   def load_packages(packages: list[Package]) -> dict[str, str]:
+   def load_packages(packages: list[dict[str, str]]) -> dict[str, str]:
        if not packages:
            raise ConfigError("no packages listed")
        return {p["name"]: p.get("version", "unknown") for p in packages}
    ```
 
-3. **Probe inference with `reveal_type`.** When a type does not resolve as expected, `reveal_type(expr)` prints what mypy actually inferred — it is a mypy-only magic function and is not valid at runtime. A minimal `[tool.mypy]` block with `check_untyped_defs = true` makes the untyped-function gap loud the moment it lands.
+3. **Probe inference with `reveal_type`.** When a type does not resolve as expected, `reveal_type(expr)` prints what mypy actually inferred — it is a mypy-only magic function and is not valid at runtime. A minimal `[tool.mypy]` block with `check_untyped_defs = true` makes the untyped-function gap loud the moment it lands. Keep `ignore_missing_imports` off globally and mark only the modules that need it — here `pytest`, which ships no type stubs, so `mypy .` stays clean while checking the test files too.
 
    ```toml
    [tool.mypy]
    check_untyped_defs = true
+
+   [[tool.mypy.overrides]]
+   module = "pytest"
+   ignore_missing_imports = true
    ```
 
-4. **Write tests for the branches the checker cannot see.** The type checker cannot prove `load_packages([])` raises, so a `pytest.raises` test guards that path. Parametrize the edge cases (missing `version` key, empty list) so each branch that type narrowing cannot fully cover is pinned by a test that would otherwise fail.
+4. **Write tests for the branches the checker cannot see.** The type checker cannot prove `load_packages([])` raises, so a `pytest.raises` test guards that path. The missing-version case omits the `version` key entirely — this is the only input that actually exercises the `.get("version", "unknown")` default. Passing `{"name": "mypy", "version": ""}` would NOT trigger it: the key is present, so `.get` returns the empty string and the lookup comes back as `{"mypy": ""}`, not `{"mypy": "unknown"}`.
 
    ```python
    import pytest
 
 
    def test_load_packages_missing_version_defaults_unknown():
-       pkgs = [{"name": "mypy", "version": ""}]
-       assert load_packages(pkgs) == {"mypy": "unknown"}
+       assert load_packages([{"name": "mypy"}]) == {"mypy": "unknown"}
 
 
    def test_load_packages_empty_raises():
@@ -93,13 +88,14 @@ This is the integration point between three things the kit teaches separately: c
 
 ## Verify
 
-- `mypy .` reports zero errors on the annotated module.
+- `mypy .` reports zero errors on the annotated module and the test file.
 - `pytest -q` exits `0`, and both the empty-list and missing-version cases are covered.
 - `uv run mypy . && uv run pytest` runs both gates from one command, matching what CI will do.
 
 ## Common errors
 
 - **Annotations added, but still invisible.** A typed function called from an unannotated caller can still flow through as `Any` — the gap is the untyped caller, not the typed callee. `check_untyped_defs` closes that gap.
+- **A default value that never fires.** `.get("version", "unknown")` only returns `"unknown"` when the key is absent. A test that passes `"version": ""` is testing the key-present path, so the default branch rots untested — omit the key to pin it.
 - **Tests that only cover the happy path.** `load_packages([])` raising `ConfigError` is a control-flow branch the type checker cannot see; without the `pytest.raises` test it rots unnoticed.
 
 ## References
