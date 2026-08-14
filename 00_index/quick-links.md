@@ -4,6 +4,7 @@
 
 - [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md) — What is Git? first-contact notes
 - [Git workflows, branches, tags, and CI](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md) — Branch-and-PR flow, semantic release tags, and CI gates tied to a uv lockfile
+- [Derive a version from git tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py) — setuptools-scm-style version resolution from plain git history
 - [Python Programming Fundamentals Primer](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — What are Python programming fundamentals? first-contact notes
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
@@ -66,6 +67,7 @@
 
 ### Type-check code
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes
+- [Type-checking patterns: Protocol, TypedDict, generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md) — Structural typing, fixed-shape dicts, and type-preserving generics in real projects
 - [First mypy Run Notes](../mypy/notes/2026-06-04-first-mypy-run.md) — Annotated a function, fixed type errors, tried reveal_type
 - [First Type Check Script](../mypy/scripts/tried-mypy-first-check.py) — Intentionally broken file to run mypy against
 - [CLI Flags Notes](../mypy/notes/2026-05-28-tried-mypy-cli-flags.md) — Trying --strict, --check-untyped-defs, --ignore-missing-imports
@@ -195,6 +197,7 @@
 
 ### Test APIs
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first-contact notes
+- [CI-safe API smoke test](../httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing on non-2xx
 - [Install and Test Script](../httpie/scripts/install_and_test_httpie.sh) — Install httpie with pipx, make GET/POST requests to JSONPlaceholder
 - [Followed httpie Quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Quickstart walkthrough: sessions, headers, JSON handling gotchas
 - [httpie Request Workflow Script](../httpie/scripts/2026-07-19-httpie-request-workflow.sh) — Workflow covering GET, POST, auth, and file upload patterns

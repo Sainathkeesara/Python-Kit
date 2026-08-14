@@ -59,6 +59,9 @@
 - **Type stub (`.pyi`)** — A file that declares types for code you didn't write, like third-party libraries without built-in type hints.
 - **`reveal_type()`** — A debugging function that makes the type checker print what type it infers for an expression.
 - **`--strict`** — A mode that enables all the strictest checks in a type checker.
+- **`Protocol`** — A class from `typing` that declares structural subtyping: any object whose methods match the declared shape satisfies the protocol, with no shared base class required.
+- **`TypedDict`** — A type that gives a plain dictionary a fixed set of keys with known value types, so the checker can validate dict shapes.
+- **TypeVar / generics** — A type variable (`T = TypeVar("T")`) that lets a function or class preserve the element type of its inputs, e.g. a helper returning `list[T]` keeps the concrete type of the list passed in.
 
 ### Virtual Environment & Dependency Mgmt
 - **Virtual environment** — An isolated Python environment with its own packages.
@@ -72,6 +75,8 @@
 
 ## httpie
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.
+- **`--ignore-stdin`** — A flag that stops HTTPie from reading a request body from stdin, so requests don't hang when stdin is closed or redirected (cron, CI runners).
+- **`--check-status`** — A flag that turns non-2xx responses into a non-zero exit code (3 on 3xx, 4 on 4xx, 5 on 5xx), so a bad response fails a script instead of printing a body and passing.
 
 ## mypy
 - **Static type checker** — A tool that analyzes code without running it, checking that type annotations are consistent with actual usage.
@@ -216,6 +221,8 @@
 - **Remote** — A hosted copy of the repository (e.g., on GitHub) that you can push to or pull from.
 - **HEAD** — A pointer to the most recent commit on the currently checked-out branch.
 - **Conventional Commits** — A convention for structuring commit messages with prefixes like `feat:`, `fix:`, `chore:`.
+- **setuptools-scm** — A build-backend plugin that derives a package version from git tags instead of a hardcoded version file.
+- **PEP 440** — The specification for Python version numbers and how they compare (e.g. `1.2.3` vs `1.2.4.dev0`), which version-from-tags output follows.
 - **Tag** — A named, fixed reference to a specific commit, typically versioned like `v1.2.0`; used as the release point that dependents pin against.
 - **Branch protection** — Repository rules that block direct pushes to a branch until required checks (e.g. a CI status check) pass.
 - **CI gate** — A check that runs on every push and pull request, and must pass before a merge is allowed.
