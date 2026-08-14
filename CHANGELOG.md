@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-14
+- con-034 (rework): Fixed the broken example test (missing `version` key now truly omitted so `.get` default fires) and corrected the Python version claim (PEP 585 generics are 3.9+, only PEP 604 unions need 3.10) in the fundamentals + static typing + testing integration docs (`docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md`)
 - con-035: Added Python Programming Fundamentals dependency-management CLI script (`docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py`) — Pattern: fundamentals + dependency management using argparse, json, and importlib.metadata in a stdlib-only CLI
 
 ## 2026-08-13
