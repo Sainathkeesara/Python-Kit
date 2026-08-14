@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-14
+- con-034 (rework): Fixed the broken example test (missing `version` key now truly omitted so `.get` default fires) and corrected the Python version claim (PEP 585 generics are 3.9+, only PEP 604 unions need 3.10) in the fundamentals + static typing + testing integration docs (`docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md`)
+
 ## 2026-08-13
 - httpie-004: Added CI-safe API smoke-test script (`httpie/scripts/ci-safe-api-smoke-test.sh`) — dodges the httpie `--ignore-stdin` stdin hang in CI and gates on `--check-status` exit codes
 - con-030 (rework): Rewrote type-checking patterns docs with L3 integration voice and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
