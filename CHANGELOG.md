@@ -3,7 +3,7 @@
 ## 2026-08-15
 
 - httpie-006: Added notebook comparing --session vs inline auth for repeated API calls (`httpie/notebooks/compare-session-vs-inline-auth.ipynb`) — Purpose, repetition problem, session auth walkthrough, comparison table, and next verification steps
-- httpie-005 (rework): Rewrote scripting docs with L3 third-person voice and added session reuse coverage (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL, --offline preview, session reuse, and common errors
+- httpie-005 (rework): Rewrote scripting docs and added session reuse coverage (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL, --offline preview, session reuse, and common errors
 
 ## 2026-08-14
 - httpie-005: Added scripting docs on request items, --offline preview, and --check-status/--ignore-stdin gating (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL traps, offline request preview, and fail-loud scripting patterns
@@ -12,7 +12,7 @@
 
 ## 2026-08-13
 - httpie-004: Added CI-safe API smoke-test script (`httpie/scripts/ci-safe-api-smoke-test.sh`) — dodges the httpie `--ignore-stdin` stdin hang in CI and gates on `--check-status` exit codes
-- con-030 (rework): Rewrote type-checking patterns docs with L3 integration voice and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
+- con-030 (rework): Rewrote type-checking patterns docs and added explicit connections to testing, packaging, and CI (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics with adjacent-concept integration
 
 ## 2026-08-12
 - con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
@@ -75,7 +75,7 @@
 - pau-004: Added pip-audit quick primer (`pau/notes/0000-primer-pip-audit.md`) — First-day notes explaining what pip-audit is, key terminology, and a tiny scan example
 
 ## 2026-07-23
-- ruf-016: Rework: Removed `set -euo pipefail` from end-to-end Ruff lint-and-format workflow script (`ruff/scripts/end-to-end-ruff-lint-format.sh`) — Replaced with `set -e` for L2 voice compliance
+- ruf-016: Rework: Removed `set -euo pipefail` from end-to-end Ruff lint-and-format workflow script (`ruff/scripts/end-to-end-ruff-lint-format.sh`) — Replaced with `set -e`
 - con-016: Added Git Version Control practice script (`docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py`) — Python script exercising init, add, commit, and branch workflows in a temp directory
 - con-017: Added Git Version Control common patterns snippet (`docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py`) — Python snippets for status checks, feature branch creation, and remote branch listing via subprocess
 - con-018: Added Static Type Checking & Type Hints common patterns snippet (`docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py`) — Python snippets demonstrating basic functions, Optional, and Union type hints
@@ -83,7 +83,7 @@
 
 ## 2026-07-21
 - ruf-012: Added minimal standalone ruff.toml (`ruff/configs/2026-07-21-minimal-standalone-ruff.toml`) — One selected rule (E), one ignored rule (E501)
-- ruf-015: Added Ruff select/ignore/extend-safe/per-directory overrides notes (`ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md`) — Replaced "production code" with "application code" for L2 voice compliance
+- ruf-015: Added Ruff select/ignore/extend-safe/per-directory overrides notes (`ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md`) — Replaced "production code" with "application code"
 
 ## 2026-07-20
 - psy-014: Rework: Reduced py-spy top+record profile script to ≤15 lines, added sleep for py-spy attach timing (`py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh`) — Profile a tiny Python loop with py-spy top (live view) and py-spy record (flamegraph SVG)
@@ -102,10 +102,10 @@
 - pdt-011: Added pipdeptree library dependency-listing script (`pipdeptree/scripts/list-package-deps.py`) — Minimal Python script using pipdeptree as a library to list all dependencies of a package
 
 ## 2026-07-13
-- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
+- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py`) — Parse pip-audit JSON output and list packages with CVEs and severity
 
 ## 2026-07-10
-- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py`) — L1 snippet to parse pip-audit JSON output and list packages with CVEs and severity
+- pau-005: Added pip-audit JSON CVE parser snippet (`pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py`) — Parse pip-audit JSON output and list packages with CVEs and severity
 
 ## 2026-07-08
 - psy-009: Added py-spy record output formats comparison notes (`py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md`) — Compared flamegraph SVG, speedscope JSON, and raw JSON output formats
@@ -149,12 +149,12 @@
 - ty-008: Added Ty CLI flags and output formats notes (`ty/notes/2026-06-16-explored-ty-cli-flags.md`) — Explored Ty CLI flags, output formats, compared with mypy options
 - prc-008: Added pre-commit install and run with lint+typecheck notes (`pre-commit/notes/2026-06-16-installed-pre-commit-ran-lint-typecheck.md`) — Installed pre-commit, ran with ruff linting and mypy type check on a sample repo
 - uv-007: Added uv CLI help and format notes (`uv/notes/2026-06-16-explored-uv-cli-help-and-format.md`) — Explored uv CLI subcommands, help topics, and output formats
-- gen-005: Added quality tools pyproject.toml config (historically in a general configs folder, moved to tool-specific configs) — Combined ruff, mypy, pytest config in one pyproject.toml
+- gen-005: Added quality tools pyproject.toml config — Combined ruff, mypy, pytest config in one pyproject.toml
 - ty-007: Added Ty vs mypy comparison snippet (`ty/snippets/tried-ty-vs-mypy.py`) — Compare Ty and mypy output on the same typed code
 - prc-007: Added ruff + mypy hooks config snippet (`pre-commit/snippets/tried-ruff-mypy-config.yaml`) — Minimal pre-commit config with ruff and mypy hooks
-- tox-005: Upgraded tox config voice to L2 (`tox/configs/tried-lint-and-test-env.ini`) — Enhanced comments with structured reasoning
-- ruf-006: Trimmed messy example to ≤15 lines for L1 compliance (`ruff/snippets/tried-messy-example.py`)
-- pdt-007: Trimmed check-package-deps to ≤15 lines for L1 compliance (`pipdeptree/snippets/tried-check-package-deps.py`)
+- tox-005: Upgraded tox config voice (`tox/configs/tried-lint-and-test-env.ini`) — Enhanced comments with structured reasoning
+- ruf-006: Trimmed messy example (`ruff/snippets/tried-messy-example.py`)
+- pdt-007: Trimmed check-package-deps (`pipdeptree/snippets/tried-check-package-deps.py`)
 
 ## 2026-06-15
 - uvl-012: Added uv.lock structure exploration notebook (`uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb`) — Walk through uv.lock sections, hashes, and reproducibility
@@ -164,7 +164,7 @@
 - pdt-007: Added check package deps snippet (`pipdeptree/snippets/tried-check-package-deps.py`) — Look up a specific package in pipdeptree JSON output and print its dependency chain
 - tox-009: Added minimal tox run script (`tox/scripts/tried-minimal-tox-run.sh`) — Create tox.ini with test env and run tox end-to-end
 - ppt-005: Added build-system config notes (`pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md`) — Exploring minimal [build-system] table in pyproject.toml
-- gen-002: Added backlog capacity audit notes (historically in general notes) — Count open vs completed tasks per tool, identify next-level blockers
+- gen-002: Added backlog capacity audit notes — Count open vs completed tasks per tool, identify next-level blockers
 
 ## 2026-06-14
 - pyt-007: Added run pytest with CLI flags script (`pytest/scripts/run-pytest-with-cli-flags.sh`) — Create test file and run with -v, -k, -x, --tb=short
@@ -182,8 +182,8 @@
 ## 2026-06-12
 - mypy-007: Added followed mypy quickstart notes (`mypy/notes/2026-06-12-followed-mypy-quickstart.md`) — Gradual typing, strict mode, and what tripped me up
 - mypy-008: Added minimal mypy.ini config (`mypy/configs/tried-minimal-mypy-config.ini`) — Strict, disallow-untyped-defs, ignore-missing-imports
-- gen-003: Added cross-tool workflow notes (historically in general notes) — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
-- gen-004: Added first quality chain snippet (historically in general snippets) — Run Ruff, mypy, and pytest in sequence from one script
+- gen-003: Added cross-tool workflow notes — How Ruff, mypy, pytest, pre-commit, and uv fit together in one pipeline
+- gen-004: Added first quality chain snippet — Run Ruff, mypy, and pytest in sequence from one script
 
 ## 2026-06-11
 - tox-004 (rework): Added followed tox quickstart notes (`tox/notes/2026-06-11-followed-tox-quickstart.md`) — Multi-env setup, what tripped me up

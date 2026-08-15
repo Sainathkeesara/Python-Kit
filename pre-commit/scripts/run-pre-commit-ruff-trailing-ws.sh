@@ -3,7 +3,7 @@
 #
 # Set up a sample Python project, configure pre-commit with ruff
 # and trailing-whitespace hooks, then run the hooks once.
-# Based on pre-commit L1/L2 research findings.
+# Configure a sample project with ruff and trailing-whitespace hooks, run them once
 
 set -e
 
