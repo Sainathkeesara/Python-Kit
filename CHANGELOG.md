@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-08-15
+
+- httpie-006: Added notebook comparing --session vs inline auth for repeated API calls (`httpie/notebooks/compare-session-vs-inline-auth.ipynb`) — Purpose, repetition problem, session auth walkthrough, comparison table, and next verification steps
 - httpie-005 (rework): Rewrote scripting docs with L3 third-person voice and added session reuse coverage (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL, --offline preview, session reuse, and common errors
 
 ## 2026-08-14
