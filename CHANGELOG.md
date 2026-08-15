@@ -3,8 +3,10 @@
 ## 2026-08-15
 
 - httpie-006: Added notebook comparing --session vs inline auth for repeated API calls (`httpie/notebooks/compare-session-vs-inline-auth.ipynb`) — Purpose, repetition problem, session auth walkthrough, comparison table, and next verification steps
+- httpie-005 (rework): Rewrote scripting docs with L3 third-person voice and added session reuse coverage (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL, --offline preview, session reuse, and common errors
 
 ## 2026-08-14
+- httpie-005: Added scripting docs on request items, --offline preview, and --check-status/--ignore-stdin gating (`httpie/docs/scripting-request-items-offline-gating.md`) — request-item DSL traps, offline request preview, and fail-loud scripting patterns
 - con-034 (rework): Fixed the broken example test (missing `version` key now truly omitted so `.get` default fires) and corrected the Python version claim (PEP 585 generics are 3.9+, only PEP 604 unions need 3.10) in the fundamentals + static typing + testing integration docs (`docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md`)
 - con-035: Added Python Programming Fundamentals dependency-management CLI script (`docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py`) — Pattern: fundamentals + dependency management using argparse, json, and importlib.metadata in a stdlib-only CLI
 
