@@ -1,47 +1,69 @@
 ---
-last_verified: 2026-08-14
+last_verified: 2026-08-15
 tool_version: 3.2.4
 sources:
   - https://httpie.io/docs/cli/scripting
+  - https://httpie.io/docs/cli/example-use-cases
   - https://pypi.org/project/httpie/
 ---
 
-# Scripting with httpie: request items, --offline, and safe status gating
+# Scripting with httpie: request-item DSL, --offline, and session reuse
 
-I've been using httpie interactively for a while, but this doc collects what I learned about making it script-friendly. Most of it comes from the official scripting docs, and it pairs with the smoke-test script already in this kit (`httpie/scripts/ci-safe-api-smoke-test.sh`), which chains these ideas together end to end.
+## Purpose
+This doc covers three httpie features that make interactive and scripted API workflows reliable: the request-item DSL that follows the URL, `--offline` for request previews, and session reuse for repeated authenticated calls. These patterns are useful for CI smoke tests, batch provisioning, and any automation where auth headers must persist across multiple requests.
 
-## The request-item parts after the URL
+## When to use
+Use request items when constructing non-trivial POST or PUT calls from the command line. Use `--offline` to validate request shape before sending it against a live endpoint or when writing examples for documentation. Use sessions when a script makes several calls to the same host and re-authenticating on every call is wasteful or fragile.
 
-A call is a URL plus request items after it. Data fields go on the command line as `key=value`, and httpie turns them into the request body. The trap I keep hitting: a body fed through `stdin` **can't** be combined with data fields specified on the command line — the docs are explicit about it, and the runtime error spells the same rule out as "Request body ... and request data (key=value) cannot be mixed". So per call, pick one way to supply the body: either pipe it in, or list it as `key=value` items, never both.
+## Prerequisites
+- httpie 3.2.4 installed (`pip install httpie`).
+- A terminal that supports standard output redirection; use `--pretty=none` or `-b` when piping JSON to a file to avoid embedded ANSI color codes.
 
-## --offline: build and preview a request without sending it
+## Request-item DSL
+Every httpie call is a URL followed by request items. Data fields specified as `key=value` become form fields or JSON body entries depending on the content-type header. The runtime enforces a hard rule: a body supplied through `stdin` cannot be combined with command-line data items. Attempting both produces the error "Request body ... and request data (key=value) cannot be mixed".
 
-`--offline` builds the request and prints it without sending anything:
+```bash
+http POST https://example.com/api/users name=john age=30
+```
+
+## --offline
+`--offline` builds the full request and prints it without sending anything. It implicitly activates `--print=HB`, so headers and body are visible. This is useful for validating a request against API docs before hitting a live endpoint, or for dry-running scripts in CI.
 
 ```bash
 http --offline POST https://example.com/api/users name=john
 ```
 
-It has the side effect of automatically activating `--print=HB`, so you see the request headers and body that *would* be sent. That's useful for API-doc examples and dry runs where you don't want to actually hit the server.
-
-## --check-status: turn non-2xx into a real exit code
-
-On its own, httpie is happy to show you a 500 body and move on. `--check-status` changes that: it instructs HTTPie to exit with an error if the HTTP status is one of `3xx`, `4xx`, or `5xx`, and the exit status is `3` (unless `--follow` is set), `4`, or `5`, respectively. That's the difference between a script that notices a failed request and one that "succeeds" against an error body. Pair it with `-qq` to silence warnings while keeping error exits.
-
-## --ignore-stdin: the hang every script hits
-
-This one cost me a CI run. Outside an interactive session (cron, CI, GitHub Actions), `stdin` is not a terminal, so httpie assumes the input will contain the request body and waits for it — and since there is neither any input data nor an end-of-file signal, httpie gets stuck. The fix is to always pass `--ignore-stdin` in scripts unless you're actually piping a body.
-
-## Verify
+## Session reuse
+HTTPie persists cookies and auth headers in a session file so subsequent calls inherit them. The basic pattern is:
 
 ```bash
-http --offline GET https://example.com/api                   # preview, nothing sent
-http --check-status --ignore-stdin GET https://example.com/api  # exit 0 on 200
-http --check-status GET https://example.com/api/definitely-nope  # exit 4 on 404
+http --session=./session.json POST https://api.example.com/login username=alice password=secret
+http --session=./session.json GET https://api.example.com/protected
 ```
 
-The third one is the one that surprised me: a plain call exits 0, `--check-status` turns it into a gated failure.
+The `./` prefix matters: without it, httpie stores the session under `~/.config/httpie/sessions/<host>/<name>.json` as a named session rather than in the working directory. Sessions are per-host; a session created for `api.example.com` does not carry cookies or auth headers to `api.test.com`.
 
-## What I'd verify next
+A session file retains the exact headers and cookies from the responses it receives. After rotating an API token, the existing session file may still send the old `Authorization` header or stale cookies. In that case, delete the session JSON and re-authenticate.
 
-Persistent session reuse across repeated calls (so auth and cookies don't have to be re-sent on every request in a batch) is the piece I haven't sorted out yet. I don't want to write those specifics up until I've verified them against the docs, so that's next on the list.
+## Verify
+Run the following against `https://httpbin.org`:
+
+```bash
+# 1. Preview a request without sending it
+http --offline GET https://httpbin.org/get
+
+# 2. Create a session and reuse it for a second request
+http --session=./demo-session.json POST https://httpbin.org/post field=value
+http --session=./demo-session.json GET https://httpbin.org/get
+
+# 3. Confirm the session file exists locally
+ls -l ./demo-session.json
+rm -f ./demo-session.json
+```
+
+The first command should print headers and a body but not contact the server. The second and third commands should return 200 with the session file present between them.
+
+## Common errors
+- **Mixed body sources:** piping JSON to `stdin` while also passing `key=value` items triggers a runtime error. Choose one input method per call.
+- **Stale session state:** rotating an API token does not update the existing session file. The old `Authorization` header or stale cookies continue to be sent. Delete the session JSON and re-authenticate.
+- **Missing `./` in session path:** omitting the relative-path prefix creates a named session under `~/.config/httpie/sessions/` instead of a local file. Cleanup becomes harder in CI.
