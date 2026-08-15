@@ -13,8 +13,11 @@ This document describes the directory layout of Python-Kit.
 | `pytest/` | pytest testing framework notes and snippets |
 | `pyproject.toml/` | pyproject.toml configuration notes and examples |
 | `uv.lock/` | uv.lock lock file notes and scripts |
+| `uvl/` | Short alias for uv.lock first-contact notes and docs |
 | `pre-commit/` | pre-commit hook configuration and scripts (scripts/, notes/, snippets/) |
+| `prc/` | Short alias for pre-commit first-contact notes and configs |
 | `pip-audit/` | Vulnerability scanning notes and scripts |
+| `pau/` | Short alias for pip-audit first-contact notes and configs |
 | `pipdeptree/` | Dependency tree notes and scripts |
 | `mypy/` | Type checking notes and test scripts |
 | `rich/` | Terminal output notes, scripts, and snippets |
