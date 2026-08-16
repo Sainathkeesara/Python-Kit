@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-16
+- mypy-014: Added docs on typing third-party deps with a stub strategy instead of the `--ignore-missing-imports` Any-poisoning trap (`mypy/docs/stub-strategy-ignore-missing-imports.md`) — stub strategy, scoped overrides, and `reveal_type` debugging
+- mypy-015: Added project mypy config for gradual typing (`mypy/configs/gradual-typing-mypy.toml`) — `check_untyped_defs`, `disallow_untyped_defs` scoped per-module, `ignore_missing_imports` off, and excludes
+
 ## 2026-08-15
 
 - httpie-006: Added notebook comparing --session vs inline auth for repeated API calls (`httpie/notebooks/compare-session-vs-inline-auth.ipynb`) — Purpose, repetition problem, session auth walkthrough, comparison table, and next verification steps
