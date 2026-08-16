@@ -22,6 +22,8 @@
 - [Applying Type Hints Practice](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py) — Apply type hints to a module and run mypy to check results
 - [Venv Practice Script](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py) — Create, activate, deactivate, and delete venvs programmatically
 - [Common venv Patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
+- [Dependency Management CLI](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py) — Fundamentals + dependency management using argparse, json, and importlib.metadata
+- [Fundamentals + Static Typing + Testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md) — Integration notes combining fundamentals, type hints, and testing
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
@@ -203,6 +205,8 @@
 - [httpie Request Workflow Script](../httpie/scripts/2026-07-19-httpie-request-workflow.sh) — Workflow covering GET, POST, auth, and file upload patterns
 - [httpie vs curl Notes](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md) — Same API calls, ergonomics compared
 - [HTTPie Defaults Config](../httpie/configs/2026-07-19-httpie-defaults.json) — Default request options for HTTPie CLI sessions
+- [Session vs Inline Auth Notebook](../httpie/notebooks/compare-session-vs-inline-auth.ipynb) — Compare session auth vs inline auth for repeated API calls
+- [Scripting Request Items Offline Gating](../httpie/docs/scripting-request-items-offline-gating.md) — request-item DSL, --offline preview, session reuse, and common errors
 
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes

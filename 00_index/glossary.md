@@ -77,6 +77,11 @@
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.
 - **`--ignore-stdin`** — A flag that stops HTTPie from reading a request body from stdin, so requests don't hang when stdin is closed or redirected (cron, CI runners).
 - **`--check-status`** — A flag that turns non-2xx responses into a non-zero exit code (3 on 3xx, 4 on 4xx, 5 on 5xx), so a bad response fails a script instead of printing a body and passing.
+- **Request-item DSL** — The `key=value` pairs that follow the URL in an httpie command. They become form fields or JSON body entries depending on the content-type header.
+- **`--offline`** — Builds the full request and prints it without sending anything, implicitly activating `--print=HB` so headers and body are visible.
+- **Session reuse** — Persisting cookies and auth headers in a session file so subsequent calls inherit them, avoiding repeated authentication.
+- **Session auth** — Using `http --session=<path>` to store and reuse cookies and auth headers across multiple requests to the same host.
+- **Inline auth** — Passing credentials directly on the command line for each request instead of relying on a persisted session.
 
 ## mypy
 - **Static type checker** — A tool that analyzes code without running it, checking that type annotations are consistent with actual usage.
