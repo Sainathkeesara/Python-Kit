@@ -1,0 +1,40 @@
+# last_verified: 2026-08-16 · mypy 2.3.1
+# [tool.mypy] section for a project using gradual typing.
+# Paste into pyproject.toml (the [tool.mypy] key) or run mypy against
+# this file directly: mypy --config-file gradual-typing-mypy.toml
+
+[tool.mypy]
+python_version = "3.11"
+
+# Gradual typing: start with the checks that catch the most without
+# overwhelming output, then tighten per-module as code gets annotated.
+# strict = true  # the full strict set; leave off until the codebase is typed
+
+# Check the bodies of unannotated functions too. Without this, mypy
+# skips type errors inside any def that has no annotations at all —
+# a "silent-pass" gotcha the mypy docs call out explicitly.
+check_untyped_defs = true
+
+# Fail on functions that declare no parameter or return annotations.
+# This is the big hammer; enable it module-by-module via overrides below
+# rather than globally so the legacy code keeps passing.
+disallow_untyped_defs = false
+
+# When a value's type is Any — unannotated params, missing __init__
+# annotations, or ignore_missing_imports — mypy silently skips the
+# errors that touch it. So keep ignore_missing_imports OFF here:
+ignore_missing_imports = false
+
+# Surface ignores that no longer suppress anything; keeps type: ignore
+# honest as the codebase gets typed.
+warn_unused_ignores = true
+
+# Don't type-check generated or vendored directories.
+exclude = ["build/", "dist/", "venv/", ".venv/", "migrations/"]
+
+# Tighten per-module as gradual typing progresses: once a package is
+# annotated, flip disallow_untyped_defs on for just that subtree.
+[[tool.mypy.overrides]]
+module = "src.myproject.*"
+disallow_untyped_defs = true
+check_untyped_defs = true

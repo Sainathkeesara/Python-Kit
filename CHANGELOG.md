@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-08-16
+- mypy-014: Added docs on typing third-party deps with a stub strategy instead of the `--ignore-missing-imports` Any-poisoning trap (`mypy/docs/stub-strategy-ignore-missing-imports.md`) — stub strategy, scoped overrides, and `reveal_type` debugging
+- mypy-015: Added project mypy config for gradual typing (`mypy/configs/gradual-typing-mypy.toml`) — `check_untyped_defs`, `disallow_untyped_defs` scoped per-module, `ignore_missing_imports` off, and excludes
 - mypy-013: Added a script moving a small scoreboard module from untyped to `mypy --strict` clean with `reveal_type` under `if TYPE_CHECKING:` (`mypy/scripts/untyped-to-strict-reveal-type.py`) — silent-pass gotcha, empty-collection annotations, and revealed-type debugging
 
 ## 2026-08-15
