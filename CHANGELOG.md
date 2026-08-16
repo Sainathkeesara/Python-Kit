@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-16
+- mypy-013: Added a script moving a small scoreboard module from untyped to `mypy --strict` clean with `reveal_type` under `if TYPE_CHECKING:` (`mypy/scripts/untyped-to-strict-reveal-type.py`) — silent-pass gotcha, empty-collection annotations, and revealed-type debugging
+
 ## 2026-08-15
 
 - httpie-006: Added notebook comparing --session vs inline auth for repeated API calls (`httpie/notebooks/compare-session-vs-inline-auth.ipynb`) — Purpose, repetition problem, session auth walkthrough, comparison table, and next verification steps
