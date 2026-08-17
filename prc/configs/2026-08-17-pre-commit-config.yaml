@@ -1,0 +1,20 @@
+# last_verified: 2026-08-17 · pre-commit n/a
+# .pre-commit-config.yaml — pinned ruff + pre-commit-hooks set
+# My first "real" config: enough hooks to lint + format before I commit,
+# with revisions pinned so every machine runs the same hook versions.
+# Hook ids come from the two official hook repos; keep the set small.
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-ast
+      - id: check-yaml
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+      - id: ruff-format
