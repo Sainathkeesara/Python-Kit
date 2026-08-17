@@ -3,6 +3,8 @@
 ## 2026-08-17
 - con-032: Added a lockfile drift-detection script for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py`) — lockfile vs active-env comparison, importlib.metadata, and CI-style --strict exit gating
 - prc-012: Added a pinned pre-commit config with ruff + pre-commit-hooks (`prc/configs/2026-08-17-pre-commit-config.yaml`) — trailing-whitespace, end-of-file-fixer, check-ast, check-yaml, and ruff/ruff-format hooks with pinned revisions
+- pdt-018: Added pipdeptree output-reading docs (`pipdeptree/docs/reading-pipdeptree-output.md`) — default text tree, JSON structured output, reverse dependencies, and `--warn` modes
+- pdt-019: Added pipdeptree reverse-dependency library snippet (`pipdeptree/snippets/reverse-dependency-queries.py`) — Query reverse deps via the pipdeptree Python API instead of parsing CLI JSON
 
 ## 2026-08-16
 - con-031: Added an interactive type-narrowing notebook that drives mypy on scratch modules (`docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb`) — isinstance/Optional/reassignment narrowing, reveal_type, the untyped-def silent pass and `--check-untyped-defs`, Any-poisoning, and container invariance
