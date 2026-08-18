@@ -1,7 +1,9 @@
 # CHANGELOG
 
 ## 2026-08-18
-- ruf-018: Added pinned ruff rule-set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select, ignore, and per-file-ignores for a real project
+- ruf-018: Added pinned [tool.ruff] rule set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select/ignore baseline with per-file-ignores for tests and __init__ re-exports
+- typer-007: Added typer quickstart script (`typer/scripts/2026-08-18-quickstart-args-options-help.py`) — positional arg, optional arg with default, bool flag, and free --help
+- typer-008: Added typer quickstart trip-up notes (`typer/notes/2026-08-18-tripped-up-typer-quickstart.md`) — what confused me about positional args, --no- flags, and docstring help
 - ty-012: Added minimal annotated module with ty findings and fixes (`ty/snippets/2026-08-18-minimal-annotated-module.py`) — parameter types, assignment types, and return-type mismatches
 - con-033: Added venv-strategy comparison docs for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md`) — when to reach for venv vs uv vs tox, src-layout vs flat-layout reasoning, and how the layers combine with pyproject.toml and CI
 - rich-005: Added first rich output snippet (`rich/snippets/2026-08-18-first-rich-output.py`) — markup colors, a table, and a live display
@@ -35,7 +37,6 @@
 
 ## 2026-08-12
 - con-030: Added type-checking patterns docs for real projects (`docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md`) — Protocol, TypedDict, and generics integration patterns
-## 2026-08-12
 - con-025: Added Git Version Control version-from-tags script (`docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py`) — Derive a package version from the nearest reachable git tag (setuptools-scm pattern) using only stdlib
 - con-028: Added Python Packaging & Project Config build-and-verify wheel script (`docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py`) — Build a minimal package into a wheel and inspect its contents
 - con-029: Added Software Testing Principles boundary values and test doubles snippet (`docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py`) — Practice boundary-value tests and a fake test double with pytest
