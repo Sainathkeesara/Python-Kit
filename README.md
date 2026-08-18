@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pre-commit, rich, Typer, pip-audit, py-spy, tox, httpie, and the project config that holds them together.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pre-commit, rich, Typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -18,9 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [CI parity check](prc/scripts/2026-08-17-ci-parity-check.sh) — Verify local CI parity between Ruff, mypy, and pytest in a single shell script
-- [Lockfile drift check](docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py) — Compare `pyproject.toml` against `uv.lock` to spot stale or missing entries
-- [Pre-commit config](prc/configs/2026-08-17-pre-commit-config.yaml) — Minimal pre-commit config with Ruff and trailing-whitespace hooks
+- [Venv strategies in real projects: venv vs uv vs tox](docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md) — How venv, uv, and tox each solve a different layer of environment management
+- [First rich output: markup colors, a table, and a live display](rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
+- [When to use py-spy top vs record/flamegraph vs dump](py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
+- [CI parity check script](prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
+- [First real pre-commit config](prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
 
 ## Layout
 
@@ -31,10 +33,10 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `pau/` — pip-audit short-alias configs and primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
-- `prc/` — pre-commit first-contact notes and configs
+- `prc/` — pre-commit first-contact hook notes, configs, and scripts
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Ruff first-contact primer and install-and-lint script
-- `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples
+- `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples, and docs
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
@@ -55,21 +57,21 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 3 | 1 | 1 | 1 | 1 | 2026-08-15 |
-| mypy | 7 | 2 | 4 | 4 | 1 | — | 2026-08-16 |
+| mypy | 7 | 2 | 5 | 4 | 1 | — | 2026-08-16 |
 | pau | 1 | — | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
-| prc | 1 | 1 | 1 | — | — | — | 2026-08-10 |
+| prc | 1 | 1 | 1 | — | — | — | 2026-08-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 9 | — | 2 | 1 | — | 2026-08-17 |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
-| rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
+| rich | 8 | 3 | — | 8 | — | — | 2026-08-05 |
 | ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-08-03 |
 | tox | 5 | 2 | 2 | — | — | — | — |
 | ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
-| typer | 3 | 2 | — | 2 | — | — | — |
+| typer | 3 | 3 | — | 2 | — | — | — |
 | uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-10 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
@@ -78,7 +80,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through first-contact notes and configs across the toolchain, with recent additions in prc (CI parity check, pre-commit config) and py-spy (top vs record vs dump guide).
+Currently working through first-contact notes and configs across the toolchain, with recent additions in venv strategies (venv vs uv vs tox), py-spy output-mode selection, rich first-output snippets, and the prc tool (first real config + CI parity script).
 
 ---
-_Last updated: 2026-08-17_
+_Last updated: 2026-08-18_
