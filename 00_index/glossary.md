@@ -121,6 +121,11 @@
 - **ID** — The identifier of a specific hook within a pre-commit source repo.
 - **`--all-files`** — A pre-commit flag that runs hooks on every tracked file, not just staged changes.
 - **`SKIP=`** — An environment variable that skips specific hooks by ID for a single commit (e.g. `SKIP=ruff git commit`).
+- **CI parity check** — Running pre-commit `--all-files` locally to confirm the same hooks will pass in CI, where `SKIP` bypasses are not available.
+
+## prc
+- **pre-commit** — A framework for managing and running git hooks; `prc` is the short alias used for first-contact notes and configs in this kit.
+- **CI parity** — The guarantee that a local `pre-commit run --all-files` result matches what CI will see, since CI cannot honour `SKIP=` bypasses.
 
 ## py (Ruff)
 - **Linter** — Ruff's lint rules that detect code issues; configured under `[tool.ruff.lint]`.
@@ -133,6 +138,7 @@
 - **flamegraph** — A visualization of program execution showing which functions consume the most CPU time.
 - **record** — A py-spy subcommand that captures a profiling dump to disk.
 - **top** — A py-spy subcommand that displays a live, top-like view of hot functions.
+- **dump** — A py-spy subcommand that prints the current call stack of every thread to the terminal and exits immediately, with no sampling window and no output file.
 - **CPU-bound** — Code that spends most of its time using the CPU rather than waiting for I/O.
 - **speedscope** — A web-based viewer for flamechart/flamegraph data; py-spy can export JSON in speedscope format.
 

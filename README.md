@@ -18,11 +18,9 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [CI-safe API smoke test](httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing the run on non-2xx
-- [Session vs inline auth notebook](httpie/notebooks/compare-session-vs-inline-auth.ipynb) — Compare HTTPie session auth against inline auth for repeated API calls
-- [Type-checking patterns: Protocol, TypedDict, generics](docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md) — Structural typing, fixed-shape dicts, and type-preserving generics in real projects
-- [Derive a version from git tags](docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py) — setuptools-scm-style version resolution from plain git history, close to PEP 440
-- [Build and verify a wheel](docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect what actually gets packaged
+- [CI parity check](prc/scripts/2026-08-17-ci-parity-check.sh) — Verify local CI parity between Ruff, mypy, and pytest in a single shell script
+- [Lockfile drift check](docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py) — Compare `pyproject.toml` against `uv.lock` to spot stale or missing entries
+- [Pre-commit config](prc/configs/2026-08-17-pre-commit-config.yaml) — Minimal pre-commit config with Ruff and trailing-whitespace hooks
 
 ## Layout
 
@@ -33,7 +31,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `pau/` — pip-audit short-alias configs and primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
-- `prc/` — pre-commit first-contact hook notes
+- `prc/` — pre-commit first-contact notes and configs
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Ruff first-contact primer and install-and-lint script
 - `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples
@@ -57,14 +55,14 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 3 | 1 | 1 | 1 | 1 | 2026-08-15 |
-| mypy | 7 | 1 | 4 | 4 | — | — | — |
+| mypy | 7 | 2 | 4 | 4 | 1 | — | 2026-08-16 |
 | pau | 1 | — | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
-| prc | 1 | — | — | — | — | — | 2026-08-10 |
+| prc | 1 | 1 | 1 | — | — | — | 2026-08-10 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | — | — | 2026-07-19 |
+| py-spy | 10 | 9 | — | 2 | 1 | — | 2026-08-17 |
 | pyproject.toml | 3 | — | 5 | — | — | — | — |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | — |
 | rich | 8 | 3 | — | 7 | — | — | 2026-08-05 |
@@ -80,7 +78,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through first-contact notes and configs across the toolchain, with recent additions in httpie (session auth, offline gating) and the docs/concepts tree (type-checking patterns, git version-from-tags, wheel builds).
+Currently working through first-contact notes and configs across the toolchain, with recent additions in prc (CI parity check, pre-commit config) and py-spy (top vs record vs dump guide).
 
 ---
-_Last updated: 2026-08-15_
+_Last updated: 2026-08-17_
