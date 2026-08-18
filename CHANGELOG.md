@@ -3,6 +3,8 @@
 ## 2026-08-18
 - ruf-018: Added pinned ruff rule-set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select, ignore, and per-file-ignores for a real project
 - ty-012: Added minimal annotated module with ty findings and fixes (`ty/snippets/2026-08-18-minimal-annotated-module.py`) — parameter types, assignment types, and return-type mismatches
+- con-033: Added venv-strategy comparison docs for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md`) — when to reach for venv vs uv vs tox, src-layout vs flat-layout reasoning, and how the layers combine with pyproject.toml and CI
+- rich-005: Added first rich output snippet (`rich/snippets/2026-08-18-first-rich-output.py`) — markup colors, a table, and a live display
 
 ## 2026-08-17
 - con-032: Added a lockfile drift-detection script for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py`) — lockfile vs active-env comparison, importlib.metadata, and CI-style --strict exit gating
