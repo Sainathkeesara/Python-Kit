@@ -1,0 +1,31 @@
+# last_verified: 2026-08-18 · ruff n/a
+
+# Pinned [tool.ruff] rule set for a real project with a src/ layout and tests/.
+# I put it in pyproject.toml so ruff, mypy, and pytest all read one file.
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.lint]
+# Base set from the ruff+mypy CI guide: style (E/W), bugs (F/B),
+# imports (I), modernization (UP), plus N for naming.
+# I did NOT add the ANN* annotation rules — mypy --strict already enforces
+# annotations, so they'd just double-report the same problems.
+select = ["E", "F", "W", "I", "UP", "B", "N"]
+# E501 (line length) is handled by ruff format, not the linter.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# tests/ use short test helper names; relax naming there.
+"tests/**" = ["N"]
+# __init__ files re-export the public API on purpose.
+"__init__.py" = ["F401"]
