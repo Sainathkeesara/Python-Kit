@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-18
+- con-033: Added venv-strategy comparison docs for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md`) — when to reach for venv vs uv vs tox, src-layout vs flat-layout reasoning, and how the layers combine with pyproject.toml and CI
+- rich-005: Added first rich output snippet (`rich/snippets/2026-08-18-first-rich-output.py`) — markup colors, a table, and a live display
+
 ## 2026-08-17
 - con-032: Added a lockfile drift-detection script for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py`) — lockfile vs active-env comparison, importlib.metadata, and CI-style --strict exit gating
 - prc-012: Added a pinned pre-commit config with ruff + pre-commit-hooks (`prc/configs/2026-08-17-pre-commit-config.yaml`) — trailing-whitespace, end-of-file-fixer, check-ast, check-yaml, and ruff/ruff-format hooks with pinned revisions
