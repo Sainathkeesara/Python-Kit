@@ -4,6 +4,8 @@
 - ruf-018: Added pinned [tool.ruff] rule set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select/ignore baseline with per-file-ignores for tests and __init__ re-exports
 - typer-007: Added typer quickstart script (`typer/scripts/2026-08-18-quickstart-args-options-help.py`) — positional arg, optional arg with default, bool flag, and free --help
 - typer-008: Added typer quickstart trip-up notes (`typer/notes/2026-08-18-tripped-up-typer-quickstart.md`) — what confused me about positional args, --no- flags, and docstring help
+- ruf-018: Added pinned ruff rule-set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select, ignore, and per-file-ignores for a real project
+- ty-012: Added minimal annotated module with ty findings and fixes (`ty/snippets/2026-08-18-minimal-annotated-module.py`) — parameter types, assignment types, and return-type mismatches
 - con-033: Added venv-strategy comparison docs for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md`) — when to reach for venv vs uv vs tox, src-layout vs flat-layout reasoning, and how the layers combine with pyproject.toml and CI
 - rich-005: Added first rich output snippet (`rich/snippets/2026-08-18-first-rich-output.py`) — markup colors, a table, and a live display
 
@@ -11,8 +13,8 @@
 - con-032: Added a lockfile drift-detection script for the Virtual Environment & Dependency Mgmt concept (`docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py`) — lockfile vs active-env comparison, importlib.metadata, and CI-style --strict exit gating
 - prc-012: Added a pinned pre-commit config with ruff + pre-commit-hooks (`prc/configs/2026-08-17-pre-commit-config.yaml`) — trailing-whitespace, end-of-file-fixer, check-ast, check-yaml, and ruff/ruff-format hooks with pinned revisions
 - prc-013: Added CI parity check script for pre-commit (`prc/scripts/2026-08-17-ci-parity-check.sh`) — Automate pre-commit install, run all hooks repo-wide, and verify local run matches CI behavior
-- psy-017: Added end-to-end py-spy profiling script (`psy/scripts/profile-running-process-end-to-end.sh`) — record, flamegraph, and dump against a running CPU-bound process
-- psy-018: Added py-spy profiling modes docs (`psy/docs/when-to-use-py-spy-modes.md`) — when to use top vs record vs dump, and how to read each output
+- psy-017: Added end-to-end py-spy profiling script (`py-spy/scripts/profile-running-process-end-to-end.sh`) — record, flamegraph, and dump against a running CPU-bound process
+- psy-018: Added py-spy profiling modes docs (`py-spy/docs/when-to-use-py-spy-modes.md`) — when to use top vs record vs dump, and how to read each output
 
 ## 2026-08-16
 - con-031: Added an interactive type-narrowing notebook that drives mypy on scratch modules (`docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb`) — isinstance/Optional/reassignment narrowing, reveal_type, the untyped-def silent pass and `--check-untyped-defs`, Any-poisoning, and container invariance
