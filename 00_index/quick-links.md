@@ -13,7 +13,7 @@
 - [Practicing Fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py) — Practice data types, control flow, functions, and comprehensions
 - [Comprehensions, Generators, Error Handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
 - [Packaging Patterns Snippet](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py) — Reading pyproject.toml metadata and discovering packages
-- [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect what actually gets packaged
+- [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
 - [Testing Principles Practice](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py) — Writing isolated, parametrized tests with fixtures
 - [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Practice Git Version Control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py) — Reproduce common Git workflows from a Python script
@@ -24,6 +24,7 @@
 - [Common venv Patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py) — Python helpers to create and compare virtual environments
 - [Dependency Management CLI](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py) — Fundamentals + dependency management using argparse, json, and importlib.metadata
 - [Fundamentals + Static Typing + Testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md) — Integration notes combining fundamentals, type hints, and testing
+- [Venv strategies in real projects: venv vs uv vs tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md) — How venv, uv, and tox each solve a different layer of environment management
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
@@ -104,8 +105,8 @@
 ### Manage pre-commit hooks
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
 - [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
-- [CI parity check](../prc/scripts/2026-08-17-ci-parity-check.sh) — Verify local CI parity between Ruff, mypy, and pytest in a single shell script
-- [Pre-commit config](../prc/configs/2026-08-17-pre-commit-config.yaml) — Minimal pre-commit config with Ruff and trailing-whitespace hooks
+- [First real pre-commit config](../prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
+- [CI parity check script](../prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
 - [pre-commit config](../pre-commit/snippets/first-pre-commit-config.yaml) — My first pre-commit hook config
 - [Pre-commit Multi-Hook Config](../pre-commit/configs/tried-multi-hook-config.yaml) — Ruff + mypy + trailing-whitespace hooks
 - [Ruff + Mypy Hooks Config](../pre-commit/snippets/tried-ruff-mypy-config.yaml) — Minimal pre-commit config with ruff and mypy hooks
@@ -178,6 +179,7 @@
 - [Record Output Formats Compared (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [Record Output Formats Compared (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
 - [Record Output Formats Compared (June)](../py-spy/notes/2026-06-13-compared-py-spy-record-output-formats.md) — Compared flamegraph SVG, speedscope JSON, and raw JSON formats
+- [When to use top vs record/flamegraph vs dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
 - [CPU Speedscope Record Script (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — Self-profiling CPU-bound workload with py-spy record and speedscope export
 - [CPU Speedscope Record Script (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
 - [CPU Speedscope Record Script (June)](../py-spy/scripts/tried-cpu-speedscope-record.py) — CPU-bound workload with py-spy record and speedscope JSON export
@@ -218,3 +220,4 @@
 - [Styled Output Snippet](../rich/snippets/tried-rich-styled-output.py) — First styled terminal output with rich print
 - [Rich styled output script](../rich/scripts/2026-08-07-first-styled-rich-output.py) — Install Rich and produce first styled console output with tables and panels
 - [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
+- [First rich output snippet](../rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script

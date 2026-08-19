@@ -72,6 +72,8 @@
 - **Transitive dependency** — A dependency of a direct dependency (indirect dependency).
 - **Marker** — A condition that controls when a dependency is installed, based on Python version, OS, or platform.
 - **`pip-audit`** — A tool that scans installed packages against known vulnerability databases and reports CVEs.
+- **src layout** — A project structure where source code lives in a `src/` directory, so tests import the installed package rather than the working directory.
+- **flat layout** — A project structure where source code lives at the repository root, which can mask packaging bugs because tests resolve imports from `.` instead of the installed artifact.
 
 ## httpie
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.

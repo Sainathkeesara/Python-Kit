@@ -11,7 +11,7 @@
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **docs** (3): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [repository-structure](../docs/repository-structure.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md)
-- **scripts** (7): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py)
+- **scripts** (7): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - **snippets** (6): [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 
 ## httpie  ·  12 files
@@ -31,7 +31,8 @@
 - **docs** (1): [stub-strategy-ignore-missing-imports](../mypy/docs/stub-strategy-ignore-missing-imports.md)
 - **scripts** (2): [tried-mypy-first-check](../mypy/scripts/tried-mypy-first-check.py), [untyped-to-strict-reveal-type](../mypy/scripts/untyped-to-strict-reveal-type.py)
 - **configs** (5): [selective-mypy-strictness](../mypy/configs/2026-08-04-selective-mypy-strictness.ini), [strict-mypy-config](../mypy/configs/tried-strict-mypy-config.toml), [strict-disallow-ignore-config](../mypy/configs/tried-strict-disallow-ignore-config.ini), [minimal-mypy-config](../mypy/configs/tried-minimal-mypy-config.ini), [gradual-typing-mypy](../mypy/configs/gradual-typing-mypy.toml)
-- **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/typed-functions-validate.py), [tried-validating-typed-function](../mypy/snippets/tried-validating-typed-function.py)
+- **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/typed-functions-validate.py)
+- _…and 1 more under `mypy/snippets/` — browse the folder._
 
 ## pau  ·  3 files
 
@@ -58,7 +59,6 @@
 
 ## prc  ·  3 files
 
-- **primer:** [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
 - **notes** (1): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
 - **scripts** (1): [ci-parity-check](../prc/scripts/2026-08-17-ci-parity-check.sh)
 - **configs** (1): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml)
@@ -79,7 +79,8 @@
 ## py-spy  ·  22 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
-- **notes** (10): [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md), [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md)
+- **notes** (10): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md)
+- **docs** (1): [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md)
 - **scripts** (9): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [cpu-speedscope-record (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py)
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 - _…and 6 more under `py-spy/notes/` and 6 more under `py-spy/scripts/` — browse the folders._
@@ -100,13 +101,13 @@
 - **docs** (1): [pytest-vs-unittest-mapping.md](../pytest/docs/pytest-vs-unittest-mapping.md)
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
 
-## rich  ·  18 files
+## rich  ·  19 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
 - **scripts** (3): [2026-08-07-first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [2026-08-05-rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
-- **snippets** (7): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output](../rich/snippets/tried-rich-styled-output.py)
-- _…and 4 more under `rich/notes/` and 4 more under `rich/snippets/` — browse the folders._
+- **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output](../rich/snippets/tried-rich-styled-output.py)
+- _…and 5 more under `rich/notes/` and 5 more under `rich/snippets/` — browse the folders._
 
 ## ruff  ·  14 files
 
