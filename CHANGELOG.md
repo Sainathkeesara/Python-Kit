@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- pdt-017: Added dependency-health report script (`pipdeptree/scripts/dependency-health-report.sh`) — Build a dependency-health report from pipdeptree --warn, reverse deps, and JSON tree
+
 ## 2026-08-18
 - ruf-018: Added pinned [tool.ruff] rule set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select/ignore baseline with per-file-ignores for tests and __init__ re-exports
 - typer-007: Added typer quickstart script (`typer/scripts/2026-08-18-quickstart-args-options-help.py`) — positional arg, optional arg with default, bool flag, and free --help
