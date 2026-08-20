@@ -112,6 +112,9 @@
 - **Transitive dependency** — A dependency of a direct dependency (indirect dependency).
 - **Dependency conflict** — When two packages require incompatible versions of the same third package.
 - **Cycle detection** — Identifying circular dependencies where package A depends on B and B depends on A, which can break installs.
+- **Leaf package** — A package with no outgoing dependencies of its own; in a dependency tree it sits at the leaves.
+- **Reverse-dependency count** — How many installed packages depend on a given package, used to gauge a package's blast radius before changing or removing it.
+- **Dependency-health report** — A summary combining `pipdeptree --warn`, `--reverse`, and `--json` into one pass: conflicts, top-level and leaf counts, and the most-depended-on packages.
 - **`--json`** — Output the dependency tree as JSON instead of the default text tree.
 - **`--warn silence`** — Suppress CVE advisory warnings so the output can be read cleanly.
 - **`--freeze`** — Output packages as `pkg==version` lines, suitable for piping into grep.
@@ -181,6 +184,9 @@
 - **Command** — A function decorated with `@app.command()` that becomes a CLI subcommand.
 - **Option** — A command-line flag defined via type hints (e.g. `--name` becomes an option, `name` becomes a positional argument).
 - **Argument** — A value passed positionally on the command line; required unless it has a default.
+- **Required positional argument** — A bare-typed parameter without a default (e.g. `name: str`); Typer makes it positional and required, not an option.
+- **`--no-` flag pair** — A parameter typed `bool` with a default (e.g. `formal: bool = False`) produces both `--formal` and `--no-formal` variants automatically.
+- **Docstring-as-help** — Typer uses the command function's docstring as its `--help` text at no extra cost.
 - **`--help`** — Automatically generated documentation for each command, showing all options and their types.
 - **Completion** — Shell tab-completion scripts that Typer generates for bash, zsh, and fish.
 

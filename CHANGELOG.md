@@ -6,6 +6,8 @@
 
 ## 2026-08-18
 - pdt-017: Added dependency-health report script (`pipdeptree/scripts/dependency-health-report.sh`) — Build a dependency-health report from pipdeptree --warn, reverse deps, and JSON tree
+- uv-014: Added a uv project bootstrap script with a lockfile reproducibility gate (`uv/scripts/bootstrap-project-lockcheck.sh`) — uv init --package, add runtime + dev deps, sync all groups, wipe and re-sync off uv.lock, and confirm the lock is stable
+- uv-016: Added a uv-managed project pyproject.toml (`uv/configs/uv-dependency-groups-pyproject.toml`) — runtime deps under [project], dev-only deps under [dependency-groups], and a uv_build src-layout backend
 
 ## 2026-08-18
 - ruf-018: Added pinned [tool.ruff] rule set config (`ruff/configs/2026-08-18-pinned-rule-set.toml`) — select/ignore baseline with per-file-ignores for tests and __init__ re-exports
