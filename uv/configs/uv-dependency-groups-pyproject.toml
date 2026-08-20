@@ -1,0 +1,26 @@
+# last_verified: 2026-08-20 · uv
+# pyproject.toml for a uv-managed project: runtime deps in [project],
+# dev-only deps in [dependency-groups], and a uv_build (src layout) backend.
+# Backend version range per uv's build-backend docs.
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13"]
+build-backend = "uv_build"
+
+[project]
+name = "demo-svc"
+version = "0.1.0"
+description = "Demo service managed with uv"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.scripts]
+demo-svc = "demo_svc.cli:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.5",
+    "pytest>=8.0",
+]
