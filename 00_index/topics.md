@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  24 files
+## Foundational concepts  ·  26 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -10,7 +10,8 @@
 - **primer:** [Software Testing Principles](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md)
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
-- **docs** (3): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [repository-structure](../docs/repository-structure.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md)
+- **docs** (4): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [repository-structure](../docs/repository-structure.md)
+- **notebooks** (1): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb)
 - **scripts** (7): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - **snippets** (6): [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 
@@ -48,11 +49,11 @@
 - **snippets** (4): [parse-pip-audit-json-cves-2026-07-13](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py), [list-cve-findings](../pip-audit/snippets/list-cve-findings.py)
 - _…and 1 more under `pip-audit/snippets/` — browse the folder._
 
-## pipdeptree  ·  17 files
+## pipdeptree  ·  18 files
 
 - **primer:** [0000-primer-pipdeptree.md](../pipdeptree/notes/0000-primer-pipdeptree.md)
 - **notes** (8): [pipdeptree-tutorial](../pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md), [pipdeptree-patterns-i-use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md), [common-cli-patterns](../pipdeptree/notes/2026-06-13-common-cli-patterns.md)
-- **scripts** (2): [list-package-deps](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps](../pipdeptree/scripts/install-and-inspect-deps.sh)
+- **scripts** (3): [dependency-health-report](../pipdeptree/scripts/dependency-health-report.sh), [list-package-deps](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps](../pipdeptree/scripts/install-and-inspect-deps.sh)
 - **configs** (1): [dev-dependencies-pipdeptree](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml)
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folder._
@@ -85,6 +86,11 @@
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 - _…and 6 more under `py-spy/notes/` and 6 more under `py-spy/scripts/` — browse the folders._
 
+## psy  ·  2 files
+
+- **docs** (1): [when-to-use-py-spy-modes](../psy/docs/when-to-use-py-spy-modes.md)
+- **scripts** (1): [profile-running-process-end-to-end](../psy/scripts/profile-running-process-end-to-end.sh)
+
 ## pyproject.toml  ·  8 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
@@ -98,26 +104,26 @@
 - **notes** (5): [explored-pytest-cli-advanced-flags](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md), [installed-pytest-first-suite](../pytest/notes/2026-06-08-installed-pytest-first-suite.md), [tried-pytest-fixtures-conftest](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md)
 - **scripts** (3): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh)
 - **configs** (1): [minimal-pytest-config](../pytest/configs/2026-07-19-minimal-pytest-config.toml)
-- **docs** (1): [pytest-vs-unittest-mapping.md](../pytest/docs/pytest-vs-unittest-mapping.md)
+- **docs** (1): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md)
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
 
 ## rich  ·  19 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
-- **scripts** (3): [2026-08-07-first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [2026-08-05-rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
-- **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py), [tried-rich-styled-output](../rich/snippets/tried-rich-styled-output.py)
-- _…and 5 more under `rich/notes/` and 5 more under `rich/snippets/` — browse the folders._
+- **scripts** (3): [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
+- **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [first-rich-output](../rich/snippets/2026-08-18-first-rich-output.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py)
+- _…and 4 more under `rich/notes/` and 5 more under `rich/snippets/` — browse the folders._
 
-## ruff  ·  14 files
+## ruff  ·  15 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **notes** (6): [ruff-select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md)
-- **configs** (4): [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml), [ruff-pyproject.toml](../ruff/configs/ruff-pyproject.toml)
-- **docs** (1): [ruff-vs-flake8-comparison.md](../ruff/docs/ruff-vs-flake8-comparison.md)
+- **configs** (5): [pinned-rule-set](../ruff/configs/2026-08-18-pinned-rule-set.toml), [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml)
+- **docs** (1): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **scripts** (1): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
-- _…and 1 more under `ruff/configs/` — browse the folder._
+- _…and 2 more under `ruff/configs/` — browse the folder._
 
 ## tox  ·  9 files
 
@@ -126,20 +132,22 @@
 - **configs** (2): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini)
 - **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
 
-## ty  ·  14 files
+## ty  ·  15 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (7): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md)
 - **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
 - **scripts** (1): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh)
-- **snippets** (3): [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase.py](../ty/snippets/run-ty-on-codebase.py), [tried-ty-vs-mypy](../ty/snippets/tried-ty-vs-mypy.py)
+- **snippets** (4): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
+- _…and 1 more under `ty/notes/` — browse the folder._
 
-## typer  ·  7 files
+## typer  ·  9 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
-- **notes** (3): [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
-- **scripts** (2): [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
+- **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
+- **scripts** (3): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (2): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
+- _…and 1 more under `typer/notes/` — browse the folder._
 
 ## uv  ·  17 files
 
@@ -147,7 +155,7 @@
 - **notes** (8): [uv-script-venv-lockfile](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md), [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md)
 - **scripts** (4): [install-and-first-command](../uv/scripts/install-and-first-command.sh), [hello-with-dep](../uv/scripts/hello-with-dep.py), [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh)
 - **configs** (2): [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
-- **docs** (1): [uv-vs-pip-cheat-sheet.md](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
+- **docs** (1): [uv-vs-pip-cheat-sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
 - **snippets** (2): [first-uv-project](../uv/snippets/2026-08-08-first-uv-project.py), [run-with-uv](../uv/snippets/run-with-uv.py)
 - _…and 4 more under `uv/notes/` and 1 more under `uv/scripts/` — browse the folders._
 

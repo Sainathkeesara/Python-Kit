@@ -10,7 +10,7 @@
 
 ## Who this is for
 
-A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain — uv, Ruff, pytest, mypy, Ty, pre-commit, rich, Typer, pip-audit, pipdeptree, py-spy, tox, httpie, and more. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working Python engineer's quick-reference: first-contact notes, runnable scripts, configuration files, and snippets collected while getting productive with the modern Python toolchain. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
@@ -18,11 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [Venv strategies in real projects: venv vs uv vs tox](docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md) — How venv, uv, and tox each solve a different layer of environment management
-- [First rich output: markup colors, a table, and a live display](rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
-- [When to use py-spy top vs record/flamegraph vs dump](py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
-- [CI parity check script](prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
-- [First real pre-commit config](prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
+- [Dependency-health report](pipdeptree/scripts/dependency-health-report.sh) — Turn `pipdeptree --warn`, `--reverse`, and `--json` output into one health summary
+- [Pinned Ruff rule set](ruff/configs/2026-08-18-pinned-rule-set.toml) — Explicit rule selections, ignores, and per-rule settings for a settled linter config
+- [What tripped me up in the typer quickstart](typer/notes/2026-08-18-tripped-up-typer-quickstart.md) — Positional args, the free `--no-` pair, and docstring-driven `--help`
+- [Typer quickstart CLI](typer/scripts/2026-08-18-quickstart-args-options-help.py) — Arguments, options, and generated help in one small script
+- [Minimal annotated module](ty/snippets/2026-08-18-minimal-annotated-module.py) — A small fully-annotated module to run Ty's type checker against
 
 ## Layout
 
@@ -32,11 +32,12 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `mypy/` — mypy type-checking notes, strict configs, and typed code samples
 - `pau/` — pip-audit short-alias configs and primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
-- `pipdeptree/` — Dependency tree notes, JSON parsing, reverse-dep snippets
+- `pipdeptree/` — Dependency tree notes, health-report script, JSON parsing, reverse-dep snippets
 - `prc/` — pre-commit first-contact hook notes, configs, and scripts
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Ruff first-contact primer and install-and-lint script
 - `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples, and docs
+- `psy/` — py-spy short-alias docs (profiling mode guide) and end-to-end profile script
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
@@ -58,20 +59,21 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 3 | 1 | 1 | 1 | 1 | 2026-08-15 |
 | mypy | 7 | 2 | 5 | 4 | 1 | — | 2026-08-16 |
-| pau | 1 | — | 2 | — | — | — | 2026-07-26 |
+| pau | 1 | — | 2 | — | — | — | 2026-08-09 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
-| pipdeptree | 8 | 2 | 1 | 6 | — | — | 2026-08-06 |
+| pipdeptree | 8 | 3 | 1 | 6 | — | — | 2026-08-18 |
 | prc | 1 | 1 | 1 | — | — | — | 2026-08-17 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | — |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 9 | — | 2 | 1 | — | 2026-08-17 |
-| pyproject.toml | 3 | — | 5 | — | — | — | — |
-| pytest | 5 | 3 | 1 | 2 | 1 | — | — |
-| rich | 8 | 3 | — | 8 | — | — | 2026-08-05 |
-| ruff | 6 | 1 | 4 | 2 | 1 | — | 2026-08-03 |
-| tox | 5 | 2 | 2 | — | — | — | — |
-| ty | 7 | 1 | 3 | 3 | — | — | 2026-08-04 |
-| typer | 3 | 3 | — | 2 | — | — | — |
+| psy | — | 1 | — | — | 1 | — | 2026-08-17 |
+| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
+| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
+| rich | 8 | 3 | — | 8 | — | — | 2026-08-18 |
+| ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
+| tox | 5 | 2 | 2 | — | — | — | 2026-08-05 |
+| ty | 7 | 1 | 3 | 4 | — | — | 2026-08-18 |
+| typer | 4 | 3 | — | 2 | — | — | 2026-08-18 |
 | uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-10 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
@@ -80,7 +82,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through first-contact notes and configs across the toolchain, with recent additions in venv strategies (venv vs uv vs tox), py-spy output-mode selection, rich first-output snippets, and the prc tool (first real config + CI parity script).
+Currently working through uv L3 content (workflow docs, lockfile reproducibility checks) and typer subcommand CLIs, with the pipdeptree dependency-health report just landed.
 
 ---
-_Last updated: 2026-08-18_
+_Last updated: 2026-08-19_
