@@ -18,11 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [Dependency-health report](pipdeptree/scripts/dependency-health-report.sh) — Turn `pipdeptree --warn`, `--reverse`, and `--json` output into one health summary
-- [Pinned Ruff rule set](ruff/configs/2026-08-18-pinned-rule-set.toml) — Explicit rule selections, ignores, and per-rule settings for a settled linter config
-- [What tripped me up in the typer quickstart](typer/notes/2026-08-18-tripped-up-typer-quickstart.md) — Positional args, the free `--no-` pair, and docstring-driven `--help`
-- [Typer quickstart CLI](typer/scripts/2026-08-18-quickstart-args-options-help.py) — Arguments, options, and generated help in one small script
-- [Minimal annotated module](ty/snippets/2026-08-18-minimal-annotated-module.py) — A small fully-annotated module to run Ty's type checker against
+- [Parametrized AAA tests](docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py) — Arrange–act–assert made explicit with `parametrize` and a fixture
+- [Typer TODO CLI](typer/scripts/2026-08-20-todo-cli.py) — A small persists-to-disk todo list with `add` / `list` / `done` subcommands
+- [uv dependency groups pyproject](uv/configs/uv-dependency-groups-pyproject.toml) — uv-managed project with runtime `[project]` deps and dev-only `[dependency-groups]`
+- [Bootstrap + lockcheck script](uv/scripts/bootstrap-project-lockcheck.sh) — Scaffold a uv project, sync every group, wipe and re-sync to prove the lockfile reproduces
+- [Dependency-health report](pipdeptree/scripts/dependency-health-report.sh) — Summarise conflicts, top-level and leaf counts from pipdeptree output in one pass
 
 ## Layout
 
@@ -36,8 +36,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `prc/` — pre-commit first-contact hook notes, configs, and scripts
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Ruff first-contact primer and install-and-lint script
-- `py-spy/` — Profiler notes, flamegraph scripts, CPU-bound samples, and docs
-- `psy/` — py-spy short-alias docs (profiling mode guide) and end-to-end profile script
+- `py-spy/` — Profiler notes, flamegraph scripts, profiling-mode guide, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
@@ -65,15 +64,15 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | prc | 1 | 1 | 1 | — | — | — | 2026-08-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-20 |
+| py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-17 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-18 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
 | tox | 5 | 2 | 2 | — | — | — | 2026-08-05 |
 | ty | 7 | 1 | 3 | 4 | — | — | 2026-08-18 |
-| typer | 4 | 3 | — | 2 | — | — | 2026-08-18 |
-| uv | 8 | 4 | 2 | 2 | 1 | — | 2026-08-10 |
+| typer | 4 | 4 | — | 2 | — | — | 2026-08-20 |
+| uv | 8 | 5 | 3 | 2 | 1 | — | 2026-08-20 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | — | — | — | 1 | — | 2026-08-08 |
 
@@ -81,7 +80,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through uv L3 content (workflow docs, lockfile reproducibility checks) and typer subcommand CLIs, with the pipdeptree dependency-health report just landed.
+Currently working through pyproject.toml content (a minimal PEP 621 config, build-system vs `[project]` gotchas, and tomllib validation) and uv L3 workflow docs, with a CI-friendly pip-audit lockfile scan in the queue.
 
 ---
-_Last updated: 2026-08-19_
+_Last updated: 2026-08-20_
