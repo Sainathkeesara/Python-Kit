@@ -65,8 +65,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | prc | 1 | 1 | 1 | — | — | — | 2026-08-17 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — |
-| py-spy | 10 | 9 | — | 2 | 1 | — | 2026-08-17 |
-| psy | — | 1 | — | — | 1 | — | 2026-08-17 |
+| py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-20 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
 | pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-18 |

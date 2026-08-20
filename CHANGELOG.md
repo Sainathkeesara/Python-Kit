@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-08-20
+- typer-009: Added subcommand TODO CLI script (`typer/scripts/2026-08-20-todo-cli.py`) — add/list/done subcommands over a shared JSON store, the first multi-command Typer() app
+- con-037: Added parametrized AAA edge-case test snippet (`docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py`) — Arrange/Act/Assert shape combined with a fixture and @pytest.mark.parametrize
+
+## 2026-08-18
 - pdt-017: Added dependency-health report script (`pipdeptree/scripts/dependency-health-report.sh`) — Build a dependency-health report from pipdeptree --warn, reverse deps, and JSON tree
 - uv-014: Added a uv project bootstrap script with a lockfile reproducibility gate (`uv/scripts/bootstrap-project-lockcheck.sh`) — uv init --package, add runtime + dev deps, sync all groups, wipe and re-sync off uv.lock, and confirm the lock is stable
 - uv-016: Added a uv-managed project pyproject.toml (`uv/configs/uv-dependency-groups-pyproject.toml`) — runtime deps under [project], dev-only deps under [dependency-groups], and a uv_build src-layout backend
