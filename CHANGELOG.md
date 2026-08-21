@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-21
+- pau-014: Added CI-friendly pip-audit scan script (`pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh`) — Scan a lockfile for known vulnerabilities with exit-code gating for CI
+
 ## 2026-08-20
 - typer-009: Added subcommand TODO CLI script (`typer/scripts/2026-08-20-todo-cli.py`) — add/list/done subcommands over a shared JSON store, the first multi-command Typer() app
 - con-037: Added parametrized AAA edge-case test snippet (`docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py`) — Arrange/Act/Assert shape combined with a fixture and @pytest.mark.parametrize
