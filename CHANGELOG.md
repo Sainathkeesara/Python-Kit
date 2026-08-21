@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-21
+- con-036: Added src-layout package build-and-verify script (`docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py`) — create a minimal src/ package with a console_scripts entry point, build the wheel, and verify the packaged paths
+
 ## 2026-08-20
 - typer-009: Added subcommand TODO CLI script (`typer/scripts/2026-08-20-todo-cli.py`) — add/list/done subcommands over a shared JSON store, the first multi-command Typer() app
 - con-037: Added parametrized AAA edge-case test snippet (`docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py`) — Arrange/Act/Assert shape combined with a fixture and @pytest.mark.parametrize
