@@ -66,7 +66,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-17 |
 | pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
-| pytest | 5 | 3 | 1 | 2 | 1 | — | 2026-07-19 |
+| pytest | 5 | 4 | 1 | 2 | 2 | 1 | 2026-08-22 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-18 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
 | tox | 5 | 2 | 2 | — | — | — | 2026-08-05 |
