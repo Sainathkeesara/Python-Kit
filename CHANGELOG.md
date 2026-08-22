@@ -6,6 +6,8 @@
 - ppt-010: Added pyproject.toml trip-up notes (`pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md`) — build-system vs [project], requires-python enforcement, and optional-dependencies gotchas
 - ppt-011: Added pyproject.toml validation script (`pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py`) — tomllib parse + required-section and build-backend/requires consistency check before build tools
 - uv-017: Cleaned up spurious `src/quickstart_demo/` example paths in uv quickstart notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`) — rephrased as generated output, not repo files
+- pyt-014: Added pytest fixtures and scoping docs (`pytest/docs/fixtures-conftest-scoping.md`) — scoping rules, conftest.py resolution, fixture ordering, and tmp_path/tmp_path_factory usage
+- pyt-015: Added red-green-refactor notebook (`pytest/notebooks/red-green-refactor-loop.ipynb`) — TDD loop walkthrough with -k test selection, -x stop-on-fail, and assertion introspection
 - pyt-013: Added fixture-and-parametrize test suite script (`pyt/scripts/fixture-and-parametrize-suite.py`) — function/class/module-scoped fixtures, @pytest.mark.parametrize, and custom markers
 
 ## 2026-08-21
