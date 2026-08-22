@@ -4,6 +4,8 @@
 - uv-015: Added uv workflows docs (`uv/docs/2026-08-22-uv-workflows-run-uvx-tools-version-pinning.md`) — uv run, uvx, tool management, and Python version pinning workflows
 - ppt-009: Added minimal PEP 621 pyproject.toml config (`pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml`) — build-system, project metadata, and [tool] tables in one file
 - ppt-010: Added pyproject.toml trip-up notes (`pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md`) — build-system vs [project], requires-python enforcement, and optional-dependencies gotchas
+- ppt-011: Added pyproject.toml validation script (`pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py`) — tomllib parse + required-section and build-backend/requires consistency check before build tools
+- uv-017: Cleaned up spurious `src/quickstart_demo/` example paths in uv quickstart notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`) — rephrased as generated output, not repo files
 
 ## 2026-08-21
 - pau-014: Added CI-friendly pip-audit scan script (`pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh`) — Scan a lockfile for known vulnerabilities with exit-code gating for CI
