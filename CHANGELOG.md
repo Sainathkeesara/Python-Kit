@@ -8,6 +8,7 @@
 - uv-017: Cleaned up spurious `src/quickstart_demo/` example paths in uv quickstart notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`) — rephrased as generated output, not repo files
 - pyt-014: Added pytest fixtures and scoping docs (`pytest/docs/fixtures-conftest-scoping.md`) — scoping rules, conftest.py resolution, fixture ordering, and tmp_path/tmp_path_factory usage
 - pyt-015: Added red-green-refactor notebook (`pytest/notebooks/red-green-refactor-loop.ipynb`) — TDD loop walkthrough with -k test selection, -x stop-on-fail, and assertion introspection
+- pyt-013: Added fixture-and-parametrize test suite script (`pyt/scripts/fixture-and-parametrize-suite.py`) — function/class/module-scoped fixtures, @pytest.mark.parametrize, and custom markers
 
 ## 2026-08-21
 - pau-014: Added CI-friendly pip-audit scan script (`pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh`) — Scan a lockfile for known vulnerabilities with exit-code gating for CI
