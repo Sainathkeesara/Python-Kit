@@ -10,6 +10,7 @@
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
+- [Parametrized AAA tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py) — Arrange-act-assert made explicit with `parametrize` and a fixture
 - [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first-contact notes
 - [Type-checking patterns: Protocol, TypedDict, generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md) — Structural typing, fixed-shape dicts, and type-preserving generics in real projects
@@ -23,7 +24,9 @@
 - [uv Primer](../uv/notes/0000-primer-uv.md) — What is uv? first-contact notes
 - [Install uv Script](../uv/scripts/install-and-first-command.sh) — Install uv and run first command
 - [End-to-end uv Workflow Script](../uv/scripts/2026-07-19-uv-workflow.sh) — Create project, add deps, sync, run, and lock with uv
+- [Bootstrap + lockcheck script](../uv/scripts/bootstrap-project-lockcheck.sh) — Scaffold a uv project, sync every group, wipe and re-sync to prove the lockfile reproduces
 - [Managed Project Config](../uv/configs/2026-07-19-uv-managed-project.toml) — Scaffolded uv-managed project with pyproject.toml, build-system, and dependencies
+- [uv dependency groups pyproject](../uv/configs/uv-dependency-groups-pyproject.toml) — Runtime deps in `[project]`, dev-only deps in `[dependency-groups]`
 - [uv script, venv, and lockfile workflow notes](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md) — Tried uv script, venv, and lockfile workflow on a small CLI project
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
@@ -85,16 +88,18 @@
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
 - [What tripped me up in the typer quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md) — Positional args, the free `--no-` pair, and docstring-driven `--help`
 - [Typer quickstart CLI](../typer/scripts/2026-08-18-quickstart-args-options-help.py) — Arguments, options, and generated help in one small script
+- [Typer TODO CLI](../typer/scripts/2026-08-20-todo-cli.py) — A small persists-to-disk todo list with `add` / `list` / `done` subcommands
 - [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments
 - [Typer CLI Option + Subcommand Snippet](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py) — Typer CLI with one option and two subcommands
 
 ### Profile performance
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first-contact notes
 - [When to use top vs record/flamegraph vs dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
+- [Profiling mode guide](../py-spy/docs/when-to-use-py-spy-modes.md) — Short-alias-guide to choosing the right py-spy mode
+- [Profile Running Process End-to-End](../py-spy/scripts/profile-running-process-end-to-end.sh) — End-to-end script: start a process, profile it, read the flamegraph
 - [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Minimal CPU-bound loop for profiling practice with py-spy
 - [CPU Speedscope Record Script](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py) — Self-profiling CPU-bound workload with py-spy record and speedscope export
 - [Record Output Formats Compared (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md) — flamegraph, speedscope, and raw JSON compared
-- [Profiling mode guide (psy)](../psy/docs/when-to-use-py-spy-modes.md) — Short-alias guide to choosing the right py-spy mode
 
 ### Automate test environments
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first-contact notes

@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  26 files
+## Foundational concepts  ·  28 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -10,10 +10,12 @@
 - **primer:** [Software Testing Principles](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md)
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
-- **docs** (4): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [repository-structure](../docs/repository-structure.md)
+- **docs** (5): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md)
 - **notebooks** (1): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb)
-- **scripts** (7): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
-- **snippets** (6): [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
+- **scripts** (9): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py)
+- _…and 5 more under `docs/concepts/*/scripts/` — browse the folders._
+- **snippets** (7): [2026-08-20-parametrized-aaa-tests.py](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py)
+- _…and 3 more under `docs/concepts/*/snippets/` — browse the folders._
 
 ## httpie  ·  12 files
 
@@ -77,19 +79,14 @@
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
 - **scripts** (1): [install-and-lint](../py/scripts/install-and-lint.sh)
 
-## py-spy  ·  22 files
+## py-spy  ·  24 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
 - **notes** (10): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md)
-- **docs** (1): [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md)
-- **scripts** (9): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [cpu-speedscope-record (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py)
+- **docs** (2): [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md), [when-to-use-py-spy-modes](../py-spy/docs/when-to-use-py-spy-modes.md)
+- **scripts** (10): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [profile-running-process-end-to-end](../py-spy/scripts/profile-running-process-end-to-end.sh), [cpu-speedscope-record (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py)
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
-- _…and 6 more under `py-spy/notes/` and 6 more under `py-spy/scripts/` — browse the folders._
-
-## psy  ·  2 files
-
-- **docs** (1): [when-to-use-py-spy-modes](../psy/docs/when-to-use-py-spy-modes.md)
-- **scripts** (1): [profile-running-process-end-to-end](../psy/scripts/profile-running-process-end-to-end.sh)
+- _…and 7 more under `py-spy/notes/` and 6 more under `py-spy/scripts/` — browse the folders._
 
 ## pyproject.toml  ·  8 files
 
@@ -141,23 +138,23 @@
 - **snippets** (4): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
 - _…and 1 more under `ty/notes/` — browse the folder._
 
-## typer  ·  9 files
+## typer  ·  10 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
 - **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
-- **scripts** (3): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
+- **scripts** (4): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (2): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
 - _…and 1 more under `typer/notes/` — browse the folder._
 
-## uv  ·  17 files
+## uv  ·  19 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
 - **notes** (8): [uv-script-venv-lockfile](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md), [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md)
-- **scripts** (4): [install-and-first-command](../uv/scripts/install-and-first-command.sh), [hello-with-dep](../uv/scripts/hello-with-dep.py), [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh)
-- **configs** (2): [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
+- **scripts** (5): [bootstrap-project-lockcheck](../uv/scripts/bootstrap-project-lockcheck.sh), [install-and-first-command](../uv/scripts/install-and-first-command.sh), [hello-with-dep](../uv/scripts/hello-with-dep.py), [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh)
+- **configs** (3): [uv-dependency-groups-pyproject](../uv/configs/uv-dependency-groups-pyproject.toml), [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
 - **docs** (1): [uv-vs-pip-cheat-sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
 - **snippets** (2): [first-uv-project](../uv/snippets/2026-08-08-first-uv-project.py), [run-with-uv](../uv/snippets/run-with-uv.py)
-- _…and 4 more under `uv/notes/` and 1 more under `uv/scripts/` — browse the folders._
+- _…and 5 more under `uv/notes/` — browse the folder._
 
 ## uv.lock  ·  11 files
 

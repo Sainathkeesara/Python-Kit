@@ -48,6 +48,7 @@
 - **Mock** — A fake object that replaces a real dependency during testing.
 - **Test double** — A generic term for any stand-in object (stub, fake, mock, spy) that replaces a real dependency during testing.
 - **Boundary value** — A value at the edge of a valid input range (e.g. `12`, `13`, `20` around a `< 13` threshold), where off-by-one bugs tend to hide.
+- **AAA pattern** — Arrange–Act–Assert: writing each test as setup (Arrange), calling the code under test (Act), and checking the result (Assert) so each beat is explicit and readable.
 - **Regression** — A bug that reappears after a change.
 
 ### Static Type Checking & Type Hints
@@ -202,6 +203,8 @@
 - **`uv python`** — Command for managing Python versions.
 - **dev-dependencies** — Dependencies marked for development only; they are installed but not included in the published package metadata.
 - **scaffold** — A project skeleton created by `uv init` with default directories and a `pyproject.toml`.
+- **`[dependency-groups]`** — A pyproject.toml table for dev-only dependencies (e.g. `dev = ["ruff>=0.5", ...]`); `uv sync` installs them but they never appear in published metadata or the runtime dependency set.
+- **uv_build** — A build backend that builds a src-layout package straight from a static pyproject.toml, with no setup.py; the backend uv recommends for new projects.
 - **PEP 723** — Python Enhancement Proposal that allows inline script metadata/declarations in a special comment block.
 - **ephemeral venv** — A temporary virtual environment created on-the-fly for a single run.
 - **`uv lock --frozen`** — Validates the lock file against pyproject.toml without modifying it; fails if they're out of sync.
