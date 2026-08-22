@@ -6,6 +6,7 @@
 - ppt-010: Added pyproject.toml trip-up notes (`pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md`) — build-system vs [project], requires-python enforcement, and optional-dependencies gotchas
 
 ## 2026-08-21
+- pau-014: Added CI-friendly pip-audit scan script (`pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh`) — Scan a lockfile for known vulnerabilities with exit-code gating for CI
 - con-036: Added src-layout package build-and-verify script (`docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py`) — create a minimal src/ package with a console_scripts entry point, build the wheel, and verify the packaged paths
 
 ## 2026-08-20
