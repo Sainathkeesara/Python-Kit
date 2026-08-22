@@ -154,6 +154,7 @@
 - **`[project]`** — Section for project metadata (name, version, dependencies, Python version requirement).
 - **PEP 517** — The specification for a build-system independent format for source trees; defines how backends like hatchling are invoked.
 - **PEP 621** — The specification for storing project metadata (name, version, dependencies) in the `[project]` table of `pyproject.toml`.
+- **tomllib** — Python's built-in TOML parser (3.11+) used for validating pyproject.toml structure programmatically.
 
 ## pytest
 - **assert** — Python's built-in assertion statement; pytest rewrites it to provide detailed failure messages.
@@ -161,6 +162,8 @@
 - **parametrize** — A pytest decorator (`@pytest.mark.parametrize`) that runs a test function against multiple sets of arguments.
 - **test discovery** — pytest's automatic collection of test functions (files matching `test_*.py`, functions named `test_*`).
 - **xunit-style setup** — Module/class-level `setup_method` / `teardown_method` functions, inherited from the xUnit tradition.
+- **conftest.py** — A special file pytest uses for sharing fixtures, hooks, and configuration across test directories.
+- **scoping** — Controls how often a fixture runs (e.g. `session`, `module`, `class`, `function`) to balance setup cost against test isolation.
 
 ## ruff
 - **Rule selection** — Choosing which lint rules Ruff applies; controlled by the `select` setting.
@@ -209,6 +212,7 @@
 - **ephemeral venv** — A temporary virtual environment created on-the-fly for a single run.
 - **`uv lock --frozen`** — Validates the lock file against pyproject.toml without modifying it; fails if they're out of sync.
 - **`uv export`** — Generates a requirements.txt or similar format from the project's dependencies for tools that don't use uv.lock.
+- **`uvx`** — A command alias for `uv tool run` that executes a tool in an ephemeral environment without installing it globally.
 
 ## uv.lock
 - **Lockfile** — A file that pins exact versions of every direct and transitive dependency, ensuring reproducible installs.

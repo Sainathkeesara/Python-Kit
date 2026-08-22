@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  28 files
+## Foundational concepts  ·  29 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -37,10 +37,11 @@
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/typed-functions-validate.py)
 - _…and 1 more under `mypy/snippets/` — browse the folder._
 
-## pau  ·  3 files
+## pau  ·  4 files
 
 - **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
 - **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
+- **scripts** (1): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh)
 
 ## pip-audit  ·  12 files
 
@@ -88,21 +89,23 @@
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 - _…and 7 more under `py-spy/notes/` and 6 more under `py-spy/scripts/` — browse the folders._
 
-## pyproject.toml  ·  8 files
+## pyproject.toml  ·  11 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
-- **notes** (3): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md)
-- **configs** (5): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml)
+- **notes** (4): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md), [what-tripped-me-up-pyproject-toml](../pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md)
+- **configs** (6): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
+- **scripts** (1): [validate-pyproject-tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py)
 
-## pytest  ·  12 files
+## pytest  ·  14 files
 
 - **primer:** [0000-primer-pytest.md](../pytest/notes/0000-primer-pytest.md)
 - **notes** (5): [explored-pytest-cli-advanced-flags](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md), [installed-pytest-first-suite](../pytest/notes/2026-06-08-installed-pytest-first-suite.md), [tried-pytest-fixtures-conftest](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md)
 - **scripts** (3): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh)
 - **configs** (1): [minimal-pytest-config](../pytest/configs/2026-07-19-minimal-pytest-config.toml)
-- **docs** (1): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md)
+- **docs** (2): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md), [fixtures-conftest-scoping](../pytest/docs/fixtures-conftest-scoping.md)
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
+- **notebooks** (1): [red-green-refactor-loop](../pytest/notebooks/red-green-refactor-loop.ipynb)
 
 ## rich  ·  19 files
 
@@ -146,13 +149,13 @@
 - **snippets** (2): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
 - _…and 1 more under `typer/notes/` — browse the folder._
 
-## uv  ·  19 files
+## uv  ·  20 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
 - **notes** (8): [uv-script-venv-lockfile](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md), [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md)
 - **scripts** (5): [bootstrap-project-lockcheck](../uv/scripts/bootstrap-project-lockcheck.sh), [install-and-first-command](../uv/scripts/install-and-first-command.sh), [hello-with-dep](../uv/scripts/hello-with-dep.py), [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh)
-- **configs** (3): [uv-dependency-groups-pyproject](../uv/configs/uv-dependency-groups-pyproject.toml), [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
-- **docs** (1): [uv-vs-pip-cheat-sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md)
+- **configs** (4): [uv-dependency-groups-pyproject](../uv/configs/uv-dependency-groups-pyproject.toml), [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
+- **docs** (2): [uv-vs-pip-cheat-sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md), [uv-workflows-run-uvx-tools-version-pinning](../uv/docs/2026-08-22-uv-workflows-run-uvx-tools-version-pinning.md)
 - **snippets** (2): [first-uv-project](../uv/snippets/2026-08-08-first-uv-project.py), [run-with-uv](../uv/snippets/run-with-uv.py)
 - _…and 5 more under `uv/notes/` — browse the folder._
 
