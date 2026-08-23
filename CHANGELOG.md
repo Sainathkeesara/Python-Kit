@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-23
+- uvl-016: Added uv.lock evolution notebook (`uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb`) — how uv.lock changes across `uv add` / `uv add --dev` / `uv lock`, and which habits (uncommitted lock, manual pyproject edits, re-resolving) break reproducibility
+
 ## 2026-08-22
 - uvl-015: Added lockfile reproducibility check script (`uvl/scripts/lockfile-reproducibility-check.sh`) — verify uv.lock consistency, record hash, fresh install from lock, and detect drift
 - tox-010: Added tox environment matrix pyproject.toml config (`tox/configs/2026-08-22-tox-env-matrix.toml`) — lint/typecheck/test envs via [tool.tox] legacy_tox_ini shim in one TOML file
