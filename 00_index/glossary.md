@@ -164,6 +164,8 @@
 - **xunit-style setup** — Module/class-level `setup_method` / `teardown_method` functions, inherited from the xUnit tradition.
 - **conftest.py** — A special file pytest uses for sharing fixtures, hooks, and configuration across test directories.
 - **scoping** — Controls how often a fixture runs (e.g. `session`, `module`, `class`, `function`) to balance setup cost against test isolation.
+- **`tmp_path`** — pytest's built-in fixture providing a temporary directory unique to each test function; files created inside it are removed automatically.
+- **`tmp_path_factory`** — pytest's session-scoped fixture for creating temporary directories shared across an entire test session, useful for expensive one-time setup.
 
 ## ruff
 - **Rule selection** — Choosing which lint rules Ruff applies; controlled by the `select` setting.
@@ -221,6 +223,7 @@
 - **`[[package]]` section** — TOML array entry in `uv.lock` describing a single resolved package.
 - **`[metadata]` section** — The top-level metadata block in `uv.lock` containing the resolver version and install strategy.
 - **Hashes** — Cryptographic checksums (SHA256, SHA512) stored in `uv.lock` for each package to verify integrity across installs.
+- **source** — The origin of a resolved package in `uv.lock`: PyPI, a git URL, a local path, or a custom index.
 
 ## uvl
 - **Dependency group** — A category of dependencies in `uv.lock` (e.g. `default`, `dev`) that controls which packages are installed together.

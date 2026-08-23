@@ -108,6 +108,7 @@
 - [tox Primer](../tox/notes/0000-primer-tox.md) — What is tox? first-contact notes
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
 - [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — tox.ini with lint (ruff) and test (pytest) environments
+- [tox env matrix](../tox/configs/2026-08-22-tox-env-matrix.toml) — tox envlist matrix with Python version constraints
 - [Install tox and first env script](../tox/scripts/2026-08-05-install-tox-and-first-env.sh) — Install tox, write a minimal tox.ini, and run a first test environment
 
 ### Test APIs

@@ -97,11 +97,11 @@
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
 - **scripts** (1): [validate-pyproject-tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py)
 
-## pytest  ·  14 files
+## pytest  ·  15 files
 
 - **primer:** [0000-primer-pytest.md](../pytest/notes/0000-primer-pytest.md)
 - **notes** (5): [explored-pytest-cli-advanced-flags](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md), [installed-pytest-first-suite](../pytest/notes/2026-06-08-installed-pytest-first-suite.md), [tried-pytest-fixtures-conftest](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md)
-- **scripts** (3): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh)
+- **scripts** (4): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh), [fixture-and-parametrize-suite](../pytest/scripts/fixture-and-parametrize-suite.py)
 - **configs** (1): [minimal-pytest-config](../pytest/configs/2026-07-19-minimal-pytest-config.toml)
 - **docs** (2): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md), [fixtures-conftest-scoping](../pytest/docs/fixtures-conftest-scoping.md)
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
@@ -125,11 +125,11 @@
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - _…and 2 more under `ruff/configs/` — browse the folder._
 
-## tox  ·  9 files
+## tox  ·  10 files
 
 - **primer:** [0000-primer-tox.md](../tox/notes/0000-primer-tox.md)
 - **notes** (5): [followed-tox-quickstart](../tox/notes/2026-06-11-followed-tox-quickstart.md), [tox-quickstart](../tox/notes/2026-06-08-tox-quickstart.md), [first-tox-run-tripped-me-up](../tox/notes/2026-06-08-first-tox-run-tripped-me-up.md)
-- **configs** (2): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini)
+- **configs** (3): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml)
 - **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
 
 ## ty  ·  15 files
@@ -167,8 +167,10 @@
 - **snippets** (2): [tried-reading-uv-lock](../uv.lock/snippets/tried-reading-uv-lock.py), [tried-detect-conflicting-constraints](../uv.lock/snippets/tried-detect-conflicting-constraints.py)
 - **notebooks** (1): [exploring-uv-lock-structure.ipynb](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb)
 
-## uvl  ·  3 files
+## uvl  ·  6 files
 
 - **primer:** [0000-primer-uv.lock.md](../uvl/notes/0000-primer-uv.lock.md)
 - **notes** (2): [uv-lock-mapping-to-pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md)
-- **docs** (1): [uv-lock-dependencies](../uvl/docs/2026-08-08-uv-lock-dependencies.md)
+- **docs** (2): [uv-lock-dependencies](../uvl/docs/2026-08-08-uv-lock-dependencies.md), [reading-uv-lock-entries-hashes-sources](../uvl/docs/reading-uv-lock-entries-hashes-sources.md)
+- **scripts** (1): [lockfile-reproducibility-check](../uvl/scripts/lockfile-reproducibility-check.sh)
+- **notebooks** (1): [uv-lock-evolution-add-upgrade](../uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb)
