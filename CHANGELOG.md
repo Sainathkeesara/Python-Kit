@@ -2,6 +2,7 @@
 
 ## 2026-08-23
 - uvl-016: Added uv.lock evolution notebook (`uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb`) — how uv.lock changes across `uv add` / `uv add --dev` / `uv lock`, and which habits (uncommitted lock, manual pyproject edits, re-resolving) break reproducibility
+- uvl-014: Added uv.lock entries, hashes, and sources docs (`uvl/docs/reading-uv-lock-entries-hashes-sources.md`) — how entries are structured, how hashes verify artifacts, how sources track origins, and what triggers lockfile updates
 
 ## 2026-08-22
 - uvl-015: Added lockfile reproducibility check script (`uvl/scripts/lockfile-reproducibility-check.sh`) — verify uv.lock consistency, record hash, fresh install from lock, and detect drift
