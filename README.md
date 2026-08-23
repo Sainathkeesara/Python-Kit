@@ -23,6 +23,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - [uv dependency groups pyproject](uv/configs/uv-dependency-groups-pyproject.toml) — uv-managed project with runtime `[project]` deps and dev-only `[dependency-groups]`
 - [Bootstrap + lockcheck script](uv/scripts/bootstrap-project-lockcheck.sh) — Scaffold a uv project, sync every group, wipe and re-sync to prove the lockfile reproduces
 - [Dependency-health report](pipdeptree/scripts/dependency-health-report.sh) — Summarise conflicts, top-level and leaf counts from pipdeptree output in one pass
+- [pytest fixtures docs](pytest/docs/fixtures-conftest-scoping.md) — Fixtures, conftest, and scoping patterns explained
+- [red-green-refactor notebook](pytest/notebooks/red-green-refactor-loop.ipynb) — Interactive TDD workflow with pytest
 
 ## Layout
 
@@ -65,8 +67,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-17 |
-| pyproject.toml | 3 | — | 5 | — | — | — | 2026-07-05 |
-| pytest | 5 | 4 | 1 | 2 | 2 | 1 | 2026-08-22 |
+| pyproject.toml | 3 | 1 | 5 | — | — | — | 2026-08-22 |
+| pytest | 5 | 3 | 1 | 2 | 2 | 1 | 2026-08-22 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-18 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
 | tox | 5 | 2 | 2 | — | — | — | 2026-08-05 |
@@ -83,4 +85,4 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 Currently working through pyproject.toml content (a minimal PEP 621 config, build-system vs `[project]` gotchas, and tomllib validation) and uv L3 workflow docs, with a CI-friendly pip-audit lockfile scan in the queue.
 
 ---
-_Last updated: 2026-08-20_
+_Last updated: 2026-08-22_

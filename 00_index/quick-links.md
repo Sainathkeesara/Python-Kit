@@ -46,6 +46,8 @@
 - [Run pytest with CLI Flags Script](../pytest/scripts/run-pytest-with-cli-flags.sh) — Create a test file and run with -v, -k, -x, --tb=short
 - [Fixtures with conftest Notes](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md) — conftest.py with shared setup/teardown using yield fixtures
 - [Minimal pytest Config](../pytest/configs/2026-07-19-minimal-pytest-config.toml) — Minimal pytest configuration in pyproject.toml format
+- [Fixtures, conftest, and scoping patterns](../pytest/docs/fixtures-conftest-scoping.md) — Fixtures, conftest, and scoping patterns explained
+- [red-green-refactor notebook](../pytest/notebooks/red-green-refactor-loop.ipynb) — Interactive TDD workflow with pytest
 
 ### Type-check code
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes
@@ -83,6 +85,7 @@
 - [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
 - [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
 - [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
+- [Validate pyproject.toml with tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py) — Validate pyproject.toml structure with tomllib
 
 ### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
