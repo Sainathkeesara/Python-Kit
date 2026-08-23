@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-08-23
+- con-038: Added build backend selection docs (`docs/concepts/python-packaging-project-config/docs/build-backend-selection.md`) — comparing setuptools, hatchling, and uv_build, and wiring them to venv and typing configs
+- con-039: Added wheel build-verify-smoke-test script (`docs/concepts/python-packaging-project-config/scripts/build-wheel-verify-smoke-test.py`) — build wheel from src layout, verify contents, smoke-install in fresh venv
 - uvl-016: Added uv.lock evolution notebook (`uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb`) — how uv.lock changes across `uv add` / `uv add --dev` / `uv lock`, and which habits (uncommitted lock, manual pyproject edits, re-resolving) break reproducibility
 - uvl-014: Added uv.lock entries, hashes, and sources docs (`uvl/docs/reading-uv-lock-entries-hashes-sources.md`) — how entries are structured, how hashes verify artifacts, how sources track origins, and what triggers lockfile updates
 
