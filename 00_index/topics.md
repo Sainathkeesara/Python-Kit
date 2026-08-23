@@ -95,14 +95,15 @@
 - **configs** (5): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml)
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
 
-## pytest  ·  12 files
+## pytest  ·  15 files
 
 - **primer:** [0000-primer-pytest.md](../pytest/notes/0000-primer-pytest.md)
 - **notes** (5): [explored-pytest-cli-advanced-flags](../pytest/notes/2026-06-10-explored-pytest-cli-advanced-flags.md), [installed-pytest-first-suite](../pytest/notes/2026-06-08-installed-pytest-first-suite.md), [tried-pytest-fixtures-conftest](../pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md)
-- **scripts** (3): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh)
+- **scripts** (4): [test_parametrized](../pytest/scripts/test_parametrized.py), [run-pytest-with-cli-flags](../pytest/scripts/run-pytest-with-cli-flags.sh), [install-and-run-first-pytest](../pytest/scripts/install-and-run-first-pytest.sh), [fixture-and-parametrize-suite](../pytest/scripts/fixture-and-parametrize-suite.py)
 - **configs** (1): [minimal-pytest-config](../pytest/configs/2026-07-19-minimal-pytest-config.toml)
-- **docs** (1): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md)
+- **docs** (2): [pytest-vs-unittest-mapping](../pytest/docs/pytest-vs-unittest-mapping.md), [fixtures-conftest-scoping](../pytest/docs/fixtures-conftest-scoping.md)
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
+- **notebooks** (1): [red-green-refactor-loop](../pytest/notebooks/red-green-refactor-loop.ipynb)
 
 ## rich  ·  19 files
 

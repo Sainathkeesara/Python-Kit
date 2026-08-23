@@ -1,0 +1,26 @@
+# last_verified: 2026-08-22 · tox n/a
+#
+# pyproject.toml fragment: tox environment matrix under [tool.tox]
+# so lint, typecheck, and test run from one TOML file instead of a
+# separate tox.ini.  The legacy_tox_ini shim keeps the familiar INI
+# env layout while living inside pyproject.toml.
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = lint,typecheck,test
+
+[testenv]
+deps = pytest
+commands = pytest
+
+[testenv:lint]
+skip_install = true
+deps = ruff
+commands = ruff check .
+
+[testenv:typecheck]
+skip_install = true
+deps = mypy
+commands = mypy src/
+"""
