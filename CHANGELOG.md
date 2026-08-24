@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-24
+- con-038 (rework): Rewrote choosing-build-backend docs (`docs/concepts/python-packaging-project-config/choosing-build-backend.md`) — removed unsupported version specifics and URLs, corrected file path, L3 reference voice
+
 ## 2026-08-23
 - uvl-016: Added uv.lock evolution notebook (`uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb`) — how uv.lock changes across `uv add` / `uv add --dev` / `uv lock`, and which habits (uncommitted lock, manual pyproject edits, re-resolving) break reproducibility
 - uvl-014: Added uv.lock entries, hashes, and sources docs (`uvl/docs/reading-uv-lock-entries-hashes-sources.md`) — how entries are structured, how hashes verify artifacts, how sources track origins, and what triggers lockfile updates
