@@ -71,7 +71,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
 | tox | 5 | 2 | 3 | — | — | — | 2026-08-05 |
 | ty | 7 | 1 | 3 | 4 | — | — | 2026-08-04 |
-| typer | 4 | 4 | — | 2 | — | — | 2026-08-20 |
+| typer | 4 | 5 | — | 2 | — | — | 2026-08-24 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | 2026-08-23 |
@@ -83,4 +83,4 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 Currently expanding uv.lock and uvl content (lockfile evolution notebooks, entry-hash parsing docs, reproducibility scripts) alongside tox environment-matrix configs and pytest fixture docs.
 
 ---
-_Last updated: 2026-08-23_
+_Last updated: 2026-08-24_

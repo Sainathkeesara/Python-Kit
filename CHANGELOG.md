@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-24
+- con-040: Added AAA/parametrize/fixtures/coverage + static typing + CI docs (`docs/concepts/software-testing-principles/how-aaa-parametrize-fixtures-and-coverage-combine-with-static-typing-and-ci.md`) — how Arrange-Act-Assert, pytest.mark.parametrize, fixtures, and coverage integrate with mypy and a CI pipeline
 - con-039 (rework): Added build-verify-smoke-install wheel script (`docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py`) — build a src-layout wheel, verify contents, smoke-install in fresh venv, test import and entry point; uses research-backed setuptools 77.0.3
 - con-038 (rework): Rewrote choosing-build-backend docs (`docs/concepts/python-packaging-project-config/choosing-build-backend.md`) — removed unsupported version specifics and URLs, corrected file path, L3 reference voice
 
