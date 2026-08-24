@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pre-commit, rich, Typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, pre-commit, rich, Typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -14,14 +14,14 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## What's in here
 
-Notes, configs, scripts, and snippets organised per tool, covering the day-to-day Python workflow: package and project management (uv), linting and formatting (Ruff), testing (pytest), static type checking (mypy, Ty), hook management (pre-commit), terminal output (rich), CLI building (typer), dependency auditing (pip-audit), dependency trees (pipdeptree), profiling (py-spy), multi-environment test automation (tox), API testing (httpie), and lockfile analysis (uv.lock, uvl). A `docs/concepts/` tree carries the foundational primers — Git, Python fundamentals, packaging, testing principles, type hints, and virtual environments — that the tool notes build on.
+Notes, configs, scripts, and snippets organised per tool, covering the day-to-day Python workflow: package and project management (uv), linting and formatting (Ruff), testing (pytest), static type checking (mypy, Ty, pyright), hook management (pre-commit), terminal output (rich), CLI building (typer), dependency auditing (pip-audit), dependency trees (pipdeptree), profiling (py-spy), multi-environment test automation (tox), API testing (httpie), and lockfile analysis (uv.lock, uvl). A `docs/concepts/` tree carries the foundational primers — Git, Python fundamentals, packaging, testing principles, type hints, virtual environments, and security — that the tool notes build on.
 
 ## Quick links
 
+- [Security Best Practices primer](docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — First-day notes on dependency scanning, secrets hygiene, input validation, and least privilege
+- [Pyright primer](pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python, config via pyrightconfig.json
 - [Choosing a build backend](docs/concepts/python-packaging-project-config/choosing-build-backend.md) — How to pick between hatchling, setuptools, flit, pdm-backend for a new project
 - [uv-lock evolution notebook](uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb) — Walk through adding and upgrading deps in uv.lock with hash diffs
-- [Reading uv.lock entries, hashes, sources](uvl/docs/reading-uv-lock-entries-hashes-sources.md) — Deep dive into the `[[package]]` array, checksums, and source metadata
-- [tox env matrix config](tox/configs/2026-08-22-tox-env-matrix.toml) — Multi-environment tox config with pytest, ruff, mypy across Python versions
 - [Lockfile reproducibility check](uvl/scripts/lockfile-reproducibility-check.sh) — Verify uv.lock checksums stay stable across lock commands
 
 ## Layout
@@ -39,6 +39,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `py-spy/` — Profiler notes, flamegraph scripts, profiling-mode guide, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
+- `pyright/` — Pyright type-checking primer and notes
 - `rich/` — Terminal output notes, tables, panels, progress, snippets
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs
 - `tox/` — Tox automation notes, env config, and CLI patterns
@@ -66,11 +67,12 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-17 |
 | pyproject.toml | 4 | 1 | 6 | — | — | — | 2026-08-22 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | 2026-08-22 |
+| pyright | 1 | — | — | — | — | — | 2026-08-24 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-05 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-03 |
 | tox | 5 | 2 | 3 | — | — | — | — |
 | ty | 7 | 1 | 3 | 4 | — | — | 2026-08-04 |
-| typer | 4 | 4 | — | 2 | — | — | 2026-08-18 |
+| typer | 4 | 5 | — | 2 | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | 2026-08-23 |
@@ -79,7 +81,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through pyproject.toml content (a minimal PEP 621 config, build-system vs `[project]` gotchas, and tomllib validation) and uv L3 workflow docs, with a CI-friendly pip-audit lockfile scan in the queue.
+Currently working through pyright first-contact notes and security best practices primers, with pyproject.toml and uv workflow docs ongoing.
 
 ---
 _Last updated: 2026-08-24_
