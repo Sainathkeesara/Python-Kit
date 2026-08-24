@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## 2026-08-24
+- con-041: Added parametrized edge-case test suite with coverage thresholds script (`docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py`) — boundary-value parametrize patterns for clamp/classify/distance functions with pytest-cov integration
+- pyright-001: Added pyright primer (`pyright/notes/0000-primer-pyright.md`) — first-contact notes on Microsoft's static type checker, pyrightconfig.json, diagnostics, and Pylance
+- con-043: Added Security Best Practices concept primer (`docs/concepts/security-best-practices/0000-primer-security-best-practices.md`) — first-contact notes on dependency scanning, secrets hygiene, input validation, and static analysis
 - con-039 (rework): Added build-verify-smoke-install wheel script (`docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py`) — build a src-layout wheel, verify contents, smoke-install in fresh venv, test import and entry point; uses research-backed setuptools 77.0.3
 - con-038 (rework): Rewrote choosing-build-backend docs (`docs/concepts/python-packaging-project-config/choosing-build-backend.md`) — removed unsupported version specifics and URLs, corrected file path, L3 reference voice
 
