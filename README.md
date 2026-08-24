@@ -18,11 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [uv-lock evolution notebook](uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb) — Explore how uv.lock evolves across add/upgrade and what breaks reproducibility
-- [Reading uv.lock entries and hashes](uvl/docs/reading-uv-lock-entries-hashes-sources.md) — Parse [[package]] entries, hashes, and sources in a uv.lock file
-- [tox env matrix config](tox/configs/2026-08-22-tox-env-matrix.toml) — tox envlist matrix with Python version constraints
-- [uvl lockfile reproducibility check](uvl/scripts/lockfile-reproducibility-check.sh) — Verify that uv.lock checksums are stable across lock commands
-- [Fixtures, conftest, and scoping](pytest/docs/fixtures-conftest-scoping.md) — Fixtures, conftest, and scoping patterns explained
+- [Choosing a build backend](docs/concepts/python-packaging-project-config/choosing-build-backend.md) — How to pick between hatchling, setuptools, flit, pdm-backend for a new project
+- [uv-lock evolution notebook](uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb) — Walk through adding and upgrading deps in uv.lock with hash diffs
+- [Reading uv.lock entries, hashes, sources](uvl/docs/reading-uv-lock-entries-hashes-sources.md) — Deep dive into the `[[package]]` array, checksums, and source metadata
+- [tox env matrix config](tox/configs/2026-08-22-tox-env-matrix.toml) — Multi-environment tox config with pytest, ruff, mypy across Python versions
+- [Lockfile reproducibility check](uvl/scripts/lockfile-reproducibility-check.sh) — Verify uv.lock checksums stay stable across lock commands
 
 ## Layout
 
@@ -47,7 +47,6 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `uv/` — uv package/project manager notes, scripts, and configs
 - `uv.lock/` — Lockfile structure notes, generation and reproducibility scripts
 - `uvl/` — uv.lock mapping primer and dependency docs
-- `CHANGELOG.md` — Recent changes log
 
 ## Coverage
 
@@ -58,20 +57,20 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 |------|-------|---------|---------|----------|------|-----------|---------------|
 | httpie | 5 | 3 | 1 | 1 | 1 | 1 | 2026-08-15 |
 | mypy | 7 | 2 | 5 | 4 | 1 | — | 2026-08-16 |
-| pau | 1 | — | 2 | — | — | — | 2026-08-09 |
+| pau | 1 | 1 | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
 | pipdeptree | 8 | 3 | 1 | 6 | — | — | 2026-08-06 |
-| prc | 1 | 1 | 1 | — | — | — | 2026-08-17 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | 2026-07-17 |
+| prc | 1 | 1 | 1 | — | — | — | 2026-08-10 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | — |
 | py | 1 | 1 | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 2 | — | 2026-08-17 |
 | pyproject.toml | 4 | 1 | 6 | — | — | — | 2026-08-22 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | 2026-08-22 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-05 |
-| ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-18 |
-| tox | 5 | 2 | 3 | — | — | — | 2026-08-05 |
+| ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-03 |
+| tox | 5 | 2 | 3 | — | — | — | — |
 | ty | 7 | 1 | 3 | 4 | — | — | 2026-08-04 |
-| typer | 4 | 4 | — | 2 | — | — | 2026-08-20 |
+| typer | 4 | 4 | — | 2 | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | 2026-08-23 |
@@ -80,7 +79,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently expanding uv.lock and uvl content (lockfile evolution notebooks, entry-hash parsing docs, reproducibility scripts) alongside tox environment-matrix configs and pytest fixture docs.
+Currently working through pyproject.toml content (a minimal PEP 621 config, build-system vs `[project]` gotchas, and tomllib validation) and uv L3 workflow docs, with a CI-friendly pip-audit lockfile scan in the queue.
 
 ---
-_Last updated: 2026-08-23_
+_Last updated: 2026-08-24_
