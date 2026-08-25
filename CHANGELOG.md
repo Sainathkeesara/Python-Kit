@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-25
+- con-042: Added static type checking + pytest + pyproject.toml CI pattern docs (`docs/concepts/static-type-checking-type-hints/static-type-checking-pytest-pyproject-ci-pattern.md`) — wiring mypy into a CI pipeline with pytest-mypy-plugins and pyproject.toml configuration
+- typer-010: Added hello.py companion script (`typer/scripts/hello.py`) — minimal typer hello-world matching the code block in the first-typer-hello-world note
+
 ## 2026-08-24
 - con-041: Added parametrized edge-case test suite with coverage thresholds script (`docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py`) — boundary-value parametrize patterns for clamp/classify/distance functions with pytest-cov integration
 - pyright-001: Added pyright primer (`pyright/notes/0000-primer-pyright.md`) — first-contact notes on Microsoft's static type checker, pyrightconfig.json, diagnostics, and Pylance
