@@ -76,6 +76,14 @@
 - **src layout** — A project structure where source code lives in a `src/` directory, so tests import the installed package rather than the working directory.
 - **flat layout** — A project structure where source code lives at the repository root, which can mask packaging bugs because tests resolve imports from `.` instead of the installed artifact.
 
+### Security Best Practices
+- **Dependency scanning** — Checking installed packages against known vulnerabilities, typically with `pip-audit` or similar tools.
+- **Secrets management** — Keeping API keys, passwords, and tokens out of source code by using environment variables, vaults, or secret managers.
+- **Input validation** — Verifying that data from users, files, or the network matches expected types and ranges before processing it.
+- **Least privilege** — Giving code only the permissions it needs to do its job, rather than broad access like an admin account.
+- **Static analysis** — Tools that scan code without running it to find security anti-patterns (e.g. `bandit` catching `eval()` or hardcoded secrets).
+- **SBOM (Software Bill of Materials)** — A machine-readable list of every component in a project, useful for tracking which vulnerabilities affect it.
+
 ## httpie
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.
 - **`--ignore-stdin`** — A flag that stops HTTPie from reading a request body from stdin, so requests don't hang when stdin is closed or redirected (cron, CI runners).
@@ -166,6 +174,15 @@
 - **scoping** — Controls how often a fixture runs (e.g. `session`, `module`, `class`, `function`) to balance setup cost against test isolation.
 - **`tmp_path`** — pytest's built-in fixture providing a temporary directory unique to each test function; files created inside it are removed automatically.
 - **`tmp_path_factory`** — pytest's session-scoped fixture for creating temporary directories shared across an entire test session, useful for expensive one-time setup.
+
+## pyright
+- **Pyright** — A fast static type checker for Python, written in TypeScript and used as the engine behind Pylance in VS Code.
+- **`pyrightconfig.json`** — Project-level config file controlling Python version, include/exclude paths, and strictness (`"off"`, `"basic"`, `"strict"`).
+- **Diagnostics** — Errors and warnings Pyright reports, each with a file, line, column, and message.
+- **Type stubs (`.pyi`)** — Skeleton files declaring types for third-party libraries that don't ship their own annotations; Pyright auto-downloads these for popular packages.
+- **`reportMissingImports`** — Setting to control whether unresolved imports produce warnings or are silenced.
+- **`typeCheckingMode`** — `"off"`, `"basic"`, or `"strict"`; strict enables every diagnostic.
+- **Pylance** — The VS Code extension wrapping Pyright, providing type checking, autocomplete, and go-to-definition in the editor.
 
 ## ruff
 - **Rule selection** — Choosing which lint rules Ruff applies; controlled by the `select` setting.
