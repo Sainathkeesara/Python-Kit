@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-26
+- con-042 (rework): Added CI-ready static type checking with pytest and pyproject.toml docs (`docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md`) — unified pyproject.toml for mypy/pytest/Ruff, pre-commit hook with pass_filenames=false, GitHub Actions workflow with cache isolation, incremental mypy with --num-workers, and JUnit XML output
 - httpie-007: Added CI-friendly HTTPie wrapper script (`httpie/scripts/ci-httpie-wrapper.sh`) — sourceable bash library with `--ignore-stdin`, `--check-status` exit-code mapping, and jq JSON parsing helpers
 - httpie-008: Added multi-endpoint API smoke-test runner (`httpie/scripts/multi-endpoint-smoke-runner.sh`) — config-driven runner with `--check-status` exit-code mapping, `--ignore-stdin`, `--timeout`, and jq assertions
 - tox-012: Added minimal tox multi-Python-version test matrix config (`tox/configs/2026-08-26-minimal-tox-matrix.toml`) — py39–py312 envlist, pytest + coverage, and a lint env via `[tool.tox]` legacy_tox_ini
