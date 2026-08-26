@@ -5,6 +5,7 @@
 - httpie-007: Added CI-friendly HTTPie wrapper script (`httpie/scripts/ci-httpie-wrapper.sh`) — sourceable bash library with `--ignore-stdin`, `--check-status` exit-code mapping, and jq JSON parsing helpers
 - httpie-008: Added multi-endpoint API smoke-test runner (`httpie/scripts/multi-endpoint-smoke-runner.sh`) — config-driven runner with `--check-status` exit-code mapping, `--ignore-stdin`, `--timeout`, and jq assertions
 - tox-012: Added minimal tox multi-Python-version test matrix config (`tox/configs/2026-08-26-minimal-tox-matrix.toml`) — py39–py312 envlist, pytest + coverage, and a lint env via `[tool.tox]` legacy_tox_ini
+- typer-010 (rework): Added hello.py companion script for first typer hello-world note (`typer/scripts/2026-08-26-hello.py`) — minimal Typer CLI with greet command demonstrating @app.command() decorator and auto-generated --help
 
 ## 2026-08-24
 - con-041: Added parametrized edge-case test suite with coverage thresholds script (`docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py`) — boundary-value parametrize patterns for clamp/classify/distance functions with pytest-cov integration
