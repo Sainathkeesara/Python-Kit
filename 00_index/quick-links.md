@@ -7,6 +7,7 @@
 - [Derive a version from git tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py) — setuptools-scm-style version resolution from plain git history
 - [Python Programming Fundamentals Primer](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — What are Python programming fundamentals? first-contact notes
 - [Comprehensions, Generators, Error Handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
+- [Dataclasses, Context Managers, Decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
@@ -14,9 +15,11 @@
 - [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first-contact notes
 - [Type-checking patterns: Protocol, TypedDict, generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md) — Structural typing, fixed-shape dicts, and type-preserving generics in real projects
+- [CI-ready static type checking with pytest and pyproject.toml](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md) — Wiring mypy into a CI pipeline with pytest and pyproject.toml
 - [Virtual Environment & Dependency Mgmt Primer](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md) — What are virtual environments and dependency management? first-contact notes
 - [Venv strategies in real projects: venv vs uv vs tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md) — How venv, uv, and tox each solve a different layer of environment management
 - [Security Best Practices Primer](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — Dependency scanning, secrets hygiene, input validation, and least privilege
+- [Secure coding patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py) — Common secure coding patterns and anti-patterns in Python
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
@@ -116,7 +119,9 @@
 ### Test APIs
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first-contact notes
 - [Followed httpie Quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Quickstart walkthrough: sessions, headers, JSON handling gotchas
+- [Integrating httpie with jq and shell pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md) — Composable httpie stages: piping, field extraction, and chained API calls
 - [CI-safe API smoke test](../httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing on non-2xx
+- [CI httpie wrapper](../httpie/scripts/ci-httpie-wrapper.sh) — A safe httpie wrapper for CI with `--ignore-stdin` and `--check-status`
 - [Session vs Inline Auth Notebook](../httpie/notebooks/compare-session-vs-inline-auth.ipynb) — Compare session auth vs inline auth for repeated API calls
 
 ### Make terminal output nice

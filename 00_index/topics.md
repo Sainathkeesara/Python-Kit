@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  30 files
+## Foundational concepts  ·  38 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -11,19 +11,19 @@
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **primer:** [Security Best Practices](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md)
-- **docs** (5): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md)
+- **docs** (6): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
 - **notebooks** (1): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb)
-- **scripts** (9): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py)
-- _…and 5 more under `docs/concepts/*/scripts/` — browse the folders._
-- **snippets** (7): [2026-08-20-parametrized-aaa-tests.py](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py)
-- _…and 3 more under `docs/concepts/*/snippets/` — browse the folders._
+- **scripts** (10): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
+- _…and 3 more under `docs/concepts/*/scripts/` — browse the folders._
+- **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
+- _…and 1 more under `docs/concepts/*/snippets/` — browse the folders._
 
-## httpie  ·  12 files
+## httpie  ·  15 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
-- **notes** (5): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md)
-- **docs** (1): [scripting-request-items-offline-gating](../httpie/docs/scripting-request-items-offline-gating.md)
-- **scripts** (3): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie.sh](../httpie/scripts/install_and_test_httpie.sh)
+- **notes** (5): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
+- **docs** (2): [integrating-httpie-jq-shell-pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md), [scripting-request-items-offline-gating](../httpie/docs/scripting-request-items-offline-gating.md)
+- **scripts** (5): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie](../httpie/scripts/install_and_test_httpie.sh), [ci-httpie-wrapper](../httpie/scripts/ci-httpie-wrapper.sh), [multi-endpoint-smoke-runner](../httpie/scripts/multi-endpoint-smoke-runner.sh)
 - **configs** (1): [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (1): [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (1): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb)
@@ -60,7 +60,7 @@
 - **scripts** (3): [dependency-health-report](../pipdeptree/scripts/dependency-health-report.sh), [list-package-deps](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps](../pipdeptree/scripts/install-and-inspect-deps.sh)
 - **configs** (1): [dev-dependencies-pipdeptree](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml)
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
-- _…and 3 more under `pipdeptree/snippets/` — browse the folder._
+- _…and 3 more under `pipdeptree/snippets/` — browse the folders._
 
 ## prc  ·  3 files
 
@@ -130,11 +130,11 @@
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - _…and 2 more under `ruff/configs/` — browse the folder._
 
-## tox  ·  10 files
+## tox  ·  11 files
 
 - **primer:** [0000-primer-tox.md](../tox/notes/0000-primer-tox.md)
 - **notes** (5): [followed-tox-quickstart](../tox/notes/2026-06-11-followed-tox-quickstart.md), [tox-quickstart](../tox/notes/2026-06-08-tox-quickstart.md), [first-tox-run-tripped-me-up](../tox/notes/2026-06-08-first-tox-run-tripped-me-up.md)
-- **configs** (3): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml)
+- **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
 - **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
 
 ## ty  ·  15 files
@@ -146,20 +146,19 @@
 - **snippets** (4): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
 - _…and 1 more under `ty/notes/` — browse the folder._
 
-## typer  ·  11 files
+## typer  ·  10 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
 - **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
-- **scripts** (5): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
+- **scripts** (4): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (2): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
-- _…and 1 more under `typer/notes/` — browse the folder._
 
 ## uv  ·  20 files
 
 - **primer:** [0000-primer-uv.md](../uv/notes/0000-primer-uv.md)
 - **notes** (8): [uv-script-venv-lockfile](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md), [uv-quickstart-tripped-up](../uv/notes/2026-08-05-uv-quickstart-tripped-up.md), [explored-uv-cli-help-and-format](../uv/notes/2026-06-16-explored-uv-cli-help-and-format.md)
 - **scripts** (5): [bootstrap-project-lockcheck](../uv/scripts/bootstrap-project-lockcheck.sh), [install-and-first-command](../uv/scripts/install-and-first-command.sh), [hello-with-dep](../uv/scripts/hello-with-dep.py), [uv-workflow](../uv/scripts/2026-07-19-uv-workflow.sh)
-- **configs** (4): [uv-dependency-groups-pyproject](../uv/configs/uv-dependency-groups-pyproject.toml), [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
+- **configs** (3): [uv-dependency-groups-pyproject](../uv/configs/uv-dependency-groups-pyproject.toml), [uv-managed-project](../uv/configs/2026-07-19-uv-managed-project.toml), [uv-pyproject-settings](../uv/configs/2026-05-26-uv-pyproject-settings.toml)
 - **docs** (2): [uv-vs-pip-cheat-sheet](../uv/docs/2026-06-05-uv-vs-pip-cheat-sheet.md), [uv-workflows-run-uvx-tools-version-pinning](../uv/docs/2026-08-22-uv-workflows-run-uvx-tools-version-pinning.md)
 - **snippets** (2): [first-uv-project](../uv/snippets/2026-08-08-first-uv-project.py), [run-with-uv](../uv/snippets/run-with-uv.py)
 - _…and 5 more under `uv/notes/` — browse the folder._

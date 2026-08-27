@@ -24,6 +24,9 @@
 - **Comprehension** — A compact expression that builds a list, dict, or set from an iterable in one line (e.g. `[x * 2 for x in items]`).
 - **Generator** — A function using `yield` that produces values lazily, one at a time, without building the whole sequence in memory.
 - **Exception** — An error raised at runtime that can be caught with `try`/`except` so the program can recover instead of crashing.
+- **Dataclass** — A class decorated with `@dataclass` that automatically generates `__init__`, `__repr__`, and `__eq__` methods from type-annotated fields, reducing boilerplate for data-holding classes.
+- **Context manager** — An object that implements `__enter__` and `__exit__` to set up and tear down a resource block, used with the `with` statement (e.g. `with open(...) as f:`).
+- **Decorator** — A function that wraps another function or class to modify its behaviour without changing its source code, applied with the `@decorator` syntax above the definition.
 
 ### Python Packaging & Project Config
 - **pyproject.toml** — The standard config file for Python projects, defined by PEP 518 and PEP 621.
