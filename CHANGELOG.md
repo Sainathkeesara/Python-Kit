@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-27
+- httpie-009: Added httpie + jq shell pipeline docs (`httpie/docs/integrating-httpie-jq-shell-pipelines.md`) — feeding request bodies from pipes/files, parsing responses with jq, chaining API calls with command substitution, and --check-status/--ignore-stdin for CI
+
 ## 2026-08-26
 - con-042 (rework): Added CI-ready static type checking with pytest and pyproject.toml docs (`docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md`) — unified pyproject.toml for mypy/pytest/Ruff, pre-commit hook with pass_filenames=false, GitHub Actions workflow with cache isolation, incremental mypy with --num-workers, and JUnit XML output
 - httpie-007: Added CI-friendly HTTPie wrapper script (`httpie/scripts/ci-httpie-wrapper.sh`) — sourceable bash library with `--ignore-stdin`, `--check-status` exit-code mapping, and jq JSON parsing helpers
