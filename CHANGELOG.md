@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-27
+- mypy-018: Added gradual typing adoption notebook (`mypy/notebooks/gradual-typing-adoption.ipynb`) — step a small untyped project toward strict via reveal_type probes, --check-untyped-defs body checking, scoped # type: ignore[<code>] suppressions, and per-module [[tool.mypy.overrides]] ratchet
 - con-044: Added dataclasses, context managers, and decorators practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py`) — @dataclass with __post_init__, contextlib.contextmanager timer, retry decorator factory, and functools.wraps usage
 - con-049: Added secure coding patterns snippet (`docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py`) — parameterized SQL queries, input allowlisting, CSPRNG via secrets module, and env-var secrets handling
 - httpie-009: Added httpie + jq shell pipeline docs (`httpie/docs/integrating-httpie-jq-shell-pipelines.md`) — feeding request bodies from pipes/files, parsing responses with jq, chaining API calls with command substitution, and --check-status/--ignore-stdin for CI
