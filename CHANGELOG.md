@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-28
+- mypy-020: Added incremental mypy CI workflow (`mypy/manifests/ci-incremental-mypy-workflow.yaml`) — fail-fast type-check job with isolated MYPY_CACHE_DIR keyed by lockfile + interpreter, a warm cache step, and a cold-cache --no-incremental fallback
+- con-050: Added dependency/secrets/safe-deserialization practice script (`docs/concepts/security-best-practices/scripts/2026-08-28-dependency-secrets-scan-deserialize.py`) — pip-audit dependency gate, secrets-pattern detection, env-based secret loading, and hardened XML parsing that rejects DTD/entity (XXE) payloads
+
 ## 2026-08-27
 - mypy-018: Added gradual typing adoption notebook (`mypy/notebooks/gradual-typing-adoption.ipynb`) — step a small untyped project toward strict via reveal_type probes, --check-untyped-defs body checking, scoped # type: ignore[<code>] suppressions, and per-module [[tool.mypy.overrides]] ratchet
 - con-044: Added dataclasses, context managers, and decorators practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py`) — @dataclass with __post_init__, contextlib.contextmanager timer, retry decorator factory, and functools.wraps usage

@@ -1,0 +1,68 @@
+# last_verified: 2026-08-28 · mypy 2.3.1
+
+# Incremental mypy type-check workflow.
+#
+# Key idea from research: mypy caches its type graph across runs so a CI
+# job that keeps the cache warm is meaningfully faster. The cache is only
+# sound if (a) it never shares a directory with ruff's cache, and (b) it is
+# keyed by the two things that actually change the type graph — the locked
+# dependency set and the interpreter version. Otherwise you get a phantom
+# pass where a stale graph reports clean on code that is actually broken.
+#
+# Fail-fast: this job is a hard gate. A missing annotation or type error
+# makes mypy exit non-zero and the build fails. No --ignore-errors, and no
+# trailing # type: ignore comment to silence a fresh diagnostic.
+
+name: mypy-incremental
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout
+
+      - name: Set up Python
+        uses: actions/setup-python
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          pip install mypy
+
+      - name: Cache mypy type graph
+        id: cache-mypy
+        uses: actions/cache
+        with:
+          path: .mypy_cache
+          # Key by the two things that invalidate the graph: the locked
+          # dependency set and the interpreter. Ruff must never reuse this
+          # directory, so its cache key stays separate.
+          key: mypy-${{ runner.os }}-3.13-${{ hashFiles('uv.lock', 'requirements*.txt', 'pyproject.toml') }}
+          restore-keys: |
+            mypy-${{ runner.os }}-3.13-
+
+      - name: Type-check (incremental)
+        env:
+          # Isolate mypy's cache so it can never collide with ruff's.
+          MYPY_CACHE_DIR: ${{ github.workspace }}/.mypy_cache
+        # The strict baseline lives in [tool.mypy] in pyproject.toml.
+        run: mypy
+
+      # Slow path: when the cache did not hit, the warm graph is missing, so
+      # fall back to a full --no-incremental scan instead of trusting a
+      # partial graph. mypy --follow-imports stays at its default so the
+      # whole project graph is analysed, matching the pre-commit guidance to
+      # run mypy over the full project rather than just staged files.
+      - name: Full type-check (cold cache)
+        if: steps.cache-mypy.outputs.cache-hit != 'true'
+        run: mypy --no-incremental
