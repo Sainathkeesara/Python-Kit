@@ -5,6 +5,9 @@
 - con-044: Added dataclasses, context managers, and decorators practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py`) — @dataclass with __post_init__, contextlib.contextmanager timer, retry decorator factory, and functools.wraps usage
 - con-049: Added secure coding patterns snippet (`docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py`) — parameterized SQL queries, input allowlisting, CSPRNG via secrets module, and env-var secrets handling
 - httpie-009: Added httpie + jq shell pipeline docs (`httpie/docs/integrating-httpie-jq-shell-pipelines.md`) — feeding request bodies from pipes/files, parsing responses with jq, chaining API calls with command substitution, and --check-status/--ignore-stdin for CI
+- httpie-013: Added first API request notes (`httpie/notes/2026-08-27-installed-httpie-first-api-request.md`) — install httpie, run my first request, and figure out why name=value and name:=value behave differently
+- httpie-014: Added httpie core syntax snippet (`httpie/snippets/2026-08-27-httpie-core-syntax.sh`) — field types, JSON output, headers, and auth in a single session
+- httpie-015: Added persistent httpie session config (`httpie/configs/2026-08-27-httpie-session-dev.json`) — default headers, basic auth, and session reuse for repeated API calls
 
 ## 2026-08-26
 - con-042 (rework): Added CI-ready static type checking with pytest and pyproject.toml docs (`docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md`) — unified pyproject.toml for mypy/pytest/Ruff, pre-commit hook with pass_filenames=false, GitHub Actions workflow with cache isolation, incremental mypy with --num-workers, and JUnit XML output
