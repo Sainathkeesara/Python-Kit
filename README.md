@@ -18,11 +18,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [Security Best Practices primer](docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — First-day notes on dependency scanning, secrets hygiene, input validation, and least privilege
-- [Pyright primer](pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python, config via pyrightconfig.json
-- [Choosing a build backend](docs/concepts/python-packaging-project-config/choosing-build-backend.md) — How to pick between hatchling, setuptools, flit, pdm-backend for a new project
-- [uv-lock evolution notebook](uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb) — Walk through adding and upgrading deps in uv.lock with hash diffs
-- [Lockfile reproducibility check](uvl/scripts/lockfile-reproducibility-check.sh) — Verify uv.lock checksums stay stable across lock commands
+- [Dataclasses, context managers, and decorators](docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
+- [Secure coding patterns](docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py) — Common secure coding patterns and anti-patterns in Python
+- [Integrating httpie with jq and shell pipelines](httpie/docs/integrating-httpie-jq-shell-pipelines.md) — Composable httpie stages: piping, field extraction, and chained API calls
+- [CI-ready static type checking with pytest and pyproject.toml](docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md) — Wiring mypy into a CI pipeline with pytest and pyproject.toml
+- [CI httpie wrapper](httpie/scripts/ci-httpie-wrapper.sh) — A safe httpie wrapper for CI with `--ignore-stdin` and `--check-status`
 
 ## Layout
 
@@ -56,7 +56,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 5 | 3 | 1 | 1 | 1 | 1 | 2026-08-15 |
+| httpie | 5 | 5 | 1 | 1 | 2 | 1 | 2026-08-15 |
 | mypy | 7 | 2 | 5 | 4 | 1 | — | 2026-08-16 |
 | pau | 1 | 1 | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
@@ -70,9 +70,9 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pyright | 1 | — | — | — | — | — | 2026-08-24 |
 | rich | 8 | 3 | — | 8 | — | — | 2026-08-05 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | 2026-08-03 |
-| tox | 5 | 2 | 3 | — | — | — | — |
+| tox | 5 | 2 | 4 | — | — | — | — |
 | ty | 7 | 1 | 3 | 4 | — | — | 2026-08-04 |
-| typer | 4 | 5 | — | 2 | — | — | 2026-08-18 |
+| typer | 4 | 4 | — | 2 | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | 2026-08-23 |
@@ -84,4 +84,4 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 Currently working through pyright first-contact notes and security best practices primers, with pyproject.toml and uv workflow docs ongoing.
 
 ---
-_Last updated: 2026-08-24_
+_Last updated: 2026-08-27_
