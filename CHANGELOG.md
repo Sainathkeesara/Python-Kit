@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-29
+- httpie-010: Added httpie + pytest API scaffold template (`httpie/templates/httpie-pytest-api-scaffold/`) — FastAPI sample service, pytest integration tests via http CLI subprocess, conftest.py live-server fixture on a free port, GitHub Actions CI matrix, and pyproject.toml with httpie + pytest + fastapi deps
+
 ## 2026-08-28
 - mypy-020: Added incremental mypy CI workflow (`mypy/manifests/ci-incremental-mypy-workflow.yaml`) — fail-fast type-check job with isolated MYPY_CACHE_DIR keyed by lockfile + interpreter, a warm cache step, and a cold-cache --no-incremental fallback
 - con-050: Added dependency/secrets/safe-deserialization practice script (`docs/concepts/security-best-practices/scripts/2026-08-28-dependency-secrets-scan-deserialize.py`) — pip-audit dependency gate, secrets-pattern detection, env-based secret loading, and hardened XML parsing that rejects DTD/entity (XXE) payloads
