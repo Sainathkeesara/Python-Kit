@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-08-29
+- httpie-010: Added httpie + pytest API scaffold template (`httpie/templates/httpie-pytest-api-scaffold/`) — FastAPI sample service, pytest integration tests via http CLI subprocess, conftest.py live-server fixture on a free port, GitHub Actions CI matrix, and pyproject.toml with httpie + pytest + fastapi deps
 - mypy-019: Added type-safe Python package scaffold template (`mypy/templates/type-safe-python-package/`) — src-layout package with strict mypy, pytest, and coverage configuration in a single pyproject.toml
 
 ## 2026-08-28
