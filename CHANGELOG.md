@@ -2,6 +2,7 @@
 
 ## 2026-08-29
 - httpie-010: Added httpie + pytest API scaffold template (`httpie/templates/httpie-pytest-api-scaffold/`) — FastAPI sample service, pytest integration tests via http CLI subprocess, conftest.py live-server fixture on a free port, GitHub Actions CI matrix, and pyproject.toml with httpie + pytest + fastapi deps
+- mypy-019: Added type-safe Python package scaffold template (`mypy/templates/type-safe-python-package/`) — src-layout package with strict mypy, pytest, and coverage configuration in a single pyproject.toml
 
 ## 2026-08-28
 - mypy-020: Added incremental mypy CI workflow (`mypy/manifests/ci-incremental-mypy-workflow.yaml`) — fail-fast type-check job with isolated MYPY_CACHE_DIR keyed by lockfile + interpreter, a warm cache step, and a cold-cache --no-incremental fallback
@@ -43,7 +44,7 @@
 - uv-017: Cleaned up spurious `src/quickstart_demo/` example paths in uv quickstart notes (`uv/notes/2026-06-01-tried-uv-quickstart-scaffold.md`) — rephrased as generated output, not repo files
 - pyt-014: Added pytest fixtures and scoping docs (`pytest/docs/fixtures-conftest-scoping.md`) — scoping rules, conftest.py resolution, fixture ordering, and tmp_path/tmp_path_factory usage
 - pyt-015: Added red-green-refactor notebook (`pytest/notebooks/red-green-refactor-loop.ipynb`) — TDD loop walkthrough with -k test selection, -x stop-on-fail, and assertion introspection
-- pyt-013: Added fixture-and-parametrize test suite script (`pyt/scripts/fixture-and-parametrize-suite.py`) — function/class/module-scoped fixtures, @pytest.mark.parametrize, and custom markers
+- pyt-013: Added fixture-and-parametrize test suite script (`pytest/scripts/fixture-and-parametrize-suite.py`) — function/class/module-scoped fixtures, @pytest.mark.parametrize, and custom markers
 
 ## 2026-08-21
 - pau-014: Added CI-friendly pip-audit scan script (`pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh`) — Scan a lockfile for known vulnerabilities with exit-code gating for CI
@@ -131,8 +132,8 @@
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
 - mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
-- pyt-010: Added pytest quickstart tripped-me-up notes (`pyt/notes/2026-08-04-tried-pytest-quickstart.md`) — Fixtures, parametrize, and conftest.py: what tripped me up following the official quickstart
-- pyt-011: Added minimal pytest fixture and parametrize suite (`pyt/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — Minimal pytest test suite demonstrating fixtures and parametrized test functions
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-08-04-tried-pytest-quickstart.md`) — [FILE MISSING] content superseded by `pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — [FILE MISSING] content superseded by `pytest/scripts/fixture-and-parametrize-suite.py`
 - ty-010: Added Ty quickstart tripped-me-up notes (`ty/notes/2026-08-04-followed-ty-quickstart.md`) — What I learned following the official Ty quickstart: install, run, type mismatches, and config gotchas
 - ty-011: Added minimal Ty type-checking workflow snippet (`ty/snippets/2026-08-04-ty-type-checking-workflow.py`) — Minimal typed Python module demonstrating Ty check workflow
 

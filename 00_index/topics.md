@@ -18,25 +18,29 @@
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 - _…and 1 more under `docs/concepts/*/snippets/` — browse the folders._
 
-## httpie  ·  15 files
+## httpie  ·  18 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
-- **notes** (5): [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md), [first-httpie-request-tripped-me-up](../httpie/notes/2026-06-06-first-httpie-request-tripped-me-up.md), [compare-httpie-vs-curl](../httpie/notes/2026-05-30-compare-httpie-vs-curl.md)
+- **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
+- _…and 3 more under `httpie/notes/` — browse the folder._
 - **docs** (2): [integrating-httpie-jq-shell-pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md), [scripting-request-items-offline-gating](../httpie/docs/scripting-request-items-offline-gating.md)
 - **scripts** (5): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie](../httpie/scripts/install_and_test_httpie.sh), [ci-httpie-wrapper](../httpie/scripts/ci-httpie-wrapper.sh), [multi-endpoint-smoke-runner](../httpie/scripts/multi-endpoint-smoke-runner.sh)
-- **configs** (1): [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
-- **snippets** (1): [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
+- **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
+- **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (1): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb)
 
-## mypy  ·  19 files
+## mypy  ·  21 files
 
 - **primer:** [0000-primer-mypy.md](../mypy/notes/0000-primer-mypy.md)
 - **notes** (7): [followed-mypy-quickstart](../mypy/notes/2026-06-12-followed-mypy-quickstart.md), [tried-mypy-official-quickstart](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md), [first-mypy-run](../mypy/notes/2026-06-04-first-mypy-run.md)
 - **docs** (1): [stub-strategy-ignore-missing-imports](../mypy/docs/stub-strategy-ignore-missing-imports.md)
 - **scripts** (2): [tried-mypy-first-check](../mypy/scripts/tried-mypy-first-check.py), [untyped-to-strict-reveal-type](../mypy/scripts/untyped-to-strict-reveal-type.py)
 - **configs** (5): [selective-mypy-strictness](../mypy/configs/2026-08-04-selective-mypy-strictness.ini), [strict-mypy-config](../mypy/configs/tried-strict-mypy-config.toml), [strict-disallow-ignore-config](../mypy/configs/tried-strict-disallow-ignore-config.ini), [minimal-mypy-config](../mypy/configs/tried-minimal-mypy-config.ini), [gradual-typing-mypy](../mypy/configs/gradual-typing-mypy.toml)
+- **manifests** (1): [ci-incremental-mypy-workflow](../mypy/manifests/ci-incremental-mypy-workflow.yaml) — a fail-fast, cache-warm incremental type-check job
+- **notebooks** (1): [gradual-typing-adoption](../mypy/notebooks/gradual-typing-adoption.ipynb)
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/tried-validating-typed-function.py)
 - _…and 1 more under `mypy/snippets/` — browse the folder._
+- _…and 4 more under `mypy/notes/` — browse the folder._
 
 ## pau  ·  4 files
 

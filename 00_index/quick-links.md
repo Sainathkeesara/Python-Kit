@@ -20,6 +20,7 @@
 - [Venv strategies in real projects: venv vs uv vs tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md) — How venv, uv, and tox each solve a different layer of environment management
 - [Security Best Practices Primer](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — Dependency scanning, secrets hygiene, input validation, and least privilege
 - [Secure coding patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py) — Common secure coding patterns and anti-patterns in Python
+- [Dependency, secrets, and deserialization practice](../docs/concepts/security-best-practices/scripts/2026-08-28-dependency-secrets-scan-deserialize.py) — Three runnable security habits: scanning deps, spotting leaked secrets, and safe parsing
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
@@ -57,6 +58,7 @@
 - [mypy Primer](../mypy/notes/0000-primer-mypy.md) — What is mypy? first-contact notes
 - [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
 - [Selective mypy strictness config](../mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
+- [Incremental mypy CI workflow](../mypy/manifests/ci-incremental-mypy-workflow.yaml) — A fail-fast, cache-warm type-check job keyed by lockfile and interpreter version
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
@@ -118,7 +120,9 @@
 
 ### Test APIs
 - [httpie Primer](../httpie/notes/0000-primer-httpie.md) — What is HTTPie? first-contact notes
-- [Followed httpie Quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md) — Quickstart walkthrough: sessions, headers, JSON handling gotchas
+- [Installed httpie — first API request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md) — First request and why `name=value` and `name:=value` behave differently
+- [httpie core syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh) — GET/POST with query params, JSON bodies, headers, and auth in one shell snippet
+- [httpie dev session config](../httpie/configs/2026-08-27-httpie-session-dev.json) — A reusable session carrying auth and headers for repeated API calls
 - [Integrating httpie with jq and shell pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md) — Composable httpie stages: piping, field extraction, and chained API calls
 - [CI-safe API smoke test](../httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing on non-2xx
 - [CI httpie wrapper](../httpie/scripts/ci-httpie-wrapper.sh) — A safe httpie wrapper for CI with `--ignore-stdin` and `--check-status`
