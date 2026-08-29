@@ -56,7 +56,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Last verified |
 |------|-------|---------|---------|----------|------|-----------|---------------|
-| httpie | 6 | 5 | 2 | 2 | 2 | 1 | 2026-08-15 |
+| httpie | 5 | 5 | 1 | 1 | 2 | 1 | 2026-08-15 |
 | mypy | 7 | 2 | 5 | 4 | 1 | — | 2026-08-16 |
 | pau | 1 | 1 | 2 | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | 2026-07-17 |
