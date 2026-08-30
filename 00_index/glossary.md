@@ -87,6 +87,12 @@
 - **Static analysis** — Tools that scan code without running it to find security anti-patterns (e.g. `bandit` catching `eval()` or hardcoded secrets).
 - **SBOM (Software Bill of Materials)** — A machine-readable list of every component in a project, useful for tracking which vulnerabilities affect it.
 
+## bandit
+- **Test ID** — A unique identifier for each security check, like B101 (assert), B102 (exec), B601 (shell injection). Example: `bandit -s B101` skips the assert check.
+- **Profile** — A named group of tests organized by category, like `ShellInjection` or `Crypto`. Example: `bandit -p ShellInjection` runs only shell-injection-related tests.
+- **Severity** — How bad the finding is: LOW, MEDIUM, or HIGH. Example: hardcoded password = HIGH severity.
+- **Confidence** — How sure bandit is that this is a real issue: LOW, MEDIUM, or HIGH. Example: `os.system()` with a format string = HIGH confidence shell injection.
+
 ## httpie
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.
 - **`--ignore-stdin`** — A flag that stops HTTPie from reading a request body from stdin, so requests don't hang when stdin is closed or redirected (cron, CI runners).
