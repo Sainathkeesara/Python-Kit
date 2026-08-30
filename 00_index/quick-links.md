@@ -63,6 +63,7 @@
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
+- [Type-safe Python package template](../mypy/templates/type-safe-python-package/) — A minimal src-layout package wired for mypy strict checking from the first commit
 
 ### Manage pre-commit hooks
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
@@ -127,6 +128,7 @@
 - [CI-safe API smoke test](../httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing on non-2xx
 - [CI httpie wrapper](../httpie/scripts/ci-httpie-wrapper.sh) — A safe httpie wrapper for CI with `--ignore-stdin` and `--check-status`
 - [Session vs Inline Auth Notebook](../httpie/notebooks/compare-session-vs-inline-auth.ipynb) — Compare session auth vs inline auth for repeated API calls
+- [httpie + pytest API scaffold template](../httpie/templates/httpie-pytest-api-scaffold/) — A ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
