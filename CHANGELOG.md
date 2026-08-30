@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## 2026-08-29
+- bandit-001: Added bandit primer (`bandit/notes/0000-primer-bandit.md`) — first-contact notes on Python security linter, test IDs, profiles, baseline workflow, and exclude paths
+- typer-012: Added Typer subcommands snippet (`typer/snippets/2026-08-29-typer-subcommands.py`) — minimal CLI with subcommands, type-annotated params, and --help customization
+- ty-017: Added ty minimal typed module snippet (`ty/snippets/2026-08-29-ty-minimal-module.py`) — generics, function signatures, and reveal_type usage
 - httpie-010: Added httpie + pytest API scaffold template (`httpie/templates/httpie-pytest-api-scaffold/`) — FastAPI sample service, pytest integration tests via http CLI subprocess, conftest.py live-server fixture on a free port, GitHub Actions CI matrix, and pyproject.toml with httpie + pytest + fastapi deps
 - mypy-019: Added type-safe Python package scaffold template (`mypy/templates/type-safe-python-package/`) — src-layout package with strict mypy, pytest, and coverage configuration in a single pyproject.toml
 
