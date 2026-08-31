@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-08-31
+- httpie-011: Added httpie vs curl CI gating notebook (`httpie/notebooks/compare-httpie-curl-ci-gating.ipynb`) — compare --check-status vs curl -f for CI smoke-test gating: exit-code semantics, selective status-code tolerance, timeout behavior, and failure-mode coverage
+- pyproject.toml-024: Added src-layout pyproject.toml with tool tables (`pyproject.toml/configs/src-layout-pyproject.toml`) — build-system, project metadata, setuptools src-layout package discovery, and ruff/pytest/mypy/coverage configuration
+
 ## 2026-08-29
 - bandit-001: Added bandit primer (`bandit/notes/0000-primer-bandit.md`) — first-contact notes on Python security linter, test IDs, profiles, baseline workflow, and exclude paths
 - typer-012: Added Typer subcommands snippet (`typer/snippets/2026-08-29-typer-subcommands.py`) — minimal CLI with subcommands, type-annotated params, and --help customization

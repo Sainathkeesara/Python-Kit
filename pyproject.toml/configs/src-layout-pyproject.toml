@@ -1,0 +1,64 @@
+# last_verified: 2026-08-31 · pyproject.toml (src-layout)
+# Minimal pyproject.toml for a src-layout Python package with tool tables.
+# Covers build-system, project metadata, package discovery, and
+# ruff / pytest / mypy configuration in one file.
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-src-layout-package"
+version = "0.1.0"
+description = "A minimal src-layout Python package"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["ruff>=0.4", "mypy>=1.10", "pytest>=8.0", "pytest-cov>=5.0"]
+
+# ── Package discovery (src layout) ───────────────────────────────────
+# Without this, setuptools looks for packages in the repo root.
+# The src/ prefix keeps the installed package isolated from the repo
+# tree, which prevents accidental imports of the uninstalled source.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ── Ruff ─────────────────────────────────────────────────────────────
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]   # allow assert in tests
+
+# ── Pytest ───────────────────────────────────────────────────────────
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short --cov=src --cov-report=term-missing"
+
+# ── Mypy ─────────────────────────────────────────────────────────────
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+ignore_missing_imports = false
+
+# ── Coverage ─────────────────────────────────────────────────────────
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
