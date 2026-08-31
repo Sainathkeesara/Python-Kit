@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-08-30
+- prc-014: Added pre-commit quickstart tripped-me-up notes (`prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md`) — local hooks, --hook-stage, and pass_args gotchas after following the official quickstart
+
 ## 2026-08-29
 - bandit-001: Added bandit primer (`bandit/notes/0000-primer-bandit.md`) — first-contact notes on Python security linter, test IDs, profiles, baseline workflow, and exclude paths
 - typer-012: Added Typer subcommands snippet (`typer/snippets/2026-08-29-typer-subcommands.py`) — minimal CLI with subcommands, type-annotated params, and --help customization
