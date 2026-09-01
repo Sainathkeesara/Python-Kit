@@ -21,11 +21,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [pre-commit bootstrap script](prc/scripts/pre-commit-bootstrap.sh) — Bootstrap pre-commit on a fresh repo: ensure the config exists, install the git hook, and run --all-files
+- [pre-commit quickstart gotchas](prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md) — Local hooks, --hook-stage, and pass_args — the three things that kept tripping me up
 - [Live log tailer](rich/scripts/live-log-tailer.py) — A live-updating log viewer that colour-codes INFO/WARN/ERROR lines using Rich panels and a rolling deque buffer
 - [bandit primer](bandit/notes/0000-primer-bandit.md) — bandit first-contact notes: AST-based security linter for catching hardcoded secrets, injection risks, and unsafe crypto
 - [Minimal annotated Ty module](ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
-- [Typer subcommands demo](typer/snippets/2026-08-29-typer-subcommands.py) — Typer CLI demo with nested subcommands, type-annotated options, and auto-generated help
-- [httpie + pytest scaffold README](httpie/templates/httpie-pytest-api-scaffold/README.md) — Ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ## Layout
 
@@ -65,10 +65,10 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | bandit | 1 | — | — | — | — | — | — | — | 2026-08-29 |
 | httpie | 6 | 5 | 2 | 2 | 2 | 1 | — | 7 | 2026-08-29 |
 | mypy | 7 | 2 | 5 | 4 | 1 | 1 | 1 | 5 | 2026-08-28 |
-| pau | 1 | 1 | 2 | — | — | — | — | — | 2026-08-21 |
+| pau | 1 | 1 | 2 | — | — | — | — | — | 2026-08-09 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
-| pipdeptree | 8 | 3 | 1 | 6 | — | — | — | — | 2026-08-18 |
-| prc | 1 | 1 | 1 | — | — | — | — | — | 2026-08-17 |
+| pipdeptree | 8 | 3 | 1 | 6 | — | — | — | — | 2026-08-06 |
+| prc | 2 | 2 | 1 | — | — | — | — | — | 2026-08-30 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 2 | — | — | — | 2026-08-17 |
@@ -79,7 +79,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | ruff | 6 | 1 | 5 | 2 | 1 | — | — | — | 2026-08-18 |
 | tox | 5 | 2 | 4 | — | — | — | — | — | 2026-08-26 |
 | ty | 7 | 1 | 3 | 5 | — | — | — | — | 2026-08-29 |
-| typer | 4 | 4 | — | 3 | — | — | — | — | 2026-08-29 |
+| typer | 4 | 4 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-23 |
@@ -88,8 +88,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through pyright first-contact notes, security best practices primers, and bandit, with httpie+pytest and mypy type-safe package templates on the shelf.
+Currently working through pre-commit first-contact notes, with bandit, pyright, and uv first-contact notes active. httpie+pytest and mypy type-safe package templates on the shelf.
 
 ---
 
-_Last updated: 2026-08-30_
+_Last updated: 2026-09-01_
