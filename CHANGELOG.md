@@ -3,6 +3,11 @@
 ## 2026-08-31
 - httpie-011: Added httpie vs curl CI gating notebook (`httpie/notebooks/compare-httpie-curl-ci-gating.ipynb`) — compare --check-status vs curl -f for CI smoke-test gating: exit-code semantics, selective status-code tolerance, timeout behavior, and failure-mode coverage
 - pyproject.toml-024: Added src-layout pyproject.toml with tool tables (`pyproject.toml/configs/src-layout-pyproject.toml`) — build-system, project metadata, setuptools src-layout package discovery, and ruff/pytest/mypy/coverage configuration
+## 2026-09-01
+- prc-015: Added pre-commit bootstrap script (`prc/scripts/pre-commit-bootstrap.sh`) — fresh-repo scaffold: sample a config if missing, `pre-commit install`, then `pre-commit run --all-files` with non-zero exit on first-run failure
+
+## 2026-08-30
+- prc-014: Added pre-commit quickstart tripped-me-up notes (`prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md`) — local hooks, --hook-stage, and pass_args gotchas after following the official quickstart
 
 ## 2026-08-29
 - bandit-001: Added bandit primer (`bandit/notes/0000-primer-bandit.md`) — first-contact notes on Python security linter, test IDs, profiles, baseline workflow, and exclude paths

@@ -32,6 +32,7 @@ Intermediate tools and patterns that extend the core workflow.
 - **Type checking (Ty)** — An alternative type checker with a focus on ergonomics. Start with the [Ty Primer](../ty/notes/0000-primer-ty.md) and [quickstart notes](../ty/notes/2026-06-05-tried-ty-quickstart.md). For configuration, see the [minimal ty config](../ty/configs/2026-08-05-minimal-ty-config.toml). Try the [type-checking workflow snippet](../ty/snippets/2026-08-04-ty-type-checking-workflow.py) for a minimal example, or the [minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) to run Ty against a small fully-typed file.
 - **Type checking (pyright)** — Microsoft's fast type checker, config via `pyrightconfig.json`. Start with the [Pyright Primer](../pyright/notes/0000-primer-pyright.md).
 - **Lock files (uv.lock, uvl)** — Reproducible dependency resolution. Start with the lighter [uvl primer](../uvl/notes/0000-primer-uv.lock.md) and [uv.lock mapping notes](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md), then dive into the full [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) and [generation script](../uv.lock/scripts/generate-uv-lock.sh). For the new notebook exploring how uv.lock evolves across add/upgrade, see [uv-lock-evolution-add-upgrade](../uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb).
+- **Security linting (bandit)** — AST-based security linter that scans source code for common anti-patterns like hardcoded secrets, SQL injection, and unsafe deserialization. Start with the [bandit Primer](../bandit/notes/0000-primer-bandit.md).
 - **Vulnerability scanning (pip-audit)** — Audit dependencies for known CVEs. Start with the [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) and [scan script](../pip-audit/scripts/scan-project.sh). For the quick primer, see the [pau quick primer](../pau/notes/0000-primer-pip-audit.md).
 - **Dependency trees (pipdeptree)** — Visualize and analyze package dependency graphs. Start with the [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) and [JSON parsing snippet](../pipdeptree/snippets/parse-pipdeptree-json.py). For a one-shot overview of conflicts and the most-depended-on packages, run the [dependency-health report script](../pipdeptree/scripts/dependency-health-report.sh).
 - **uv script, venv, and lockfile workflow** — Try uv script, venv, and lockfile on a small CLI project: [uv workflow notes](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md).
@@ -74,5 +75,5 @@ Python Programming Fundamentals
 │                                 ├── Ruff (linter config)
 │                                 ├── pytest (test config)
 │                                 └── mypy (type check config)
-└── Security Best Practices ────► bandit (locked, coming soon)
+└── Security Best Practices ────► bandit
 ```
