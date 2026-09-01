@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-01
+- prc-015: Added pre-commit bootstrap script (`prc/scripts/pre-commit-bootstrap.sh`) — fresh-repo scaffold: sample a config if missing, `pre-commit install`, then `pre-commit run --all-files` with non-zero exit on first-run failure
+
 ## 2026-08-30
 - prc-014: Added pre-commit quickstart tripped-me-up notes (`prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md`) — local hooks, --hook-stage, and pass_args gotchas after following the official quickstart
 
