@@ -18,6 +18,10 @@
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 - _…and 1 more under `docs/concepts/*/snippets/` — browse the folders._
 
+## bandit  ·  1 file
+
+- **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
+
 ## httpie  ·  26 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
@@ -127,7 +131,7 @@
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
 - _…and 5 more under `rich/notes/` — browse the folder._
-- **scripts** (3): [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
+- **scripts** (4): [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py), [live-log-tailer](../rich/scripts/live-log-tailer.py)
 - **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [first-rich-output](../rich/snippets/2026-08-18-first-rich-output.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py)
 - _…and 5 more under `rich/snippets/` — browse the folder._
 
@@ -157,8 +161,8 @@
 - _…and 4 more under `ty/notes/` — browse the folder._
 - **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
 - **scripts** (1): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh)
-- **snippets** (4): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
-- _…and 1 more under `ty/snippets/` — browse the folder._
+- **snippets** (5): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
+- _…and 2 more under `ty/snippets/` — browse the folder._
 
 ## typer  ·  10 files
 
@@ -166,7 +170,7 @@
 - **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
 - _…and 1 more under `typer/notes/` — browse the folder._
 - **scripts** (4): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
-- **snippets** (2): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
+- **snippets** (3): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [typer-subcommands](../typer/snippets/2026-08-29-typer-subcommands.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
 
 ## uv  ·  20 files
 

@@ -72,6 +72,9 @@
 - [CI parity check script](../prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
 - [Run Ruff + Trailing-Whitespace Hooks Script](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project with ruff and trailing-whitespace hooks, run them once
 
+### Scan for security issues
+- [bandit Primer](../bandit/notes/0000-primer-bandit.md) — What is bandit? first-contact notes for the AST-based security linter
+
 ### Audit and understand dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first-contact notes
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
@@ -135,3 +138,4 @@
 - [First rich output snippet](../rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
 - [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
+- [Live log tailer](../rich/scripts/live-log-tailer.py) — A live-updating log viewer that colour-codes INFO/WARN/ERROR lines using Rich panels and a rolling deque buffer
