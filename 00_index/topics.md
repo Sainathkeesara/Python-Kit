@@ -103,11 +103,15 @@
 - _…and 6 more under `py-spy/scripts/` — browse the folder._
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 
-## pyproject.toml  ·  11 files
+## psy  ·  1 file
+
+- **notebooks** (1): [compare-py-spy-top-vs-record-vs-dump](../psy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — top vs record/flamegraph vs dump side-by-side on the same CPU-bound target
+
+## pyproject.toml  ·  12 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
 - **notes** (4): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md), [what-tripped-me-up-pyproject-toml](../pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md)
-- **configs** (6): [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
+- **configs** (7): [src-layout-pyproject](../pyproject.toml/configs/src-layout-pyproject.toml), [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
 - **scripts** (1): [validate-pyproject-tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py)
 
@@ -126,12 +130,13 @@
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
 
-## rich  ·  20 files
+## rich  ·  21 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
 - _…and 5 more under `rich/notes/` — browse the folder._
-- **scripts** (4): [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py), [live-log-tailer](../rich/scripts/live-log-tailer.py)
+- **docs** (1): [wiring-rich-into-a-cli-status-dashboard](../rich/docs/wiring-rich-into-a-cli-status-dashboard.md) — assembling Console + Panel + Layout + Live for an updating CLI dashboard
+- **scripts** (4): [live-log-tailer](../rich/scripts/live-log-tailer.py), [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
 - **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [first-rich-output](../rich/snippets/2026-08-18-first-rich-output.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py)
 - _…and 5 more under `rich/snippets/` — browse the folder._
 

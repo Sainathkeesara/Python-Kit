@@ -112,6 +112,7 @@
 ### Profile performance
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first-contact notes
 - [When to use top vs record/flamegraph vs dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
+- [py-spy modes comparison notebook](../psy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — Side-by-side top vs record/flamegraph vs dump on the same CPU-bound target
 - [Profiling mode guide](../py-spy/docs/when-to-use-py-spy-modes.md) — Short-alias-guide to choosing the right py-spy mode
 - [Profile Running Process End-to-End](../py-spy/scripts/profile-running-process-end-to-end.sh) — End-to-end script: start a process, profile it, read the flamegraph
 - [Profile Tiny Loop Script](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh) — Minimal CPU-bound loop for profiling practice with py-spy
@@ -138,6 +139,7 @@
 
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
+- [Wiring Rich into a CLI status dashboard](../rich/docs/wiring-rich-into-a-cli-status-dashboard.md) — Console + Panel + Layout + Live for an updating CLI dashboard
 - [First rich output snippet](../rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
 - [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar

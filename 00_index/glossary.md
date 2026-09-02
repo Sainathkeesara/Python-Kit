@@ -106,6 +106,7 @@
 - **Session reuse** — Persisting cookies and auth headers in a session file so subsequent calls inherit them, avoiding repeated authentication.
 - **Session auth** — Using `http --session=<path>` to store and reuse cookies and auth headers across multiple requests to the same host.
 - **Inline auth** — Passing credentials directly on the command line for each request instead of relying on a persisted session.
+- **CI smoke test** — A small, non-mutating API call (often a GET against `/health` or `/version`) wrapped with `--check-status` and `--ignore-stdin` so it fails fast in CI when the service is down. httpie and `curl -f` differ on which status codes they treat as failure.
 
 ## mypy
 - **Static type checker** — A tool that analyzes code without running it, checking that type annotations are consistent with actual usage.
@@ -149,6 +150,8 @@
 - **`--all-files`** — A pre-commit flag that runs hooks on every tracked file, not just staged changes.
 - **`SKIP=`** — An environment variable that skips specific hooks by ID for a single commit (e.g. `SKIP=ruff git commit`).
 - **CI parity check** — Running pre-commit `--all-files` locally to confirm the same hooks will pass in CI, where `SKIP` bypasses are not available.
+- **`stages`** — A per-hook setting (`pre-commit`, `commit-msg`, `pre-push`, `manual`) that controls which git hook event runs the hook. A hook with `stages: [manual]` will not run on `git commit` and must be triggered with `pre-commit run --hook-stage manual`.
+- **`pass_args`** — A local-hook setting that forwards extra arguments from the hook entry to the script (e.g. `pass_args: [--strict]`), useful for tightening a single hook without changing the default behaviour for everyone.
 
 ## prc
 - **pre-commit** — A framework for managing and running git hooks; `prc` is the short alias used for first-contact notes and configs in this kit.
@@ -168,6 +171,7 @@
 - **dump** — A py-spy subcommand that prints the current call stack of every thread to the terminal and exits immediately, with no sampling window and no output file.
 - **CPU-bound** — Code that spends most of its time using the CPU rather than waiting for I/O.
 - **speedscope** — A web-based viewer for flamechart/flamegraph data; py-spy can export JSON in speedscope format.
+- **Mode selection** — Choosing between `top` (live snapshot, no output file), `record` (sampled dump to disk in flamegraph/speedscope/raw formats), and `dump` (one-shot stack print, no sampling). Rule of thumb: `top` for live inspection, `record` for later analysis, `dump` for hang diagnosis without writing to disk.
 
 ## pyproject.toml
 - **pyproject.toml** — The Python project configuration file (PEP 518 / PEP 621), used to declare build system, project metadata, and tool settings.
@@ -270,6 +274,7 @@
 - **Markdown** — Renders markdown text to formatted terminal output.
 - **Syntax** — Syntax-highlights source code with a Pygments-based theme.
 - **Inspect** — Rich utility that dumps an object's attributes, methods, and source for quick debugging in the terminal.
+- **Layout** — A grid of renderables that splits the terminal into named regions (`Layout(name="header")`) and updates each region independently inside a `Live`. The building block for a CLI status dashboard.
 
 ## Git Version Control
 - **Repository (repo)** — A directory managed by Git, containing all tracked files and their complete history.
