@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-09-02
+- rich-007: Added Rich CLI status dashboard docs (`rich/docs/wiring-rich-into-a-cli-status-dashboard.md`) — assembling Console + Panel + Layout + Live for an updating dashboard, with a minimal end-to-end example and verify/common errors
 - psy-019: Added py-spy profiling modes notebook (`psy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb`) — side-by-side top vs record/flamegraph vs dump on the same CPU-bound target, with sample-target program, mode-by-mode reading notes, and a comparison table for choosing between them
 
 ## 2026-08-31
