@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-02
+- rich-007: Added Rich CLI status dashboard docs (`rich/docs/wiring-rich-into-a-cli-status-dashboard.md`) — assembling Console + Panel + Layout + Live for an updating dashboard, with a minimal end-to-end example and verify/common errors
+
 ## 2026-08-31
 - httpie-011: Added httpie vs curl CI gating notebook (`httpie/notebooks/compare-httpie-curl-ci-gating.ipynb`) — compare --check-status vs curl -f for CI smoke-test gating: exit-code semantics, selective status-code tolerance, timeout behavior, and failure-mode coverage
 - pyproject.toml-024: Added src-layout pyproject.toml with tool tables (`pyproject.toml/configs/src-layout-pyproject.toml`) — build-system, project metadata, setuptools src-layout package discovery, and ruff/pytest/mypy/coverage configuration
