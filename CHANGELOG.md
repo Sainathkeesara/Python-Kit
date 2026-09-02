@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-09-02
+- mypy-022: Added mypy incremental cache and follow-imports notebook (`mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb`) — cold/warm cache invalidation, --follow-imports modes (normal/silent/skip/error), py.typed gating, python_version interactions, and what --no-incremental actually breaks
 - prc-016: Added pre-commit internals docs (`prc/docs/how-pre-commit-works-under-the-hood.md`) — hook stages, pass_filenames behavior, environment variables, and debugging toolkit for failing hooks
 - rich-007: Added Rich CLI status dashboard docs (`rich/docs/wiring-rich-into-a-cli-status-dashboard.md`) — assembling Console + Panel + Layout + Live for an updating dashboard, with a minimal end-to-end example and verify/common errors
 - psy-019: Added py-spy profiling modes notebook (`py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb`) — side-by-side top vs record/flamegraph vs dump on the same CPU-bound target, with sample-target program, mode-by-mode reading notes, and a comparison table for choosing between them
