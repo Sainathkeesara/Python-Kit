@@ -6,6 +6,7 @@
 - rich-007: Added Rich CLI status dashboard docs (`rich/docs/wiring-rich-into-a-cli-status-dashboard.md`) — assembling Console + Panel + Layout + Live for an updating dashboard, with a minimal end-to-end example and verify/common errors
 - psy-019: Added py-spy profiling modes notebook (`py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb`) — side-by-side top vs record/flamegraph vs dump on the same CPU-bound target, with sample-target program, mode-by-mode reading notes, and a comparison table for choosing between them
 - prc-017: Added src-layout pre-commit config with staged pinned hooks (`prc/configs/src-layout-pinned-hooks.yaml`) — ruff/mypy/pytest hooks with per-repo ids, commit-stage for fast checks and push-stage for type-check and tests
+- mypy-021 (rework): Added mypy+ruff CI integration docs (`mypy/docs/integrating-mypy-ruff-ci.md`) — exit-code aggregation, cache isolation, and ANN* rule-overlap elimination
 
 ## 2026-08-31
 - httpie-011: Added httpie vs curl CI gating notebook (`httpie/notebooks/compare-httpie-curl-ci-gating.ipynb`) — compare --check-status vs curl -f for CI smoke-test gating: exit-code semantics, selective status-code tolerance, timeout behavior, and failure-mode coverage
