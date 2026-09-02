@@ -92,6 +92,9 @@
 - **Profile** — A named group of tests organized by category, like `ShellInjection` or `Crypto`. Example: `bandit -p ShellInjection` runs only shell-injection-related tests.
 - **Severity** — How bad the finding is: LOW, MEDIUM, or HIGH. Example: hardcoded password = HIGH severity.
 - **Confidence** — How sure bandit is that this is a real issue: LOW, MEDIUM, or HIGH. Example: `os.system()` with a format string = HIGH confidence shell injection.
+- **Baseline** — A JSON file capturing known findings so subsequent runs only report new issues. Example: `bandit -b baseline.json -r .` shows only findings not in the baseline.
+- **Exclude paths** — Directories or files to skip during scanning, passed with `-x`. Example: `bandit -r . -x tests,build`.
+- **Output format** — How results are rendered: `txt` (default), `json`, `csv`, `html`, `sarif`. Example: `bandit -f json -o report.json -r .`.
 
 ## httpie
 - **HTTPie** — A user-friendly CLI HTTP client for the API age, built for testing and interacting with REST APIs.
