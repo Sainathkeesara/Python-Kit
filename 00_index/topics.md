@@ -22,7 +22,7 @@
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
 
-## httpie  ·  26 files
+## httpie  ·  25 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -73,10 +73,10 @@
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folders._
 
-## prc  ·  3 files
+## prc  ·  5 files
 
-- **notes** (1): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md)
-- **scripts** (1): [ci-parity-check](../prc/scripts/2026-08-17-ci-parity-check.sh)
+- **notes** (2): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md), [pre-commit-quickstart-gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md)
+- **scripts** (2): [ci-parity-check](../prc/scripts/2026-08-17-ci-parity-check.sh), [pre-commit-bootstrap](../prc/scripts/pre-commit-bootstrap.sh)
 - **configs** (1): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml)
 
 ## pre-commit  ·  11 files
@@ -126,7 +126,7 @@
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
 
-## rich  ·  19 files
+## rich  ·  20 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
@@ -154,7 +154,7 @@
 - **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
 - **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
 
-## ty  ·  15 files
+## ty  ·  16 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (7): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md)
