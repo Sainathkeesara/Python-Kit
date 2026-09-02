@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-02
+- psy-019: Added py-spy profiling modes notebook (`psy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb`) — side-by-side top vs record/flamegraph vs dump on the same CPU-bound target, with sample-target program, mode-by-mode reading notes, and a comparison table for choosing between them
+
 ## 2026-08-31
 - httpie-011: Added httpie vs curl CI gating notebook (`httpie/notebooks/compare-httpie-curl-ci-gating.ipynb`) — compare --check-status vs curl -f for CI smoke-test gating: exit-code semantics, selective status-code tolerance, timeout behavior, and failure-mode coverage
 - pyproject.toml-024: Added src-layout pyproject.toml with tool tables (`pyproject.toml/configs/src-layout-pyproject.toml`) — build-system, project metadata, setuptools src-layout package discovery, and ruff/pytest/mypy/coverage configuration
