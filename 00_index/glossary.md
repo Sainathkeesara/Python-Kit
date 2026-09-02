@@ -119,6 +119,9 @@
 - **Stub file (`.pyi`)** — A file declaring type signatures without implementation, used for third-party packages.
 - **strict mode** — A mypy configuration that enables the strictest set of type-checking rules.
 - **incremental mode** — mypy's ability to cache previous results and only re-check changed files.
+- **`MYPY_CACHE_DIR`** — An environment variable that controls where mypy stores its incremental cache. In CI, set it to a path keyed by Python version and lockfile hash to avoid stale cache leaking across runs.
+- **Exit-code aggregation** — Running multiple tools (e.g. mypy + ruff) to completion in a single CI step and collecting their exit codes, so the job fails only after all tools have reported their findings.
+- **Cache isolation** — Keeping mypy's `.mypy-cache` and ruff's `.ruff_cache` in separate directories so that stale results from one tool don't leak into the other's analysis.
 
 ## pip-audit
 - **CVE** — A publicly disclosed security vulnerability with an ID like `CVE-2023-12345`.
@@ -152,6 +155,10 @@
 - **CI parity check** — Running pre-commit `--all-files` locally to confirm the same hooks will pass in CI, where `SKIP` bypasses are not available.
 - **`stages`** — A per-hook setting (`pre-commit`, `commit-msg`, `pre-push`, `manual`) that controls which git hook event runs the hook. A hook with `stages: [manual]` will not run on `git commit` and must be triggered with `pre-commit run --hook-stage manual`.
 - **`pass_args`** — A local-hook setting that forwards extra arguments from the hook entry to the script (e.g. `pass_args: [--strict]`), useful for tightening a single hook without changing the default behaviour for everyone.
+- **`pre-merge-commit`** — A git hook that fires after merge resolution but before the merge commit is created (git ≥2.24). pre-commit hooks assigned to this stage run at that point.
+- **`post-checkout`** — A git hook that fires after a successful `git checkout`. Useful for setup or cleanup tasks like installing dependencies after switching branches.
+- **`post-merge`** — A git hook that fires after a successful `git merge`. Can trigger actions like re-installing dependencies when lockfiles change.
+- **`post-rewrite`** — A git hook that fires after `git commit --amend` or `git rebase`. Can trigger actions that need to run whenever history is rewritten.
 
 ## prc
 - **pre-commit** — A framework for managing and running git hooks; `prc` is the short alias used for first-contact notes and configs in this kit.

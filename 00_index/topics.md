@@ -11,8 +11,8 @@
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **primer:** [Security Best Practices](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md)
-- **docs** (6): [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
-- **notebooks** (1): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb)
+- **docs** (7): [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
+- **notebooks** (2): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
 - **scripts** (10): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - _…and 3 more under `docs/concepts/*/scripts/` — browse the folders._
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
@@ -22,7 +22,7 @@
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
 
-## httpie  ·  25 files
+## httpie  ·  26 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -31,19 +31,19 @@
 - **scripts** (5): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie](../httpie/scripts/install_and_test_httpie.sh), [ci-httpie-wrapper](../httpie/scripts/ci-httpie-wrapper.sh), [multi-endpoint-smoke-runner](../httpie/scripts/multi-endpoint-smoke-runner.sh)
 - **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
-- **notebooks** (1): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb)
+- **notebooks** (2): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb), [compare-httpie-curl-ci-gating](../httpie/notebooks/compare-httpie-curl-ci-gating.ipynb)
 - **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
-## mypy  ·  26 files
+## mypy  ·  28 files
 
 - **primer:** [0000-primer-mypy.md](../mypy/notes/0000-primer-mypy.md)
 - **notes** (7): [followed-mypy-quickstart](../mypy/notes/2026-06-12-followed-mypy-quickstart.md), [tried-mypy-official-quickstart](../mypy/notes/2026-06-08-tried-mypy-official-quickstart.md), [first-mypy-run](../mypy/notes/2026-06-04-first-mypy-run.md)
 - _…and 4 more under `mypy/notes/` — browse the folder._
-- **docs** (1): [stub-strategy-ignore-missing-imports](../mypy/docs/stub-strategy-ignore-missing-imports.md)
+- **docs** (2): [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [stub-strategy-ignore-missing-imports](../mypy/docs/stub-strategy-ignore-missing-imports.md)
 - **scripts** (2): [tried-mypy-first-check](../mypy/scripts/tried-mypy-first-check.py), [untyped-to-strict-reveal-type](../mypy/scripts/untyped-to-strict-reveal-type.py)
 - **configs** (5): [selective-mypy-strictness](../mypy/configs/2026-08-04-selective-mypy-strictness.ini), [strict-mypy-config](../mypy/configs/tried-strict-mypy-config.toml), [strict-disallow-ignore-config](../mypy/configs/tried-strict-disallow-ignore-config.ini), [minimal-mypy-config](../mypy/configs/tried-minimal-mypy-config.ini), [gradual-typing-mypy](../mypy/configs/gradual-typing-mypy.toml)
 - **manifests** (1): [ci-incremental-mypy-workflow](../mypy/manifests/ci-incremental-mypy-workflow.yaml) — a fail-fast, cache-warm incremental type-check job
-- **notebooks** (1): [gradual-typing-adoption](../mypy/notebooks/gradual-typing-adoption.ipynb)
+- **notebooks** (2): [gradual-typing-adoption](../mypy/notebooks/gradual-typing-adoption.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
 - **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/tried-validating-typed-function.py)
 - _…and 1 more under `mypy/snippets/` — browse the folder._
 - **templates** (5): [type-safe-python-package](../mypy/templates/type-safe-python-package/) — a minimal src-layout package wired for mypy strict checking from the first commit
@@ -73,11 +73,12 @@
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folders._
 
-## prc  ·  5 files
+## prc  ·  7 files
 
 - **notes** (2): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md), [pre-commit-quickstart-gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md)
+- **docs** (1): [how-pre-commit-works-under-the-hood](../prc/docs/how-pre-commit-works-under-the-hood.md)
 - **scripts** (2): [ci-parity-check](../prc/scripts/2026-08-17-ci-parity-check.sh), [pre-commit-bootstrap](../prc/scripts/pre-commit-bootstrap.sh)
-- **configs** (1): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml)
+- **configs** (2): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml), [src-layout-pinned-hooks](../prc/configs/src-layout-pinned-hooks.yaml)
 
 ## pre-commit  ·  11 files
 
@@ -127,7 +128,7 @@
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
 
-## rich  ·  21 files
+## rich  ·  22 files
 
 - **primer:** [0000-primer-rich.md](../rich/notes/0000-primer-rich.md)
 - **notes** (8): [followed-rich-quickstart](../rich/notes/2026-08-05-followed-rich-quickstart.md), [explored-rich-console-api-renderables](../rich/notes/2026-06-17-explored-rich-console-api-renderables.md), [tried-rich-cli](../rich/notes/2026-06-09-tried-rich-cli.md)
@@ -136,6 +137,7 @@
 - **scripts** (4): [live-log-tailer](../rich/scripts/live-log-tailer.py), [first-styled-rich-output](../rich/scripts/2026-08-07-first-styled-rich-output.py), [rich-styled-output-tables-progress](../rich/scripts/2026-08-05-rich-styled-output-tables-progress.py), [first-table-panel-progress](../rich/scripts/first-table-panel-progress.py)
 - **snippets** (8): [rich-inspect-live-pipeline](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py), [first-rich-output](../rich/snippets/2026-08-18-first-rich-output.py), [tried-rich-console-panel-table](../rich/snippets/tried-rich-console-panel-table.py)
 - _…and 5 more under `rich/snippets/` — browse the folder._
+- **notebooks** (1): [rich-dashboard-approaches](../rich/notebooks/rich-dashboard-approaches.ipynb) — comparing approaches for building a live CLI status dashboard
 
 ## ruff  ·  15 files
 
@@ -166,7 +168,7 @@
 - **snippets** (5): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
 - _…and 2 more under `ty/snippets/` — browse the folder._
 
-## typer  ·  10 files
+## typer  ·  11 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
 - **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)

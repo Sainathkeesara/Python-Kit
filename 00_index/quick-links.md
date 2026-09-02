@@ -59,6 +59,8 @@
 - [Followed mypy Quickstart Notes](../mypy/notes/2026-06-12-followed-mypy-quickstart.md) — Gradual typing, strict mode, what tripped me up
 - [Selective mypy strictness config](../mypy/configs/2026-08-04-selective-mypy-strictness.ini) — Minimal mypy.ini with strict mode and per-directory rule overrides
 - [Incremental mypy CI workflow](../mypy/manifests/ci-incremental-mypy-workflow.yaml) — A fail-fast, cache-warm type-check job keyed by lockfile and interpreter version
+- [Integrating mypy with ruff in CI](../mypy/docs/integrating-mypy-ruff-ci.md) — Wiring mypy and ruff into a shared CI pipeline with incremental caching
+- [mypy incremental cache notebook](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb) — Exploring mypy's incremental cache and follow-imports behaviour
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
@@ -70,8 +72,10 @@
 - [pre-commit Primer](../pre-commit/notes/0000-primer-pre-commit.md) — What is pre-commit? first-contact notes
 - [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
 - [pre-commit quickstart gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md) — Local hooks, --hook-stage, and pass_args — the three things that kept tripping me up
+- [pre-commit under the hood](../prc/docs/how-pre-commit-works-under-the-hood.md) — How pre-commit hooks are installed, discovered, and run inside git
 - [pre-commit bootstrap script](../prc/scripts/pre-commit-bootstrap.sh) — Bootstrap pre-commit on a fresh repo: ensure the config exists, install the git hook, and run --all-files
 - [First real pre-commit config](../prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
+- [src-layout pinned hooks config](../prc/configs/src-layout-pinned-hooks.yaml) — A pinned pre-commit config for src-layout projects with ruff, mypy, and pytest hooks
 - [CI parity check script](../prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
 - [Run Ruff + Trailing-Whitespace Hooks Script](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project with ruff and trailing-whitespace hooks, run them once
 
@@ -140,6 +144,7 @@
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
 - [Wiring Rich into a CLI status dashboard](../rich/docs/wiring-rich-into-a-cli-status-dashboard.md) — Console + Panel + Layout + Live for an updating CLI dashboard
+- [Rich dashboard approaches notebook](../rich/notebooks/rich-dashboard-approaches.ipynb) — Comparing approaches for building a live CLI status dashboard
 - [First rich output snippet](../rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
 - [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
