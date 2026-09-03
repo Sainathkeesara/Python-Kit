@@ -44,6 +44,7 @@
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
+- [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
 
 ### Write and run tests
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
@@ -63,6 +64,7 @@
 - [mypy incremental cache notebook](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb) — Exploring mypy's incremental cache and follow-imports behaviour
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
+- [Ty quickstart loop snippet](../ty/snippets/2026-09-02-followed-ty-quickstart-loop.py) — Minimal annotated loop module for a Ty first type-check pass
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
@@ -88,6 +90,7 @@
 - [Parse pip-audit JSON CVEs](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [pau scan config](../pau/configs/2026-08-09-pip-audit-scan-config.toml) — pip-audit scan configuration with strict mode and custom sources
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first-contact notes
+- [Dependency-health helper](../pipdeptree/scripts/dependency-health-helper.py) — pipdeptree + warnings + reverse deps in one script for a project overview
 - [Dependency-health report](../pipdeptree/scripts/dependency-health-report.sh) — Turn `--warn`, `--reverse`, and `--json` output into one health summary
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
 

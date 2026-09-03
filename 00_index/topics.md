@@ -63,12 +63,12 @@
 - **snippets** (4): [parse-pip-audit-json-cves-2026-07-13](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py), [parse-pip-audit-json-cves](../pip-audit/snippets/2026-07-10-parse-pip-audit-json-cves.py), [list-cve-findings](../pip-audit/snippets/list-cve-findings.py)
 - _…and 1 more under `pip-audit/snippets/` — browse the folder._
 
-## pipdeptree  ·  18 files
+## pipdeptree  ·  19 files
 
 - **primer:** [0000-primer-pipdeptree.md](../pipdeptree/notes/0000-primer-pipdeptree.md)
 - **notes** (8): [pipdeptree-tutorial](../pipdeptree/notes/2026-08-06-pipdeptree-tutorial.md), [pipdeptree-patterns-i-use](../pipdeptree/notes/2026-06-17-pipdeptree-patterns-i-use.md), [common-cli-patterns](../pipdeptree/notes/2026-06-13-common-cli-patterns.md)
 - _…and 5 more under `pipdeptree/notes/` — browse the folder._
-- **scripts** (3): [dependency-health-report](../pipdeptree/scripts/dependency-health-report.sh), [list-package-deps](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps](../pipdeptree/scripts/install-and-inspect-deps.sh)
+- **scripts** (4): [dependency-health-helper](../pipdeptree/scripts/dependency-health-helper.py), [dependency-health-report](../pipdeptree/scripts/dependency-health-report.sh), [list-package-deps](../pipdeptree/scripts/list-package-deps.py), [install-and-inspect-deps](../pipdeptree/scripts/install-and-inspect-deps.sh)
 - **configs** (1): [dev-dependencies-pipdeptree](../pipdeptree/configs/2026-07-19-dev-dependencies-pipdeptree.toml)
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folders._
@@ -139,7 +139,7 @@
 - _…and 5 more under `rich/snippets/` — browse the folder._
 - **notebooks** (1): [rich-dashboard-approaches](../rich/notebooks/rich-dashboard-approaches.ipynb) — comparing approaches for building a live CLI status dashboard
 
-## ruff  ·  15 files
+## ruff  ·  17 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **notes** (6): [ruff-select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md)
@@ -149,6 +149,7 @@
 - **docs** (1): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **scripts** (1): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
+- **notebooks** (1): [compare-ruff-format-vs-black](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — side-by-side Ruff format and black on a shared sample
 
 ## tox  ·  11 files
 
@@ -158,15 +159,15 @@
 - **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
 - **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
 
-## ty  ·  16 files
+## ty  ·  17 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (7): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md)
 - _…and 4 more under `ty/notes/` — browse the folder._
 - **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
 - **scripts** (1): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh)
-- **snippets** (5): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
-- _…and 2 more under `ty/snippets/` — browse the folder._
+- **snippets** (6): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
+- _…and 3 more under `ty/snippets/` — browse the folder._
 
 ## typer  ·  11 files
 
