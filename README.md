@@ -21,11 +21,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [Rich CLI status dashboard docs](rich/docs/wiring-rich-into-a-cli-status-dashboard.md) — Assembling a Live-updating status panel with Console + Panel + Layout
-- [py-spy modes comparison notebook](py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — Side-by-side top vs record/flamegraph vs dump on a shared CPU-bound target
-- [pre-commit bootstrap script](prc/scripts/pre-commit-bootstrap.sh) — Fresh-repo scaffold: sample a config, install hooks, run --all-files
-- [httpie vs curl CI gating notebook](httpie/notebooks/compare-httpie-curl-ci-gating.ipynb) — Exit-code semantics, selective status tolerance, and timeout behaviour for CI smoke tests
-- [src-layout pyproject.toml](pyproject.toml/configs/src-layout-pyproject.toml) — A complete src-layout package config with ruff, pytest, mypy, and coverage
+- [Integrating mypy with ruff in CI](mypy/docs/integrating-mypy-ruff-ci.md) — Wiring mypy and ruff into a shared CI pipeline with incremental caching
+- [Rich dashboard approaches notebook](rich/notebooks/rich-dashboard-approaches.ipynb) — Comparing approaches for building a live CLI status dashboard with Rich
+- [pre-commit under the hood](prc/docs/how-pre-commit-works-under-the-hood.md) — How pre-commit hooks are installed, discovered, and run inside git
+- [src-layout pinned hooks config](prc/configs/src-layout-pinned-hooks.yaml) — A pinned pre-commit config for src-layout projects with ruff, mypy, and pytest hooks
+- [mypy incremental cache notebook](mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb) — Exploring mypy's incremental cache and follow-imports behaviour
 
 ## Layout
 
@@ -35,18 +35,18 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `.gitattributes` — Git merge-strategy config (union merge for CHANGELOG.md)
 - `bandit/` — Security linter first-contact primer
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows, configs, notebooks, and an httpie+pytest scaffold template
-- `mypy/` — mypy type-checking notes, strict configs, typed samples, CI manifests, and a type-safe package template
+- `mypy/` — mypy type-checking notes, strict configs, typed samples, CI manifests, CI integration docs, and a type-safe package template
 - `pau/` — pip-audit short-alias configs and primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, health-report script, JSON parsing, reverse-dep snippets
-- `prc/` — pre-commit first-contact hook notes, configs, and scripts
+- `prc/` — pre-commit first-contact hook notes, configs, CI parity scripts, and under-the-hood docs
 - `pre-commit/` — Hook configs, install/run scripts, snippets
 - `py/` — Ruff first-contact primer and install-and-lint script
 - `py-spy/` — Profiler notes, flamegraph scripts, profiling-mode guide, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
 - `pyright/` — Pyright type-checking primer and notes
-- `rich/` — Terminal output notes, tables, panels, progress, snippets, and a status-dashboard doc
+- `rich/` — Terminal output notes, tables, panels, progress, snippets, status-dashboard docs, and dashboard approach notebooks
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs
 - `tox/` — Tox automation notes, env config, and CLI patterns
 - `ty/` — Ty type checker notes, configs, and comparisons with mypy
@@ -66,19 +66,18 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
 | bandit | 1 | — | — | — | — | — | — | — | 2026-08-29 |
 | httpie | 6 | 5 | 2 | 2 | 2 | 2 | — | 7 | 2026-08-29 |
-| mypy | 7 | 2 | 5 | 4 | 1 | 1 | 1 | 5 | 2026-08-28 |
+| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 1 | 2 | — | — | — | — | — | 2026-08-21 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 3 | 1 | 6 | — | — | — | — | 2026-08-18 |
-| prc | 2 | 2 | 1 | — | — | — | — | — | 2026-08-30 |
+| prc | 2 | 2 | 2 | — | 1 | — | — | — | 2026-08-30 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-07-17 |
-| psy | — | — | — | — | — | 1 | — | — | 2026-09-02 |
 | py | 1 | 1 | — | — | — | — | — | — | — |
-| py-spy | 10 | 10 | — | 2 | 2 | — | — | — | 2026-08-17 |
+| py-spy | 10 | 10 | — | 2 | 2 | 1 | — | — | 2026-08-17 |
 | pyproject.toml | 4 | 1 | 7 | — | — | — | — | — | 2026-09-01 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 1 | — | — | — | — | — | — | — | 2026-08-24 |
-| rich | 8 | 4 | — | 8 | 1 | — | — | — | 2026-09-02 |
+| rich | 8 | 4 | — | 8 | 1 | 2 | — | — | 2026-09-02 |
 | ruff | 6 | 1 | 5 | 2 | 1 | — | — | — | 2026-08-18 |
 | tox | 5 | 2 | 4 | — | — | — | — | — | 2026-08-26 |
 | ty | 7 | 1 | 3 | 5 | — | — | — | — | 2026-08-29 |
@@ -91,8 +90,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through pre-commit quickstart gotchas, Rich CLI status-dashboard docs, py-spy mode-comparison notebooks, and the bandit primer; httpie+pytest and mypy type-safe package templates are on the shelf.
+Currently working through pre-commit quickstart gotchas, Rich CLI status-dashboard docs, py-spy mode-comparison notebooks, and the bandit primer; httpie+pytest and mypy type-safe package templates are on the shelf. Recently added mypy+ruff CI integration docs and Rich dashboard approach notebooks.
 
 ---
 
-_Last updated: 2026-09-02_
+_Last updated: 2026-09-03_
