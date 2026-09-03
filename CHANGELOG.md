@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-03
+- pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
+
 ## 2026-09-02
 - ruf-021: Added ruff format vs black comparison notebook (`ruff/notebooks/compare-ruff-format-vs-black.ipynb`) — same-file format comparison, where the outputs disagree, and single-formatter resolution with a ruff check + format check gate
 - ty-013: Added ty quickstart loop snippet (`ty/snippets/2026-09-02-followed-ty-quickstart-loop.py`) — minimal typed module with generics plus the `ty check` file-scoped type-check loop and a reveal_type runtime fallback
