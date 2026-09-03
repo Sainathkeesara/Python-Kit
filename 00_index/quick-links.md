@@ -42,6 +42,8 @@
 - [Pinned Ruff rule set](../ruff/configs/2026-08-18-pinned-rule-set.toml) — Explicit rule selections, ignores, and per-rule settings for a settled linter config
 - [Ruff End-to-End Lint-and-Format Workflow](../ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
+- [Ruff Lint Gate Script](../ruff/scripts/ruff-lint-gate.py) — Ruff linting script for CI pipelines
+- [Ruff rulesets per file ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md) — How to selectively apply Ruff rules and per-file ignores
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
