@@ -2,6 +2,7 @@
 
 ## 2026-09-03
 - pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
+- ruf-019 (rework): Added one-command lint gate script (`ruff/scripts/ruff-lint-gate.py`) — Python wrapper combining ruff check with configurable rules, format check, and per-file ignores
 
 ## 2026-09-02
 - ruf-021: Added ruff format vs black comparison notebook (`ruff/notebooks/compare-ruff-format-vs-black.ipynb`) — same-file format comparison, where the outputs disagree, and single-formatter resolution with a ruff check + format check gate
