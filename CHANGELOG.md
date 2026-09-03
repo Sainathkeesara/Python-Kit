@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-09-03
+- ruf-019 (rework): Added one-command lint gate Python script (`ruff/scripts/ruff-lint-gate.py`) — ruff check with curated ruleset, format check, and per-file ignores for tests and init modules
+- ruf-020 (rework): Added ruleset selection and per-file-ignores docs (`ruff/docs/selecting-rulesets-per-file-ignores.md`) — tiered ruleset strategy (E/W/F/I vs UP/B/C4), preview rules, and per-file-ignore patterns for S101/F401
 - pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
 
 ## 2026-09-02
