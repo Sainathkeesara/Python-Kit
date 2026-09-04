@@ -20,11 +20,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [Ruff rulesets per file ignores](ruff/docs/selecting-rulesets-per-file-ignores.md) — How to selectively apply Ruff rules and per-file ignores
+- [Ruff lint gate script](ruff/scripts/ruff-lint-gate.py) — Ruff linting script for CI pipelines
 - [Dependency health helper](pipdeptree/scripts/dependency-health-helper.py) — pipdeptree + warnings + reverse deps in one script for a project overview
 - [Ruff format vs black notebook](ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
 - [Ty quickstart loop snippet](ty/snippets/2026-09-02-followed-ty-quickstart-loop.py) — Minimal annotated loop module for a Ty first type-check pass
-- [Integrating mypy and Ruff in CI](mypy/docs/integrating-mypy-ruff-ci.md) — Sequencing Ruff then mypy so the type check runs on a clean tree
-- [Mypy incremental cache and follow-imports notebook](mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb) — How the `.mypy_cache` interacts with `--follow-imports` across runs
 
 ## Layout
 
@@ -77,7 +77,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 1 | — | — | — | — | — | — | — | 2026-08-24 |
 | rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
-| ruff | 6 | 2 | 5 | 2 | 1 | 1 | — | — | 2026-08-03 |
+| ruff | 6 | 3 | 5 | 2 | 2 | 1 | — | — | 2026-08-03 |
 | tox | 5 | 2 | 4 | — | — | — | — | — | 2026-08-22 |
 | ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
 | typer | 4 | 4 | — | 3 | — | — | — | — | 2026-08-18 |
@@ -93,4 +93,4 @@ Currently adding the pipdeptree dependency-health helper, the Ruff format-vs-bla
 
 ---
 
-_Last updated: 2026-09-03_
+_Last updated: 2026-09-04_

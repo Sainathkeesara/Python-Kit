@@ -139,15 +139,15 @@
 - _…and 5 more under `rich/snippets/` — browse the folder._
 - **notebooks** (1): [rich-dashboard-approaches](../rich/notebooks/rich-dashboard-approaches.ipynb) — comparing approaches for building a live CLI status dashboard
 
-## ruff  ·  17 files
+## ruff  ·  19 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **notes** (6): [ruff-select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md)
 - _…and 3 more under `ruff/notes/` — browse the folder._
 - **configs** (5): [pinned-rule-set](../ruff/configs/2026-08-18-pinned-rule-set.toml), [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml)
 - _…and 2 more under `ruff/configs/` — browse the folder._
-- **docs** (1): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md)
-- **scripts** (1): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh)
+- **docs** (2): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md), [selecting-rulesets-per-file-ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md)
+- **scripts** (2): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh), [ruff-lint-gate](../ruff/scripts/ruff-lint-gate.py)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - **notebooks** (1): [compare-ruff-format-vs-black](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — side-by-side Ruff format and black on a shared sample
 
