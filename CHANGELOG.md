@@ -6,6 +6,9 @@
 - pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
 
 ## 2026-09-04
+- pdt-021: Added pipdeptree + pip-audit dependency hygiene project scaffold template (`pdt/templates/dependency-hygiene-scaffold/`) — src-layout package with pyproject.toml tool tables for pipdeptree/pip-audit/ruff/pytest/mypy/coverage, audit_deps.sh (uv export → pip-audit scan), and audit_deps.py (pipdeptree JSON-tree analysis with cycle detection and reverse-dependency hotspots)
+- pdt-022: Added pipdeptree CI gates manifest (`pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml`) — drift, conflict, and cycle gates on a Python 3.11/3.12/3.13 matrix
+- bandit-007: Added bandit -s skip-tests bash snippet (`bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh`) — skip specific test IDs (B101, B105) without losing the rest of the scan
 Passed ([x]) ruf-019 — ruff: script — Build a one-command lint gate: ruff check with selected rules, format check, and per-file ignores as a Python wrapper · Level: L3 · 2026-09-04
 Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyupgrade) and preview rules, and when to use per-file-ignores · Level: L3 · 2026-09-04
 - httpie-012: Added GitHub Actions CI/CD workflow docs (`httpie/docs/ci-cd-github-actions.md`) — --check-status exit-code gating, --timeout for CI reliability, --ignore-stdin for non-terminal hangs, secret handling via GitHub secrets/vars, and session file lifecycle in CI

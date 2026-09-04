@@ -1,0 +1,71 @@
+# last_verified: 2026-09-04 · pipdeptree n/a
+
+# CI workflow: dependency drift, conflict, and cycle gates with pipdeptree
+# on a Python version matrix.
+#
+# Runs three independent pipdeptree checks per Python version and fails the
+# job on any violation. Drift = top-level requirement installed at a version
+# other than what the lockfile pins. Conflict = two packages require mutually
+# exclusive versions of the same transitive dependency. Cycle = circular
+# dependency relationship between installed packages.
+#
+# pipdeptree is pure-Python and resolves metadata against the active
+# interpreter's importlib.metadata, so each matrix leg must install the
+# project (and its extras) into its own venv before the checks run.
+
+name: pipdeptree-gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  dep-gates:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Sync lockfile into venv
+        # uv sync installs the project + all extras into .venv, exactly the
+        # environment pipdeptree will introspect next. --frozen refuses to
+        # rewrite uv.lock so the drift check below has a stable reference.
+        run: uv sync --frozen --all-extras
+
+      - name: Install pipdeptree
+        run: uv pip install pipdeptree
+
+      - name: Drift gate — top-level must match pyproject.toml
+        # --warn fail turns any drift entry into a non-zero exit.
+        run: |
+          set -euo pipefail
+          uv run pipdeptree --warn fail -e none --depth 1 > /tmp/drift.txt
+          echo "Top-level installed:"; cat /tmp/drift.txt
+
+      - name: Conflict gate — no version conflicts among installed packages
+        # pipdeptree exits non-zero when any package is listed twice under
+        # mutually-exclusive versions.
+        run: uv run pipdeptree --warn fail --check
+
+      - name: Cycle gate — no circular dependencies
+        run: uv run pipdeptree --warn fail --detect-cycle
+
+      - name: Upload JSON tree on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipdeptree-${{ matrix.python-version }}
+          path: /tmp/drift.txt
