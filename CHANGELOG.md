@@ -5,6 +5,12 @@
 - ruf-020 (rework): Added ruleset selection and per-file-ignores docs (`ruff/docs/selecting-rulesets-per-file-ignores.md`) — tiered ruleset strategy (E/W/F/I vs UP/B/C4), preview rules, and per-file-ignore patterns for S101/F401
 - pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
 
+## 2026-09-04
+Passed ([x]) ruf-019 — ruff: script — Build a one-command lint gate: ruff check with selected rules, format check, and per-file ignores as a Python wrapper · Level: L3 · 2026-09-04
+Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyupgrade) and preview rules, and when to use per-file-ignores · Level: L3 · 2026-09-04
+- httpie-012: Added GitHub Actions CI/CD workflow docs (`httpie/docs/ci-cd-github-actions.md`) — --check-status exit-code gating, --timeout for CI reliability, --ignore-stdin for non-terminal hangs, secret handling via GitHub secrets/vars, and session file lifecycle in CI
+- tox-011: Added multi-Python-version tox matrix runner (`tox/scripts/2026-09-04-multi-python-tox-matrix.sh`) — loop over pyenv Python versions, run tox -e for each, capture pass/fail in a CSV matrix
+
 ## 2026-09-02
 - ruf-021: Added ruff format vs black comparison notebook (`ruff/notebooks/compare-ruff-format-vs-black.ipynb`) — same-file format comparison, where the outputs disagree, and single-formatter resolution with a ruff check + format check gate
 - ty-013: Added ty quickstart loop snippet (`ty/snippets/2026-09-02-followed-ty-quickstart-loop.py`) — minimal typed module with generics plus the `ty check` file-scoped type-check loop and a reveal_type runtime fallback
