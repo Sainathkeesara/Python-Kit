@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dep-hygiene"
+version = "0.1.0"
+description = "Src-layout package with pipdeptree + pip-audit dependency hygiene"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pipdeptree",
+    "pip-audit>=2.10",
+    "ruff>=0.4",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "mypy>=1.10",
+]
+
+# ── Package discovery (src layout) ───────────────────────────────────────
+# The src/ prefix keeps the installed package isolated from the repo tree,
+# preventing accidental imports of the uninstalled source.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ── pipdeptree ───────────────────────────────────────────────────────────
+# Exclude virtualenv and build artefacts so the tree only shows project
+# dependencies. Warn on version conflicts.
+
+[tool.pipdeptree]
+exclude = [".venv", "build", "dist", ".eggs"]
+warn = "summary"
+
+# ── pip-audit ────────────────────────────────────────────────────────────
+# Ignore dev dependencies (they're not in the runtime lockfile).
+# --no-deps means pip-audit only scans what uv explicitly installed.
+# --disable-pip prevents pip-audit from rebuilding a venv.
+
+[tool.pip-audit]
+ignore-dir = [".venv", "build", "dist", "tests"]
+skip = ["dev"]
+
+# ── Ruff ─────────────────────────────────────────────────────────────────
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+# ── Pytest ───────────────────────────────────────────────────────────────
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short --cov=src --cov-report=term-missing"
+
+# ── Mypy ─────────────────────────────────────────────────────────────────
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+ignore_missing_imports = false
+
+# ── Coverage ─────────────────────────────────────────────────────────────
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
