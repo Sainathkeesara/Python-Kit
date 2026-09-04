@@ -42,8 +42,6 @@
 - [Pinned Ruff rule set](../ruff/configs/2026-08-18-pinned-rule-set.toml) — Explicit rule selections, ignores, and per-rule settings for a settled linter config
 - [Ruff End-to-End Lint-and-Format Workflow](../ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
-- [Ruff Lint Gate Script](../ruff/scripts/ruff-lint-gate.py) — Ruff linting script for CI pipelines
-- [Ruff rulesets per file ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md) — How to selectively apply Ruff rules and per-file ignores
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
@@ -85,6 +83,7 @@
 
 ### Scan for security issues
 - [bandit Primer](../bandit/notes/0000-primer-bandit.md) — What is bandit? first-contact notes for the AST-based security linter
+- [Skip specific bandit tests snippet](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh) — Skip B101 and B105 for test files without losing the rest of the scan
 
 ### Audit and understand dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first-contact notes
@@ -95,6 +94,8 @@
 - [Dependency-health helper](../pipdeptree/scripts/dependency-health-helper.py) — pipdeptree + warnings + reverse deps in one script for a project overview
 - [Dependency-health report](../pipdeptree/scripts/dependency-health-report.sh) — Turn `--warn`, `--reverse`, and `--json` output into one health summary
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
+- [Dependency hygiene scaffold template](../pdt/templates/dependency-hygiene-scaffold/README.md) — A src-layout scaffold for a CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
+- [pipdeptree CI gates manifest](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
 
 ### Manage lockfiles
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first-contact notes
@@ -133,6 +134,7 @@
 - [Minimal tox Config](../tox/configs/tox.ini) — Single env with pytest deps
 - [Lint and Test Env Config](../tox/configs/tried-lint-and-test-env.ini) — tox.ini with lint (ruff) and test (pytest) environments
 - [tox env matrix](../tox/configs/2026-08-22-tox-env-matrix.toml) — tox envlist matrix with Python version constraints
+- [Multi-Python tox matrix script](../tox/scripts/2026-09-04-multi-python-tox-matrix.sh) — Run tox across multiple Python versions with a matrix strategy
 - [Install tox and first env script](../tox/scripts/2026-08-05-install-tox-and-first-env.sh) — Install tox, write a minimal tox.ini, and run a first test environment
 
 ### Test APIs
@@ -141,10 +143,11 @@
 - [httpie core syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh) — GET/POST with query params, JSON bodies, headers, and auth in one shell snippet
 - [httpie dev session config](../httpie/configs/2026-08-27-httpie-session-dev.json) — A reusable session carrying auth and headers for repeated API calls
 - [Integrating httpie with jq and shell pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md) — Composable httpie stages: piping, field extraction, and chained API calls
+- [HTTPie in GitHub Actions CI/CD](../httpie/docs/ci-cd-github-actions.md) — Timeouts, status gating, and secret management for httpie in CI
 - [CI-safe API smoke test](../httpie/scripts/ci-safe-api-smoke-test.sh) — httpie requests that never hang on a closed stdin, with `--check-status` failing on non-2xx
 - [CI httpie wrapper](../httpie/scripts/ci-httpie-wrapper.sh) — A safe httpie wrapper for CI with `--ignore-stdin` and `--check-status`
 - [Session vs Inline Auth Notebook](../httpie/notebooks/compare-session-vs-inline-auth.ipynb) — Compare session auth vs inline auth for repeated API calls
-- [httpie + pytest API scaffold template](../httpie/templates/httpie-pytest-api-scaffold/) — A ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
+- [httpie + pytest API scaffold template](../httpie/templates/httpie-pytest-api-scaffold/README.md) — A ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes

@@ -145,6 +145,13 @@
 - **`--warn silence`** — Suppress CVE advisory warnings so the output can be read cleanly.
 - **`--freeze`** — Output packages as `pkg==version` lines, suitable for piping into grep.
 
+## pdt
+- **Dependency-health scaffold** — A project skeleton (`pdt/templates/dependency-hygiene-scaffold`) that wraps pipdeptree warnings, reverse-dependency counts, and conflict detection into a small CLI.
+- **Drift gate** — A CI check that fails when a top-level requirement is installed at a version other than what the lockfile pins.
+- **Conflict gate** — A CI check that fails when two packages require mutually exclusive versions of the same transitive dependency.
+- **Cycle gate** — A CI check that fails when the dependency tree contains a circular dependency relationship.
+- **CI matrix** — Running the same dependency-health checks across multiple Python versions to catch version-specific conflicts.
+
 ## pre-commit
 - **Hook** — A script or command that runs before a commit is finalized, defined in `.pre-commit-config.yaml`.
 - **Repo** — In pre-commit, a source repository that provides hooks (e.g. `https://github.com/pre-commit/pre-commit-hooks`).
