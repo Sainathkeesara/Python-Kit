@@ -37,10 +37,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `mypy/` — mypy type-checking notes, strict configs, typed samples, CI manifests, and a type-safe package template
 - `pau/` — pip-audit short-alias configs and primer
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
-- `pipdeptree/` — Dependency tree notes, health-report scripts, JSON parsing, reverse-dep snippets
+- `pipdepttree/` — Dependency tree notes, health-report scripts, JSON parsing, reverse-dep snippets
+- `pdt/` — pipdepttree short-alias manifests and templates
 - `prc/` — pre-commit first-contact hook notes, configs, and scripts
 - `pre-commit/` — Hook configs, install/run scripts, snippets
-- `py/` — Ruff first-contact primer and install-and-lint script
+- `py/` — General Python launcher notes and lint scripts
 - `py-spy/` — Profiler notes, flamegraph scripts, profiling-mode guide, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
@@ -68,7 +69,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 1 | 2 | — | — | — | — | — | 2026-07-26 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
-| pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
+| pipdepttree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
+| pdt | — | — | — | — | — | — | 1 | 1 | 2026-09-05 |
 | prc | 2 | 2 | 2 | — | 1 | — | — | — | 2026-09-02 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-07-17 |
 | py | 1 | 1 | — | — | — | — | — | — | — |
@@ -93,4 +95,4 @@ Currently adding the pipdeptree dependency-health helper, the Ruff format-vs-bla
 
 ---
 
-_Last updated: 2026-09-04_
+_Last updated: 2026-09-05_
