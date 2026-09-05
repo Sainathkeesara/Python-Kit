@@ -1,13 +1,17 @@
 # CHANGELOG
 
+## 2026-09-05
+- con-047: Added AAA + parametrize + fixtures + coverage + static typing + CI integration docs (`docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md`) — combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
+- pyright-004: Added first pyright type check notes (`pyright/notes/2026-09-05-first-pyright-type-check.md`) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
+
 ## 2026-09-03
 - ruf-019 (rework): Added one-command lint gate Python script (`ruff/scripts/ruff-lint-gate.py`) — ruff check with curated ruleset, format check, and per-file ignores for tests and init modules
 - ruf-020 (rework): Added ruleset selection and per-file-ignores docs (`ruff/docs/selecting-rulesets-per-file-ignores.md`) — tiered ruleset strategy (E/W/F/I vs UP/B/C4), preview rules, and per-file-ignore patterns for S101/F401
 - pdt-020: Added reusable dependency-health helper script (`pipdeptree/scripts/dependency-health-helper.py`) — JSON-tree output, warnings triage, and cycle detection for a project
 
 ## 2026-09-04
-- pdt-021: Added pipdeptree + pip-audit dependency hygiene project scaffold template (`pdt/templates/dependency-hygiene-scaffold/`) — src-layout package with pyproject.toml tool tables for pipdeptree/pip-audit/ruff/pytest/mypy/coverage, audit_deps.sh (uv export → pip-audit scan), and audit_deps.py (pipdeptree JSON-tree analysis with cycle detection and reverse-dependency hotspots)
-- pdt-022: Added pipdeptree CI gates manifest (`pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml`) — drift, conflict, and cycle gates on a Python 3.11/3.12/3.13 matrix
+- pdt-021: Added pipdeptree + pip-audit dependency hygiene project scaffold template (`pipdeptree/templates/dependency-hygiene-scaffold/`) — src-layout package with pyproject.toml tool tables for pipdeptree/pip-audit/ruff/pytest/mypy/coverage, audit_deps.sh (uv export → pip-audit scan), and audit_deps.py (pipdeptree JSON-tree analysis with cycle detection and reverse-dependency hotspots)
+- pdt-022: Added pipdeptree CI gates manifest (`pipdeptree/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml`) — drift, conflict, and cycle gates on a Python 3.11/3.12/3.13 matrix
 - bandit-007: Added bandit -s skip-tests bash snippet (`bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh`) — skip specific test IDs (B101, B105) without losing the rest of the scan
 Passed ([x]) ruf-019 — ruff: script — Build a one-command lint gate: ruff check with selected rules, format check, and per-file ignores as a Python wrapper · Level: L3 · 2026-09-04
 Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyupgrade) and preview rules, and when to use per-file-ignores · Level: L3 · 2026-09-04
