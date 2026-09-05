@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-09-05
+- con-045: Added pyproject.toml tool tables docs (`docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md`) — pattern for consolidating uv, Ruff, pytest, and mypy configuration into pyproject.toml within a src-layout package
 - con-047: Added AAA + parametrize + fixtures + coverage + static typing + CI integration docs (`docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md`) — combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
 - pyright-004: Added first pyright type check notes (`pyright/notes/2026-09-05-first-pyright-type-check.md`) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
 - pdt-023: Added dependency-health loop docs (`pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md`) — integrating pipdeptree, pip-audit, and uv for continuous drift, conflict, and vulnerability detection
