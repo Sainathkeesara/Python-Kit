@@ -23,7 +23,7 @@
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
 - **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
-## httpie  ·  27 files
+## httpie  ·  28 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -55,8 +55,9 @@
 - **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
 - **scripts** (1): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh)
 
-## pdt  ·  10 files
+## pdt  ·  11 files
 
+- **docs** (1): [integrating-pipdeptree-pip-audit-uv-dependency-health-loop](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md)
 - **manifests** (1): [ci-pipdeptree-drift-conflict-cycle-gates](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
 - **templates** (9): [dependency-hygiene-scaffold](../pdt/templates/dependency-hygiene-scaffold/README.md) — a src-layout scaffold for a dependency-health CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
 
@@ -130,9 +131,10 @@
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
 - **notebooks** (1): [red-green-refactor-loop](../pytest/notebooks/red-green-refactor-loop.ipynb)
 
-## pyright  ·  1 file
+## pyright  ·  2 files
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
+- **notes** (1): [first-pyright-type-check](../pyright/notes/2026-09-05-first-pyright-type-check.md)
 
 ## rich  ·  22 files
 
