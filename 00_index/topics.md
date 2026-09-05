@@ -18,21 +18,22 @@
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 - _…and 1 more under `docs/concepts/*/snippets/` — browse the folders._
 
-## bandit  ·  1 file
+## bandit  ·  2 files
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
+- **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
-## httpie  ·  26 files
+## httpie  ·  27 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
 - _…and 3 more under `httpie/notes/` — browse the folder._
-- **docs** (2): [integrating-httpie-jq-shell-pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md), [scripting-request-items-offline-gating](../httpie/docs/scripting-request-items-offline-gating.md)
+- **docs** (3): [ci-cd-github-actions](../httpie/docs/ci-cd-github-actions.md), [integrating-httpie-jq-shell-pipelines](../httpie/docs/integrating-httpie-jq-shell-pipelines.md), [scripting-request-items-offline-gating](../httpie/docs/scripting-request-items-offline-gating.md)
 - **scripts** (5): [ci-safe-api-smoke-test](../httpie/scripts/ci-safe-api-smoke-test.sh), [httpie-request-workflow](../httpie/scripts/2026-07-19-httpie-request-workflow.sh), [install_and_test_httpie](../httpie/scripts/install_and_test_httpie.sh), [ci-httpie-wrapper](../httpie/scripts/ci-httpie-wrapper.sh), [multi-endpoint-smoke-runner](../httpie/scripts/multi-endpoint-smoke-runner.sh)
 - **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (2): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb), [compare-httpie-curl-ci-gating](../httpie/notebooks/compare-httpie-curl-ci-gating.ipynb)
-- **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
+- **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ## mypy  ·  28 files
 
@@ -53,6 +54,11 @@
 - **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
 - **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
 - **scripts** (1): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh)
+
+## pdt  ·  10 files
+
+- **manifests** (1): [ci-pipdeptree-drift-conflict-cycle-gates](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
+- **templates** (9): [dependency-hygiene-scaffold](../pdt/templates/dependency-hygiene-scaffold/README.md) — a src-layout scaffold for a dependency-health CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
 
 ## pip-audit  ·  12 files
 
@@ -139,25 +145,25 @@
 - _…and 5 more under `rich/snippets/` — browse the folder._
 - **notebooks** (1): [rich-dashboard-approaches](../rich/notebooks/rich-dashboard-approaches.ipynb) — comparing approaches for building a live CLI status dashboard
 
-## ruff  ·  19 files
+## ruff  ·  18 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
 - **notes** (6): [ruff-select-ignore-extend-safe-overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md), [tripped-on-ruff-first-project](../ruff/notes/2026-07-19-tripped-on-ruff-first-project.md), [tried-ruff-cli-more-flags](../ruff/notes/2026-06-17-tried-ruff-cli-more-flags.md)
 - _…and 3 more under `ruff/notes/` — browse the folder._
 - **configs** (5): [pinned-rule-set](../ruff/configs/2026-08-18-pinned-rule-set.toml), [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml)
 - _…and 2 more under `ruff/configs/` — browse the folder._
-- **docs** (2): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md), [selecting-rulesets-per-file-ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md)
+- **docs** (1): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md)
 - **scripts** (2): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh), [ruff-lint-gate](../ruff/scripts/ruff-lint-gate.py)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - **notebooks** (1): [compare-ruff-format-vs-black](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — side-by-side Ruff format and black on a shared sample
 
-## tox  ·  11 files
+## tox  ·  12 files
 
 - **primer:** [0000-primer-tox.md](../tox/notes/0000-primer-tox.md)
 - **notes** (5): [followed-tox-quickstart](../tox/notes/2026-06-11-followed-tox-quickstart.md), [tox-quickstart](../tox/notes/2026-06-08-tox-quickstart.md), [first-tox-run-tripped-me-up](../tox/notes/2026-06-08-first-tox-run-tripped-me-up.md)
 - _…and 2 more under `tox/notes/` — browse the folder._
 - **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
-- **scripts** (2): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh)
+- **scripts** (3): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh), [multi-python-tox-matrix](../tox/scripts/2026-09-04-multi-python-tox-matrix.sh)
 
 ## ty  ·  17 files
 
