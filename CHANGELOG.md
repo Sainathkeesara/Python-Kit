@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-05
+- pdt-023: Added dependency-health loop docs (`pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md`) — integrating pipdeptree, pip-audit, and uv for continuous drift, conflict, and vulnerability detection
+
 ## 2026-09-03
 - ruf-019 (rework): Added one-command lint gate Python script (`ruff/scripts/ruff-lint-gate.py`) — ruff check with curated ruleset, format check, and per-file ignores for tests and init modules
 - ruf-020 (rework): Added ruleset selection and per-file-ignores docs (`ruff/docs/selecting-rulesets-per-file-ignores.md`) — tiered ruleset strategy (E/W/F/I vs UP/B/C4), preview rules, and per-file-ignore patterns for S101/F401

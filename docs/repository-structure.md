@@ -19,6 +19,7 @@ This document describes the directory layout of Python-Kit.
 | `pip-audit/` | Vulnerability scanning notes and scripts |
 | `pau/` | Short alias for pip-audit first-contact notes and configs |
 | `pipdeptree/` | Dependency tree notes and scripts |
+| `pdt/` | Short alias for pipdeptree manifests and templates |
 | `mypy/` | Type checking notes and test scripts |
 | `rich/` | Terminal output notes, scripts, and snippets |
 | `ty/` | Type checker comparison notes and configs |
