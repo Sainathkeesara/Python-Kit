@@ -3,6 +3,7 @@
 ## 2026-09-05
 - con-047: Added AAA + parametrize + fixtures + coverage + static typing + CI integration docs (`docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md`) — combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
 - pyright-004: Added first pyright type check notes (`pyright/notes/2026-09-05-first-pyright-type-check.md`) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
+- pdt-023: Added dependency-health loop docs (`pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md`) — integrating pipdeptree, pip-audit, and uv for continuous drift, conflict, and vulnerability detection
 
 ## 2026-09-03
 - ruf-019 (rework): Added one-command lint gate Python script (`ruff/scripts/ruff-lint-gate.py`) — ruff check with curated ruleset, format check, and per-file ignores for tests and init modules
