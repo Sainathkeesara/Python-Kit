@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-09-06
+- bandit-002: Added first bandit scan notes (`bandit/notes/2026-09-06-first-bandit-scan.md`) — Python version requirement wall, optional extras trap, profile vs test-ID confusion, and venv exclusion gotcha
+- bandit-003: Added vulnerable-file scan demo script (`bandit/scripts/2026-09-06-scan-vulnerable-file.sh`) — creates a deliberately vulnerable Python file with os.system, subprocess.call, eval, and hardcoded secrets, then runs bandit to show test IDs and severity
+
 ## 2026-09-05
 - con-045: Added pyproject.toml tool tables docs (`docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md`) — pattern for consolidating uv, Ruff, pytest, and mypy configuration into pyproject.toml within a src-layout package
 - con-047: Added AAA + parametrize + fixtures + coverage + static typing + CI integration docs (`docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md`) — combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
