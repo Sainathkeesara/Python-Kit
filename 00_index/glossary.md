@@ -53,6 +53,9 @@
 - **Boundary value** — A value at the edge of a valid input range (e.g. `12`, `13`, `20` around a `< 13` threshold), where off-by-one bugs tend to hide.
 - **AAA pattern** — Arrange–Act–Assert: writing each test as setup (Arrange), calling the code under test (Act), and checking the result (Assert) so each beat is explicit and readable.
 - **Regression** — A bug that reappears after a change.
+- **Coverage threshold** — A minimum line-coverage percentage enforced in CI (e.g. `--cov-fail-under=80`); the pipeline fails if coverage drops below it.
+- **Mutation testing** — A coverage-augmentation technique that introduces small bugs (mutations) into the source and checks whether the test suite catches them; tools like `mutmut` automate this.
+- **ids** — The `ids` parameter on `@pytest.mark.parametrize` that assigns human-readable names to each test case, making parametrized failures easier to diagnose.
 
 ### Static Type Checking & Type Hints
 - **Type hint** — An annotation on a variable, parameter, or return value indicating its expected type.
@@ -147,6 +150,8 @@
 
 ## pdt
 - **Dependency-health scaffold** — A project skeleton (`pdt/templates/dependency-hygiene-scaffold`) that wraps pipdeptree warnings, reverse-dependency counts, and conflict detection into a small CLI.
+- **Dependency-health loop** — A continuous CI sequence that runs pipdeptree, pip-audit, and uv together to catch dependency drift, structural conflicts, and known vulnerabilities before they reach production.
+- **Health-check script** — A short script that runs pipdeptree and pip-audit in sequence and exits non-zero if either reports a problem; designed to be invoked from CI or pre-commit.
 - **Drift gate** — A CI check that fails when a top-level requirement is installed at a version other than what the lockfile pins.
 - **Conflict gate** — A CI check that fails when two packages require mutually exclusive versions of the same transitive dependency.
 - **Cycle gate** — A CI check that fails when the dependency tree contains a circular dependency relationship.
