@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-09-06
+- psy-020: Added production py-spy profiling runbook (`py-spy/docs/production-profiling-runbook.md`) — profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling
+- pau-015: Added pip-audit + uv + pre-commit integration docs (`pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md`) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow
+
 ## 2026-09-05
 - con-045: Added pyproject.toml tool tables docs (`docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md`) — pattern for consolidating uv, Ruff, pytest, and mypy configuration into pyproject.toml within a src-layout package
 - con-047: Added AAA + parametrize + fixtures + coverage + static typing + CI integration docs (`docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md`) — combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
