@@ -9,10 +9,10 @@
 - [Comprehensions, Generators, Error Handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
 - [Dataclasses, Context Managers, Decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
+- [Pyproject.toml tool tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Consolidating uv, Ruff, pytest, and mypy config into pyproject.toml
 - [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
-- [pyproject.toml tool tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Mapping of pyproject.toml tables to the tools that consume them
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
-- [AAA, parametrize, fixtures, coverage, and static typing](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md) — How pytest fixtures, parametrize, coverage, and type checking compose in a real test suite
+- [AAA + parametrize + fixtures + coverage + static typing + CI](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md) — Combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
 - [Parametrized AAA tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py) — Arrange-act-assert made explicit with `parametrize` and a fixture
 - [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first-contact notes
@@ -41,6 +41,7 @@
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first-contact notes
 - [Ruff select, ignore, extend-safe, and per-directory overrides](../ruff/notes/2026-07-21-ruff-select-ignore-extend-safe-overrides.md) — `select` as a filter, safe fixes only, and per-directory rule exceptions
+- [Selecting rulesets and per-file-ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md) — Tiered ruleset strategy (E/W/F/I vs UP/B/C4), preview rules, and per-file-ignore patterns
 - [Pinned Ruff rule set](../ruff/configs/2026-08-18-pinned-rule-set.toml) — Explicit rule selections, ignores, and per-rule settings for a settled linter config
 - [Ruff End-to-End Lint-and-Format Workflow](../ruff/scripts/end-to-end-ruff-lint-format.sh) — Install Ruff, lint a project, auto-fix, format, and verify end to end
 - [Ruff Linter Config](../ruff/configs/ruff-linter-settings.toml) — Minimal ruff config with rule selection, ignores, excludes
@@ -70,7 +71,7 @@
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
-- [First pyright type check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — First-contact notes from running pyright on a typed codebase
+- [First pyright type check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — Install pyright, run initial type check, diagnostic interpretation, and differences from mypy
 - [Type-safe Python package template](../mypy/templates/type-safe-python-package/) — A minimal src-layout package wired for mypy strict checking from the first commit
 
 ### Manage pre-commit hooks
@@ -86,6 +87,8 @@
 
 ### Scan for security issues
 - [bandit Primer](../bandit/notes/0000-primer-bandit.md) — What is bandit? first-contact notes for the AST-based security linter
+- [First bandit scan notes](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
+- [Vulnerable-file scan demo script](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - [Skip specific bandit tests snippet](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh) — Skip B101 and B105 for test files without losing the rest of the scan
 
 ### Audit and understand dependencies
@@ -93,11 +96,12 @@
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
 - [Parse pip-audit JSON CVEs](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [pau scan config](../pau/configs/2026-08-09-pip-audit-scan-config.toml) — pip-audit scan configuration with strict mode and custom sources
+- [pip-audit + uv + pre-commit integration](../pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — Wiring pip-audit into pre-commit hooks and CI for a full vulnerability workflow
 - [pipdeptree Primer](../pipdeptree/notes/0000-primer-pipdeptree.md) — What is pipdeptree? first-contact notes
 - [Dependency-health helper](../pipdeptree/scripts/dependency-health-helper.py) — pipdeptree + warnings + reverse deps in one script for a project overview
 - [Dependency-health report](../pipdeptree/scripts/dependency-health-report.sh) — Turn `--warn`, `--reverse`, and `--json` output into one health summary
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
-- [Integrating pipdeptree, pip-audit, and uv in a dependency-health loop](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md) — A single CI job that runs pipdeptree, pip-audit, and a drift check in sequence
+- [Dependency-health loop docs](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md) — Integrating pipdeptree, pip-audit, and uv for continuous drift, conflict, and vulnerability detection
 - [Dependency hygiene scaffold template](../pdt/templates/dependency-hygiene-scaffold/README.md) — A src-layout scaffold for a CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
 - [pipdeptree CI gates manifest](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
 
@@ -125,6 +129,7 @@
 
 ### Profile performance
 - [py-spy Primer](../py-spy/notes/0000-primer-py-spy.md) — What is py-spy? first-contact notes
+- [Production profiling runbook](../py-spy/docs/production-profiling-runbook.md) — Profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling
 - [When to use top vs record/flamegraph vs dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md) — Choosing the right py-spy mode for the question you're asking
 - [py-spy modes comparison notebook](../py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — Side-by-side top vs record/flamegraph vs dump on the same CPU-bound target
 - [Profiling mode guide](../py-spy/docs/when-to-use-py-spy-modes.md) — Short-alias-guide to choosing the right py-spy mode
