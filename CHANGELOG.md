@@ -3,6 +3,8 @@
 ## 2026-09-06
 - psy-020: Added production py-spy profiling runbook (`py-spy/docs/production-profiling-runbook.md`) — profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling
 - pau-015: Added pip-audit + uv + pre-commit integration docs (`pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md`) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow
+- bandit-002: Added first bandit scan notes (`bandit/notes/2026-09-06-first-bandit-scan.md`) — Python version requirement wall, optional extras trap, profile vs test-ID confusion, and venv exclusion gotcha
+- bandit-003: Added vulnerable-file scan demo script (`bandit/scripts/2026-09-06-scan-vulnerable-file.sh`) — creates a deliberately vulnerable Python file with os.system, subprocess.call, eval, and hardcoded secrets, then runs bandit to show test IDs and severity
 
 ## 2026-09-05
 - con-045: Added pyproject.toml tool tables docs (`docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md`) — pattern for consolidating uv, Ruff, pytest, and mypy configuration into pyproject.toml within a src-layout package

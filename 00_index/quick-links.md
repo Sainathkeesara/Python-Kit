@@ -10,7 +10,9 @@
 - [Dataclasses, Context Managers, Decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
+- [pyproject.toml tool tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Mapping of pyproject.toml tables to the tools that consume them
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
+- [AAA, parametrize, fixtures, coverage, and static typing](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md) — How pytest fixtures, parametrize, coverage, and type checking compose in a real test suite
 - [Parametrized AAA tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py) — Arrange-act-assert made explicit with `parametrize` and a fixture
 - [Boundary Values and Test Doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py) — Boundary-value cases and test doubles applied in pytest
 - [Static Type Checking & Type Hints Primer](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md) — What are type hints and static type checkers? first-contact notes
@@ -68,6 +70,7 @@
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
+- [First pyright type check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — First-contact notes from running pyright on a typed codebase
 - [Type-safe Python package template](../mypy/templates/type-safe-python-package/) — A minimal src-layout package wired for mypy strict checking from the first commit
 
 ### Manage pre-commit hooks
@@ -94,6 +97,7 @@
 - [Dependency-health helper](../pipdeptree/scripts/dependency-health-helper.py) — pipdeptree + warnings + reverse deps in one script for a project overview
 - [Dependency-health report](../pipdeptree/scripts/dependency-health-report.sh) — Turn `--warn`, `--reverse`, and `--json` output into one health summary
 - [Reverse Dependency Snippet](../pipdeptree/snippets/find-reverse-deps.py) — Use `--reverse` to find which packages depend on a given package
+- [Integrating pipdeptree, pip-audit, and uv in a dependency-health loop](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md) — A single CI job that runs pipdeptree, pip-audit, and a drift check in sequence
 - [Dependency hygiene scaffold template](../pdt/templates/dependency-hygiene-scaffold/README.md) — A src-layout scaffold for a CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
 - [pipdeptree CI gates manifest](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
 
