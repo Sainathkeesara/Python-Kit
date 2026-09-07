@@ -66,11 +66,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 1 | 2 | — | 1 | — | — | — | 2026-09-06 |
-| pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-06 |
+| pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
 | prc | 2 | 2 | 2 | — | 1 | — | — | — | 2026-09-02 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-06-18 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
 | pyproject.toml | 4 | 1 | 7 | — | — | — | — | — | 2026-08-22 |
@@ -78,11 +78,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pyright | 2 | — | — | — | — | — | — | — | 2026-09-05 |
 | rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
 | ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
-| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-09-04 |
+| tox | 5 | 3 | 4 | — | — | — | — | — | — |
 | ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
 | typer | 4 | 4 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | 2026-06-18 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
 | uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-23 |
 
 </details>
@@ -93,4 +93,4 @@ Currently adding bandit scan notes and scripts, the py-spy production profiling 
 
 ---
 
-_Last updated: 2026-09-07_
+_Last updated: 2026-09-08_
