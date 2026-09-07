@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  37 files
+## Foundational concepts  ·  39 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -11,16 +11,16 @@
 - **primer:** [Static Type Checking & Type Hints](../docs/concepts/static-type-checking-type-hints/0000-primer-static-type-checking-type-hints.md)
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **primer:** [Security Best Practices](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md)
-- **docs** (7): [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
+- **docs** (9): [pyproject-toml-tool-tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md), [aaa-parametrize-fixtures-coverage-static-typing-ci](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md), [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
 - **notebooks** (2): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
-- **scripts** (10): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
-- _…and 3 more under `docs/concepts/*/scripts/` — browse the folders._
+- **scripts** (13): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
-- _…and 1 more under `docs/concepts/*/snippets/` — browse the folders._
 
-## bandit  ·  2 files
+## bandit  ·  4 files
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
+- **notes** (1): [2026-09-06-first-bandit-scan](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
+- **scripts** (1): [2026-09-06-scan-vulnerable-file](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
 ## httpie  ·  28 files
@@ -49,16 +49,17 @@
 - _…and 1 more under `mypy/snippets/` — browse the folder._
 - **templates** (5): [type-safe-python-package](../mypy/templates/type-safe-python-package/) — a minimal src-layout package wired for mypy strict checking from the first commit
 
-## pau  ·  4 files
+## pau  ·  5 files
 
 - **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
 - **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
 - **scripts** (1): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh)
+- **docs** (1): [integrating-pip-audit-uv-pre-commit-vulnerability-workflow](../pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow
 
 ## pdt  ·  11 files
 
-- **docs** (1): [integrating-pipdeptree-pip-audit-uv-dependency-health-loop](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md)
 - **manifests** (1): [ci-pipdeptree-drift-conflict-cycle-gates](../pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml) — CI workflow gating dependency drift, conflicts, and cycles across a Python version matrix
+- **docs** (1): [integrating-pipdeptree-pip-audit-uv-dependency-health-loop](../pdt/docs/integrating-pipdeptree-pip-audit-uv-dependency-health-loop.md) — integrating pipdeptree, pip-audit, and uv for continuous drift, conflict, and vulnerability detection
 - **templates** (9): [dependency-hygiene-scaffold](../pdt/templates/dependency-hygiene-scaffold/README.md) — a src-layout scaffold for a dependency-health CLI that wraps pipdeptree warnings, reverse deps, and conflict detection
 
 ## pip-audit  ·  12 files
@@ -101,12 +102,12 @@
 - **primer:** [0000-primer-py.md](../py/notes/0000-primer-py.md)
 - **scripts** (1): [install-and-lint](../py/scripts/install-and-lint.sh)
 
-## py-spy  ·  25 files
+## py-spy  ·  26 files
 
 - **primer:** [0000-primer-py-spy.md](../py-spy/notes/0000-primer-py-spy.md)
 - **notes** (10): [installed-py-spy-profiled-running-process](../py-spy/notes/2026-07-19-installed-py-spy-profiled-running-process.md), [compared-py-spy-record-output-formats (July 10)](../py-spy/notes/2026-07-10-compared-py-spy-record-output-formats.md), [compared-py-spy-record-output-formats (July 8)](../py-spy/notes/2026-07-08-compared-py-spy-record-output-formats.md)
 - _…and 7 more under `py-spy/notes/` — browse the folder._
-- **docs** (2): [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md), [when-to-use-py-spy-modes](../py-spy/docs/when-to-use-py-spy-modes.md)
+- **docs** (3): [production-profiling-runbook](../py-spy/docs/production-profiling-runbook.md) — profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling, [when-to-use-py-spy-top-vs-record-flamegraph-vs-dump](../py-spy/docs/when-to-use-py-spy-top-vs-record-flamegraph-vs-dump.md), [when-to-use-py-spy-modes](../py-spy/docs/when-to-use-py-spy-modes.md)
 - **scripts** (10): [profile-tiny-loop-py-spy](../py-spy/scripts/2026-07-20-profile-tiny-loop-py-spy.sh), [profile-running-process-end-to-end](../py-spy/scripts/profile-running-process-end-to-end.sh), [cpu-speedscope-record (July 10)](../py-spy/scripts/2026-07-10-cpu-speedscope-record.py), [cpu-speedscope-record (July 8)](../py-spy/scripts/2026-07-08-cpu-speedscope-record.py)
 - _…and 6 more under `py-spy/scripts/` — browse the folder._
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
@@ -134,7 +135,7 @@
 ## pyright  ·  2 files
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
-- **notes** (1): [first-pyright-type-check](../pyright/notes/2026-09-05-first-pyright-type-check.md)
+- **notes** (1): [2026-09-05-first-pyright-type-check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
 
 ## rich  ·  22 files
 
@@ -154,7 +155,7 @@
 - _…and 3 more under `ruff/notes/` — browse the folder._
 - **configs** (5): [pinned-rule-set](../ruff/configs/2026-08-18-pinned-rule-set.toml), [minimal-standalone-ruff-2026-07-21](../ruff/configs/2026-07-21-minimal-standalone-ruff.toml), [ruff-linter-settings.toml](../ruff/configs/ruff-linter-settings.toml)
 - _…and 2 more under `ruff/configs/` — browse the folder._
-- **docs** (1): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md)
+- **docs** (2): [ruff-vs-flake8-comparison](../ruff/docs/ruff-vs-flake8-comparison.md), [selecting-rulesets-per-file-ignores](../ruff/docs/selecting-rulesets-per-file-ignores.md) — tiered ruleset strategy, preview rules, and per-file-ignore patterns
 - **scripts** (2): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh), [ruff-lint-gate](../ruff/scripts/ruff-lint-gate.py)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - **notebooks** (1): [compare-ruff-format-vs-black](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — side-by-side Ruff format and black on a shared sample
