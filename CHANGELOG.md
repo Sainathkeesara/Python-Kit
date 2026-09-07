@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-07
+- pyproject.toml-022: Added migration checklist docs (`pyproject.toml/docs/migration-checklist.md`) — How pyproject.toml replaces setup.cfg/setup.py/requirements.txt: a migration checklist
+
 ## 2026-09-06
 - psy-020: Added production py-spy profiling runbook (`py-spy/docs/production-profiling-runbook.md`) — profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling
 - pau-015: Added pip-audit + uv + pre-commit integration docs (`pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md`) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow

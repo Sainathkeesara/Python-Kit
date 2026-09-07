@@ -63,7 +63,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
 | bandit | 2 | 1 | — | 1 | — | — | — | — | 2026-09-06 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-09-04 |
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 1 | 2 | — | 1 | — | — | — | 2026-09-06 |
 | pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-06 |
@@ -80,7 +80,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
 | tox | 5 | 3 | 4 | — | — | — | — | — | 2026-09-04 |
 | ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
-| typer | 4 | 4 | — | 3 | — | — | — | — | 2026-08-18 |
+| typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | 2026-06-18 |
 | uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-23 |
