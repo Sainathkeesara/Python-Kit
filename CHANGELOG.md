@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-09-08
+- rich-010: Added multi-bar progress tracker script (`rich/scripts/multi-bar-progress-tracker.py`) — concurrent Rich Progress bars with per-bar elapsed time, ETA, and spinner columns
+- pyright-002: Added minimal typed module snippet (`pyright/snippets/2026-09-08-minimal-typed-module.py`) — function signatures, generics, reveal_type, and intentional type errors for pyright CLI diagnostics
+- pyright-003: Added src-layout pyrightconfig.json (`pyright/configs/2026-09-08-src-layout-pyrightconfig.json`) — typeCheckingMode, reportMissingImports, venv paths, and include/exclude for a src-layout project
+- con-057: Added list comprehensions, dicts, and error handling practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-09-08-list-comprehensions-dicts-error-handling.py`) — 10 exercises covering comprehension ordering, defaultdict grouping, Counter frequency, dict merge operator, custom exception hierarchy, and mutable default arg trap
+- bandit-008: Added minimal bandit config (`bandit/configs/2026-09-08-minimal-bandit-config.toml`) — severity/confidence thresholds, exclude_dirs, skips, and per-file-ignores for a src-layout project
+- pyright-007: Added pyright quickstart learnings notes (`pyright/notes/2026-09-08-pyright-quickstart-learnings.md`) — strict mode gotchas, type: ignore differences vs mypy, and missing import error formatting
+
 ## 2026-09-06
 - psy-020: Added production py-spy profiling runbook (`py-spy/docs/production-profiling-runbook.md`) — profiling live services without downtime, sampling rate selection, flamegraph interpretation, and containerized service handling
 - pau-015: Added pip-audit + uv + pre-commit integration docs (`pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md`) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow

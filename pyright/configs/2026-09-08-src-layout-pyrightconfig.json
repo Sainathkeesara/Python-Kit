@@ -1,0 +1,9 @@
+{
+  "typeCheckingMode": "basic",
+  "include": ["src", "tests"],
+  "exclude": ["**/node_modules", "**/__pycache__", ".venv"],
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "venvPath": ".",
+  "venv": ".venv"
+}
