@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-09-08
+- pyproject.toml-023: Added tool tables exploration notebook (`pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb`) — live-editing [tool.ruff], [tool.mypy], and [tool.pytest.ini_options] sections and observing behavioral changes, cross-tool interactions, and common config mistakes
+- con-057: Added comprehensions, dicts, and error handling practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py`) — list/dict/set comprehensions, try/except/else/finally patterns, and batch conversion with error handling
+
 ## 2026-09-07
 - pyproject.toml-022: Added migration checklist docs (`pyproject.toml/docs/migration-checklist.md`) — How pyproject.toml replaces setup.cfg/setup.py/requirements.txt: a migration checklist
 
