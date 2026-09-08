@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, pdt, and the project config that holds them together.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -20,11 +20,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [Practice comprehensions, dicts, and error handling](docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py) — Comprehension and dict patterns with try/except practice exercises
+- [Explore tool tables live editing notebook](pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — Interactive exploration of pyproject.toml tool table configuration
+- [Migration checklist](pyproject.toml/docs/migration-checklist.md) — Step-by-step guide for migrating project configuration to pyproject.toml
+- [Typer hello world script](typer/scripts/hello.py) — Minimal typer CLI with a greeting command
 - [First bandit scan notes](bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
-- [Production profiling runbook](py-spy/docs/production-profiling-runbook.md) — Profiling live services without downtime, sampling rate selection, and flamegraph interpretation
-- [pip-audit + uv + pre-commit integration](pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — Wiring pip-audit into pre-commit hooks and CI for a full vulnerability workflow
-- [First pyright type check](pyright/notes/2026-09-05-first-pyright-type-check.md) — Install pyright, run initial type check, and diagnostic interpretation
-- [Pyproject.toml tool tables](docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Consolidating uv, Ruff, pytest, and mypy config into pyproject.toml
 
 ## Layout
 
@@ -73,7 +73,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
-| pyproject.toml | 4 | 1 | 7 | — | — | — | — | — | 2026-08-22 |
+| pyproject.toml | 4 | 1 | 7 | — | — | 1 | — | — | 2026-08-22 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 2 | — | — | — | — | — | — | — | 2026-09-05 |
 | rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
@@ -89,7 +89,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently adding bandit scan notes and scripts, the py-spy production profiling runbook, and the pip-audit integration docs. The pyright first-run notes and pyproject.toml tool tables pattern are the most recent additions.
+Currently adding bandit scan notes and scripts, the py-spy production profiling runbook, and the pip-audit integration docs. The pyright first-run notes, pyproject.toml tool tables pattern, and comprehensions/dicts/errors practice script are the most recent additions.
 
 ---
 
