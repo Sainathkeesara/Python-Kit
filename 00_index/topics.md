@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  39 files
+## Foundational concepts  ·  40 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -12,8 +12,8 @@
 - **primer:** [Virtual Environment & Dependency Mgmt](../docs/concepts/virtual-environment-dependency-mgmt/0000-primer-virtual-environment-dependency-mgmt.md)
 - **primer:** [Security Best Practices](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md)
 - **docs** (9): [pyproject-toml-tool-tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md), [aaa-parametrize-fixtures-coverage-static-typing-ci](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md), [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
-- **notebooks** (2): [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
-- **scripts** (13): [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
+- **notebooks** (3): [explore-tool-tables-live-editing](../pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb), [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
+- **scripts** (14): [2026-09-08-practice-comprehensions-dicts-errors](../docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py), [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 
 ## bandit  ·  4 files
@@ -23,7 +23,7 @@
 - **scripts** (1): [2026-09-06-scan-vulnerable-file](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
-## httpie  ·  27 files
+## httpie  ·  28 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -33,7 +33,7 @@
 - **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (2): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb), [compare-httpie-curl-ci-gating](../httpie/notebooks/compare-httpie-curl-ci-gating.ipynb)
-- **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
+- **templates** (8): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ## mypy  ·  28 files
 
@@ -113,13 +113,15 @@
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 - **notebooks** (1): [compare-py-spy-top-vs-record-vs-dump](../py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — top vs record/flamegraph vs dump side-by-side on the same CPU-bound target
 
-## pyproject.toml  ·  12 files
+## pyproject.toml  ·  14 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
 - **notes** (4): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md), [what-tripped-me-up-pyproject-toml](../pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md)
+- **docs** (1): [migration-checklist](../pyproject.toml/docs/migration-checklist.md) — step-by-step guide for migrating project configuration to pyproject.toml
 - **configs** (7): [src-layout-pyproject](../pyproject.toml/configs/src-layout-pyproject.toml), [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
 - **scripts** (1): [validate-pyproject-tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py)
+- **notebooks** (1): [explore-tool-tables-live-editing](../pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — interactive exploration of pyproject.toml tool table configuration
 
 ## pytest  ·  15 files
 
@@ -178,12 +180,12 @@
 - **snippets** (6): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
 - _…and 3 more under `ty/snippets/` — browse the folder._
 
-## typer  ·  11 files
+## typer  ·  12 files
 
 - **primer:** [0000-primer-typer.md](../typer/notes/0000-primer-typer.md)
 - **notes** (4): [tripped-up-typer-quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md), [first-typer-hello-world](../typer/notes/2026-06-10-first-typer-hello-world.md), [typer-quickstart-notes](../typer/notes/2026-05-29-typer-quickstart-notes.md)
 - _…and 1 more under `typer/notes/` — browse the folder._
-- **scripts** (4): [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
+- **scripts** (5): [hello](../typer/scripts/hello.py), [quickstart-args-options-help](../typer/scripts/2026-08-18-quickstart-args-options-help.py), [todo-cli](../typer/scripts/2026-08-20-todo-cli.py), [typer_cli_demo](../typer/scripts/typer_cli_demo.py), [tried-typer-calculator](../typer/scripts/tried-typer-calculator.py)
 - **snippets** (3): [typer-cli-option-and-subcommand](../typer/snippets/2026-07-05-typer-cli-option-and-subcommand.py), [typer-subcommands](../typer/snippets/2026-08-29-typer-subcommands.py), [tried-first-typer-cli-app](../typer/snippets/tried-first-typer-cli-app.py)
 
 ## uv  ·  20 files
