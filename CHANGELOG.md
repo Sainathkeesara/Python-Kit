@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-09-09
+- prc-019: Added custom pre-commit hook docs (`prc/docs/writing-custom-pre-commit-hook.md`) — writing a Python-based pre-commit hook from scratch: script, entry point wiring, and pass_filenames behavior
+- pyright-002: Added minimal typed module snippet (`pyright/snippets/2026-09-09-minimal-typed-module.py`) — typed functions with reveal_type and diagnostic examples for pyright exploration
+
 ## 2026-09-08
 - pyproject.toml-023: Added tool tables exploration notebook (`pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb`) — live-editing [tool.ruff], [tool.mypy], and [tool.pytest.ini_options] sections and observing behavioral changes, cross-tool interactions, and common config mistakes
 - con-057: Added comprehensions, dicts, and error handling practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py`) — list/dict/set comprehensions, try/except/else/finally patterns, and batch conversion with error handling
