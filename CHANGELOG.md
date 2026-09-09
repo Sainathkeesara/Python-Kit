@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-09-09
+- prc-019: Added custom pre-commit hook docs (`prc/docs/writing-custom-pre-commit-hook.md`) — writing a Python-based pre-commit hook from scratch: script, entry point wiring, and pass_filenames behavior
+- pyright-002: Added minimal typed module snippet (`pyright/snippets/2026-09-09-minimal-typed-module.py`) — typed functions with reveal_type and diagnostic examples for pyright exploration
 - pyright-007: Added pyright quickstart debrief notes (`pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md`) — strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
 - bandit-009: Added bandit severity/confidence debrief docs (`bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md`) — `-l/-ll/-lll` and `-i/-ii/-iii` stacking, baseline extras + clean-tree requirement, and `# nosec` line-scoping
 - con-054: Added Security Best Practices + static type checking integration docs (`docs/concepts/security-best-practices/combining-security-static-type-checking.md`) — bandit security gate + mypy strict in one CI pipeline, baseline-then-tighten workflow
