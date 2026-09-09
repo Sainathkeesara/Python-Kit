@@ -3,6 +3,7 @@
 ## 2026-09-08
 - pyproject.toml-023: Added tool tables exploration notebook (`pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb`) — live-editing [tool.ruff], [tool.mypy], and [tool.pytest.ini_options] sections and observing behavioral changes, cross-tool interactions, and common config mistakes
 - con-057: Added comprehensions, dicts, and error handling practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py`) — list/dict/set comprehensions, try/except/else/finally patterns, and batch conversion with error handling
+- ty-014: Added gradual typing comparison script (`ty/scripts/gradual-typing-compare-ty-mypy.py`) — annotate a small module incrementally across three stages and compare ty vs mypy diagnostics
 
 ## 2026-09-07
 - pyproject.toml-022: Added migration checklist docs (`pyproject.toml/docs/migration-checklist.md`) — How pyproject.toml replaces setup.cfg/setup.py/requirements.txt: a migration checklist
@@ -26,7 +27,7 @@
 
 ## 2026-09-04
 - pdt-021: Added pipdeptree + pip-audit dependency hygiene project scaffold template (`pipdeptree/templates/dependency-hygiene-scaffold/`) — src-layout package with pyproject.toml tool tables for pipdeptree/pip-audit/ruff/pytest/mypy/coverage, audit_deps.sh (uv export → pip-audit scan), and audit_deps.py (pipdeptree JSON-tree analysis with cycle detection and reverse-dependency hotspots)
-- pdt-022: Added pipdeptree CI gates manifest (`pipdeptree/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml`) — drift, conflict, and cycle gates on a Python 3.11/3.12/3.13 matrix
+- pdt-022: Added pipdeptree CI gates manifest (`pdt/manifests/ci-pipdeptree-drift-conflict-cycle-gates.yaml`) — drift, conflict, and cycle gates on a Python 3.11/3.12/3.13 matrix
 - bandit-007: Added bandit -s skip-tests bash snippet (`bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh`) — skip specific test IDs (B101, B105) without losing the rest of the scan
 Passed ([x]) ruf-019 — ruff: script — Build a one-command lint gate: ruff check with selected rules, format check, and per-file ignores as a Python wrapper · Level: L3 · 2026-09-04
 Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyupgrade) and preview rules, and when to use per-file-ignores · Level: L3 · 2026-09-04
@@ -36,7 +37,7 @@ Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyup
 ## 2026-09-02
 - ruf-021: Added ruff format vs black comparison notebook (`ruff/notebooks/compare-ruff-format-vs-black.ipynb`) — same-file format comparison, where the outputs disagree, and single-formatter resolution with a ruff check + format check gate
 - ty-013: Added ty quickstart loop snippet (`ty/snippets/2026-09-02-followed-ty-quickstart-loop.py`) — minimal typed module with generics plus the `ty check` file-scoped type-check loop and a reveal_type runtime fallback
-- mypy-022: Added mypy incremental cache and follow-imports modes notebook (`mypy/notebooks/mypy-incremental-cache-follow-imports.ipynb`) — step-by-step investigation of `--cache-dir` and `--follow-imports` (normal/skip/silent), cache invalidation across Python versions, and CI-friendly invocation patterns
+- mypy-022: Added mypy incremental cache and follow-imports modes notebook (`mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb`) — step-by-step investigation of `--cache-dir` and `--follow-imports` (normal/skip/silent), cache invalidation across Python versions, and CI-friendly invocation patterns
 - mypy-022: Added mypy incremental cache and follow-imports notebook (`mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb`) — cold/warm cache invalidation, --follow-imports modes (normal/silent/skip/error), py.typed gating, python_version interactions, and what --no-incremental actually breaks
 - prc-016: Added pre-commit internals docs (`prc/docs/how-pre-commit-works-under-the-hood.md`) — hook stages, pass_filenames behavior, environment variables, and debugging toolkit for failing hooks
 - rich-007: Added Rich CLI status dashboard docs (`rich/docs/wiring-rich-into-a-cli-status-dashboard.md`) — assembling Console + Panel + Layout + Live for an updating dashboard, with a minimal end-to-end example and verify/common errors
@@ -188,8 +189,8 @@ Passed ([x]) ruf-020 — ruff: docs — Selecting a ruleset: E/W/F/I vs UP (pyup
 - pdt-016: Added pipdeptree dependency report snippet (`pipdeptree/snippets/2026-08-04-build-dependency-report.py`) — Build a tiny dependency report from pipdeptree JSON for a selected package
 - uvl-010: Added uv.lock mapping notes (`uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md`) — What I learned examining uv.lock: how the lockfile maps to pyproject.toml dependencies
 - mypy-012: Added selective mypy strictness config (`mypy/configs/2026-08-04-selective-mypy-strictness.ini`) — Minimal mypy.ini with selective strictness flags (warn_return_any, disallow_untyped_defs, warn_unused_ignores)
-- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-08-04-tried-pytest-quickstart.md`) — [FILE MISSING] content superseded by `pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`
-- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/2026-08-04-minimal-fixture-parametrize-suite.py`) — [FILE MISSING] content superseded by `pytest/scripts/fixture-and-parametrize-suite.py`
+- pyt-010: Added pytest quickstart tripped-me-up notes (`pytest/notes/2026-06-04-tried-pytest-fixtures-conftest.md`) — content superseded earlier file
+- pyt-011: Added minimal pytest fixture and parametrize suite (`pytest/scripts/fixture-and-parametrize-suite.py`) — content superseded earlier file
 - ty-010: Added Ty quickstart tripped-me-up notes (`ty/notes/2026-08-04-followed-ty-quickstart.md`) — What I learned following the official Ty quickstart: install, run, type mismatches, and config gotchas
 - ty-011: Added minimal Ty type-checking workflow snippet (`ty/snippets/2026-08-04-ty-type-checking-workflow.py`) — Minimal typed Python module demonstrating Ty check workflow
 
