@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-09-09
+- pyright-007: Added pyright quickstart debrief notes (`pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md`) — strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
+- bandit-009: Added bandit severity/confidence debrief docs (`bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md`) — `-l/-ll/-lll` and `-i/-ii/-iii` stacking, baseline extras + clean-tree requirement, and `# nosec` line-scoping
+- con-054: Added Security Best Practices + static type checking integration docs (`docs/concepts/security-best-practices/combining-security-static-type-checking.md`) — bandit security gate + mypy strict in one CI pipeline, baseline-then-tighten workflow
+- con-065: Added security scanning practice script (`docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py`) — bandit `-lll` JSON scan + pip-audit JSON dependency scan combined into one exit-code gate
+
 ## 2026-09-08
 - pyproject.toml-023: Added tool tables exploration notebook (`pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb`) — live-editing [tool.ruff], [tool.mypy], and [tool.pytest.ini_options] sections and observing behavioral changes, cross-tool interactions, and common config mistakes
 - con-057: Added comprehensions, dicts, and error handling practice script (`docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py`) — list/dict/set comprehensions, try/except/else/finally patterns, and batch conversion with error handling
