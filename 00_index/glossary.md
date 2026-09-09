@@ -94,9 +94,12 @@
 - **Test ID** — A unique identifier for each security check, like B101 (assert), B102 (exec), B601 (shell injection). Example: `bandit -s B101` skips the assert check.
 - **Profile** — A named group of tests organized by category, like `ShellInjection` or `Crypto`. Example: `bandit -p ShellInjection` runs only shell-injection-related tests.
 - **Severity** — How bad the finding is: LOW, MEDIUM, or HIGH. Example: hardcoded password = HIGH severity.
+- **Severity level flags** — Short flags that filter findings by severity: `-l` (LOW and above), `-ll` (MEDIUM and above), `-lll` (HIGH only). Stacking letters raises the threshold. Example: `bandit -ll` shows MEDIUM+ findings.
 - **Confidence** — How sure bandit is that this is a real issue: LOW, MEDIUM, or HIGH. Example: `os.system()` with a format string = HIGH confidence shell injection.
-- **Baseline** — A JSON file capturing known findings so subsequent runs only report new issues. Example: `bandit -b baseline.json -r .` shows only findings not in the baseline.
+- **Confidence level flags** — Short flags that filter findings by confidence: `-i` (LOW and above), `-ii` (MEDIUM and above), `-iii` (HIGH only). Combined additively with severity flags: `-ll -ii` means MEDIUM severity AND MEDIUM confidence or higher.
+- **Baseline** — A JSON file capturing known findings so subsequent runs only report new issues. Example: `bandit -b baseline.json -r .` shows only findings not in the baseline. Requires the `bandit[baseline]` extra and a clean working tree.
 - **Exclude paths** — Directories or files to skip during scanning, passed with `-x`. Example: `bandit -r . -x tests,build`.
+- **`# nosec`** — An inline comment that silences bandit findings on a single line. Does not apply file-wide; for whole-file exclusions use `--skip` with test IDs or the `skips` list in a config file.
 - **Output format** — How results are rendered: `txt` (default), `json`, `csv`, `html`, `sarif`. Example: `bandit -f json -o report.json -r .`.
 
 ## httpie
@@ -216,9 +219,10 @@
 - **`pyrightconfig.json`** — Project-level config file controlling Python version, include/exclude paths, and strictness (`"off"`, `"basic"`, `"strict"`).
 - **Diagnostics** — Errors and warnings Pyright reports, each with a file, line, column, and message.
 - **Type stubs (`.pyi`)** — Skeleton files declaring types for third-party libraries that don't ship their own annotations; Pyright auto-downloads these for popular packages.
-- **`reportMissingImports`** — Setting to control whether unresolved imports produce warnings or are silenced.
-- **`typeCheckingMode`** — `"off"`, `"basic"`, or `"strict"`; strict enables every diagnostic.
+- **`reportMissingImports`** — Setting to control whether unresolved imports produce warnings or are silenced. Defaults to warning; set to `"error"` so missing stubs fail the check instead of being buried in warnings.
+- **`typeCheckingMode`** — `"off"`, `"basic"`, or `"strict"`; strict enables every diagnostic. Switching from basic to strict produces a large jump in error count, especially around optional handling and unused imports.
 - **Pylance** — The VS Code extension wrapping Pyright, providing type checking, autocomplete, and go-to-definition in the editor.
+- **`# type: ignore`** — A comment that suppresses a diagnostic on a single line. Does not apply file-wide; use `# type: ignore[reportUnusedImport]` for named, auditable suppressions.
 
 ## ruff
 - **Rule selection** — Choosing which lint rules Ruff applies; controlled by the `select` setting.

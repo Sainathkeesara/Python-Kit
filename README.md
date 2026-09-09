@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, pdt, and the project config that holds them together.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -20,17 +20,17 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [First bandit scan notes](bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
-- [Production profiling runbook](py-spy/docs/production-profiling-runbook.md) — Profiling live services without downtime, sampling rate selection, and flamegraph interpretation
-- [pip-audit + uv + pre-commit integration](pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — Wiring pip-audit into pre-commit hooks and CI for a full vulnerability workflow
-- [First pyright type check](pyright/notes/2026-09-05-first-pyright-type-check.md) — Install pyright, run initial type check, and diagnostic interpretation
+- [Bandit severity and confidence scoring debrief](bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — `-l/-ll/-lll` and `-i/-ii/-iii` flag stacking, baseline extras trap, and `# nosec` line-scoping
+- [Security Best Practices meets Static Type Checking](docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
+- [What I learned doing the pyright quickstart](pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md) — Strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
+- [Security scanning practice script](docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py) — bandit `-lll` JSON scan + pip-audit dependency scan combined into one exit-code gate
 - [Pyproject.toml tool tables](docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Consolidating uv, Ruff, pytest, and mypy config into pyproject.toml
 
 ## Layout
 
 - `00_index/` — Navigation: topics.md, quick-links.md, glossary.md, learning-path.md
 - `docs/` — Foundational concept primers, practice scripts, and snippets per concept; plus project-level docs like repository-structure.md
-- `bandit/` — Security linter notes, scan scripts, and skip-tests snippets
+- `bandit/` — Security linter notes, scan scripts, skip-tests snippets, and severity/confidence scoring docs
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows, configs, notebooks, CI docs, and an httpie+pytest scaffold template
 - `mypy/` — mypy type-checking notes, strict configs, typed samples, CI manifests, and a type-safe package template
 - `pau/` — pip-audit short-alias configs, integration docs, and primer
@@ -43,7 +43,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `py-spy/` — Profiler notes, flamegraph scripts, profiling-mode guide, production runbook, CPU-bound samples
 - `pyproject.toml/` — pyproject.toml settings, minimal and multi-tool configs
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
-- `pyright/` — Pyright type-checking primer and first-run notes
+- `pyright/` — Pyright type-checking primer, first-run notes, and quickstart debrief
 - `rich/` — Terminal output notes, tables, panels, progress, snippets, and a status-dashboard doc
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs, format-vs-black notebook
 - `tox/` — Tox automation notes, env config, and CLI patterns
@@ -62,8 +62,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
-| bandit | 2 | 1 | — | 1 | — | — | — | — | 2026-09-06 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-09-04 |
+| bandit | 2 | 1 | — | 1 | 1 | — | — | — | 2026-09-09 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 1 | 2 | — | 1 | — | — | — | 2026-09-06 |
 | pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
@@ -73,13 +73,13 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
-| pyproject.toml | 4 | 1 | 7 | — | — | — | — | — | 2026-08-22 |
+| pyproject.toml | 4 | 1 | 7 | — | 1 | 1 | — | — | 2026-08-22 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
-| pyright | 2 | — | — | — | — | — | — | — | 2026-09-05 |
+| pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
 | rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
 | ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
-| tox | 5 | 3 | 4 | — | — | — | — | — | — |
-| ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
+| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-09-04 |
+| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
 | typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
@@ -89,8 +89,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently adding bandit scan notes and scripts, the py-spy production profiling runbook, and the pip-audit integration docs. The pyright first-run notes and pyproject.toml tool tables pattern are the most recent additions.
+Currently adding bandit severity/confidence debrief docs, pyright quickstart notes, and the security-best-practices + static-type-checking integration pattern. The combined security scanning practice script (bandit + pip-audit in one gate) is the most recent addition.
 
 ---
 
-_Last updated: 2026-09-08_
+_Last updated: 2026-09-09_
