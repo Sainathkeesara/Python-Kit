@@ -73,6 +73,7 @@
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
 - [First pyright type check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — Install pyright, run initial type check, diagnostic interpretation, and differences from mypy
+- [What I learned doing the pyright quickstart](../pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md) — Strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
 - [Type-safe Python package template](../mypy/templates/type-safe-python-package/) — A minimal src-layout package wired for mypy strict checking from the first commit
 
 ### Manage pre-commit hooks
@@ -89,6 +90,9 @@
 ### Scan for security issues
 - [bandit Primer](../bandit/notes/0000-primer-bandit.md) — What is bandit? first-contact notes for the AST-based security linter
 - [First bandit scan notes](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
+- [Bandit severity and confidence debrief](../bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — `-l/-ll/-lll` and `-i/-ii/-iii` flag stacking, baseline extras trap, and `# nosec` line-scoping
+- [Security Best Practices meets Static Type Checking](../docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
+- [Security scanning practice script](../docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py) — bandit `-lll` JSON scan + pip-audit dependency scan combined into one exit-code gate
 - [Vulnerable-file scan demo script](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - [Skip specific bandit tests snippet](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh) — Skip B101 and B105 for test files without losing the rest of the scan
 
