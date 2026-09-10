@@ -6,6 +6,7 @@
 - [Git workflows, branches, tags, and CI](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md) — Branch-and-PR flow, semantic release tags, and CI gates tied to a uv lockfile
 - [Derive a version from git tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py) — setuptools-scm-style version resolution from plain git history
 - [Python Programming Fundamentals Primer](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md) — What are Python programming fundamentals? first-contact notes
+- [Practice comprehensions, dicts, and error handling](../docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py) — Comprehension and dict patterns with try/except practice exercises
 - [Comprehensions, Generators, Error Handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py) — Practice transforming data, lazy sequences, and try/except
 - [Dataclasses, Context Managers, Decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
@@ -118,14 +119,17 @@
 
 ### Configure pyproject.toml
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
+- [Migration checklist](../pyproject.toml/docs/migration-checklist.md) — Step-by-step guide for migrating project configuration to pyproject.toml
 - [Multi-tool pyproject.toml Config](../pyproject.toml/configs/multi-tool-pyproject.toml) — Combined ruff, pytest, mypy config
 - [First PEP 621 Config](../pyproject.toml/configs/first-pep621-config.toml) — PEP 621 build-system and project metadata with hatchling
 - [pyproject.toml Settings Notes](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md) — Key pyproject.toml settings explained
 - [Validate pyproject.toml with tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py) — Validate pyproject.toml structure with tomllib
+- [Explore tool tables live editing notebook](../pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — Interactive exploration of pyproject.toml tool table configuration
 
 ### Build a CLI
 - [Typer Primer](../typer/notes/0000-primer-typer.md) — First-contact notes for typer
 - [What tripped me up in the typer quickstart](../typer/notes/2026-08-18-tripped-up-typer-quickstart.md) — Positional args, the free `--no-` pair, and docstring-driven `--help`
+- [Typer hello world script](../typer/scripts/hello.py) — Minimal typer CLI with a greeting command
 - [Typer quickstart CLI](../typer/scripts/2026-08-18-quickstart-args-options-help.py) — Arguments, options, and generated help in one small script
 - [Typer TODO CLI](../typer/scripts/2026-08-20-todo-cli.py) — A small persists-to-disk todo list with `add` / `list` / `done` subcommands
 - [Minimal CLI Demo](../typer/scripts/typer_cli_demo.py) — CLI with positional and optional arguments

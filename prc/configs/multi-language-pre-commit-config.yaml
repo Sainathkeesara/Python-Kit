@@ -1,0 +1,45 @@
+# last_verified: 2026-09-09 · pre-commit n/a
+# .pre-commit-config.yaml — multi-language repo: Python (ruff/mypy), shell (shellcheck), markdown (markdownlint)
+# Fast checks run on commit; slower type-check and markdown rules run on push.
+
+default_stages: [commit, push]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        stages: [commit]
+      - id: end-of-file-fixer
+        stages: [commit]
+      - id: check-yaml
+        stages: [commit]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+        stages: [commit]
+      - id: ruff-format
+        stages: [commit]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.15.0
+    hooks:
+      - id: mypy
+        files: ^src/
+        stages: [push]
+
+  - repo: https://github.com/koalaman/shellcheck-precommit
+    rev: v0.10.0
+    hooks:
+      - id: shellcheck
+        files: \.(sh|bash|zsh)$
+        stages: [commit]
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+      - id: markdownlint
+        files: \.(md|markdown)$
+        stages: [commit]
