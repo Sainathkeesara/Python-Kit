@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-09-09
+- prc-018: Added multi-language pre-commit config (`prc/configs/multi-language-pre-commit-config.yaml`) — Python (ruff/mypy), shell (shellcheck), and markdown (markdownlint) hooks staged by speed
 - prc-019: Added custom pre-commit hook docs (`prc/docs/writing-custom-pre-commit-hook.md`) — writing a Python-based pre-commit hook from scratch: script, entry point wiring, and pass_filenames behavior
 - pyright-002: Added minimal typed module snippet (`pyright/snippets/2026-09-09-minimal-typed-module.py`) — typed functions with reveal_type and diagnostic examples for pyright exploration
 - pyright-007: Added pyright quickstart debrief notes (`pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md`) — strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
