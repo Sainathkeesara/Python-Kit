@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-10
+- prc-020: Added pre-commit hook debugging notebook (`prc/notebooks/2026-09-10-hook-debugging-trace.ipynb`) — tracing pass_filenames, pass_args, hook-stage flow with prints and logs, PRE_COMMIT env var, try-repo workflow, and common debugging scenarios
+
 ## 2026-09-09
 - prc-018: Added multi-language pre-commit config (`prc/configs/multi-language-pre-commit-config.yaml`) — Python (ruff/mypy), shell (shellcheck), and markdown (markdownlint) hooks staged by speed
 - prc-019: Added custom pre-commit hook docs (`prc/docs/writing-custom-pre-commit-hook.md`) — writing a Python-based pre-commit hook from scratch: script, entry point wiring, and pass_filenames behavior
