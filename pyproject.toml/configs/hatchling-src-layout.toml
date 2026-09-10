@@ -1,0 +1,71 @@
+# last_verified: 2026-09-10 · pyproject.toml
+
+# ── Minimal src-layout pyproject.toml with hatchling ─────────────────
+# Hatchling auto-discovers packages under src/ without needing an explicit
+# [tool.setuptools.packages.find] block. The [tool.hatch.build] section
+# tells hatchling where the source tree lives.
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-src-package"
+version = "0.1.0"
+description = "Minimal src-layout package with hatchling"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4",
+    "mypy>=1.10",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+# ── Hatch build config (src layout) ─────────────────────────────────
+# Without this, hatchling looks for packages in the repo root.
+# sources = ["src"] maps the installed package to src/<package>/.
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mypackage"]
+
+# ── Ruff ─────────────────────────────────────────────────────────────
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+# ── Pytest ───────────────────────────────────────────────────────────
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short --cov=src --cov-report=term-missing"
+
+# ── Mypy ─────────────────────────────────────────────────────────────
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+ignore_missing_imports = false
+
+# ── Coverage ─────────────────────────────────────────────────────────
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
