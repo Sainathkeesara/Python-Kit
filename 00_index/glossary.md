@@ -32,6 +32,7 @@
 - **pyproject.toml** — The standard config file for Python projects, defined by PEP 518 and PEP 621.
 - **PEP 621** — The standard that defines how to put project metadata directly in pyproject.toml under a `[project]` table.
 - **Build backend** — The library that builds your package into a distribution (setuptools, hatchling, flit_core, pdm-backend).
+- **hatchling** — A PEP 517 build backend by Zanieb that auto-discovers packages using project structure (src-layout or flat-layout) without needing explicit package discovery configuration. Configured via `[build-system]` with `build-backend = "hatchling.build"` and `[tool.hatch.build.targets.wheel]`.
 - **Dependencies** — Other packages your project needs at runtime.
 - **Lockfile** — A file that pins exact versions of every dependency and transitive dependency.
 - **Virtual environment** — An isolated directory with its own Python interpreter and package set.
@@ -169,7 +170,12 @@
 - **`SKIP=`** — An environment variable that skips specific hooks by ID for a single commit (e.g. `SKIP=ruff git commit`).
 - **CI parity check** — Running pre-commit `--all-files` locally to confirm the same hooks will pass in CI, where `SKIP` bypasses are not available.
 - **`stages`** — A per-hook setting (`pre-commit`, `commit-msg`, `pre-push`, `manual`) that controls which git hook event runs the hook. A hook with `stages: [manual]` will not run on `git commit` and must be triggered with `pre-commit run --hook-stage manual`.
-- **`pass_args`** — A local-hook setting that forwards extra arguments from the hook entry to the script (e.g. `pass_args: [--strict]`), useful for tightening a single hook without changing the default behaviour for everyone.
+- **`pass_filenames`** — A hook declaration field (default `true`) that passes staged file paths as positional arguments to the hook script. When `false`, the script receives no filenames and must discover files itself.
+- **`language: python`** — A hook runtime mode where pre-commit creates an isolated virtual environment, installs the hook script and `additional_dependencies`, then runs the entry point within that environment.
+- **`language: system`** — A hook runtime mode where pre-commit runs the hook script directly with whatever Python is on the caller's `PATH`, without creating an isolated environment. Use when the tool is pre-installed in CI or on developer machines.
+- **`additional_dependencies`** — A list of packages installed into a `language: python` hook's isolated environment, in addition to the hook script itself. Used when a custom hook needs third-party libraries to run its checks.
+- **`.pre-commit-hooks.yaml`** — A YAML file placed at the root of a hook repository that declares reusable hooks for other projects to consume via `repo: https://github.com/yourorg/pre-commit-hooks`. Distinct from `.pre-commit-config.yaml`, which is the consuming project's configuration.
+- **`pre-commit try-repo`** — A command that tests a hook from a local repository against the current project without modifying `.pre-commit-config.yaml`. Useful for developing and debugging custom hooks before publishing.
 - **`pre-merge-commit`** — A git hook that fires after merge resolution but before the merge commit is created (git ≥2.24). pre-commit hooks assigned to this stage run at that point.
 - **`post-checkout`** — A git hook that fires after a successful `git checkout`. Useful for setup or cleanup tasks like installing dependencies after switching branches.
 - **`post-merge`** — A git hook that fires after a successful `git merge`. Can trigger actions like re-installing dependencies when lockfiles change.

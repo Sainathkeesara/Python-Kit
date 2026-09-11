@@ -38,6 +38,7 @@
 - [uv script, venv, and lockfile workflow notes](../uv/notes/2026-08-09-tried-uv-script-venv-lockfile.md) — Tried uv script, venv, and lockfile workflow on a small CLI project
 - [pyproject.toml Primer](../pyproject.toml/notes/0000-primer-pyproject.toml.md) — What is pyproject.toml? first-contact notes
 - [Minimal pyproject.toml Config](../pyproject.toml/configs/minimal-pyproject.toml) — Minimal pyproject.toml for a Python project
+- [Hatchling src-layout pyproject Config](../pyproject.toml/configs/hatchling-src-layout.toml) — PEP 621 build-system with hatchling backend and src-layout package structure
 
 ### Lint and format code
 - [Ruff Primer](../ruff/notes/0000-primer-ruff.md) — What is Ruff? first-contact notes
@@ -81,9 +82,12 @@
 - [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
 - [pre-commit quickstart gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md) — Local hooks, --hook-stage, and pass_args — the three things that kept tripping me up
 - [pre-commit under the hood](../prc/docs/how-pre-commit-works-under-the-hood.md) — How pre-commit hooks are installed, discovered, and run inside git
+- [Writing custom pre-commit hooks](../prc/docs/writing-custom-pre-commit-hook.md) — Building and packaging your own pre-commit hooks
 - [pre-commit bootstrap script](../prc/scripts/pre-commit-bootstrap.sh) — Bootstrap pre-commit on a fresh repo: ensure the config exists, install the git hook, and run --all-files
 - [First real pre-commit config](../prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
 - [src-layout pinned hooks config](../prc/configs/src-layout-pinned-hooks.yaml) — A pinned pre-commit config for src-layout projects with ruff, mypy, and pytest hooks
+- [Multi-language pre-commit config](../prc/configs/multi-language-pre-commit-config.yaml) — Pre-commit hooks spanning Python, JS, and shell script stages
+- [Hook debugging trace notebook](../prc/notebooks/2026-09-10-hook-debugging-trace.ipynb) — Interactive walkthrough of pre-commit hook execution and debugging
 - [CI parity check script](../prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
 - [Run Ruff + Trailing-Whitespace Hooks Script](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project with ruff and trailing-whitespace hooks, run them once
 
@@ -99,6 +103,8 @@
 ### Audit and understand dependencies
 - [pip-audit Primer](../pip-audit/notes/0000-primer-pip-audit.md) — What is pip-audit? first-contact notes
 - [Scan Project Script](../pip-audit/scripts/scan-project.sh) — Scan my project for vulnerabilities with pip-audit
+- [CI-friendly pip-audit Scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh) — Run pip-audit in CI with structured JSON output and exit-code gating
+- [pip-audit CI Wrapper](../pau/scripts/pip-audit-ci-wrapper.py) — Python wrapper for pip-audit that produces CI-friendly structured output
 - [Parse pip-audit JSON CVEs](../pip-audit/snippets/2026-07-13-parse-pip-audit-json-cves.py) — Parse pip-audit JSON and list CVE findings with severity and package info
 - [pau scan config](../pau/configs/2026-08-09-pip-audit-scan-config.toml) — pip-audit scan configuration with strict mode and custom sources
 - [pip-audit + uv + pre-commit integration](../pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — Wiring pip-audit into pre-commit hooks and CI for a full vulnerability workflow

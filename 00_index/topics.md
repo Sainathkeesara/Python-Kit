@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  40 files
+## Foundational concepts  ·  42 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -16,14 +16,15 @@
 - **scripts** (14): [2026-09-08-practice-comprehensions-dicts-errors](../docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py), [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
 - **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
 
-## bandit  ·  4 files
+## bandit  ·  5 files
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
 - **notes** (1): [2026-09-06-first-bandit-scan](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
+- **docs** (1): [severity-confidence debrief](../bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — `-l/-ll/-lll` and `-i/-ii/-iii` flag stacking, baseline extras trap, and `# nosec` line-scoping
 - **scripts** (1): [2026-09-06-scan-vulnerable-file](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
-## httpie  ·  28 files
+## httpie  ·  27 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -33,7 +34,7 @@
 - **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (2): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb), [compare-httpie-curl-ci-gating](../httpie/notebooks/compare-httpie-curl-ci-gating.ipynb)
-- **templates** (8): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
+- **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ## mypy  ·  28 files
 
@@ -49,11 +50,11 @@
 - _…and 1 more under `mypy/snippets/` — browse the folder._
 - **templates** (5): [type-safe-python-package](../mypy/templates/type-safe-python-package/) — a minimal src-layout package wired for mypy strict checking from the first commit
 
-## pau  ·  5 files
+## pau  ·  6 files
 
 - **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
 - **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
-- **scripts** (1): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh)
+- **scripts** (2): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh), [pip-audit-ci-wrapper](../pau/scripts/pip-audit-ci-wrapper.py) — Wrap pip-audit into a CI-friendly command with structured JSON output
 - **docs** (1): [integrating-pip-audit-uv-pre-commit-vulnerability-workflow](../pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow
 
 ## pdt  ·  11 files
@@ -81,12 +82,13 @@
 - **snippets** (6): [build-dependency-report](../pipdeptree/snippets/2026-08-04-build-dependency-report.py), [parse-pipdeptree-json](../pipdeptree/snippets/parse-pipdeptree-json.py), [find-reverse-deps](../pipdeptree/snippets/find-reverse-deps.py)
 - _…and 3 more under `pipdeptree/snippets/` — browse the folders._
 
-## prc  ·  7 files
+## prc  ·  10 files
 
 - **notes** (2): [first-pre-commit-hook](../prc/notes/2026-08-09-first-pre-commit-hook.md), [pre-commit-quickstart-gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md)
-- **docs** (1): [how-pre-commit-works-under-the-hood](../prc/docs/how-pre-commit-works-under-the-hood.md)
+- **docs** (2): [how-pre-commit-works-under-the-hood](../prc/docs/how-pre-commit-works-under-the-hood.md), [writing-custom-pre-commit-hook](../prc/docs/writing-custom-pre-commit-hook.md)
 - **scripts** (2): [ci-parity-check](../prc/scripts/2026-08-17-ci-parity-check.sh), [pre-commit-bootstrap](../prc/scripts/pre-commit-bootstrap.sh)
-- **configs** (2): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml), [src-layout-pinned-hooks](../prc/configs/src-layout-pinned-hooks.yaml)
+- **configs** (3): [pre-commit-config](../prc/configs/2026-08-17-pre-commit-config.yaml), [src-layout-pinned-hooks](../prc/configs/src-layout-pinned-hooks.yaml), [multi-language-pre-commit](../prc/configs/multi-language-pre-commit-config.yaml)
+- **notebooks** (1): [hook-debugging-trace](../prc/notebooks/2026-09-10-hook-debugging-trace.ipynb)
 
 ## pre-commit  ·  11 files
 
@@ -113,12 +115,12 @@
 - **snippets** (2): [tried-cpu-bound-simulation](../py-spy/snippets/tried-cpu-bound-simulation.py), [tried-profile-running-process](../py-spy/snippets/tried-profile-running-process.py)
 - **notebooks** (1): [compare-py-spy-top-vs-record-vs-dump](../py-spy/notebooks/compare-py-spy-top-vs-record-vs-dump.ipynb) — top vs record/flamegraph vs dump side-by-side on the same CPU-bound target
 
-## pyproject.toml  ·  14 files
+## pyproject.toml  ·  15 files
 
 - **primer:** [0000-primer-pyproject.toml.md](../pyproject.toml/notes/0000-primer-pyproject.toml.md)
 - **notes** (4): [pyproject-toml-settings](../pyproject.toml/notes/2026-05-26-pyproject-toml-settings.md), [explored-pyproject-build-system](../pyproject.toml/notes/2026-06-05-explored-pyproject-build-system.md), [what-tripped-me-up-pyproject-toml](../pyproject.toml/notes/2026-08-22-what-tripped-me-up-pyproject-toml.md)
 - **docs** (1): [migration-checklist](../pyproject.toml/docs/migration-checklist.md) — step-by-step guide for migrating project configuration to pyproject.toml
-- **configs** (7): [src-layout-pyproject](../pyproject.toml/configs/src-layout-pyproject.toml), [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
+- **configs** (8): [src-layout-pyproject](../pyproject.toml/configs/src-layout-pyproject.toml), [multi-tool-pyproject.toml](../pyproject.toml/configs/multi-tool-pyproject.toml), [first-pep621-pyproject.toml](../pyproject.toml/configs/first-pep621-pyproject.toml), [minimal-pyproject.toml](../pyproject.toml/configs/minimal-pyproject.toml), [minimal-pep621-pyproject](../pyproject.toml/configs/2026-08-22-minimal-pep621-pyproject.toml)
 - _…and 2 more under `pyproject.toml/configs/` — browse the folder._
 - **scripts** (1): [validate-pyproject-tomllib](../pyproject.toml/scripts/2026-08-22-validate-pyproject-tomllib.py)
 - **notebooks** (1): [explore-tool-tables-live-editing](../pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — interactive exploration of pyproject.toml tool table configuration
@@ -134,10 +136,11 @@
 - **snippets** (2): [test_first_test](../pytest/snippets/test_first_test.py), [three_basic_tests](../pytest/snippets/three_basic_tests.py)
 - **notebooks** (1): [red-green-refactor-loop](../pytest/notebooks/red-green-refactor-loop.ipynb)
 
-## pyright  ·  2 files
+## pyright  ·  4 files
 
 - **primer:** [0000-primer-pyright.md](../pyright/notes/0000-primer-pyright.md)
-- **notes** (1): [2026-09-05-first-pyright-type-check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
+- **notes** (3): [2026-09-09-what-i-learned-pyright-quickstart](../pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md) — Strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error, [2026-09-05-first-pyright-type-check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — install pyright, run initial type check, diagnostic interpretation, and differences from mypy
+- **snippets** (1): [2026-09-09-minimal-typed-module](../pyright/snippets/2026-09-09-minimal-typed-module.py)
 
 ## rich  ·  22 files
 
@@ -170,13 +173,13 @@
 - **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
 - **scripts** (3): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh), [multi-python-tox-matrix](../tox/scripts/2026-09-04-multi-python-tox-matrix.sh)
 
-## ty  ·  17 files
+## ty  ·  18 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (7): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md)
 - _…and 4 more under `ty/notes/` — browse the folder._
 - **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
-- **scripts** (1): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh)
+- **scripts** (2): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh), [gradual-typing-compare-ty-mypy](../ty/scripts/gradual-typing-compare-ty-mypy.py)
 - **snippets** (6): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
 - _…and 3 more under `ty/snippets/` — browse the folder._
 

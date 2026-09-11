@@ -62,24 +62,24 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
-| bandit | 2 | 1 | — | 1 | — | — | — | — | 2026-09-06 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-09-04 |
+| bandit | 2 | 1 | — | 1 | 1 | — | — | — | 2026-09-09 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
-| pau | 1 | 1 | 2 | — | 1 | — | — | — | 2026-09-06 |
+| pau | 1 | 2 | 2 | — | 1 | — | — | — | 2026-09-06 |
 | pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
-| prc | 2 | 2 | 2 | — | 1 | — | — | — | 2026-09-02 |
+| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-09 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
-| pyproject.toml | 4 | 1 | 7 | — | — | 1 | — | — | 2026-08-22 |
+| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-07 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
-| pyright | 2 | — | — | — | — | — | — | — | 2026-09-05 |
+| pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
 | rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
 | ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
 | tox | 5 | 3 | 4 | — | — | — | — | — | — |
-| ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
+| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
 | typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
@@ -87,10 +87,12 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 </details>
 
+---
+
 ## Status
 
-Currently adding bandit scan notes and scripts, the py-spy production profiling runbook, and the pip-audit integration docs. The pyright first-run notes, pyproject.toml tool tables pattern, and comprehensions/dicts/errors practice script are the most recent additions.
+Currently working on bandit severity-confidence debrief notes, the py-spy production profiling runbook, and the prc pre-commit hook debugging notebook. The most recent additions include pip-audit CI wrapper scripts, pyproject.toml hatchling src-layout configs, and the pre-commit multi-language config.
 
 ---
 
-_Last updated: 2026-09-08_
+_Last updated: 2026-09-11_
