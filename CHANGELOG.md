@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## 2026-09-10
+- pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
+- pau-016: Added pip-audit CI wrapper Python script (`pau/scripts/pip-audit-ci-wrapper.py`) — JSON output, severity filtering, GitHub Actions summary, and exit-code mapping
 - prc-020: Added pre-commit hook debugging notebook (`prc/notebooks/2026-09-10-hook-debugging-trace.ipynb`) — tracing pass_filenames, pass_args, hook-stage flow with prints and logs, PRE_COMMIT env var, try-repo workflow, and common debugging scenarios
 
 ## 2026-09-09
