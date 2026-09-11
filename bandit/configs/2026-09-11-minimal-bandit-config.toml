@@ -1,0 +1,16 @@
+# last_verified: 2026-09-11 · bandit 1.9.4
+
+# Minimal bandit config for a src-layout Python project
+# Place this as .bandit in the project root, or point to it with --config
+
+[bandit]
+# Exclude test and venv directories from scans
+exclude = .venv,venv,tests,build,dist
+
+# Skip assert_used in tests (B101 is noisy in test files)
+skips = B101
+
+# Only report medium+ severity, medium+ confidence
+# This matches the "zero noise" CI gate pattern
+severity = medium
+confidence = medium

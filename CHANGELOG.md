@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-09-11
+- bandit-006: Added JSON severity scan script (`bandit/scripts/2026-09-11-json-severity-scan.sh`) — bandit JSON output with severity filtering, grouped-by-severity display, and per-file summary
+- bandit-008: Added minimal bandit config (`bandit/configs/2026-09-11-minimal-bandit-config.toml`) — severity threshold, confidence floor, and per-file exclusions for a src-layout project
+- pau-020: Added minimal pip-audit config (`pau/configs/minimal-pip-audit-config.toml`) — strict mode, timeout, ignore rules, and transitive dep scanning notes
+
 ## 2026-09-10
 - pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
 - pau-016: Added pip-audit CI wrapper Python script (`pau/scripts/pip-audit-ci-wrapper.py`) — JSON output, severity filtering, GitHub Actions summary, and exit-code mapping

@@ -1,0 +1,21 @@
+# last_verified: 2026-09-11 · pip-audit 2.10.1
+
+# Minimal pip-audit config for a src-layout Python project
+# Place in pyproject.toml or reference with pip-audit --config
+
+[tool.pip-audit]
+# Fail on any vulnerability (non-zero exit)
+strict = true
+
+# Connection timeout in seconds for PyPI/OSV API calls
+timeout = 60
+
+[tool.pip-audit.ignore]
+# Advisory IDs to skip after documented review.
+# Remove entries once the package is upgraded past the vulnerable version.
+vulns = []
+
+# Note: pip-audit scans all transitive dependencies by default.
+# Use --no-deps on the CLI to audit only directly declared packages.
+# Severity filtering is not available in config — post-process JSON output
+# with a script to filter by CVSS score or severity level.
