@@ -73,7 +73,7 @@
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
 - [Pyright Primer](../pyright/notes/0000-primer-pyright.md) — Microsoft's fast static type checker for Python
 - [First pyright type check](../pyright/notes/2026-09-05-first-pyright-type-check.md) — Install pyright, run initial type check, diagnostic interpretation, and differences from mypy
-- [What I learned doing the pyright quickstart](../pyright/notes/2026-09-09-what-i-learned-pyright-quickstart.md) — Strict mode jump from default, `# type: ignore` line-scoping, and `reportMissingImports` as warning vs error
+- [Minimal typed module (pyright)](../pyright/snippets/2026-09-09-minimal-typed-module.py) — A minimal fully-annotated module for pyright type checking
 - [Type-safe Python package template](../mypy/templates/type-safe-python-package/) — A minimal src-layout package wired for mypy strict checking from the first commit
 
 ### Manage pre-commit hooks
@@ -81,18 +81,19 @@
 - [First pre-commit hook notes](../prc/notes/2026-08-09-first-pre-commit-hook.md) — Set up first pre-commit hook: install, config, first run
 - [pre-commit quickstart gotchas](../prc/notes/2026-08-30-pre-commit-quickstart-gotchas.md) — Local hooks, --hook-stage, and pass_args — the three things that kept tripping me up
 - [pre-commit under the hood](../prc/docs/how-pre-commit-works-under-the-hood.md) — How pre-commit hooks are installed, discovered, and run inside git
+- [Writing custom pre-commit hook](../prc/docs/writing-custom-pre-commit-hook.md) — How to write and test your own pre-commit hook from scratch
 - [pre-commit bootstrap script](../prc/scripts/pre-commit-bootstrap.sh) — Bootstrap pre-commit on a fresh repo: ensure the config exists, install the git hook, and run --all-files
 - [First real pre-commit config](../prc/configs/2026-08-17-pre-commit-config.yaml) — Pinned ruff + pre-commit-hooks set for day-to-day commits
 - [src-layout pinned hooks config](../prc/configs/src-layout-pinned-hooks.yaml) — A pinned pre-commit config for src-layout projects with ruff, mypy, and pytest hooks
+- [Multi-language pre-commit config](../prc/configs/multi-language-pre-commit-config.yaml) — Pre-commit config spanning Python, JS, and YAML hooks
 - [CI parity check script](../prc/scripts/2026-08-17-ci-parity-check.sh) — Automate pre-commit install and repo-wide hook runs that match CI behaviour
+- [Hook debugging trace notebook](../prc/notebooks/2026-09-10-hook-debugging-trace.ipynb) — Interactive notebook for debugging pre-commit hook execution
 - [Run Ruff + Trailing-Whitespace Hooks Script](../pre-commit/scripts/run-pre-commit-ruff-trailing-ws.sh) — Configure a sample project with ruff and trailing-whitespace hooks, run them once
 
 ### Scan for security issues
 - [bandit Primer](../bandit/notes/0000-primer-bandit.md) — What is bandit? first-contact notes for the AST-based security linter
 - [First bandit scan notes](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
-- [Bandit severity and confidence debrief](../bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — `-l/-ll/-lll` and `-i/-ii/-iii` flag stacking, baseline extras trap, and `# nosec` line-scoping
-- [Security Best Practices meets Static Type Checking](../docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
-- [Security scanning practice script](../docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py) — bandit `-lll` JSON scan + pip-audit dependency scan combined into one exit-code gate
+- [Bandit severity & confidence debrief](../bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — Understanding severity levels and confidence scores in bandit output
 - [Vulnerable-file scan demo script](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
 - [Skip specific bandit tests snippet](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh) — Skip B101 and B105 for test files without losing the rest of the scan
 
