@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-12
+- bandit-008: Added minimal bandit TOML config (`bandit/configs/2026-09-12-minimal-bandit-config.toml`) — exclude_dirs for build/test directories and skips for B101 in test code
+
 ## 2026-09-10
 - pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
 - pau-016: Added pip-audit CI wrapper Python script (`pau/scripts/pip-audit-ci-wrapper.py`) — JSON output, severity filtering, GitHub Actions summary, and exit-code mapping

@@ -1,0 +1,4 @@
+# last_verified: 2026-09-12 · bandit n/a
+
+exclude_dirs = ["tests", "build", "dist", ".venv"]
+skips = ["B101"]
