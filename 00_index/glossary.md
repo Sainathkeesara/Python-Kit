@@ -225,9 +225,11 @@
 - **`pyrightconfig.json`** — Project-level config file controlling Python version, include/exclude paths, and strictness (`"off"`, `"basic"`, `"strict"`).
 - **Diagnostics** — Errors and warnings Pyright reports, each with a file, line, column, and message.
 - **Type stubs (`.pyi`)** — Skeleton files declaring types for third-party libraries that don't ship their own annotations; Pyright auto-downloads these for popular packages.
-- **`reportMissingImports`** — Setting to control whether unresolved imports produce warnings or are silenced. Defaults to warning; set to `"error"` so missing stubs fail the check instead of being buried in warnings.
-- **`typeCheckingMode`** — `"off"`, `"basic"`, or `"strict"`; strict enables every diagnostic. Switching from basic to strict produces a large jump in error count, especially around optional handling and unused imports.
+- **`reportMissingImports`** — Setting to control whether unresolved imports produce warnings or are silenced.
+- **`typeCheckingMode`** — `"off"`, `"basic"`, or `"strict"`; strict enables every diagnostic.
 - **Pylance** — The VS Code extension wrapping Pyright, providing type checking, autocomplete, and go-to-definition in the editor.
+- **Basic mode** — Pyright's default strictness level: checks function signatures and return types but allows `Any` and skips unannotated code.
+- **Strict mode** — Pyright's highest strictness level: checks all functions (even unannotated ones), disallows `Any`, and enables all diagnostics.
 - **`# type: ignore`** — A comment that suppresses a diagnostic on a single line. Does not apply file-wide; use `# type: ignore[reportUnusedImport]` for named, auditable suppressions.
 
 ## ruff
