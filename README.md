@@ -20,11 +20,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
-- [Hook debugging trace notebook](prc/notebooks/2026-09-10-hook-debugging-trace.ipynb) — Interactive notebook for debugging pre-commit hook execution
-- [Multi-language pre-commit config](prc/configs/multi-language-pre-commit-config.yaml) — Pre-commit config spanning Python, JS, and YAML hooks
-- [Writing custom pre-commit hook](prc/docs/writing-custom-pre-commit-hook.md) — How to write and test your own pre-commit hook from scratch
-- [Minimal typed module (pyright)](pyright/snippets/2026-09-09-minimal-typed-module.py) — A minimal fully-annotated module for pyright type checking
-- [Bandit severity & confidence debrief](bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — Understanding severity levels and confidence scores in bandit output
+- [Practice comprehensions, dicts, and error handling](docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py) — Comprehension and dict patterns with try/except practice exercises
+- [Explore tool tables live editing notebook](pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — Interactive exploration of pyproject.toml tool table configuration
+- [Migration checklist](pyproject.toml/docs/migration-checklist.md) — Step-by-step guide for migrating project configuration to pyproject.toml
+- [Typer hello world script](typer/scripts/hello.py) — Minimal typer CLI with a greeting command
+- [First bandit scan notes](bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
 
 ## Layout
 
@@ -63,34 +63,36 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
 | bandit | 2 | 1 | — | 1 | 1 | — | — | — | 2026-09-09 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-08-27 |
-| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-08-04 |
-| pau | 1 | 1 | 2 | — | 1 | — | — | — | 2026-08-21 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
+| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
+| pau | 1 | 2 | 2 | — | 1 | — | — | — | 2026-09-06 |
 | pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
-| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-10 |
+| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-09 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
-| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-07-19 |
-| pyproject.toml | 4 | 1 | 7 | — | 1 | 1 | — | — | 2026-08-22 |
-| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-07-19 |
+| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
+| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-07 |
+| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
-| rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-08-05 |
-| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-08-18 |
-| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-08-26 |
-| ty | 7 | 1 | 3 | 6 | — | — | — | — | 2026-08-04 |
-| typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-20 |
+| rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
+| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
+| tox | 5 | 3 | 4 | — | — | — | — | — | — |
+| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
+| typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | 2026-06-18 |
-| uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-08 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
+| uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-23 |
 
 </details>
 
+---
+
 ## Status
 
-Currently adding prc pre-commit hook debugging notebooks, writing custom hook docs, and pyright type-checking snippets. The bandit severity & confidence debrief and multi-language pre-commit config are the most recent additions.
+Currently working on bandit severity-confidence debrief notes, the py-spy production profiling runbook, and the prc pre-commit hook debugging notebook. The most recent additions include pip-audit CI wrapper scripts, pyproject.toml hatchling src-layout configs, and the pre-commit multi-language config.
 
 ---
 
-_Last updated: 2026-09-10_
+_Last updated: 2026-09-11_
