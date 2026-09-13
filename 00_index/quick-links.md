@@ -24,6 +24,7 @@
 - [Security Best Practices Primer](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — Dependency scanning, secrets hygiene, input validation, and least privilege
 - [Secure coding patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py) — Common secure coding patterns and anti-patterns in Python
 - [Dependency, secrets, and deserialization practice](../docs/concepts/security-best-practices/scripts/2026-08-28-dependency-secrets-scan-deserialize.py) — Three runnable security habits: scanning deps, spotting leaked secrets, and safe parsing
+- [Security Best Practices meets Static Type Checking](../docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
