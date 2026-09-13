@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-13
+- rich-009: Added Rich Console CI/local dev docs (`rich/docs/console-ci-output-routing.md`) — output routing, force_terminal, and NO_COLOR for CI pipelines and local development
+
 ## 2026-09-10
 - pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
 - pau-016: Added pip-audit CI wrapper Python script (`pau/scripts/pip-audit-ci-wrapper.py`) — JSON output, severity filtering, GitHub Actions summary, and exit-code mapping
