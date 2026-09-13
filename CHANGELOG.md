@@ -3,6 +3,7 @@
 ## 2026-09-13
 - ruf-022: Added one-command lint gate Python script (`ruf/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
 - con-046: Added src-layout multi-tool tables docs (`docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md`) — pattern for pyproject.toml tool tables for uv, Ruff, pytest, mypy in a src-layout package
+- rich-009: Added Rich Console CI/local dev docs (`rich/docs/console-ci-output-routing.md`) — output routing, force_terminal, and NO_COLOR for CI pipelines and local development
 
 ## 2026-09-10
 - pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
