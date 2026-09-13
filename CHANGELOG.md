@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-09-13
+- ruf-022: Added one-command lint gate Python script (`ruf/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
+- con-046: Added src-layout multi-tool tables docs (`docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md`) — pattern for pyproject.toml tool tables for uv, Ruff, pytest, mypy in a src-layout package
+
 ## 2026-09-10
 - pyproject.toml-021: Added hatchling src-layout pyproject.toml config (`pyproject.toml/configs/hatchling-src-layout.toml`) — minimal src-layout package with hatchling backend, build-system, project metadata, and tool tables for ruff/pytest/mypy/coverage
 - pau-016: Added pip-audit CI wrapper Python script (`pau/scripts/pip-audit-ci-wrapper.py`) — JSON output, severity filtering, GitHub Actions summary, and exit-code mapping
