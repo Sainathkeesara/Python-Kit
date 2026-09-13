@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-09-13
+- pau-020: Added pip-audit src-layout pyproject.toml config (`pau/configs/pip-audit-src-layout.toml`) — pyproject.toml showing how to wire pip-audit into a src-layout project as a dev dependency, with CLI flags for vulnerability thresholds and ignore rules (pip-audit has no native TOML config)
 - ruf-022: Added one-command lint gate Python script (`ruf/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
 - con-046: Added src-layout multi-tool tables docs (`docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md`) — pattern for pyproject.toml tool tables for uv, Ruff, pytest, mypy in a src-layout package
 - rich-009: Added Rich Console CI/local dev docs (`rich/docs/console-ci-output-routing.md`) — output routing, force_terminal, and NO_COLOR for CI pipelines and local development

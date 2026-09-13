@@ -1,0 +1,39 @@
+# last_verified: 2026-09-13 · pip-audit (no native config file)
+#
+# pip-audit has no TOML config file or --config option.
+# Vulnerability thresholds and ignore rules are set via CLI flags.
+# This pyproject.toml shows how to wire pip-audit into a src-layout
+# project as a dev dependency and invoke it with the right flags.
+#
+# Usage:
+#   pip install -e ".[dev]"
+#   pip-audit --strict --timeout 60
+#   pip-audit --ignore-vuln CVE-YYYY-NNNNN --ignore-vuln PYSEC-YYYY-NNN
+#   pip-audit --fix                   # auto-upgrade vulnerable packages
+#   pip-audit --format json -o report.json   # CI-friendly output
+#
+# For severity filtering (high/critical only), pipe JSON output through
+# a wrapper script or use the GitHub Action:
+#   developmentseed/action-python-security-auditing
+# which provides pip_audit_block_on: fixable | all | none.
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-src-layout-package"
+version = "0.1.0"
+description = "Src-layout package with pip-audit dependency scanning"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pip-audit>=2.7",
+]
+
+# ── Package discovery (src layout) ───────────────────────────────────────
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/my_package"]
