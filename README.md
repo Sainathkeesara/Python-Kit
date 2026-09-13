@@ -1,5 +1,5 @@
 # Python-Kit
-> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, and httpie.
+> A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
 [![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
 [![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
@@ -16,24 +16,24 @@ A working Python engineer's quick-reference: first-contact notes, runnable scrip
 
 ## What's in here
 
-Notes, configs, scripts, and snippets organised per tool, covering the day-to-day Python workflow: package and project management (uv), linting and formatting (Ruff), testing (pytest), static type checking (mypy, Ty, pyright), security linting (bandit), hook management (pre-commit), terminal output (rich), CLI building (typer), dependency auditing (pip-audit), dependency trees (pipdeptree), profiling (py-spy), multi-environment test automation (tox), API testing (httpie), and lockfile analysis (uv.lock, uvl). A `docs/concepts/` tree carries the foundational primers — Git, Python fundamentals, packaging, testing principles, type hints, virtual environments, and security — that the tool notes build on.
+Notes, configs, scripts, and snippets organised per tool, covering the day-to-day Python workflow: package and project management (uv), linting and formatting (Ruff), testing (pytest), static type checking (mypy, Ty, pyright), security linting (bandit), hook management (pre-commit), terminal output (rich), CLI building (typer), dependency auditing (pip-audit), dependency trees (pipdeptree), dependency hygiene (pdt), profiling (py-spy), multi-environment test automation (tox), API testing (httpie), and lockfile analysis (uv.lock, uvl). A `docs/concepts/` tree carries the foundational primers — Git, Python fundamentals, packaging, testing principles, type hints, virtual environments, and security — that the tool notes build on.
 
 ## Quick links
 
-- [Practice comprehensions, dicts, and error handling](docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py) — Comprehension and dict patterns with try/except practice exercises
-- [Explore tool tables live editing notebook](pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb) — Interactive exploration of pyproject.toml tool table configuration
-- [Migration checklist](pyproject.toml/docs/migration-checklist.md) — Step-by-step guide for migrating project configuration to pyproject.toml
-- [Writing custom pre-commit hooks](prc/docs/writing-custom-pre-commit-hook.md) — Building and packaging your own pre-commit hooks
-- [Bandit severity and confidence debrief](bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — Flag stacking, baseline extras trap, and nosec line-scoping
+- [Output formats comparison notebook](rich/notebooks/output-formats-comparison.ipynb) — Compare flamegraph, speedscope, and raw JSON profiling output formats
+- [Multi-bar progress tracker](rich/scripts/multi-bar-progress-tracker.py) — Demonstrates multiple concurrent progress bars with Rich
+- [Source layout multi-tool tables](docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md) — How src-layout changes pyproject.toml tool tables
+- [Ruff one-command lint gate](ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
+- [Console CI output routing](rich/docs/console-ci-output-routing.md) — Route Rich console output for CI logs and human terminals
 
 ## Layout
 
 - `00_index/` — Navigation: topics.md, quick-links.md, glossary.md, learning-path.md
-- `docs/` — Foundational concept primers, practice scripts, and snippets per concept
+- `docs/` — Foundational concept primers, practice scripts, and snippets per concept; plus project-level docs like repository-structure.md
 - `bandit/` — Security linter notes, scan scripts, and skip-tests snippets
 - `httpie/` — HTTPie CLI notes, install scripts, request workflows, configs, notebooks, CI docs, and an httpie+pytest scaffold template
 - `mypy/` — mypy type-checking notes, strict configs, typed samples, CI manifests, and a type-safe package template
-- `pau/` — pip-audit short-alias configs, integration docs, and CI wrapper script
+- `pau/` — pip-audit short-alias configs, integration docs, and primer
 - `pdt/` — pipdeptree manifests, dependency-health loop docs, and a scaffold template
 - `pip-audit/` — Vulnerability scanning notes, JSON parsing scripts, ignore config
 - `pipdeptree/` — Dependency tree notes, health-report scripts, JSON parsing, reverse-dep snippets
@@ -63,23 +63,23 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
 | bandit | 2 | 1 | — | 1 | 1 | — | — | — | 2026-09-09 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-09-04 |
 | mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
 | pau | 1 | 2 | 2 | — | 1 | — | — | — | 2026-09-06 |
-| pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
+| pdt | — | 2 | — | — | 1 | — | 1 | 9 | 2026-09-05 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
 | prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-09 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
 | py | 1 | 1 | — | — | — | — | — | — | — |
 | py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
-| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-07 |
+| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-10 |
 | pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
-| rich | 8 | 4 | — | 8 | 1 | 1 | — | — | 2026-09-02 |
+| rich | 8 | 5 | — | 8 | 2 | 2 | — | — | 2026-09-13 |
 | ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
-| tox | 5 | 3 | 4 | — | — | — | — | — | — |
-| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
+| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-08-26 |
+| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-05 |
 | typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
 | uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
 | uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
@@ -91,8 +91,8 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Status
 
-Currently working through pyright first-contact notes, pre-commit hook debugging, and the pdt dependency-hygiene scaffold. The most recent additions include the bandit severity-confidence debrief, pip-audit CI wrapper scripts, and the pre-commit multi-language config.
+Currently working on bandit severity-confidence debrief notes, the py-spy production profiling runbook, and the prc pre-commit hook debugging notebook. The most recent additions include multi-bar progress tracker script, output formats comparison notebook, and console CI output routing docs.
 
 ---
 
-_Last updated: 2026-09-11_
+_Last updated: 2026-09-13_

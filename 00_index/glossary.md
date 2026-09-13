@@ -238,6 +238,7 @@
 - **`extend-safe`** — A Ruff lint configuration that restricts `--fix` to safe auto-fixes only, avoiding changes that could break code.
 - **`--unsafe-fixes`** — A Ruff CLI flag that overrides `extend-safe` and allows potentially unsafe auto-fixes to be applied.
 - **target-version** — The minimum Python version Ruff should target when formatting or linting.
+- **lint gate** — A single command that installs and runs Ruff as a CI check, failing the pipeline on lint errors; used in ruf/scripts/one-command-lint-gate.py.
 
 ## tox
 - **env list** — The set of test environments defined in `tox.ini` and shown with `tox -l`.
@@ -306,6 +307,10 @@
 - **Syntax** — Syntax-highlights source code with a Pygments-based theme.
 - **Inspect** — Rich utility that dumps an object's attributes, methods, and source for quick debugging in the terminal.
 - **Layout** — A grid of renderables that splits the terminal into named regions (`Layout(name="header")`) and updates each region independently inside a `Live`. The building block for a CLI status dashboard.
+- **Output routing** — Directing Rich console output to files, stderr, or in-memory buffers instead of the default stdout, used for CI logs and piped output.
+- **`force_terminal`** — A Console argument that overrides TTY detection, forcing Rich to treat output as interactive even when stdout is a pipe or CI log.
+- **`NO_COLOR`** — An environment variable (any non-empty value) that disables ANSI color codes in Rich output, respecting the community standard for accessible terminals.
+- **TTY detection** — Rich's automatic check of whether stdout is a real terminal, which controls color, panels, and progress bar rendering.
 
 ## Git Version Control
 - **Repository (repo)** — A directory managed by Git, containing all tracked files and their complete history.
