@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2026-09-14
+- bandit-006: Added minimal bandit scan JSON severity script (`bandit/scripts/2026-09-14-minimal-scan-json-severity.sh`) — bandit JSON output with severity filtering, preserving scanner exit status for CI gates
+
 ## 2026-09-13
 - pau-020: Added pip-audit src-layout pyproject.toml config (`pau/configs/pip-audit-src-layout.toml`) — pyproject.toml showing how to wire pip-audit into a src-layout project as a dev dependency, with CLI flags for vulnerability thresholds and ignore rules (pip-audit has no native TOML config)
 - ruf-022: Added one-command lint gate Python script (`ruf/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
