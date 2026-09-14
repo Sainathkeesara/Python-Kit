@@ -51,7 +51,6 @@
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
-- [One-command lint gate](../ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
 
 ### Write and run tests
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
@@ -100,6 +99,7 @@
 - [Security Best Practices meets Static Type Checking](../docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
 - [Security scanning practice script](../docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py) — bandit `-lll` JSON scan + pip-audit dependency scan combined into one exit-code gate
 - [Vulnerable-file scan demo script](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
+- [Minimal bandit scan JSON severity script](../bandit/scripts/2026-09-14-minimal-scan-json-severity.sh) — Run bandit with JSON output filtered by severity level
 - [Skip specific bandit tests snippet](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh) — Skip B101 and B105 for test files without losing the rest of the scan
 
 ### Audit and understand dependencies

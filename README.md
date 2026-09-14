@@ -1,14 +1,9 @@
 # Python-Kit
 > A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
-[![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
-[![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/Python-Kit)](https://github.com/Sainathkeesara/Python-Kit)
+---
 
 > **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
-
----
 
 ## Who this is for
 
@@ -20,11 +15,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [Minimal bandit scan JSON severity script](bandit/scripts/2026-09-14-minimal-scan-json-severity.sh) — Run bandit with JSON output filtered by severity level
+- [pip-audit src-layout config](pau/configs/pip-audit-src-layout.toml) — pip-audit configuration tailored for src-layout projects
 - [Output formats comparison notebook](rich/notebooks/output-formats-comparison.ipynb) — Compare flamegraph, speedscope, and raw JSON profiling output formats
 - [Multi-bar progress tracker](rich/scripts/multi-bar-progress-tracker.py) — Demonstrates multiple concurrent progress bars with Rich
 - [Source layout multi-tool tables](docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md) — How src-layout changes pyproject.toml tool tables
-- [Ruff one-command lint gate](ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
-- [Console CI output routing](rich/docs/console-ci-output-routing.md) — Route Rich console output for CI logs and human terminals
 
 ## Layout
 
@@ -62,37 +57,31 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
-| bandit | 2 | 1 | — | 1 | 1 | — | — | — | 2026-09-09 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 8 | 2026-09-04 |
-| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
-| pau | 1 | 2 | 2 | — | 1 | — | — | — | 2026-09-06 |
-| pdt | — | 2 | — | — | 1 | — | 1 | 9 | 2026-09-05 |
+| bandit | 2 | 2 | — | 1 | 1 | — | — | — | 2026-09-06 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-08-27 |
+| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-06-12 |
+| pau | 1 | 2 | 3 | — | 1 | — | — | — | 2026-07-26 |
+| pdt | — | 2 | — | — | 1 | — | 1 | 9 | — |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
-| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-09 |
-| pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | — |
+| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-08-30 |
+| pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — | — | — |
-| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
-| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-10 |
-| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
+| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-07-19 |
+| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-08-22 |
+| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-06-10 |
 | pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
-| rich | 8 | 5 | — | 8 | 2 | 2 | — | — | 2026-09-13 |
-| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
-| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-08-26 |
-| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-05 |
+| rich | 8 | 5 | — | 8 | 2 | 2 | — | — | 2026-08-05 |
+| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-07-21 |
+| tox | 5 | 3 | 4 | — | — | — | — | — | 2026-06-11 |
+| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
 | typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
-| uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
-| uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-23 |
+| uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-10 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | 2026-06-18 |
+| uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-04 |
 
 </details>
 
 ---
 
-## Status
-
-Currently working on bandit severity-confidence debrief notes, the py-spy production profiling runbook, and the prc pre-commit hook debugging notebook. The most recent additions include multi-bar progress tracker script, output formats comparison notebook, and console CI output routing docs.
-
----
-
-_Last updated: 2026-09-13_
+_Last updated: 2026-09-15_

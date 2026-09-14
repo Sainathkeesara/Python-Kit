@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Foundational concepts  ·  42 files
+## Foundational concepts  ·  43 files
 
 - **primer:** [Git Version Control](../docs/concepts/git-version-control/0000-primer-git-version-control.md)
 - **primer:** [Python Programming Fundamentals](../docs/concepts/python-programming-fundamentals/0000-primer-python-programming-fundamentals.md)
@@ -14,17 +14,17 @@
 - **docs** (10): [pyproject-toml-tool-tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md), [aaa-parametrize-fixtures-coverage-static-typing-ci](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md), [integrating-mypy-ruff-ci](../mypy/docs/integrating-mypy-ruff-ci.md), [git-workflows-branches-tags-ci](../docs/concepts/git-version-control/git-workflows-branches-tags-ci.md), [typing-patterns-protocol-typeddict-generics](../docs/concepts/static-type-checking-type-hints/typing-patterns-protocol-typeddict-generics.md), [venv-strategies-venv-uv-tox](../docs/concepts/virtual-environment-dependency-mgmt/venv-strategies-venv-uv-tox.md), [combining-fundamentals-with-static-typing-and-testing](../docs/concepts/python-programming-fundamentals/combining-fundamentals-with-static-typing-and-testing.md), [repository-structure](../docs/repository-structure.md), [ci-ready-static-checking-pytest-pyproject](../docs/concepts/static-type-checking-type-hints/ci-ready-static-checking-pytest-pyproject.md), [choosing-build-backend](../docs/concepts/python-packaging-project-config/choosing-build-backend.md)
 - **notebooks** (3): [explore-tool-tables-live-editing](../pyproject.toml/notebooks/explore-tool-tables-live-editing.ipynb), [type-narrowing-mypy-integration](../docs/concepts/static-type-checking-type-hints/notebooks/type-narrowing-mypy-integration.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
 - **scripts** (14): [2026-09-08-practice-comprehensions-dicts-errors](../docs/concepts/python-programming-fundamentals/scripts/2026-09-08-practice-comprehensions-dicts-errors.py), [derive-version-from-git-tags](../docs/concepts/git-version-control/scripts/derive-version-from-git-tags.py), [build-verify-wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py), [dependency-management-cli](../docs/concepts/python-programming-fundamentals/scripts/dependency-management-cli.py), [lockfile-drift-check](../docs/concepts/virtual-environment-dependency-mgmt/scripts/lockfile-drift-check.py), [dataclasses-context-managers-decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py), [2026-07-05-practice-git-version-control](../docs/concepts/git-version-control/scripts/2026-07-23-practice-git-version-control.py), [2026-08-21-build-validate-src-layout-package](../docs/concepts/python-packaging-project-config/scripts/2026-08-21-build-validate-src-layout-package.py), [build-verify-smoke-install-wheel](../docs/concepts/python-packaging-project-config/scripts/build-verify-smoke-install-wheel.py), [2026-07-05-practicing-fundamentals](../docs/concepts/python-programming-fundamentals/scripts/2026-07-05-practicing-fundamentals.py), [2026-07-27-applying-type-hints](../docs/concepts/static-type-checking-type-hints/scripts/2026-07-27-applying-type-hints.py), [2026-07-05-testing-principles](../docs/concepts/software-testing-principles/scripts/2026-07-05-testing-principles.py), [parametrized-edge-case-coverage-ci](../docs/concepts/software-testing-principles/scripts/parametrized-edge-case-coverage-ci.py), [2026-07-23-venv-practice](../docs/concepts/virtual-environment-dependency-mgmt/scripts/2026-07-23-venv-practice.py)
-- **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py)
+- **snippets** (9): [2026-08-20-parametrized-aaa-tests](../docs/concepts/software-testing-principles/snippets/2026-08-20-parametrized-aaa-tests.py), [comprehensions-generators-error-handling](../docs/concepts/python-programming-fundamentals/snippets/2026-08-11-comprehensions-generators-error-handling.py), [boundary-values-test-doubles](../docs/concepts/software-testing-principles/snippets/2026-08-12-boundary-values-test-doubles.py), [common-git-patterns](../docs/concepts/git-version-control/snippets/2026-07-23-common-git-patterns-in-python-projects.py), [2026-08-27-secure-coding-patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py), [2026-07-05-packaging-patterns](../docs/concepts/python-packaging-project-config/snippets/2026-07-05-packaging-patterns.py), [common-type-checking-patterns](../docs/concepts/static-type-checking-type-hints/snippets/2026-07-23-common-type-checking-patterns.py), [2026-07-27-common-venv-patterns](../docs/concepts/virtual-environment-dependency-mgmt/snippets/2026-07-27-common-venv-patterns.py), [2026-09-09-practice-security-scan-bandit-pipaudit](../docs/concepts/security-best-practices/scripts/2026-09-09-practice-security-scan-bandit-pipaudit.py)
 
-## bandit  ·  5 files
+## bandit  ·  6 files
 
 - **primer:** [0000-primer-bandit.md](../bandit/notes/0000-primer-bandit.md)
 - **notes** (1): [2026-09-06-first-bandit-scan](../bandit/notes/2026-09-06-first-bandit-scan.md) — Python version requirement wall, extras trap, and profile vs test-ID confusion
 - **docs** (1): [severity-confidence debrief](../bandit/docs/2026-09-09-bandit-severity-confidence-debrief.md) — `-l/-ll/-lll` and `-i/-ii/-iii` flag stacking, baseline extras trap, and `# nosec` line-scoping
-- **scripts** (1): [2026-09-06-scan-vulnerable-file](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh) — Creates a deliberately vulnerable file and runs bandit to show test IDs and severity
+- **scripts** (2): [2026-09-06-scan-vulnerable-file](../bandit/scripts/2026-09-06-scan-vulnerable-file.sh), [2026-09-14-minimal-scan-json-severity](../bandit/scripts/2026-09-14-minimal-scan-json-severity.sh)
 - **snippets** (1): [skip-specific-bandit-tests](../bandit/snippets/2026-09-04-skip-specific-bandit-tests.sh)
 
-## httpie  ·  28 files
+## httpie  ·  27 files
 
 - **primer:** [0000-primer-httpie.md](../httpie/notes/0000-primer-httpie.md)
 - **notes** (6): [installed-httpie-first-api-request](../httpie/notes/2026-08-27-installed-httpie-first-api-request.md), [followed-httpie-quickstart](../httpie/notes/2026-07-19-followed-httpie-quickstart.md), [first-httpie-request](../httpie/notes/2026-06-10-first-httpie-request.md)
@@ -34,7 +34,7 @@
 - **configs** (2): [httpie-session-dev](../httpie/configs/2026-08-27-httpie-session-dev.json), [httpie-defaults](../httpie/configs/2026-07-19-httpie-defaults.json)
 - **snippets** (2): [httpie-core-syntax](../httpie/snippets/2026-08-27-httpie-core-syntax.sh), [tried-httpie-get-post-workflow](../httpie/snippets/tried-httpie-get-post-workflow.py)
 - **notebooks** (2): [compare-session-vs-inline-auth](../httpie/notebooks/compare-session-vs-inline-auth.ipynb), [compare-httpie-curl-ci-gating](../httpie/notebooks/compare-httpie-curl-ci-gating.ipynb)
-- **templates** (8): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
+- **templates** (7): [httpie-pytest-api-scaffold](../httpie/templates/httpie-pytest-api-scaffold/README.md) — a ready-to-fork project skeleton pairing httpie for API calls with pytest for test discovery
 
 ## mypy  ·  28 files
 
@@ -46,14 +46,13 @@
 - **configs** (5): [selective-mypy-strictness](../mypy/configs/2026-08-04-selective-mypy-strictness.ini), [strict-mypy-config](../mypy/configs/tried-strict-mypy-config.toml), [strict-disallow-ignore-config](../mypy/configs/tried-strict-disallow-ignore-config.ini), [minimal-mypy-config](../mypy/configs/tried-minimal-mypy-config.ini), [gradual-typing-mypy](../mypy/configs/gradual-typing-mypy.toml)
 - **manifests** (1): [ci-incremental-mypy-workflow](../mypy/manifests/ci-incremental-mypy-workflow.yaml) — a fail-fast, cache-warm incremental type-check job
 - **notebooks** (2): [gradual-typing-adoption](../mypy/notebooks/gradual-typing-adoption.ipynb), [explore-incremental-cache-and-follow-imports](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb)
-- **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [typed-functions-validate](../mypy/snippets/tried-validating-typed-function.py)
-- _…and 1 more under `mypy/snippets/` — browse the folder._
+- **snippets** (4): [typed-small-module](../mypy/snippets/2026-07-19-typed-small-module.py), [tried-mypy-type-errors](../mypy/snippets/tried-mypy-type-errors.py), [tried-validating-typed-function](../mypy/snippets/tried-validating-typed-function.py), [typed-functions-validate](../mypy/snippets/typed-functions-validate.py)
 - **templates** (5): [type-safe-python-package](../mypy/templates/type-safe-python-package/) — a minimal src-layout package wired for mypy strict checking from the first commit
 
-## pau  ·  6 files
+## pau  ·  7 files
 
 - **primer:** [0000-primer-pip-audit.md](../pau/notes/0000-primer-pip-audit.md)
-- **configs** (2): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml)
+- **configs** (3): [minimal-pip-audit-pyproject](../pau/configs/2026-08-09-minimal-pip-audit-pyproject.toml), [pip-audit-scan-config](../pau/configs/2026-08-09-pip-audit-scan-config.toml), [pip-audit-src-layout](../pau/configs/pip-audit-src-layout.toml)
 - **scripts** (2): [ci-friendly-pip-audit-scan](../pau/scripts/2026-08-21-ci-friendly-pip-audit-scan.sh), [pip-audit-ci-wrapper](../pau/scripts/pip-audit-ci-wrapper.py) — Wrap pip-audit into a CI-friendly command with structured JSON output
 - **docs** (1): [integrating-pip-audit-uv-pre-commit-vulnerability-workflow](../pau/docs/integrating-pip-audit-uv-pre-commit-vulnerability-workflow.md) — wiring pip-audit into pre-commit hooks and CI for a full dependency vulnerability workflow
 
@@ -164,10 +163,6 @@
 - **scripts** (2): [end-to-end-ruff-lint-format](../ruff/scripts/end-to-end-ruff-lint-format.sh), [ruff-lint-gate](../ruff/scripts/ruff-lint-gate.py)
 - **snippets** (2): [tried-messy-example](../ruff/snippets/tried-messy-example.py), [messy_example](../ruff/snippets/messy_example.py)
 - **notebooks** (1): [compare-ruff-format-vs-black](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — side-by-side Ruff format and black on a shared sample
-
-## ruf  ·  1 file
-
-- **scripts** (1): [one-command-lint-gate](../ruf/scripts/one-command-lint-gate.py) — single command that installs and runs Ruff as a CI lint gate
 
 ## tox  ·  12 files
 
