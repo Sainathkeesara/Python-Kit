@@ -11,6 +11,7 @@
 - [Dataclasses, Context Managers, Decorators](../docs/concepts/python-programming-fundamentals/scripts/2026-08-27-dataclasses-context-managers-decorators.py) — Practice advanced Python fundamentals with dataclasses, context managers, and decorators
 - [Python Packaging & Project Config Primer](../docs/concepts/python-packaging-project-config/0000-primer-python-packaging-project-config.md) — What is Python packaging and project config? first-contact notes
 - [Pyproject.toml tool tables](../docs/concepts/python-packaging-project-config/pyproject-toml-tool-tables.md) — Consolidating uv, Ruff, pytest, and mypy config into pyproject.toml
+- [Source layout multi-tool tables](../docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md) — How src-layout changes pyproject.toml tool tables
 - [Build and Verify a Wheel](../docs/concepts/python-packaging-project-config/scripts/2026-08-12-build-verify-wheel.py) — Build a minimal PEP 621 package into a wheel and inspect the manifest
 - [Software Testing Principles Primer](../docs/concepts/software-testing-principles/0000-primer-software-testing-principles.md) — What are software testing principles? first-contact notes
 - [AAA + parametrize + fixtures + coverage + static typing + CI](../docs/concepts/software-testing-principles/aaa-parametrize-fixtures-coverage-static-typing-ci.md) — Combining Arrange-Act-Assert, parametrized tests, fixtures, coverage thresholds, and type checking into a single CI pipeline
@@ -24,7 +25,6 @@
 - [Security Best Practices Primer](../docs/concepts/security-best-practices/0000-primer-security-best-practices.md) — Dependency scanning, secrets hygiene, input validation, and least privilege
 - [Secure coding patterns](../docs/concepts/security-best-practices/snippets/2026-08-27-secure-coding-patterns.py) — Common secure coding patterns and anti-patterns in Python
 - [Dependency, secrets, and deserialization practice](../docs/concepts/security-best-practices/scripts/2026-08-28-dependency-secrets-scan-deserialize.py) — Three runnable security habits: scanning deps, spotting leaked secrets, and safe parsing
-- [Security Best Practices meets Static Type Checking](../docs/concepts/security-best-practices/combining-security-static-type-checking.md) — Running bandit and mypy strict in one CI pipeline, baseline-then-tighten workflow
 - [Repository Structure](../docs/repository-structure.md) — How this repo is laid out
 
 ## I need to...
@@ -51,6 +51,7 @@
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
+- [One-command lint gate](../ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
 
 ### Write and run tests
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
@@ -176,8 +177,11 @@
 ### Make terminal output nice
 - [Rich Primer](../rich/notes/0000-primer-rich.md) — What is Rich? first-contact notes
 - [Wiring Rich into a CLI status dashboard](../rich/docs/wiring-rich-into-a-cli-status-dashboard.md) — Console + Panel + Layout + Live for an updating CLI dashboard
+- [Console CI output routing](../rich/docs/console-ci-output-routing.md) — Route Rich console output for CI logs and human terminals
 - [Rich dashboard approaches notebook](../rich/notebooks/rich-dashboard-approaches.ipynb) — Comparing approaches for building a live CLI status dashboard
+- [Output formats comparison notebook](../rich/notebooks/output-formats-comparison.ipynb) — Compare flamegraph, speedscope, and raw JSON profiling output formats
 - [First rich output snippet](../rich/snippets/2026-08-18-first-rich-output.py) — Minimal example showing Rich markup, tables, and live display in one script
 - [Rich inspect live pipeline snippet](../rich/snippets/2026-08-06-rich-inspect-live-pipeline.py) — What I learned using Rich's inspect() and live display on a sample data pipeline
+- [Multi-bar progress tracker](../rich/scripts/multi-bar-progress-tracker.py) — Multiple concurrent progress bars with Rich
 - [Table, Panel, Progress Script](../rich/scripts/first-table-panel-progress.py) — First rich script with table, panel, and progress bar
 - [Live log tailer](../rich/scripts/live-log-tailer.py) — A live-updating log viewer that colour-codes INFO/WARN/ERROR lines using Rich panels and a rolling deque buffer
