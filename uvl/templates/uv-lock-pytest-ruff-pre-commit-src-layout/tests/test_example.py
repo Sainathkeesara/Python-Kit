@@ -1,3 +1,4 @@
+# last_verified: 2026-09-15
 """Example tests demonstrating pytest features with the package."""
 
 from __future__ import annotations

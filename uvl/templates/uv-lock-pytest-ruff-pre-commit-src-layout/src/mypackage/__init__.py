@@ -1,3 +1,4 @@
+# last_verified: 2026-09-15
 """mypackage - Production-ready src-layout Python package template."""
 
 from __future__ import annotations

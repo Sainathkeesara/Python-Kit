@@ -1,3 +1,4 @@
+# last_verified: 2026-09-15
 """Shared pytest fixtures and configuration."""
 
 from __future__ import annotations

@@ -1,0 +1,32 @@
+# last_verified: 2026-09-15
+# Pre-commit gate for the template. All hooks are `repo: local` so they run
+# the project's own locked environment (`uv run ...`) with no extra installs.
+# Add upstream hook repos later if you need whole-file fixers.
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check
+        entry: uv run ruff check --output-format=github
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format --check --diff
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: mypy-strict
+        name: mypy strict
+        entry: uv run mypy --strict --show-error-codes --pretty src/
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: pytest-fast
+        name: pytest (no coverage gate)
+        entry: uv run pytest -q -p no:cacheprovider --no-cov -m "not slow and not integration"
+        language: system
+        types: [python]
+        pass_filenames: false
+        stages: [pre-push]

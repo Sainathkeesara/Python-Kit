@@ -2,6 +2,7 @@
 
 ## 2026-09-15
 - uvl-017: Added production-ready src-layout package template (`uvl/templates/uv-lock-pytest-ruff-pre-commit-src-layout/`) — uv.lock + pytest + Ruff + pre-commit + MyPy with GitHub Actions CI, security scanning, and PEP 561 typing support
+- uvl-017 (rework): Fixed template per audit — valid TOML per-file-ignores sub-table, added missing `.pre-commit-config.yaml`, uv.lock committed for `--frozen` CI, unpinned versions, Bandit/pip-audit JSON via artifact upload instead of SARIF
 - ty-015: Added docs on choosing ty over mypy (`ty/docs/when-to-choose-ty-over-mypy.md`) — speed, error messages, and type-narrowing behavior compared
 - ty-016: Added minimal typed module snippet (`ty/snippets/2026-09-15-minimal-typed-module.py`) — function signatures, generics, and reveal_type
 
