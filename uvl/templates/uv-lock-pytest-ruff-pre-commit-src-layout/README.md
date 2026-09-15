@@ -1,4 +1,13 @@
-# last_verified: 2026-09-15
+---
+last_verified: 2026-09-15
+tool_version: "uv 0.6.0, pytest 8.3.0, ruff 0.7.0, mypy 1.13.0, pre-commit 4.0.0"
+sources:
+  - https://docs.astral.sh/uv/
+  - https://docs.pytest.org/en/stable/
+  - https://docs.astral.sh/ruff/
+  - https://mypy.readthedocs.io/en/stable/
+  - https://pre-commit.com/
+---
 
 # mypackage
 
