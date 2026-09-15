@@ -1,12 +1,6 @@
 ---
 last_verified: 2026-09-15
-tool_version: "uv 0.6.0, pytest 8.3.0, ruff 0.7.0, mypy 1.13.0, pre-commit 4.0.0"
-sources:
-  - https://docs.astral.sh/uv/
-  - https://docs.pytest.org/en/stable/
-  - https://docs.astral.sh/ruff/
-  - https://mypy.readthedocs.io/en/stable/
-  - https://pre-commit.com/
+tool_version: n/a
 ---
 
 # mypackage
@@ -21,7 +15,7 @@ Production-ready src-layout Python package template with uv.lock, pytest, Ruff, 
 - **MyPy** for strict static type checking
 - **pre-commit** hooks for automated quality gates
 - **GitHub Actions** CI with matrix testing (3.11, 3.12, 3.13), security scanning, and artifact publishing
-- **Bandit** + **pip-audit** for security scanning with SARIF upload
+- **Bandit** + **pip-audit** for security scanning with JSON artifact upload
 - **src-layout** package structure with PEP 561 typing support
 
 ## Quick Start
@@ -108,7 +102,7 @@ The GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push and 
 1. **Lint** - Ruff check + format
 2. **Type Check** - MyPy strict mode
 3. **Test** - pytest matrix across Python 3.11, 3.12, 3.13 with coverage
-4. **Security** - Bandit SAST + pip-audit SCA with SARIF upload
+4. **Security** - Bandit SAST + pip-audit SCA with JSON artifact upload
 5. **Pre-commit** - All hooks on all files
 6. **Build** - Package build on main branch pushes
 
@@ -140,18 +134,21 @@ strategy:
 
 Also update `requires-python` and classifiers in `pyproject.toml`.
 
-## Tool Versions (Locked in uv.lock)
+## Tools (Resolved via uv.lock)
+
+Versions are intentionally unpinned here — run `uv sync --dev` and the exact
+set lands in `uv.lock`. CI reproduces it with `uv sync --dev --frozen`.
 
 | Tool | Purpose |
 |------|---------|
-| uv 0.6.0 | Package/dependency manager |
-| pytest 8.3.0 | Test runner |
-| pytest-cov 5.0.0 | Coverage reporting |
-| pytest-xdist 3.6.0 | Parallel test execution |
-| Ruff 0.7.0 | Linting + formatting |
-| MyPy 1.13.0 | Static type checking |
-| pre-commit 4.0.0 | Git hook manager |
-| Bandit 1.9.4 | Security linting |
+| uv | Package/dependency manager |
+| pytest | Test runner |
+| pytest-cov | Coverage reporting |
+| pytest-xdist | Parallel test execution |
+| Ruff | Linting + formatting |
+| MyPy | Static type checking |
+| pre-commit | Git hook manager |
+| Bandit | Security linting |
 | pip-audit | Dependency vulnerability scanning |
 
 ## License

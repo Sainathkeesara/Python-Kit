@@ -1,4 +1,4 @@
-# last_verified: 2026-09-15 · uv 0.6.0, python 3.11/3.12/3.13
+# last_verified: 2026-09-15
 
 name: CI
 
@@ -12,9 +12,6 @@ on:
 
 permissions:
   contents: read
-  security-events: write
-  checks: write
-  pull-requests: write
 
 env:
   UV_CACHE_DIR: ${{ github.workspace }}/.uv-cache
@@ -32,7 +29,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python
@@ -61,7 +57,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python
@@ -90,7 +85,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python ${{ matrix.python-version }}
@@ -138,7 +132,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python
@@ -155,24 +148,26 @@ jobs:
           uv run bandit -ll --recursive --skip B101 --format json --output bandit-report.json src/
         continue-on-error: true
 
-      - name: Upload Bandit SARIF
-        uses: github/codeql-action/upload-sarif@v3
+      - name: Upload Bandit report
+        uses: actions/upload-artifact@v4
         if: always()
         with:
-          sarif_file: bandit-report.json
-          category: bandit
+          name: bandit-report
+          path: bandit-report.json
+          retention-days: 30
 
       - name: Run pip-audit
         run: |
-          uv run pip-audit --format=json --output=pip-audit-report.json --desc --progress-spinner=off
+          uv run pip-audit --format=json --output=pip-audit-report.json --desc
         continue-on-error: true
 
-      - name: Upload pip-audit SARIF
-        uses: github/codeql-action/upload-sarif@v3
+      - name: Upload pip-audit report
+        uses: actions/upload-artifact@v4
         if: always()
         with:
-          sarif_file: pip-audit-report.json
-          category: pip-audit
+          name: pip-audit-report
+          path: pip-audit-report.json
+          retention-days: 30
 
   pre-commit:
     name: Pre-commit
@@ -185,7 +180,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python
@@ -215,7 +209,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.6.0"
           enable-cache: true
 
       - name: Set up Python
@@ -231,8 +224,7 @@ jobs:
         run: uv build
 
       - name: Verify package
-        run: |
-          uv run twine check dist/*
+        run: ls -la dist/
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

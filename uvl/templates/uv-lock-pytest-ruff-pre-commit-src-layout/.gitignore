@@ -1,4 +1,4 @@
-# last_verified: 2026-09-15 · uv 0.6.0, pytest 8.3.0, ruff 0.7.0, mypy 1.13.0, pre-commit 4.0.0
+# last_verified: 2026-09-15
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -11,8 +11,9 @@ env/
 ENV/
 
 # uv
+# NOTE: uv.lock is intentionally committed so CI can reproduce the exact
+# environment with `uv sync --frozen`. Only the local cache stays ignored.
 .uv-cache/
-uv.lock
 
 # Distribution / packaging
 dist/
@@ -34,9 +35,6 @@ dmypy.json
 
 # Ruff
 .ruff_cache/
-
-# Pre-commit
-.pre-commit-config.yaml
 
 # IDE / Editor
 .vscode/
