@@ -51,6 +51,7 @@
 - [Messy Example Snippet](../ruff/snippets/messy_example.py) — Deliberately broken code to test the linter
 - [Ruff Install Script](../py/scripts/install-and-lint.sh) — Install Ruff and lint a Python file
 - [Ruff format vs black notebook](../ruff/notebooks/compare-ruff-format-vs-black.ipynb) — Side-by-side Ruff format and black on a shared sample to compare diffs
+- [One-command lint gate](../ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
 
 ### Write and run tests
 - [pytest Primer](../pytest/notes/0000-primer-pytest.md) — What is pytest? first-contact notes
@@ -70,6 +71,8 @@
 - [mypy incremental cache notebook](../mypy/notebooks/explore-incremental-cache-and-follow-imports.ipynb) — Exploring mypy's incremental cache and follow-imports behaviour
 - [Ty Primer](../ty/notes/0000-primer-ty.md) — What is Ty? first-contact notes
 - [Followed Ty quickstart notes](../ty/notes/2026-08-04-followed-ty-quickstart.md) — Following the Ty quickstart, first type check, what tripped me up
+- [When to choose ty over mypy](../ty/docs/when-to-choose-ty-over-mypy.md) — Speed, error-message readability, and type-narrowing behaviour compared
+- [Minimal typed module for ty](../ty/snippets/2026-09-15-minimal-typed-module.py) — Generic Stack with reveal_type showing what ty infers
 - [Ty quickstart loop snippet](../ty/snippets/2026-09-02-followed-ty-quickstart-loop.py) — Minimal annotated loop module for a Ty first type-check pass
 - [Minimal annotated module](../ty/snippets/2026-08-18-minimal-annotated-module.py) — A minimal fully-annotated module to run Ty's type checker against
 - [Minimal annotated Ty module](../ty/snippets/2026-08-29-ty-minimal-module.py) — Minimal fully-annotated module with generics, TypeVar, and reveal_type for Ty exploration
@@ -120,6 +123,7 @@
 
 ### Manage lockfiles
 - [uv.lock Primer](../uv.lock/notes/0000-primer-uv.lock.md) — What is uv.lock? first-contact notes
+- [uv-lock-pytest-ruff-pre-commit-src-layout template](../uvl/templates/uv-lock-pytest-ruff-pre-commit-src-layout/README.md) — Production-ready src-layout package template with uv.lock, pytest, Ruff, and pre-commit
 - [uv.lock mapping to pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md) — Map uv.lock sections to pyproject.toml tables
 - [Generate uv.lock Script](../uv.lock/scripts/generate-uv-lock.sh) — Generate a uv.lock with uv sync
 - [Reproducibility Test Script](../uv.lock/scripts/tried-uv-lock-reproducibility.sh) — Test that uv.lock checksums are stable across lock commands
