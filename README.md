@@ -1,9 +1,9 @@
 # Python-Kit
 > A working Python engineer's quick-reference for uv, Ruff, pytest, mypy, Ty, pyright, bandit, pre-commit, rich, typer, pip-audit, pipdeptree, py-spy, tox, httpie, and the project config that holds them together.
 
----
-
 > **New here? Start at [the learning path](00_index/learning-path.md).** It walks you from first-contact to confident in a sensible order — read that before this table.
+
+---
 
 ## Who this is for
 
@@ -15,11 +15,11 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 ## Quick links
 
+- [uv-lock-pytest-ruff-pre-commit-src-layout template](uvl/templates/uv-lock-pytest-ruff-pre-commit-src-layout/README.md) — Production-ready src-layout package template with uv.lock, pytest, Ruff, and pre-commit
+- [When to choose ty over mypy](ty/docs/when-to-choose-ty-over-mypy.md) — Speed, error-message readability, and type-narrowing behaviour compared
+- [Minimal typed module for ty](ty/snippets/2026-09-15-minimal-typed-module.py) — Generic Stack with reveal_type showing what ty infers
 - [Minimal bandit scan JSON severity script](bandit/scripts/2026-09-14-minimal-scan-json-severity.sh) — Run bandit with JSON output filtered by severity level
-- [pip-audit src-layout config](pau/configs/pip-audit-src-layout.toml) — pip-audit configuration tailored for src-layout projects
-- [Output formats comparison notebook](rich/notebooks/output-formats-comparison.ipynb) — Compare flamegraph, speedscope, and raw JSON profiling output formats
-- [Multi-bar progress tracker](rich/scripts/multi-bar-progress-tracker.py) — Demonstrates multiple concurrent progress bars with Rich
-- [Source layout multi-tool tables](docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md) — How src-layout changes pyproject.toml tool tables
+- [Ruff one-command lint gate](ruf/scripts/one-command-lint-gate.py) — Single command that installs and runs Ruff as a CI lint gate
 
 ## Layout
 
@@ -40,6 +40,7 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 - `pytest/` — pytest notes, fixtures, CLI flags, test scripts
 - `pyright/` — Pyright type-checking primer and first-run notes
 - `rich/` — Terminal output notes, tables, panels, progress, snippets, and a status-dashboard doc
+- `ruf/` — Ruff short-alias CI lint-gate script
 - `ruff/` — Linter/formatter notes, configs, CLI exploration, vs flake8 docs, format-vs-black notebook
 - `tox/` — Tox automation notes, env config, and CLI patterns
 - `ty/` — Ty type checker notes, configs, and comparisons with mypy
@@ -57,31 +58,38 @@ Notes, configs, scripts, and snippets organised per tool, covering the day-to-da
 
 | Tool | Notes | Scripts | Configs | Snippets | Docs | Notebooks | Manifests | Templates | Last verified |
 |------|-------|---------|---------|----------|------|-----------|-----------|-----------|---------------|
-| bandit | 2 | 2 | — | 1 | 1 | — | — | — | 2026-09-06 |
-| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-08-27 |
-| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-06-12 |
-| pau | 1 | 2 | 3 | — | 1 | — | — | — | 2026-07-26 |
-| pdt | — | 2 | — | — | 1 | — | 1 | 9 | — |
+| bandit | 2 | 2 | — | 1 | 1 | — | — | — | 2026-09-09 |
+| httpie | 6 | 5 | 2 | 2 | 3 | 2 | — | 7 | 2026-09-04 |
+| mypy | 7 | 2 | 5 | 4 | 2 | 2 | 1 | 5 | 2026-09-02 |
+| pau | 1 | 2 | 3 | — | 1 | — | — | — | 2026-09-06 |
+| pdt | — | — | — | — | 1 | — | 1 | 9 | 2026-09-05 |
 | pip-audit | 4 | 3 | 1 | 4 | — | — | — | — | 2026-07-17 |
 | pipdeptree | 8 | 4 | 1 | 6 | — | — | — | — | 2026-08-06 |
-| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-08-30 |
+| prc | 2 | 2 | 3 | — | 2 | 1 | — | — | 2026-09-09 |
 | pre-commit | 5 | 2 | 2 | 2 | — | — | — | — | 2026-06-18 |
 | py | 1 | 1 | — | — | — | — | — | — | — |
-| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-07-19 |
-| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-08-22 |
-| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-06-10 |
+| py-spy | 10 | 10 | — | 2 | 3 | 1 | — | — | 2026-09-06 |
+| pyproject.toml | 4 | 1 | 8 | — | 1 | 1 | — | — | 2026-09-07 |
+| pytest | 5 | 4 | 1 | 2 | 2 | 1 | — | — | 2026-08-22 |
 | pyright | 3 | — | — | 1 | — | — | — | — | 2026-09-09 |
-| rich | 8 | 5 | — | 8 | 2 | 2 | — | — | 2026-08-05 |
-| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-07-21 |
+| rich | 8 | 5 | — | 8 | 2 | 2 | — | — | 2026-09-13 |
+| ruf | — | 1 | — | — | — | — | — | — | — |
+| ruff | 6 | 2 | 5 | 2 | 2 | 1 | — | — | 2026-09-03 |
 | tox | 5 | 3 | 4 | — | — | — | — | — | 2026-06-11 |
-| ty | 7 | 2 | 3 | 6 | — | — | — | — | 2026-08-04 |
+| ty | 7 | 2 | 3 | 7 | 1 | — | — | — | 2026-09-15 |
 | typer | 4 | 5 | — | 3 | — | — | — | — | 2026-08-18 |
-| uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-10 |
-| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | 2026-06-18 |
-| uvl | 2 | 1 | — | — | 2 | 1 | — | — | 2026-08-04 |
+| uv | 8 | 5 | 3 | 2 | 2 | — | — | — | 2026-08-22 |
+| uv.lock | 4 | 4 | — | 2 | — | 1 | — | — | — |
+| uvl | 2 | 1 | — | — | 2 | 1 | — | 14 | 2026-09-15 |
 
 </details>
 
 ---
 
-_Last updated: 2026-09-15_
+## Status
+
+Currently focused on reproducible project scaffolding — the new uv.lock template wires pytest, Ruff, mypy, and pre-commit into one src-layout starting point — alongside the ty-vs-mypy comparison for teams picking a type checker.
+
+---
+
+_Last updated: 2026-09-16_

@@ -152,6 +152,10 @@
 - _…and 5 more under `rich/snippets/` — browse the folder._
 - **notebooks** (2): [output-formats-comparison](../rich/notebooks/output-formats-comparison.ipynb) — compare flamegraph, speedscope, and raw JSON profiling output formats, [rich-dashboard-approaches](../rich/notebooks/rich-dashboard-approaches.ipynb) — comparing approaches for building a live CLI status dashboard
 
+## ruf  ·  1 file
+
+- **scripts** (1): [one-command-lint-gate](../ruf/scripts/one-command-lint-gate.py) — single command that installs and runs Ruff as a CI lint gate
+
 ## ruff  ·  18 files
 
 - **primer:** [0000-primer-ruff.md](../ruff/notes/0000-primer-ruff.md)
@@ -172,15 +176,16 @@
 - **configs** (4): [tox.ini](../tox/configs/tox.ini), [tried-lint-and-test-env.ini](../tox/configs/tried-lint-and-test-env.ini), [tox-env-matrix](../tox/configs/2026-08-22-tox-env-matrix.toml), [2026-08-26-minimal-tox-matrix](../tox/configs/2026-08-26-minimal-tox-matrix.toml)
 - **scripts** (3): [install-tox-and-first-env](../tox/scripts/2026-08-05-install-tox-and-first-env.sh), [tried-minimal-tox-run](../tox/scripts/tried-minimal-tox-run.sh), [multi-python-tox-matrix](../tox/scripts/2026-09-04-multi-python-tox-matrix.sh)
 
-## ty  ·  18 files
+## ty  ·  20 files
 
 - **primer:** [0000-primer-ty.md](../ty/notes/0000-primer-ty.md)
 - **notes** (7): [followed-ty-quickstart](../ty/notes/2026-08-04-followed-ty-quickstart.md), [first-ty-type-check](../ty/notes/2026-06-18-first-ty-type-check.md), [explored-ty-cli-flags](../ty/notes/2026-06-16-explored-ty-cli-flags.md)
 - _…and 4 more under `ty/notes/` — browse the folder._
 - **configs** (3): [minimal-ty-config](../ty/configs/2026-08-05-minimal-ty-config.toml), [tried-ty-config.toml](../ty/configs/tried-ty-config.toml), [tried-ty-markdown-css.css](../ty/configs/tried-ty-markdown-css.css)
+- **docs** (1): [when-to-choose-ty-over-mypy](../ty/docs/when-to-choose-ty-over-mypy.md) — speed, error-message readability, and type-narrowing behaviour compared
 - **scripts** (2): [tried-ty-pipeline](../ty/scripts/tried-ty-pipeline.sh), [gradual-typing-compare-ty-mypy](../ty/scripts/gradual-typing-compare-ty-mypy.py)
-- **snippets** (6): [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py), [run-ty-on-codebase](../ty/snippets/run-ty-on-codebase.py)
-- _…and 3 more under `ty/snippets/` — browse the folder._
+- **snippets** (7): [2026-09-15-minimal-typed-module](../ty/snippets/2026-09-15-minimal-typed-module.py), [minimal-annotated-module](../ty/snippets/2026-08-18-minimal-annotated-module.py), [ty-type-checking-workflow](../ty/snippets/2026-08-04-ty-type-checking-workflow.py)
+- _…and 4 more under `ty/snippets/` — browse the folder._
 
 ## typer  ·  12 files
 
@@ -209,10 +214,11 @@
 - **snippets** (2): [tried-reading-uv-lock](../uv.lock/snippets/tried-reading-uv-lock.py), [tried-detect-conflicting-constraints](../uv.lock/snippets/tried-detect-conflicting-constraints.py)
 - **notebooks** (1): [exploring-uv-lock-structure.ipynb](../uv.lock/notebooks/tried-exploring-uv-lock-structure.ipynb)
 
-## uvl  ·  6 files
+## uvl  ·  20 files
 
 - **primer:** [0000-primer-uv.lock.md](../uvl/notes/0000-primer-uv.lock.md)
 - **notes** (2): [uv-lock-mapping-to-pyproject](../uvl/notes/2026-08-04-uv-lock-mapping-to-pyproject.md)
 - **docs** (2): [uv-lock-dependencies](../uvl/docs/2026-08-08-uv-lock-dependencies.md), [reading-uv-lock-entries-hashes-sources](../uvl/docs/reading-uv-lock-entries-hashes-sources.md)
 - **scripts** (1): [lockfile-reproducibility-check](../uvl/scripts/lockfile-reproducibility-check.sh)
 - **notebooks** (1): [uv-lock-evolution-add-upgrade](../uvl/notebooks/uv-lock-evolution-add-upgrade.ipynb)
+- **templates** (14): [uv-lock-pytest-ruff-pre-commit-src-layout](../uvl/templates/uv-lock-pytest-ruff-pre-commit-src-layout/README.md) — a production-ready src-layout package template with uv.lock, pytest, Ruff, and pre-commit
