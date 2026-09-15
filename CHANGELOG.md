@@ -1,11 +1,15 @@
 # CHANGELOG
 
+## 2026-09-15
+- ty-015: Added docs on choosing ty over mypy (`ty/docs/when-to-choose-ty-over-mypy.md`) — speed, error messages, and type-narrowing behavior compared
+- ty-016: Added minimal typed module snippet (`ty/snippets/2026-09-15-minimal-typed-module.py`) — function signatures, generics, and reveal_type
+
 ## 2026-09-14
 - bandit-006: Added minimal bandit scan JSON severity script (`bandit/scripts/2026-09-14-minimal-scan-json-severity.sh`) — bandit JSON output with severity filtering, preserving scanner exit status for CI gates
 
 ## 2026-09-13
 - pau-020: Added pip-audit src-layout pyproject.toml config (`pau/configs/pip-audit-src-layout.toml`) — pyproject.toml showing how to wire pip-audit into a src-layout project as a dev dependency, with CLI flags for vulnerability thresholds and ignore rules (pip-audit has no native TOML config)
-- ruf-022: Added one-command lint gate Python script (`ruf/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
+- ruf-022: Added one-command lint gate Python script (`ruff/scripts/one-command-lint-gate.py`) — ruff check with selected rules, format check, and per-file ignores as a Python wrapper
 - con-046: Added src-layout multi-tool tables docs (`docs/concepts/python-packaging-project-config/src-layout-multi-tool-tables.md`) — pattern for pyproject.toml tool tables for uv, Ruff, pytest, mypy in a src-layout package
 - rich-009: Added Rich Console CI/local dev docs (`rich/docs/console-ci-output-routing.md`) — output routing, force_terminal, and NO_COLOR for CI pipelines and local development
 - rich-010: Added multi-bar progress tracker script (`rich/scripts/multi-bar-progress-tracker.py`) — Rich Progress API with multiple concurrent bars, elapsed time, and ETA columns
